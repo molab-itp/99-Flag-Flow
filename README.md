@@ -14,6 +14,6 @@ Follow these steps to build MyCLI
 - https://www.swift.org/getting-started/cli-swiftpm/
   Build a Command-line Tool
 
-## ExtractFlags
+## ExtractFlagsJSON
 
 Swift command line tool to convert flags from svg files to Assets.xcassets format
