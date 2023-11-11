@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": ["swift"],
+      "args": [],
+      "cwd": "${workspaceFolder:ExtractFlags}",
+      "name": "Debug ExtractFlags",
+      "program": "${workspaceFolder:ExtractFlags}/.build/debug/ExtractFlags",
+      "preLaunchTask": "swift: Build Debug ExtractFlags"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": ["swift"],
+      "args": [],
+      "cwd": "${workspaceFolder:ExtractFlags}",
+      "name": "Release ExtractFlags",
+      "program": "${workspaceFolder:ExtractFlags}/.build/release/ExtractFlags",
+      "preLaunchTask": "swift: Build Release ExtractFlags"
+    }
+  ]
+}

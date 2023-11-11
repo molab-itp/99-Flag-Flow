@@ -1,0 +1,80 @@
+_notes.txt
+
+
+https://www.hackingwithswift.com/plus/command-line-apps
+
+https://theswiftdev.com/how-to-build-better-command-line-apps-and-tools-using-swift/
+
+https://github.com/tib
+
+https://theswiftdev.com/encoding-and-decoding-data-using-the-hummingbird-framework/
+
+https://www.swift.org/blog/package-collections/
+
+https://www.swift.org/getting-started/cli-swiftpm/
+
+
+JSONTidy/README.md
+
+Product menu and choose Show Build Folder
+
+Convert to Asset
+
+https://github.com/linssen/country-flag-icons/blob/master/countries.json
+
+  {
+    "url": "/wiki/Jamaica",
+    "alpha3": "JAM",
+    "name": "Jamaica",
+    "file_url": "//upload.wikimedia.org/wikipedia/commons/0/0a/Flag_of_Jamaica.svg",
+    "license": "Public domain"
+  },
+  http://upload.wikimedia.org/wikipedia/commons/0/0a/Flag_of_Jamaica.svg
+
+  {
+    "url": "/wiki/United_States",
+    "alpha3": "USA",
+    "name": "United States of America",
+    "file_url": "//upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg",
+    "license": "Public domain"
+  },
+
+    {
+    "url": "/wiki/Guyana",
+    "alpha3": "GUY",
+    "name": "Guyana",
+    "file_url": "//upload.wikimedia.org/wikipedia/commons/9/99/Flag_of_Guyana.svg",
+    "license": "Public domain"
+  },
+
+2023-MoLab/_Assets.xcassets.code-workspace
+
+flag-JAM.imageset
+flag-JAM.imageset/Contents.json
+{
+  "images" : [
+    {
+      "filename" : "Flag_of_Jamaica.svg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
+flag-JAM.imageset/Flag_of_Jamaica.svg
+
+
+
+
+
