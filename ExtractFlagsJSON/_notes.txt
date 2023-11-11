@@ -1,7 +1,6 @@
 _notes.txt
 
-
-Convert to Asset
+Convert to Assets.xcassets
 
 https://github.com/linssen/country-flag-icons/blob/master/countries.json
 
@@ -56,4 +55,7 @@ flag-JAM.imageset/Contents.json
   }
 }
 flag-JAM.imageset/Flag_of_Jamaica.svg
+
+
+
 

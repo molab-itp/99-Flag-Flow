@@ -1,0 +1,44 @@
+{
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": ["swift"],
+      "args": [],
+      "cwd": "${workspaceFolder:99-Command-Line}/ExtractFlags",
+      "name": "Debug ExtractFlags (ExtractFlags)",
+      "program": "${workspaceFolder:99-Command-Line}/ExtractFlags/.build/debug/ExtractFlags",
+      "preLaunchTask": "swift: Build Debug ExtractFlags (ExtractFlags)"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": ["swift"],
+      "args": [],
+      "cwd": "${workspaceFolder:99-Command-Line}/ExtractFlags",
+      "name": "Release ExtractFlags (ExtractFlags)",
+      "program": "${workspaceFolder:99-Command-Line}/ExtractFlags/.build/release/ExtractFlags",
+      "preLaunchTask": "swift: Build Release ExtractFlags (ExtractFlags)"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": ["swift"],
+      "args": [],
+      "cwd": "${workspaceFolder:99-Command-Line}/MyCLI",
+      "name": "Debug MyCLI (MyCLI)",
+      "program": "${workspaceFolder:99-Command-Line}/MyCLI/.build/debug/MyCLI",
+      "preLaunchTask": "swift: Build Debug MyCLI (MyCLI)"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": ["swift"],
+      "args": [],
+      "cwd": "${workspaceFolder:99-Command-Line}/MyCLI",
+      "name": "Release MyCLI (MyCLI)",
+      "program": "${workspaceFolder:99-Command-Line}/MyCLI/.build/release/MyCLI",
+      "preLaunchTask": "swift: Build Release MyCLI (MyCLI)"
+    }
+  ]
+}

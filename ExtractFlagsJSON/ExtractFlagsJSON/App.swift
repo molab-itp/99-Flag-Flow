@@ -1,10 +1,5 @@
 //
-//  main.swift
-//  JSONTidy
-//
-//  Created by Paul Hudson on 10/07/2022.
-//
-// - https://www.hackingwithswift.com/plus/command-line-apps/json-tidy
+//  App.swift
 
 import ArgumentParser
 import Foundation
@@ -14,21 +9,16 @@ struct App: ParsableCommand {
     @Option(name: .shortAndLong, help: "Writes the output to a file rather than to standard output.")
     var output: String?
 
-    @Flag(name: .shortAndLong, help: "Force overwrite files if they exist already.")
-    var forceOverwrite = false
-
-    @Flag(name: .shortAndLong, help: "Neatly formats the output.")
-    var prettify = false
-
-    @Flag(name: .shortAndLong, help: "Sort keys alphabetically.")
-    var sort = false
-
     @Argument(help: "The filename you want to process.")
 //    var file: String
-    var file: String = "/Users/jht2/Downloads/sample.json"
+    var file: String = "/Users/jht2/Downloads/countries.json"
+
+    var forceOverwrite = false
 
     static var configuration: CommandConfiguration {
-        CommandConfiguration(commandName: "jsontidy", abstract: "Adjusts JSON files to compress or expand data, and also provide key sorting.")
+        CommandConfiguration(
+            commandName: "extractFlagsJSON",
+            abstract: "convert flags from svg files to Assets.xcassets format")
     }
 
     func run() {
@@ -46,27 +36,40 @@ struct App: ParsableCommand {
             return
         }
         
-        // show author entry of sample.json
-        print("json", json);
-        if let dict = json as? NSDictionary {
-            print("dict", dict)
-            if let info = dict["info"] as? NSDictionary {
-                print("info", info);
-                if let author = info["author"] as? String {
-                    print("author", author)
+        if let arr = json as? NSArray {
+            print("arr.count", arr.count)
+            // arr.count 238
+            // print("arr", arr)
+            var index = 0
+            for elm in arr {
+                if let elm = elm as? NSDictionary {
+                    // print("index", index, "elm", elm)
+                    guard let file_url = elm["file_url"] as? String else {
+                        print("!!@ index", index, "missing file_url")
+                        continue;
+                    }
+                    print("index", index, "file_url", file_url)
                 }
+                index += 1
             }
+            
+//            if let info = dict["info"] as? NSDictionary {
+//                print("info", info);
+//                if let author = info["author"] as? String {
+//                    print("author", author)
+//                }
+//            }
         }
 
         var writingOptions: JSONSerialization.WritingOptions = []
+        writingOptions.insert(.prettyPrinted)
 
-        if prettify {
-            writingOptions.insert(.prettyPrinted)
-        }
-
-        if sort {
-            writingOptions.insert(.sortedKeys)
-        }
+//        if prettify {
+//            writingOptions.insert(.prettyPrinted)
+//        }
+//        if sort {
+//            writingOptions.insert(.sortedKeys)
+//        }
 
         do {
             let newData = try JSONSerialization.data(withJSONObject: json, options: writingOptions)
@@ -81,11 +84,18 @@ struct App: ParsableCommand {
                 }
             } else {
                 let outputString = String(decoding: newData, as: UTF8.self)
-                print(outputString)
+//                print(outputString)
+                print("outputString.count", outputString.count)
             }
         } catch {
             print("Failed to create JSON output.")
         }
     }
 }
+
+
+// Based on
+//  JSONTidy
+//  Created by Paul Hudson on 10/07/2022.
+// - https://www.hackingwithswift.com/plus/command-line-apps/json-tidy
 
