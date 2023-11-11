@@ -1,0 +1,125 @@
+_notes.txt
+
+>> App.swift modified default to input
+    var file: String = "/Users/jht2/Downloads/sample.json"
+
+>> print statements added to show json, dict, info
+    json as? NSDictionary
+    dict["info"] as? NSDictionary
+    info["author"] as? String
+    
+# --
+Example output
+
+file /Users/jht2/Downloads/sample.json
+url file:///Users/jht2/Downloads/sample.json
+json {
+    images =     (
+                {
+            filename = "IMG_4837-icon.png";
+            idiom = universal;
+            platform = ios;
+            size = 1024x1024;
+        }
+    );
+    info =     {
+        author = xcode;
+        version = 1;
+    };
+}
+dict {
+    images =     (
+                {
+            filename = "IMG_4837-icon.png";
+            idiom = universal;
+            platform = ios;
+            size = 1024x1024;
+        }
+    );
+    info =     {
+        author = xcode;
+        version = 1;
+    };
+}
+elm {
+    author = xcode;
+    version = 1;
+}
+auth xcode
+{"images":[{"size":"1024x1024","idiom":"universal","filename":"IMG_4837-icon.png","platform":"ios"}],"info":{"version":1,"author":"xcode"}}
+Program ended with exit code: 0
+
+# --
+
+https://cocoacasts.com/what-is-any-in-swift
+
+In Swift 3, the id type in Objective-C now maps to the Any type in Swift, which
+describes a value of any type, whether a class, enum, struct, or any other Swift
+type.
+
+
+This means that types conforming to the Hashable protocol can be used as AnyHashable.
+
+public struct Notification : ReferenceConvertible, Equatable, Hashable {
+
+    ...
+
+    /// Storage for values or objects related to this notification.
+    public var userInfo: [AnyHashable : Any]?
+
+    ...
+
+}
+
+# Notes
+
+Product menu and choose Show Build Folder
+Products > Debug directory, you should see “JSONTidy”
+
+Copy Build Folder Path
+
+/Users/jht2/Library/Developer/Xcode/DerivedData/JSONTidy-fcztekwrdmchbuegnwyyperiqwpt/Build
+
+Make a release build of your app, rather than always using the debug version.
+
+Copy the final release binary into /user/local/bin/jsontidy, so that it’s accessible from anywhere on your system.
+
+Archive Build
+Show Package Contents
+
+<../../../../../Library/Developer/Xcode/Archives/2023-11-11/JSONTidy 11-11-23, 12.16 PM.xcarchive/Products/usr/local/bin/JSONTidy>
+
+# ls -la /usr/local/bin
+
+total 351720
+drwxr-xr-x@ 9 root  wheel        288 Aug  8 19:41 .
+drwxr-xr-x  6 root  wheel        192 Oct  5 18:29 ..
+lrwxr-xr-x  1 root  wheel         68 Oct 31  2021 code -> /Applications/Visual Studio Code.app/Contents/Resources/app/bin/code
+-rwxr-xr-x  1 root  wheel        606 Oct 12  2021 fuzzy_match
+-rwxr-xr-x  1 root  wheel        600 Oct 12  2021 httpclient
+-rwxr-xr-x  1 root  wheel  180064496 Feb  1  2023 node
+lrwxr-xr-x  1 root  wheel         38 Feb  3  2023 npm -> ../lib/node_modules/npm/bin/npm-cli.js
+lrwxr-xr-x  1 root  wheel         38 Feb  3  2023 npx -> ../lib/node_modules/npm/bin/npx-cli.js
+-rwxr-xr-x  1 root  wheel        594 Oct 12  2021 xcodeproj
+
+sudo cp /Users/jht2/Library/Developer/Xcode/Archives/2023-11-11/JSONTidy\ 11-11-23\,\ 12.16\ PM.xcarchive/Products/usr/local/bin/JSONTidy /usr/local/bin/jsontidy
+
+which jsontidy
+/usr/local/bin/jsontidy
+
+# ls -la /usr/local/bin/jsontidy
+
+-rwxr-xr-x  1 root  wheel  1497952 Nov 11 12:21 /usr/local/bin/jsontidy
+
+# jsontidy sample.json
+
+{"info":{"version":1,"author":"xcode"}}
+
+# jsontidy -p sample.json
+{
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}
+

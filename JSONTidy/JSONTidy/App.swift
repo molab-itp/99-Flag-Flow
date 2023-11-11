@@ -4,6 +4,7 @@
 //
 //  Created by Paul Hudson on 10/07/2022.
 //
+// - https://www.hackingwithswift.com/plus/command-line-apps/json-tidy
 
 import ArgumentParser
 import Foundation
@@ -23,7 +24,8 @@ struct App: ParsableCommand {
     var sort = false
 
     @Argument(help: "The filename you want to process.")
-    var file: String
+//    var file: String
+    var file: String = "/Users/jht2/Downloads/sample.json"
 
     static var configuration: CommandConfiguration {
         CommandConfiguration(commandName: "jsontidy", abstract: "Adjusts JSON files to compress or expand data, and also provide key sorting.")
@@ -31,6 +33,8 @@ struct App: ParsableCommand {
 
     func run() {
         let url = URL(fileURLWithPath: file)
+        print("file", file);
+        print("url", url);
 
         guard let contents = try? Data(contentsOf: url) else {
             print("Failed to read input file \(file)")
@@ -40,6 +44,18 @@ struct App: ParsableCommand {
         guard let json = try? JSONSerialization.jsonObject(with: contents, options: .fragmentsAllowed) else {
             print("Failed to parse JSON in input file \(file)")
             return
+        }
+        
+        // show author entry of sample.json
+        print("json", json);
+        if let dict = json as? NSDictionary {
+            print("dict", json)
+            if let info = dict["info"] as? NSDictionary {
+                print("info", info);
+                if let author = info["author"] as? String {
+                    print("author", author)
+                }
+            }
         }
 
         var writingOptions: JSONSerialization.WritingOptions = []
