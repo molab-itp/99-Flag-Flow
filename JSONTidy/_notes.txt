@@ -41,14 +41,13 @@ dict {
         version = 1;
     };
 }
-elm {
+info {
     author = xcode;
     version = 1;
 }
-auth xcode
+author xcode
 {"images":[{"size":"1024x1024","idiom":"universal","filename":"IMG_4837-icon.png","platform":"ios"}],"info":{"version":1,"author":"xcode"}}
 Program ended with exit code: 0
-
 # --
 
 https://cocoacasts.com/what-is-any-in-swift

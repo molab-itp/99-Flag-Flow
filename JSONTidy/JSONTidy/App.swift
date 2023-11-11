@@ -60,13 +60,13 @@ struct App: ParsableCommand {
 
         var writingOptions: JSONSerialization.WritingOptions = []
 
-        if prettify {
+//        if prettify {
             writingOptions.insert(.prettyPrinted)
-        }
+//        }
 
-        if sort {
+//        if sort {
             writingOptions.insert(.sortedKeys)
-        }
+//        }
 
         do {
             let newData = try JSONSerialization.data(withJSONObject: json, options: writingOptions)
@@ -81,7 +81,7 @@ struct App: ParsableCommand {
                 }
             } else {
                 let outputString = String(decoding: newData, as: UTF8.self)
-                print(outputString)
+                print("outputString:", outputString)
             }
         } catch {
             print("Failed to create JSON output.")
