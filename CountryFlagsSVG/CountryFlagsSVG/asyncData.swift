@@ -8,7 +8,7 @@
 import Foundation
 
 func asyncDataFor(url: String) async -> Data! {
-    print("asyncDataFor url", url)
+//    print("asyncDataFor url", url)
     guard let url = URL(string: url) else {
         print("asyncDataFor url nil")
         return nil;
@@ -17,6 +17,6 @@ func asyncDataFor(url: String) async -> Data! {
         print("asyncDataFor data nil")
         return nil
     }
-    print("asyncDataFor data.count", data.count)
+//    print("asyncDataFor data.count", data.count)
     return data;
 }

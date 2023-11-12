@@ -1,6 +1,23 @@
 # --
 2023-11-12 16:47:36
 
+# --
+
+struct ContentView: View {
+    
+    @State var data: Data?
+    
+    var body: some View {
+
+!!@ Wrong placment of @State
+      @State var data: Data?
+
+        ZStack {
+
+
+
+# --
+
 # 07-ImageEditDemoJSON
 
 // Read in an image from a url string
