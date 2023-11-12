@@ -15,6 +15,7 @@
 		AB24D5612AFECBA2006A61E7 /* Flag_of_Jamaica.svg in Resources */ = {isa = PBXBuildFile; fileRef = AB24D5602AFECBA2006A61E7 /* Flag_of_Jamaica.svg */; };
 		AB24D5642AFED804006A61E7 /* Flag_of_the_United_States.svg in Resources */ = {isa = PBXBuildFile; fileRef = AB24D5632AFED804006A61E7 /* Flag_of_the_United_States.svg */; };
 		AB24D5802AFF8221006A61E7 /* pikachu.svg in Resources */ = {isa = PBXBuildFile; fileRef = AB24D57F2AFF8221006A61E7 /* pikachu.svg */; };
+		ABA6CCAF2B01818B00C742D5 /* asyncData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA6CCAE2B01818B00C742D5 /* asyncData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		AB24D5602AFECBA2006A61E7 /* Flag_of_Jamaica.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Flag_of_Jamaica.svg; sourceTree = "<group>"; };
 		AB24D5632AFED804006A61E7 /* Flag_of_the_United_States.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Flag_of_the_United_States.svg; sourceTree = "<group>"; };
 		AB24D57F2AFF8221006A61E7 /* pikachu.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pikachu.svg; sourceTree = "<group>"; };
+		ABA6CCAE2B01818B00C742D5 /* asyncData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = asyncData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				AB24D5622AFED77E006A61E7 /* media */,
 				AB24D54E2AFEC32D006A61E7 /* CountryFlagsSVG.swift */,
 				AB24D5502AFEC32D006A61E7 /* ContentView.swift */,
+				ABA6CCAE2B01818B00C742D5 /* asyncData.swift */,
 				AB24D5522AFEC32D006A61E7 /* Assets.xcassets */,
 				AB24D5542AFEC32D006A61E7 /* Preview Content */,
 			);
@@ -175,6 +178,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABA6CCAF2B01818B00C742D5 /* asyncData.swift in Sources */,
 				AB24D5512AFEC32D006A61E7 /* ContentView.swift in Sources */,
 				AB24D54F2AFEC32D006A61E7 /* CountryFlagsSVG.swift in Sources */,
 			);

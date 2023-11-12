@@ -22,3 +22,11 @@ struct ItemRow: View {
             uiImage =  await imageFor(string: item.urlStr)
         }
 
+
+func asyncDataFor(url: String) async -> Data {
+    guard let url = URL(string: str),
+          let data = try? Data(contentsOf: url),
+    }
+    else { return nil }
+    return data;
+  }
