@@ -14,13 +14,15 @@ struct ContentView: View {
                 .foregroundStyle(Color(white: 0.8))
             
             VStack {
-                Image("flag-ALA")
+                Image("flag-ABW")
                     .resizable()
                     .frame(width: 200, height: 100)
-                Image("flag-AFG")
+                Image("flag-AGO")
                     .resizable()
                     .frame(width: 200, height: 100)
-                //            Image("flag-"+fitems[1].alpha3)
+                Image("flag-"+fitems[1].alpha3)
+                    .resizable()
+                    .frame(width: 200, height: 100)
             }
         }
     }
