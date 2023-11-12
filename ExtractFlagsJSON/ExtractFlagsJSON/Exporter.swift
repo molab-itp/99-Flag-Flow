@@ -29,7 +29,7 @@ func export(alpha3: String, file_url: String, name: String, outDir: URL) {
     guard let subDir = createDirectory(inDir: outDir, dirName: dirName) else {
         return;
     }
-    let fileName = durl.lastPathComponent;
+    let fileName = durl.lastPathComponent.asciiOnly();
     let outFile = subDir.appendingPathComponent(fileName);
     do {
         try data.write(to: outFile)
@@ -72,3 +72,14 @@ func export(alpha3: String, file_url: String, name: String, outDir: URL) {
 
 // contentsJSON.write(to:
 // https://www.hackingwithswift.com/books/ios-swiftui/writing-data-to-the-documents-directory
+
+// https://chat.openai.com/c/5642c2ae-85b1-416f-8a9e-2a308486bb5d
+// https://chat.openai.com/share/3d6c2f56-f0e8-4dc2-a216-57f323c3c3fc
+
+extension String {
+    func asciiOnly() -> String {
+        let asciiCharacters = self.unicodeScalars.filter { $0.isASCII }
+        return String(String.UnicodeScalarView(asciiCharacters))
+    }
+}
+

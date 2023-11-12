@@ -3,6 +3,12 @@ _notes.txt
 # --
 2023-11-12 11:12:11
 
+https://developer.apple.com/documentation/foundation/url
+
+https://developer.apple.com/documentation/foundation/url/1780317-lastpathcomponent
+
+
+
 https://developer.apple.com/documentation/foundation/filemanager/1407884-createdirectory
 
 createDirectory(atPath:withIntermediateDirectories:attributes:)
