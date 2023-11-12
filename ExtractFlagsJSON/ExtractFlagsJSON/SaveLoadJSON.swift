@@ -66,6 +66,7 @@ func remove(fileName: String) {
 //  fileName - name of file
 //
 func documentPath(fileName: String, create: Bool = false) throws -> URL {
+    
     let directory = try FileManager.default.url(
         for: .documentDirectory,
         in: .userDomainMask,
@@ -74,5 +75,22 @@ func documentPath(fileName: String, create: Bool = false) throws -> URL {
     return directory.appendingPathComponent(fileName);
 }
 
+func createDirectory(dirName: String) -> URL? {
+    do {
+        let directory = try FileManager.default.url(
+            for: .downloadsDirectory,
+            in: .userDomainMask,
+            appropriateFor: nil,
+            create: true)
+        
+        let durl = directory.appendingPathComponent(dirName);
+        
+        return durl;
 
+    } catch {
+        // fatalError("Model init error \(error)")
+        print("createDirectory dirName \(dirName) error \(error)")
+    }
+    return nil;
+}
 

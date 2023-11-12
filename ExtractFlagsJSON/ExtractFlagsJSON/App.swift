@@ -44,6 +44,15 @@ struct App: ParsableCommand {
         print("arr.count", arr.count)
         // arr.count 238
         // print("arr", arr)
+        
+//        {
+//            "url": "/wiki/Jamaica",
+//            "alpha3": "JAM",
+//            "name": "Jamaica",
+//            "file_url": "//upload.wikimedia.org/wikipedia/commons/0/0a/Flag_of_Jamaica.svg",
+//            "license": "Public domain"
+//        },
+
         for (index, elm) in arr.enumerated() {
             guard let elm = elm as? NSDictionary else {
                 print("!!@ index", index, "missing elm")
