@@ -15,10 +15,11 @@ let strRef = "https://upload.wikimedia.org/wikipedia/commons/0/0a/Flag_of_Jamaic
 //let strRef = "https://jht1493.net/external_media/country-svg/JAM.svg";
 
 struct ContentView: View {
+    
+    @State var data: Data?
+    @State var sview: SVGView?
+    
     var body: some View {
-        // let url = Bundle.main.url(forResource: bname, withExtension: "svg")
-        let url = URL(string: strRef)
-        @State var data: Data?
         
         ZStack {
             Rectangle()
@@ -29,12 +30,16 @@ struct ContentView: View {
 //                Image(aname)
 //                    .resizable()
 //                    .frame(width: 100, height: 50)
-//                SVGView(contentsOf: url!)
+//                SVGView(contentsOf: URL(string: strRef)!)
 //                    .frame(width: 100, height: 50)
-                if let data {
+                if let data = data {
                     SVGView(data: data)
                         .frame(width: 100, height: 50)
                 }
+//                if let sview  {
+//                    sview
+//                        .frame(width: 100, height: 50)
+//                }
                 Text("Hello, world!")
             }
             .padding()
@@ -43,6 +48,8 @@ struct ContentView: View {
             print("task data before", data ?? "-none-")
             data = await asyncDataFor(url: strRef)
             print("task data after", data ?? "-none-")
+//            let url = URL(string: strRef)
+//            sview = SVGView(contentsOf: url!);
         }
     }
 }
