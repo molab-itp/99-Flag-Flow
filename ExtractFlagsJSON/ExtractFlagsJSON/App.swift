@@ -22,6 +22,8 @@ struct App: ParsableCommand {
             abstract: "convert svg country flags to Assets.xcassets format")
     }
     
+    var outDirName = "exported_svgs";
+    
     func run() {
         let url = URL(fileURLWithPath: fileIn)
         print("file", fileIn);
@@ -34,9 +36,13 @@ struct App: ParsableCommand {
             print("Failed to parse JSON in input file \(fileIn)")
             return
         }
-        process_output(process_in(json: json));
+        guard let outDir = createDirectory(dirName:outDirName) else {
+            print("Failed to createDirectory file \(outDirName)")
+            return;
+        }
+        process_output(process_in(json: json, outDir: outDir));
     }
-    func process_in(json: Any) -> Any {
+    func process_in(json: Any, outDir: URL) -> Any {
         guard let arr = json as? NSArray else {
             print("!! json not NSArray", json)
             return json;
@@ -59,11 +65,28 @@ struct App: ParsableCommand {
                 continue;
             }
             // print("index", index, "elm", elm)
+            // alpha3
+            guard let alpha3 = elm["alpha3"] as? String else {
+                print("!!@ index", index, "missing alpha3")
+                continue;
+            }
+            print("index", index, "alpha3", alpha3)
+            // name
+            guard let name = elm["name"] as? String else {
+                print("!!@ index", index, "missing name")
+                continue;
+            }
+            print("index", index, "name", name)
+            // file_url
             guard let file_url = elm["file_url"] as? String else {
                 print("!!@ index", index, "missing file_url")
                 continue;
             }
             print("index", index, "file_url", file_url)
+            export(alpha3: alpha3, file_url: file_url, name: name, outDir: outDir)
+            if index == 1 {
+                break
+            }
         }
         // if let info = dict["info"] as? NSDictionary {
         // print("info", info);

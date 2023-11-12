@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		51BB63E4287A7DBA0092F305 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BB63E3287A7DBA0092F305 /* App.swift */; };
 		51BB63EC287A800F0092F305 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 51BB63EB287A800F0092F305 /* ArgumentParser */; };
+		AB56BBA32B013A4E0065E8A8 /* Exporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB56BBA22B013A4E0065E8A8 /* Exporter.swift */; };
 		ABA4C7E42B012F49004FDB8A /* SaveLoadJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA4C7E32B012F49004FDB8A /* SaveLoadJSON.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		51BB63E0287A7DBA0092F305 /* ExtractFlagsJSON */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ExtractFlagsJSON; sourceTree = BUILT_PRODUCTS_DIR; };
 		51BB63E3287A7DBA0092F305 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		AB24D5812AFF89D8006A61E7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		AB56BBA22B013A4E0065E8A8 /* Exporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exporter.swift; sourceTree = "<group>"; };
 		ABA4C7CF2AFFFA27004FDB8A /* _notes.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = _notes.txt; sourceTree = "<group>"; };
 		ABA4C7E32B012F49004FDB8A /* SaveLoadJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveLoadJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				51BB63E3287A7DBA0092F305 /* App.swift */,
+				AB56BBA22B013A4E0065E8A8 /* Exporter.swift */,
 				ABA4C7E32B012F49004FDB8A /* SaveLoadJSON.swift */,
 			);
 			path = ExtractFlagsJSON;
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABA4C7E42B012F49004FDB8A /* SaveLoadJSON.swift in Sources */,
+				AB56BBA32B013A4E0065E8A8 /* Exporter.swift in Sources */,
 				51BB63E4287A7DBA0092F305 /* App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

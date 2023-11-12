@@ -76,6 +76,7 @@ func documentPath(fileName: String, create: Bool = false) throws -> URL {
 }
 
 func createDirectory(dirName: String) -> URL? {
+    var durl:URL? = nil
     do {
         let directory = try FileManager.default.url(
             for: .downloadsDirectory,
@@ -83,14 +84,29 @@ func createDirectory(dirName: String) -> URL? {
             appropriateFor: nil,
             create: true)
         
-        let durl = directory.appendingPathComponent(dirName);
-        
-        return durl;
-
+        durl = directory.appendingPathComponent(dirName);
     } catch {
-        // fatalError("Model init error \(error)")
         print("createDirectory dirName \(dirName) error \(error)")
     }
-    return nil;
+    if let durl {
+        do {
+            try FileManager.default.createDirectory(at: durl, withIntermediateDirectories: true);
+        }
+        catch {
+            print("createDirectory dirName \(dirName) error \(error)")
+        }
+    }
+    return durl;
 }
 
+func createDirectory(inDir :URL, dirName: String) -> URL? {
+    var durl:URL? = inDir.appendingPathComponent(dirName);
+    do {
+        try FileManager.default.createDirectory(at: durl!, withIntermediateDirectories: true);
+    }
+    catch {
+        print("createDirectory inDir \(inDir) dirName \(dirName) error \(error)")
+        durl = nil;
+    }
+    return durl;
+}
