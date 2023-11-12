@@ -5,36 +5,22 @@ import SwiftUI
 import UIKit
 
 struct ContentView: View {
-    @State var len = 400.0
-    @State var fitFlag = true
-    @State var selectedImage = "circle"
+    let fitems = Bundle.main.decode([FlagItem].self, from: "countries.json")
+    @State var country = "ALA"
     var body: some View {
-        VStack() {
-            Spacer()
-            ZStack {
-                //-- image from app bundle
-                // Image(uiImage: UIImage(named: "jht.jpg")!)
-                //-- image from Assets.xcassets
-                Image("jht")
-                    .resizable()
-                    .aspectRatio(contentMode: fitFlag ? .fit : .fill)
-                    .frame(width:len, height: len)
-                //-- image from SF Symbols
-                Image(systemName: selectedImage)
-                    .resizable()
-                    .frame(width:len, height: len)
+        ZStack {
+            Rectangle()
+                .background(Color(white: 0.9))
+                .foregroundStyle(Color(white: 0.8))
+            
+            VStack {
                 Image("flag-ALA")
-            }
-            Spacer()
-            Toggle(isOn: $fitFlag) {
-                Text("Fit")
-            }
-            Slider(value: $len, in: 100.0...800.0)
-            Text("len \(len)")
-            Picker("Image Name", selection: $selectedImage) {
-                Text("circle").tag("circle")
-                Text("flag").tag("flag")
-                Text("ear").tag("ear")
+                    .resizable()
+                    .frame(width: 200, height: 100)
+                Image("flag-AFG")
+                    .resizable()
+                    .frame(width: 200, height: 100)
+                //            Image("flag-"+fitems[1].alpha3)
             }
         }
     }
