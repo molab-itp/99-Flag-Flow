@@ -12,7 +12,7 @@ struct App: ParsableCommand {
     var output: String?
     
     @Argument(help: "The filename you want to process.")
-    var fileIn: String = "/Users/jht2/Downloads/countries.json"
+    var fileIn: String = "/Users/jht2/Downloads/countries-STP-VAT.json"
     
     var forceOverwrite = false
     
@@ -22,7 +22,7 @@ struct App: ParsableCommand {
             abstract: "convert svg country flags to Assets.xcassets format")
     }
     
-    var outDirName = "exported_svgs";
+    var outDirName = "exported_svgs-STP-VAT";
     
     func run() {
         let url = URL(fileURLWithPath: fileIn)

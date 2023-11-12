@@ -21,9 +21,10 @@ func export(alpha3: String, file_url: String, name: String, outDir: URL) {
         return;
     }
     guard let data = try? Data(contentsOf: durl) else {
-        print("export no data")
+        print("export no data durl", durl)
         return;
     }
+    print("export durl", durl)
     print("export data length", data.count)
     let dirName = "flag-\(alpha3).imageset";
     guard let subDir = createDirectory(inDir: outDir, dirName: dirName) else {
