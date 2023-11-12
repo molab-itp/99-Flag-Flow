@@ -1,0 +1,24 @@
+# --
+2023-11-12 16:47:36
+
+# 07-ImageEditDemoJSON
+
+// Read in an image from a url string
+func imageFor(string str: String) async -> UIImage!  {
+    guard let url = URL(string: str),
+          let imgData = try? Data(contentsOf: url),
+          let uiImage = UIImage(data:imgData)
+    else {
+        return nil
+    }
+    return uiImage
+}
+
+struct ItemRow: View {
+
+    @State var uiImage:UIImage?
+
+        .task {
+            uiImage =  await imageFor(string: item.urlStr)
+        }
+

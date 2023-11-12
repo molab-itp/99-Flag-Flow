@@ -5,7 +5,7 @@ import SwiftUI
 import UIKit
 
 struct ContentView: View {
-    let fitems = Bundle.main.decode([FlagItem].self, from: "countries.json").shuffled()
+    let fitems = Bundle.main.decode([FlagItem].self, from: "countries.json") // .shuffled()
     @State var country = "ALA"
     var body: some View {
         ZStack {
