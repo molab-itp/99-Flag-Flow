@@ -3,17 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		51BB63E4287A7DBA0092F305 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BB63E3287A7DBA0092F305 /* App.swift */; };
-		51BB63EC287A800F0092F305 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 51BB63EB287A800F0092F305 /* ArgumentParser */; };
-		ABA4C7E42B012F49004FDB8A /* SaveLoadJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA4C7E32B012F49004FDB8A /* SaveLoadJSON.swift */; };
+		ABA4C7DD2B012611004FDB8A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA4C7DC2B012611004FDB8A /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		51BB63DE287A7DBA0092F305 /* CopyFiles */ = {
+		ABA4C7D72B012611004FDB8A /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,131 +23,118 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		51BB63E0287A7DBA0092F305 /* ExtractFlagsJSON */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ExtractFlagsJSON; sourceTree = BUILT_PRODUCTS_DIR; };
-		51BB63E3287A7DBA0092F305 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
-		AB24D5812AFF89D8006A61E7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		ABA4C7CF2AFFFA27004FDB8A /* _notes.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = _notes.txt; sourceTree = "<group>"; };
-		ABA4C7E32B012F49004FDB8A /* SaveLoadJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveLoadJSON.swift; sourceTree = "<group>"; };
+		ABA4C7D92B012611004FDB8A /* CommanLineStart */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CommanLineStart; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABA4C7DC2B012611004FDB8A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		51BB63DD287A7DBA0092F305 /* Frameworks */ = {
+		ABA4C7D62B012611004FDB8A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51BB63EC287A800F0092F305 /* ArgumentParser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		51BB63D7287A7DBA0092F305 = {
+		ABA4C7D02B012611004FDB8A = {
 			isa = PBXGroup;
 			children = (
-				ABA4C7CF2AFFFA27004FDB8A /* _notes.txt */,
-				AB24D5812AFF89D8006A61E7 /* README.md */,
-				51BB63E2287A7DBA0092F305 /* ExtractFlagsJSON */,
-				51BB63E1287A7DBA0092F305 /* Products */,
+				ABA4C7DB2B012611004FDB8A /* CommanLineStart */,
+				ABA4C7DA2B012611004FDB8A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		51BB63E1287A7DBA0092F305 /* Products */ = {
+		ABA4C7DA2B012611004FDB8A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				51BB63E0287A7DBA0092F305 /* ExtractFlagsJSON */,
+				ABA4C7D92B012611004FDB8A /* CommanLineStart */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		51BB63E2287A7DBA0092F305 /* ExtractFlagsJSON */ = {
+		ABA4C7DB2B012611004FDB8A /* CommanLineStart */ = {
 			isa = PBXGroup;
 			children = (
-				51BB63E3287A7DBA0092F305 /* App.swift */,
-				ABA4C7E32B012F49004FDB8A /* SaveLoadJSON.swift */,
+				ABA4C7DC2B012611004FDB8A /* main.swift */,
 			);
-			path = ExtractFlagsJSON;
+			path = CommanLineStart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		51BB63DF287A7DBA0092F305 /* ExtractFlagsJSON */ = {
+		ABA4C7D82B012611004FDB8A /* CommanLineStart */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 51BB63E7287A7DBA0092F305 /* Build configuration list for PBXNativeTarget "ExtractFlagsJSON" */;
+			buildConfigurationList = ABA4C7E02B012611004FDB8A /* Build configuration list for PBXNativeTarget "CommanLineStart" */;
 			buildPhases = (
-				51BB63DC287A7DBA0092F305 /* Sources */,
-				51BB63DD287A7DBA0092F305 /* Frameworks */,
-				51BB63DE287A7DBA0092F305 /* CopyFiles */,
+				ABA4C7D52B012611004FDB8A /* Sources */,
+				ABA4C7D62B012611004FDB8A /* Frameworks */,
+				ABA4C7D72B012611004FDB8A /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ExtractFlagsJSON;
-			packageProductDependencies = (
-				51BB63EB287A800F0092F305 /* ArgumentParser */,
-			);
-			productName = JSONTidy;
-			productReference = 51BB63E0287A7DBA0092F305 /* ExtractFlagsJSON */;
+			name = CommanLineStart;
+			productName = CommanLineStart;
+			productReference = ABA4C7D92B012611004FDB8A /* CommanLineStart */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		51BB63D8287A7DBA0092F305 /* Project object */ = {
+		ABA4C7D12B012611004FDB8A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1340;
-				LastUpgradeCheck = 1340;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
-					51BB63DF287A7DBA0092F305 = {
-						CreatedOnToolsVersion = 13.4.1;
+					ABA4C7D82B012611004FDB8A = {
+						CreatedOnToolsVersion = 15.0;
 					};
 				};
 			};
-			buildConfigurationList = 51BB63DB287A7DBA0092F305 /* Build configuration list for PBXProject "ExtractFlagsJSON" */;
-			compatibilityVersion = "Xcode 13.0";
+			buildConfigurationList = ABA4C7D42B012611004FDB8A /* Build configuration list for PBXProject "CommanLineStart" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 51BB63D7287A7DBA0092F305;
-			packageReferences = (
-				51BB63EA287A800F0092F305 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
-			);
-			productRefGroup = 51BB63E1287A7DBA0092F305 /* Products */;
+			mainGroup = ABA4C7D02B012611004FDB8A;
+			productRefGroup = ABA4C7DA2B012611004FDB8A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				51BB63DF287A7DBA0092F305 /* ExtractFlagsJSON */,
+				ABA4C7D82B012611004FDB8A /* CommanLineStart */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		51BB63DC287A7DBA0092F305 /* Sources */ = {
+		ABA4C7D52B012611004FDB8A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABA4C7E42B012F49004FDB8A /* SaveLoadJSON.swift in Sources */,
-				51BB63E4287A7DBA0092F305 /* App.swift in Sources */,
+				ABA4C7DD2B012611004FDB8A /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		51BB63E5287A7DBA0092F305 /* Debug */ = {
+		ABA4C7DE2B012611004FDB8A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -179,7 +164,8 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -193,23 +179,25 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		51BB63E6287A7DBA0092F305 /* Release */ = {
+		ABA4C7DF2B012611004FDB8A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -239,7 +227,8 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -247,16 +236,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
 		};
-		51BB63E8287A7DBA0092F305 /* Debug */ = {
+		ABA4C7E12B012611004FDB8A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -267,7 +256,7 @@
 			};
 			name = Debug;
 		};
-		51BB63E9287A7DBA0092F305 /* Release */ = {
+		ABA4C7E22B012611004FDB8A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -281,44 +270,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		51BB63DB287A7DBA0092F305 /* Build configuration list for PBXProject "ExtractFlagsJSON" */ = {
+		ABA4C7D42B012611004FDB8A /* Build configuration list for PBXProject "CommanLineStart" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				51BB63E5287A7DBA0092F305 /* Debug */,
-				51BB63E6287A7DBA0092F305 /* Release */,
+				ABA4C7DE2B012611004FDB8A /* Debug */,
+				ABA4C7DF2B012611004FDB8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		51BB63E7287A7DBA0092F305 /* Build configuration list for PBXNativeTarget "ExtractFlagsJSON" */ = {
+		ABA4C7E02B012611004FDB8A /* Build configuration list for PBXNativeTarget "CommanLineStart" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				51BB63E8287A7DBA0092F305 /* Debug */,
-				51BB63E9287A7DBA0092F305 /* Release */,
+				ABA4C7E12B012611004FDB8A /* Debug */,
+				ABA4C7E22B012611004FDB8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		51BB63EA287A800F0092F305 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		51BB63EB287A800F0092F305 /* ArgumentParser */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 51BB63EA287A800F0092F305 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
-			productName = ArgumentParser;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 51BB63D8287A7DBA0092F305 /* Project object */;
+	rootObject = ABA4C7D12B012611004FDB8A /* Project object */;
 }

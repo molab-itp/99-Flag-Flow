@@ -45,14 +45,16 @@ struct App: ParsableCommand {
         // arr.count 238
         // print("arr", arr)
         for (index, elm) in arr.enumerated() {
-            if let elm = elm as? NSDictionary {
-                // print("index", index, "elm", elm)
-                guard let file_url = elm["file_url"] as? String else {
-                    print("!!@ index", index, "missing file_url")
-                    continue;
-                }
-                print("index", index, "file_url", file_url)
+            guard let elm = elm as? NSDictionary else {
+                print("!!@ index", index, "missing elm")
+                continue;
             }
+            // print("index", index, "elm", elm)
+            guard let file_url = elm["file_url"] as? String else {
+                print("!!@ index", index, "missing file_url")
+                continue;
+            }
+            print("index", index, "file_url", file_url)
         }
         // if let info = dict["info"] as? NSDictionary {
         // print("info", info);
