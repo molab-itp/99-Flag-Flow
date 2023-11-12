@@ -3,6 +3,14 @@ _notes.txt
 # --
 2023-11-12 11:12:11
 
+
+    let menu = Bundle.main.decode([MenuSection].self, from: "menu.json")
+
+/Users/jht2/Documents/projects/_planning-molab-repos/_course-repos/
+  06-iDine/iDine/Bundle-decode.swift
+
+
+
 https://developer.apple.com/documentation/foundation/url
 
 https://developer.apple.com/documentation/foundation/url/1780317-lastpathcomponent

@@ -84,9 +84,9 @@ struct App: ParsableCommand {
             }
             print("index", index, "file_url", file_url)
             export(alpha3: alpha3, file_url: file_url, name: name, outDir: outDir)
-            if index == 1 {
-                break
-            }
+//            if index == 1 {
+//                break
+//            }
         }
         // if let info = dict["info"] as? NSDictionary {
         // print("info", info);

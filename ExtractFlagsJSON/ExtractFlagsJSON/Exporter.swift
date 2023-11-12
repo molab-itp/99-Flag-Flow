@@ -30,6 +30,7 @@ func export(alpha3: String, file_url: String, name: String, outDir: URL) {
         return;
     }
     let fileName = durl.lastPathComponent.asciiOnly();
+    print("export fileName", fileName)
     let outFile = subDir.appendingPathComponent(fileName);
     do {
         try data.write(to: outFile)

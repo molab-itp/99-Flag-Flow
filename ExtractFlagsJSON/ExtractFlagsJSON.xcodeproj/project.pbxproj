@@ -30,6 +30,7 @@
 		51BB63E3287A7DBA0092F305 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		AB24D5812AFF89D8006A61E7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AB56BBA22B013A4E0065E8A8 /* Exporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exporter.swift; sourceTree = "<group>"; };
+		AB56BBA42B014C700065E8A8 /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
 		ABA4C7CF2AFFFA27004FDB8A /* _notes.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = _notes.txt; sourceTree = "<group>"; };
 		ABA4C7E32B012F49004FDB8A /* SaveLoadJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveLoadJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -50,6 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				ABA4C7CF2AFFFA27004FDB8A /* _notes.txt */,
+				AB56BBA42B014C700065E8A8 /* countries.json */,
 				AB24D5812AFF89D8006A61E7 /* README.md */,
 				51BB63E2287A7DBA0092F305 /* ExtractFlagsJSON */,
 				51BB63E1287A7DBA0092F305 /* Products */,
