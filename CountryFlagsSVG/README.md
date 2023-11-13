@@ -1,8 +1,11 @@
-#  CountryFlagsSVG
+# CountryFlagsSVG
 
-- Explore using svg format files in SwiftUI
+- Explore using svg files in SwiftUI
 
-- https://github.com/exyte/SVGView
+- country svg source
 
-- svg can used in Asset catalog and accessed with Image
+  - https://github.com/linssen/country-flag-icons/blob/master/countries.json
 
+- SVG SwiftUI viewer
+
+  - https://github.com/exyte/SVGView
