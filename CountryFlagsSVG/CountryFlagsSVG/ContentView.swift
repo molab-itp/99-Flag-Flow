@@ -47,7 +47,8 @@ struct ContentView: View {
 
 func getCountriesFromJSON() -> [FlagItem] {
 //    return [];
-    return Bundle.main.decode([FlagItem].self, from: "countries.json") // .shuffled();
+    return Bundle.main.decode([FlagItem].self, from: "countries.json") 
+     .shuffled();
 }
 
 struct SVGViewAsync: View {
