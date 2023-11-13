@@ -3,6 +3,12 @@
 
 # --
 
+
+SVG parsing error. No oval radial gradients supported
+
+>> suspect AFG
+
+
 >> silent lockup up after scrolling
 >> in simulator
 >> on device

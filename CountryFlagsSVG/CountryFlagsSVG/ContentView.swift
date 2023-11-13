@@ -63,6 +63,7 @@ struct SVGViewAsync: View {
         .task {
             data = await asyncDataFor(url: strRef)
             // print("task data after", data ?? "-none-")
+            print("SVGViewAsync strRef", strRef)
         }
     }
 }
