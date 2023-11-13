@@ -3,6 +3,15 @@
 
 # --
 
+>> silent lockup up after scrolling
+>> in simulator
+>> on device
+
+
+
+>> !!@ Wrong placment of @State
+
+
 struct ContentView: View {
     
     @State var data: Data?

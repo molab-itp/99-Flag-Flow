@@ -19,13 +19,22 @@ struct ContentView: View {
             Rectangle()
                 .background(Color(white: 0.9))
                 .foregroundStyle(Color(white: 0.8))
-            VStack {
-                SVGViewAsync(strRef: strRef)
-                SVGViewAsync(strRef: strRef1)
-                SVGViewAsync(strRef: strRef2)
-                Text("Hello, world!")
+//            VStack {
+//                SVGViewAsync(strRef: strRef)
+//                SVGViewAsync(strRef: strRef1)
+//                SVGViewAsync(strRef: strRef2)
+//                Text("Hello, world!")
+//            }
+//            .padding()
+            List {
+                ForEach(fitems, id: \.alpha3) { fitem in
+                    VStack {
+                        SVGViewAsync(strRef: "https:"+fitem.file_url)
+                        Text(fitem.name)
+                    }
+                }
             }
-            .padding()
+
         }
         .onAppear {
 //            print("fitems", fitems)
