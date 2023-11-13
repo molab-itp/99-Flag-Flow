@@ -13,6 +13,7 @@ let strRef1 = "https://upload.wikimedia.org/wikipedia/commons/9/99/Flag_of_Guyan
 let strRef2 = "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg"
 
 struct ContentView: View {
+    let fitems = getCountriesFromJSON()
     var body: some View {
         ZStack {
             Rectangle()
@@ -26,7 +27,16 @@ struct ContentView: View {
             }
             .padding()
         }
+        .onAppear {
+//            print("fitems", fitems)
+            print("fitems.count", fitems.count)
+        }
     }
+}
+
+func getCountriesFromJSON() -> [FlagItem] {
+//    return [];
+    return Bundle.main.decode([FlagItem].self, from: "countries.json") // .shuffled();
 }
 
 struct SVGViewAsync: View {
