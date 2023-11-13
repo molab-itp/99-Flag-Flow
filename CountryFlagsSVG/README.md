@@ -2,6 +2,9 @@
 
 - Explore using svg files in SwiftUI
 
+- Asyncronously load svg in a View
+    - struct SVGViewAsync: View {
+
 - country svg source
 
   - https://github.com/linssen/country-flag-icons/blob/master/countries.json

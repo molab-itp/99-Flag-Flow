@@ -21,7 +21,7 @@ struct ContentView: View {
                 .foregroundStyle(Color(white: 0.8))
             List {
                 VStack {
-                    SVGViewAsync(strRef: strRef)
+                    SVGViewAsync(strRef: strRef, width: 300, height: 240)
                     SVGViewAsync(strRef: strRef1)
                     SVGViewAsync(strRef: strRef2)
                     Text("Hello, world!")
@@ -39,7 +39,7 @@ struct ContentView: View {
 
         }
         .onAppear {
-//            print("fitems", fitems)
+            // print("fitems", fitems)
             print("fitems.count", fitems.count)
         }
     }
@@ -47,18 +47,21 @@ struct ContentView: View {
 
 func getCountriesFromJSON() -> [FlagItem] {
     return Bundle.main.decode([FlagItem].self, from: "countries.json")
-//     .shuffled();
+     .shuffled();
 }
 
+/// Asyncronously load svg in a View
 struct SVGViewAsync: View {
     var strRef: String
+    var width: CGFloat = 300
+    var height: CGFloat = 200
     var label: String = ""
     @State var data: Data?
     var body: some View {
         VStack {
             if let data {
                 SVGView(data: data)
-                    .frame(width: 200, height: 100)
+                    .frame(width: width, height: height)
             }
         }
         .task {

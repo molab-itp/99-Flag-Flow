@@ -27,3 +27,9 @@ extension Bundle {
         return loaded
     }
 }
+
+// https://www.hackingwithswift.com/quick-start/swiftui/swiftui-tutorial-building-a-complete-project
+// - [iDine app](https://github.com/molab-itp/06-iDine)
+//  "restaurant app that lists items in a menu and helps folks place orders"
+//  - [source repo](https://github.com/twostraws/iDine)
+
