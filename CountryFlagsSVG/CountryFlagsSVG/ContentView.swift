@@ -19,19 +19,19 @@ struct ContentView: View {
             Rectangle()
                 .background(Color(white: 0.9))
                 .foregroundStyle(Color(white: 0.8))
-//            VStack {
-//                SVGViewAsync(strRef: strRef)
-//                SVGViewAsync(strRef: strRef1)
-//                SVGViewAsync(strRef: strRef2)
-//                Text("Hello, world!")
-//            }
-//            .padding()
             List {
+                VStack {
+                    SVGViewAsync(strRef: strRef)
+                    SVGViewAsync(strRef: strRef1)
+                    SVGViewAsync(strRef: strRef2)
+                    Text("Hello, world!")
+                }
                 ForEach(fitems, id: \.alpha3) { fitem in
                     VStack {
-                        SVGViewAsync(strRef: "https:"+fitem.file_url)
+                        SVGViewAsync(strRef: "https:"+fitem.file_url, label: fitem.alpha3 )
                         HStack {
                             Text(fitem.alpha3 + ": "+fitem.name)
+                            Spacer()
                         }
                     }
                 }
@@ -46,13 +46,13 @@ struct ContentView: View {
 }
 
 func getCountriesFromJSON() -> [FlagItem] {
-//    return [];
-    return Bundle.main.decode([FlagItem].self, from: "countries.json") 
-     .shuffled();
+    return Bundle.main.decode([FlagItem].self, from: "countries.json")
+//     .shuffled();
 }
 
 struct SVGViewAsync: View {
     var strRef: String
+    var label: String = ""
     @State var data: Data?
     var body: some View {
         VStack {
@@ -64,7 +64,7 @@ struct SVGViewAsync: View {
         .task {
             data = await asyncDataFor(url: strRef)
             // print("task data after", data ?? "-none-")
-            print("SVGViewAsync strRef", strRef)
+            print("SVGViewAsync strRef", label, strRef)
         }
     }
 }
