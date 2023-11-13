@@ -30,7 +30,9 @@ struct ContentView: View {
                 ForEach(fitems, id: \.alpha3) { fitem in
                     VStack {
                         SVGViewAsync(strRef: "https:"+fitem.file_url)
-                        Text(fitem.name)
+                        HStack {
+                            Text(fitem.alpha3 + ": "+fitem.name)
+                        }
                     }
                 }
             }
