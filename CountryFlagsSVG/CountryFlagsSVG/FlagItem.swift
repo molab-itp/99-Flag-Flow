@@ -13,4 +13,5 @@ struct FlagItem : Decodable {
     var name: String;
     var file_url: String;
     var license: String;
+    var index: Int?
 }

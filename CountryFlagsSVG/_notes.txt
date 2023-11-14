@@ -1,22 +1,31 @@
+_notes.txt
+
+
+# --
+2023-11-14 10:56:48
+
+?? Is this an download rate trottling on wiki server?
+
+>> silent lockup up after scrolling
+>> on device
+Profiling memory allocation
+Nothing odd so far
+
+
 # --
 2023-11-12 16:47:36
 
 # --
 
-
 SVG parsing error. No oval radial gradients supported
 
 >> suspect AFG
-
 
 >> silent lockup up after scrolling
 >> in simulator
 >> on device
 
-
-
 >> !!@ Wrong placment of @State
-
 
 struct ContentView: View {
     
@@ -28,8 +37,6 @@ struct ContentView: View {
       @State var data: Data?
 
         ZStack {
-
-
 
 # --
 

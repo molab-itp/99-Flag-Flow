@@ -1,5 +1,30 @@
 
 # --
+2023-11-14 09:05:50
+
+run on iphone --> crash taking up too much memory
+
+The app “ViewFlags” has been killed by the operating system 
+because it is using too much memory.
+Domain: IDEDebugSessionErrorDomain
+Code: 11
+Recovery Suggestion: Use a memory profiling tool to track the process memory usage.
+User Info: {
+    DVTErrorCreationDateKey = "2023-11-14 14:06:50 +0000";
+    IDERunOperationFailingWorker = DBGLLDBLauncher;
+}
+--
+...
+
+System Information
+
+macOS Version 13.6 (Build 22G120)
+Xcode 15.0 (22265) (Build 15A240d)
+Timestamp: 2023-11-14T09:06:50-05:00
+
+
+
+# --
 2023-11-12 15:17:54
 
 First preview / simulator run very slow

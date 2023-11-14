@@ -30,7 +30,7 @@ struct ContentView: View {
                     VStack {
                         SVGViewAsync(strRef: "https:"+fitem.file_url, label: fitem.alpha3 )
                         HStack {
-                            Text(fitem.alpha3 + ": "+fitem.name)
+                            Text( String(fitem.index ?? 0) + " " + fitem.alpha3 + " "+fitem.name)
                             Spacer()
                         }
                     }
@@ -46,8 +46,12 @@ struct ContentView: View {
 }
 
 func getCountriesFromJSON() -> [FlagItem] {
-    return Bundle.main.decode([FlagItem].self, from: "countries.json")
-     .shuffled();
+    var flags = Bundle.main.decode([FlagItem].self, from: "countries.json")
+//    flags = flags.shuffled();
+    for index in 0..<flags.count {
+        flags[index].index = index;
+    }
+    return flags
 }
 
 /// Asyncronously load svg in a View
