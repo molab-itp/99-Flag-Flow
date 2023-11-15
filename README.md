@@ -23,3 +23,6 @@
 ## CountryFlagsSVG
 
 - Explore using svg format files in SwiftUI
+
+- svg source
+  - https://github.com/linssen/country-flag-icons/blob/master/countries.json

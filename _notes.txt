@@ -1,7 +1,25 @@
 _notes.txt
 
+# --
+
+4 minute stall during svg to jpg
+
+
+flags-svg
+3,784,343 bytes (4.5 MB on disk) for 239 items
+
+export_jpeg
+3,505,561 bytes (4.9 MB on disk) for 712 items
+
+ViewFlags
+Assets.xcassets
+3,960,309 bytes (5.6 MB on disk) for 723 items
+
+# --
+
 og .
 
 
 https://www.hackingwithswift.com/quick-start/swiftui/how-to-convert-a-swiftui-view-to-an-image
+
 
