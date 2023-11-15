@@ -3,8 +3,8 @@ _notes.txt
 # --
 2023-11-15 09:27:13
 
-file /Users/jht2/Downloads/countries.json
-url file:///Users/jht2/Downloads/countries.json
+file /Users/jht2/Downloads/countries-2.json
+url file:///Users/jht2/Downloads/countries-2.json
 arr.count 238
 index 0 alpha3 AFG
 index 0 name Afghanistan
@@ -129,13 +129,13 @@ export fileName BLR.svg
 index 20 alpha3 BEL
 index 20 name Belgium
 index 20 file_url //upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Belgium.svg
-nw_connection_add_timestamp_locked_on_nw_queue [C1] Hit maximum timestamp count, will start dropping events
 export durl https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Belgium.svg
 export data length 182
 export fileName BEL.svg
 index 21 alpha3 BLZ
 index 21 name Belize
 index 21 file_url //upload.wikimedia.org/wikipedia/commons/e/e7/Flag_of_Belize.svg
+nw_connection_add_timestamp_locked_on_nw_queue [C1] Hit maximum timestamp count, will start dropping events
 export durl https://upload.wikimedia.org/wikipedia/commons/e/e7/Flag_of_Belize.svg
 export data length 71903
 export fileName BLZ.svg
@@ -573,8 +573,10 @@ export data length 6060
 export fileName HMD.svg
 index 94 alpha3 VAT
 index 94 name Holy See
-index 94 file_url //upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_the_Vatican_City.svg
-export no data durl https://upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_the_Vatican_City.svg
+index 94 file_url //upload.wikimedia.org/wikipedia/commons/3/39/Flag_of_the_Vatican_City_%282023%E2%80%93present%29.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/3/39/Flag_of_the_Vatican_City_%282023%E2%80%93present%29.svg
+export data length 194829
+export fileName VAT.svg
 index 95 alpha3 HND
 index 95 name Honduras
 index 95 file_url //upload.wikimedia.org/wikipedia/commons/8/82/Flag_of_Honduras.svg
@@ -1123,8 +1125,10 @@ export data length 132841
 export fileName SMR.svg
 index 186 alpha3 STP
 index 186 name Sao Tome and Principe
-index 186 file_url //upload.wikimedia.org/wikipedia/commons/4/4f/Flag_of_Sao_Tome_and_Principe.svg
-export no data durl https://upload.wikimedia.org/wikipedia/commons/4/4f/Flag_of_Sao_Tome_and_Principe.svg
+index 186 file_url //upload.wikimedia.org/wikipedia/commons/0/0a/Flag_of_S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/0/0a/Flag_of_S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe.svg
+export data length 417
+export fileName STP.svg
 index 187 alpha3 SEN
 index 187 name Senegal
 index 187 file_url //upload.wikimedia.org/wikipedia/commons/f/fd/Flag_of_Senegal.svg
@@ -1431,10 +1435,9 @@ index 237 file_url //upload.wikimedia.org/wikipedia/commons/6/6a/Flag_of_Zimbabw
 export durl https://upload.wikimedia.org/wikipedia/commons/6/6a/Flag_of_Zimbabwe.svg
 export data length 1801
 export fileName ZWE.svg
-outputString.count 52974
+outputString.count 53016
 No error handler for XPC error: <private>
 Program ended with exit code: 0
-
 # --
 2023-11-12 11:12:11
 
