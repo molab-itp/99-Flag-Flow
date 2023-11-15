@@ -1,19 +1,5 @@
 [
   {
-    "url": "/wiki/S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe",
-    "alpha3": "STP",
-    "name": "Sao Tome and Principe",
-    "file_url": "//upload.wikimedia.org/wikipedia/commons/0/0a/Flag_of_S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe.svg",
-    "license": "Public domain"
-  },
-  {
-    "url": "/wiki/Vatican_City",
-    "alpha3": "VAT",
-    "name": "Holy See",
-    "file_url": "//upload.wikimedia.org/wikipedia/commons/3/39/Flag_of_the_Vatican_City_%282023%E2%80%93present%29.svg",
-    "license": "Public domain"
-  },
-  {
     "url": "/wiki/Afghanistan",
     "alpha3": "AFG",
     "name": "Afghanistan",
@@ -672,6 +658,13 @@
     "license": "Public domain"
   },
   {
+    "url": "/wiki/Vatican_City",
+    "alpha3": "VAT",
+    "name": "Holy See",
+    "file_url": "//upload.wikimedia.org/wikipedia/commons/3/39/Flag_of_the_Vatican_City_%282023%E2%80%93present%29.svg",
+    "license": "Public domain"
+  },
+  {
     "url": "/wiki/Honduras",
     "alpha3": "HND",
     "name": "Honduras",
@@ -1306,6 +1299,13 @@
     "alpha3": "SMR",
     "name": "San Marino",
     "file_url": "//upload.wikimedia.org/wikipedia/commons/b/b1/Flag_of_San_Marino.svg",
+    "license": "Public domain"
+  },
+  {
+    "url": "/wiki/S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe",
+    "alpha3": "STP",
+    "name": "Sao Tome and Principe",
+    "file_url": "//upload.wikimedia.org/wikipedia/commons/0/0a/Flag_of_S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe.svg",
     "license": "Public domain"
   },
   {

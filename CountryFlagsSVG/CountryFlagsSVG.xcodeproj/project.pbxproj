@@ -17,6 +17,7 @@
 		AB24D5802AFF8221006A61E7 /* pikachu.svg in Resources */ = {isa = PBXBuildFile; fileRef = AB24D57F2AFF8221006A61E7 /* pikachu.svg */; };
 		AB4E84812B01A3C800582923 /* FlagItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4E84802B01A3C800582923 /* FlagItem.swift */; };
 		AB4E84852B03D29300582923 /* _notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = AB4E84842B03D29300582923 /* _notes.txt */; };
+		AB4E84892B050E3800582923 /* flags-svg in Resources */ = {isa = PBXBuildFile; fileRef = AB4E84882B050E3800582923 /* flags-svg */; };
 		ABA6CCAF2B01818B00C742D5 /* asyncData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA6CCAE2B01818B00C742D5 /* asyncData.swift */; };
 		ABA6CCB12B019C8E00C742D5 /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = ABA6CCB02B019C8E00C742D5 /* countries.json */; };
 		ABA6CCB32B019F5C00C742D5 /* Bundle-decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA6CCB22B019F5C00C742D5 /* Bundle-decode.swift */; };
@@ -34,6 +35,7 @@
 		AB24D57F2AFF8221006A61E7 /* pikachu.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pikachu.svg; sourceTree = "<group>"; };
 		AB4E84802B01A3C800582923 /* FlagItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlagItem.swift; sourceTree = "<group>"; };
 		AB4E84842B03D29300582923 /* _notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = _notes.txt; sourceTree = "<group>"; };
+		AB4E84882B050E3800582923 /* flags-svg */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "flags-svg"; sourceTree = "<group>"; };
 		ABA6CCAE2B01818B00C742D5 /* asyncData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = asyncData.swift; sourceTree = "<group>"; };
 		ABA6CCB02B019C8E00C742D5 /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
 		ABA6CCB22B019F5C00C742D5 /* Bundle-decode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle-decode.swift"; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				ABA6CCB02B019C8E00C742D5 /* countries.json */,
+				AB4E84882B050E3800582923 /* flags-svg */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 				ABA6CCB12B019C8E00C742D5 /* countries.json in Resources */,
 				AB4E84852B03D29300582923 /* _notes.txt in Resources */,
 				AB24D5642AFED804006A61E7 /* Flag_of_the_United_States.svg in Resources */,
+				AB4E84892B050E3800582923 /* flags-svg in Resources */,
 				AB24D5802AFF8221006A61E7 /* pikachu.svg in Resources */,
 				AB24D5612AFECBA2006A61E7 /* Flag_of_Jamaica.svg in Resources */,
 				AB24D5562AFEC32D006A61E7 /* Preview Assets.xcassets in Resources */,
