@@ -1,3 +1,7 @@
 _notes.txt
 
 og .
+
+
+https://www.hackingwithswift.com/quick-start/swiftui/how-to-convert-a-swiftui-view-to-an-image
+
