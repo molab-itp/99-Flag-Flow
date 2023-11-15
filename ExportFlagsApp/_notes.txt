@@ -3,6 +3,9 @@ _notes.txt
 # --
 2023-11-15 11:52:36
 
+>> exportAll stops at 75
+export1 index 75 https://upload.wikimedia.org/wikipedia/commons/d/db/Flag_of_French_Polynesia.svg
+Synchronous URL loading of <private> should not occur on this application's main thread as it may lead to UI unresponsiveness. Please switch to an asynchronous networking API such as URLSession.
 
 Disabled sandbox to access Downloads folder and web
 

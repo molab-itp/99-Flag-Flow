@@ -30,15 +30,26 @@ struct ContentView: View {
                 .cornerRadius(12)
                 .padding(5)
                 Button("Export") {
-                    model.export( displayScale);
+                    model.export( );
                 }
                 .foregroundColor(.white)
                 .padding(10)
                 .background(Color(.systemIndigo))
                 .cornerRadius(12)
                 .padding(5)
-                
+                Button("Export All") {
+                    model.exportAll( );
+                }
+                .foregroundColor(.white)
+                .padding(10)
+                .background(Color(.systemIndigo))
+                .cornerRadius(12)
+                .padding(5)
+
             }
+        }
+        .onAppear {
+            model.displayScale = displayScale
         }
     }
 }

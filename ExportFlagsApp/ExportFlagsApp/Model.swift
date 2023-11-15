@@ -15,20 +15,33 @@ class Model : ObservableObject {
     @Published var uiImage:UIImage?
 
     var outDir = createDirectory(dirName: "export_jpeg")
+    var displayScale: CGFloat = 1.0;
     
     var index = 0
     var countries = getCountriesFromJSON()
-
+    var jpegQuality = 0.5;
+    
     func next() {
         index = (index + 1) % countries.count;
         strRef = "https:" + countries[index].file_url;
     }
     
-    @MainActor func export(_ displayScale: CGFloat) {
+    @MainActor func exportAll() {
+        for findex in 0..<countries.count {
+            export1(findex);
+        }
+    }
+    @MainActor func export() {
+        export1(index);
+    }
+    
+    @MainActor func export1(_ index:Int) {
         guard let outDir else {
             print("export no outDir")
             return;
         }
+        let strRef = "https:" + countries[index].file_url;
+        print("export1 index", index, strRef)
         let content = SVGViewSync(strRef: strRef)
         let renderer = ImageRenderer(content: content)
         // make sure and use the correct display scale for this device
@@ -36,8 +49,13 @@ class Model : ObservableObject {
         uiImage = renderer.uiImage
         if let uiImage {
             print("Model export uiImage", uiImage)
-            let name = countries[index].alpha3
-            export_jpeg(uiImage: uiImage, quality: 0.5, name: name, outDir: outDir)
+            let fitem = countries[index]
+//            let name = fitem.alpha3
+//            export_jpeg(uiImage: uiImage, quality: 0.5, name: name, outDir: outDir)
+            export_imageset(uiImage: uiImage, quality: jpegQuality, outDir:outDir,
+                            alpha3: fitem.alpha3,
+                            file_url: fitem.file_url,
+                            name: fitem.name )
         }
         else {
             print("render no uiImage")
