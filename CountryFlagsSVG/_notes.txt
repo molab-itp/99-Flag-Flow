@@ -11,6 +11,37 @@ Added CountryFlagsSVG/CountryFlagsSVG/Resources/flags-svg
   NSString *path = [appPath stringByAppendingPathComponent: @"html-src/index-p5js.html"];
   NSURL   *url = [NSURL fileURLWithPath: path];
 
+# --
+
+fitems.count 238
+asyncDataFor url https://upload.wikimedia.org/wikipedia/commons/2/2c/Flag_of_Bahrain.svg
+asyncDataFor url https://upload.wikimedia.org/wikipedia/commons/9/93/Flag_of_the_Bahamas.svg
+asyncDataFor url https://upload.wikimedia.org/wikipedia/commons/d/dd/Flag_of_Azerbaijan.svg
+asyncDataFor url https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_Austria.svg
+asyncDataFor url https://upload.wikimedia.org/wikipedia/commons/8/88/Flag_of_Australia_%28converted%29.svg
+asyncDataFor url https://upload.wikimedia.org/wikipedia/commons/f/f6/Flag_of_Aruba.svg
+asyncDataFor url https://upload.wikimedia.org/wikipedia/commons/2/2f/Flag_of_Armenia.svg
+asyncDataFor url https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg
+asyncDataFor url https://upload.wikimedia.org/wikipedia/commons/8/89/Flag_of_Antigua_and_Barbuda.svg
+asyncDataFor url https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Anguilla.svg
+asyncDataFor url https://upload.wikimedia.org/wikipedia/commons/9/9d/Flag_of_Angola.svg
+asyncDataFor url https://upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Andorra.svg
+asyncDataFor duration 0.23440396785736084 url https://upload.wikimedia.org/wikipedia/commons/f/f6/Flag_of_Aruba.svg
+asyncDataFor url https://upload.wikimedia.org/wikipedia/commons/8/87/Flag_of_American_Samoa.svg
+SVGViewAsync strRef ABW https://upload.wikimedia.org/wikipedia/commons/f/f6/Flag_of_Aruba.svg
+asyncDataFor duration 0.26962804794311523 url https://upload.wikimedia.org/wikipedia/commons/2/2c/Flag_of_Bahrain.svg
+asyncDataFor url https://upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_Algeria.svg
+SVGViewAsync strRef BHR https://upload.wikimedia.org/wikipedia/commons/2/2c/Flag_of_Bahrain.svg
+asyncDataFor duration 0.29861199855804443 url https://upload.wikimedia.org/wikipedia/commons/9/9d/Flag_of_Angola.svg
+asyncDataFor url https://upload.wikimedia.org/wikipedia/commons/3/36/Flag_of_Albania.svg
+SVGViewAsync strRef AGO https://upload.wikimedia.org/wikipedia/commons/9/9d/Flag_of_Angola.svg
+asyncDataFor duration 0.3025200366973877 url https://upload.wikimedia.org/wikipedia/commons/9/93/Flag_of_the_Bahamas.svg
+asyncDataFor url https://upload.wikimedia.org/wikipedia/commons/5/52/Flag_of_%C3%85land.svg
+asyncDataFor duration 0.3031198978424072 url https://upload.wikimedia.org/wikipedia/commons/d/dd/Flag_of_Azerbaijan.svg
+asyncDataFor url https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_the_Taliban.svg
+...
+# --
+
 https://swdevnotes.com/swift/2020/timing_swift_functions/
 
 import Foundation

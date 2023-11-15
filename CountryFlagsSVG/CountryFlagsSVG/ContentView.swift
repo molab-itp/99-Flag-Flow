@@ -28,9 +28,9 @@ struct ContentView: View {
                 }
                 ForEach(fitems, id: \.alpha3) { fitem in
                     VStack {
-                        SVGViewAsync(strRef: "https:"+fitem.file_url, label: fitem.alpha3 )
+                        SVGViewAsync(strRef: "https:"+fitem.file_url, label: label(fitem: fitem)  )
                         HStack {
-                            Text( String(fitem.index ?? 0) + " " + fitem.alpha3 + " "+fitem.name)
+                            Text( label(fitem: fitem) + " "+fitem.name)
                             Spacer()
                         }
                     }
@@ -43,6 +43,10 @@ struct ContentView: View {
             print("fitems.count", fitems.count)
         }
     }
+}
+
+func label(fitem: FlagItem) -> String {
+    String(fitem.index ?? 0) + " " + fitem.alpha3
 }
 
 func getCountriesFromJSON() -> [FlagItem] {
