@@ -59,10 +59,14 @@ struct CountryFlagView: View {
     var data: Data?
     var body: some View {
         VStack {
-            if let data {
-                SVGView(data: data)
-                    .frame(width: width, height: height)
-            }
+//            if let data {
+//                SVGView(data: data)
+//                    .frame(width: width, height: height)
+//            }
+            Image("JAM")
+                .resizable()
+                .scaledToFit()
+                .frame(height: height)
         }
 //        .onAppear() {
 //            let url = urlFor(country: code);

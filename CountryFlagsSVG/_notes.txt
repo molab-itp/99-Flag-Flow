@@ -2,20 +2,20 @@ _notes.txt
 
 
 # --
-dataFor duration 7.402896881103516e-05 url /CountryFlagsSVG.app/flags-svg/JAM.svg
-dataFor duration 3.993511199951172e-05 url /CountryFlagsSVG.app/flags-svg/GUY.svg
-dataFor duration 3.2067298889160156e-05 url /CountryFlagsSVG.app/flags-svg/USA.svg
-dataFor duration 6.401538848876953e-05 url /CountryFlagsSVG.app/flags-svg/AFG.svg
+2023-11-15 11:05:49
+
+>> stalls with SVGView
+>> data loaded twice
+
+
+dataFor duration 0.0016330480575561523 url .../CountryFlagsSVG.app/flags-svg/JAM.svg
+dataFor duration 0.0002371072769165039 url .../CountryFlagsSVG.app/flags-svg/AFG.svg
 fitems.count 238
-JAM /CountryFlagsSVG.app/flags-svg/JAM.svg
-dataFor duration 7.796287536621094e-05 url /CountryFlagsSVG.app/flags-svg/AFG.svg
-dataFor duration 4.506111145019531e-05 url /CountryFlagsSVG.app/flags-svg/ALA.svg
-dataFor duration 3.3020973205566406e-05 url /CountryFlagsSVG.app/flags-svg/ALA.svg
-dataFor duration 4.208087921142578e-05 url /CountryFlagsSVG.app/flags-svg/ALB.svg
-dataFor duration 2.9921531677246094e-05 url /CountryFlagsSVG.app/flags-svg/ALB.svg
-dataFor duration 3.4928321838378906e-05 url /CountryFlagsSVG.app/flags-svg/DZA.svg
-dataFor duration 2.8967857360839844e-05 url /CountryFlagsSVG.app/flags-svg/DZA.svg
-dataFor duration 5.5909156799316406e-05 url /CountryFlagsSVG.app/flags-svg/ASM.svg
+dataFor duration 6.902217864990234e-05 url .../CountryFlagsSVG.app/flags-svg/AFG.svg
+dataFor duration 0.00015592575073242188 url .../CountryFlagsSVG.app/flags-svg/ALA.svg
+dataFor duration 3.600120544433594e-05 url .../CountryFlagsSVG.app/flags-svg/ALA.svg
+dataFor duration 0.00020396709442138672 url .../CountryFlagsSVG.app/flags-svg/ALB.svg
+
 
 # --
 2023-11-15 09:36:10
