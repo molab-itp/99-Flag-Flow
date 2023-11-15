@@ -8,6 +8,20 @@
 import Foundation
 
 // Load and return the source of a url as Data
+func dataFor(url: URL) -> Data! {
+    // print("dataFor url", url)
+    let startTime = Date.timeIntervalSinceReferenceDate
+    guard let data = try? Data(contentsOf: url)else {
+        print("dataFor data nil")
+        return nil
+    }
+    // print("dataFor data.count", data.count)
+    let duration = Date.timeIntervalSinceReferenceDate - startTime
+    print("dataFor duration", duration, "url", url)
+    return data;
+}
+
+// Load and return the source of a url as Data
 func asyncDataFor(url: String) async -> Data! {
     print("asyncDataFor url", url)
     let startTime = Date.timeIntervalSinceReferenceDate

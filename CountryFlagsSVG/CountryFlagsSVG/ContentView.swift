@@ -21,14 +21,18 @@ struct ContentView: View {
                 .foregroundStyle(Color(white: 0.8))
             List {
                 VStack {
-                    SVGViewAsync(strRef: strRef, width: 300, height: 240)
-                    SVGViewAsync(strRef: strRef1)
-                    SVGViewAsync(strRef: strRef2)
+                    CountryFlagView(code: "JAM", width: 300, height: 240, data: dataFor(country: "JAM"))
+// CountryFlagView(code: "GUY", width: 300, height: 240, data: dataFor(country: "GUY"))
+// CountryFlagView(code: "USA", width: 300, height: 240, data: dataFor(country: "USA"))
+//                    SVGViewAsync(strRef: strRef, width: 300, height: 240)
+//                    SVGViewAsync(strRef: strRef1)
+//                    SVGViewAsync(strRef: strRef2)
                     Text("Hello, world!")
                 }
                 ForEach(fitems, id: \.alpha3) { fitem in
                     VStack {
-                        SVGViewAsync(strRef: "https:"+fitem.file_url, label: label(fitem: fitem)  )
+                        CountryFlagView(code: fitem.alpha3, width: 300, height: 240, data: dataFor(country: fitem.alpha3))
+//                        SVGViewAsync(strRef: "https:"+fitem.file_url, label: label(fitem: fitem)  )
                         HStack {
                             Text( label(fitem: fitem) + " "+fitem.name)
                             Spacer()
@@ -41,8 +45,43 @@ struct ContentView: View {
         .onAppear {
             // print("fitems", fitems)
             print("fitems.count", fitems.count)
+            // print("JAM", urlFor(country: "JAM"))
         }
     }
+}
+
+// load svg in bundle into a SVGView
+struct CountryFlagView: View {
+    var code: String
+    var width: CGFloat = 300
+    var height: CGFloat = 200
+    var label: String = ""
+    var data: Data?
+    var body: some View {
+        VStack {
+            if let data {
+                SVGView(data: data)
+                    .frame(width: width, height: height)
+            }
+        }
+//        .onAppear() {
+//            let url = urlFor(country: code);
+//            data = dataFor(url: url)
+//            // print("task data after", data ?? "-none-")
+//            print("ViewCountry url", label, url)
+//        }
+    }
+}
+
+func dataFor(country: String) -> Data? {
+    dataFor(url: urlFor(country: country))
+}
+
+func urlFor(country: String) -> URL {
+    let appPath = Bundle.main.bundlePath
+    var url = URL(fileURLWithPath: appPath)
+    url.appendPathComponent("flags-svg/\(country).svg", isDirectory: false)
+    return url;
 }
 
 func label(fitem: FlagItem) -> String {
