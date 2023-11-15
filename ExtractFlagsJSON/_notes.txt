@@ -1,6 +1,1441 @@
 _notes.txt
 
 # --
+2023-11-15 09:27:13
+
+file /Users/jht2/Downloads/countries.json
+url file:///Users/jht2/Downloads/countries.json
+arr.count 238
+index 0 alpha3 AFG
+index 0 name Afghanistan
+index 0 file_url //upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_the_Taliban.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_the_Taliban.svg
+export data length 37065
+export fileName AFG.svg
+index 1 alpha3 ALA
+index 1 name Åland Islands
+index 1 file_url //upload.wikimedia.org/wikipedia/commons/5/52/Flag_of_%C3%85land.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/5/52/Flag_of_%C3%85land.svg
+export data length 256
+export fileName ALA.svg
+index 2 alpha3 ALB
+index 2 name Albania
+index 2 file_url //upload.wikimedia.org/wikipedia/commons/3/36/Flag_of_Albania.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/3/36/Flag_of_Albania.svg
+export data length 12534
+export fileName ALB.svg
+index 3 alpha3 DZA
+index 3 name Algeria
+index 3 file_url //upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_Algeria.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_Algeria.svg
+export data length 311
+export fileName DZA.svg
+index 4 alpha3 ASM
+index 4 name American Samoa
+index 4 file_url //upload.wikimedia.org/wikipedia/commons/8/87/Flag_of_American_Samoa.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/8/87/Flag_of_American_Samoa.svg
+export data length 49138
+export fileName ASM.svg
+index 5 alpha3 AND
+index 5 name Andorra
+index 5 file_url //upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Andorra.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Andorra.svg
+export data length 58468
+export fileName AND.svg
+index 6 alpha3 AGO
+index 6 name Angola
+index 6 file_url //upload.wikimedia.org/wikipedia/commons/9/9d/Flag_of_Angola.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/9/9d/Flag_of_Angola.svg
+export data length 2227
+export fileName AGO.svg
+index 7 alpha3 AIA
+index 7 name Anguilla
+index 7 file_url //upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Anguilla.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Anguilla.svg
+export data length 4496
+export fileName AIA.svg
+index 8 alpha3 ATG
+index 8 name Antigua and Barbuda
+index 8 file_url //upload.wikimedia.org/wikipedia/commons/8/89/Flag_of_Antigua_and_Barbuda.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/8/89/Flag_of_Antigua_and_Barbuda.svg
+export data length 540
+export fileName ATG.svg
+index 9 alpha3 ARG
+index 9 name Argentina
+index 9 file_url //upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg
+export data length 4994
+export fileName ARG.svg
+index 10 alpha3 ARM
+index 10 name Armenia
+index 10 file_url //upload.wikimedia.org/wikipedia/commons/2/2f/Flag_of_Armenia.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/2/2f/Flag_of_Armenia.svg
+export data length 201
+export fileName ARM.svg
+index 11 alpha3 ABW
+index 11 name Aruba
+index 11 file_url //upload.wikimedia.org/wikipedia/commons/f/f6/Flag_of_Aruba.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/f/f6/Flag_of_Aruba.svg
+export data length 473
+export fileName ABW.svg
+index 12 alpha3 AUS
+index 12 name Australia
+index 12 file_url //upload.wikimedia.org/wikipedia/commons/8/88/Flag_of_Australia_%28converted%29.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/8/88/Flag_of_Australia_%28converted%29.svg
+export data length 1592
+export fileName AUS.svg
+index 13 alpha3 AUT
+index 13 name Austria
+index 13 file_url //upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_Austria.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_Austria.svg
+export data length 218
+export fileName AUT.svg
+index 14 alpha3 AZE
+index 14 name Azerbaijan
+index 14 file_url //upload.wikimedia.org/wikipedia/commons/d/dd/Flag_of_Azerbaijan.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/d/dd/Flag_of_Azerbaijan.svg
+export data length 588
+export fileName AZE.svg
+index 15 alpha3 BHS
+index 15 name Bahamas
+index 15 file_url //upload.wikimedia.org/wikipedia/commons/9/93/Flag_of_the_Bahamas.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/9/93/Flag_of_the_Bahamas.svg
+export data length 240
+export fileName BHS.svg
+index 16 alpha3 BHR
+index 16 name Bahrain
+index 16 file_url //upload.wikimedia.org/wikipedia/commons/2/2c/Flag_of_Bahrain.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/2/2c/Flag_of_Bahrain.svg
+export data length 298
+export fileName BHR.svg
+index 17 alpha3 BGD
+index 17 name Bangladesh
+index 17 file_url //upload.wikimedia.org/wikipedia/commons/f/f9/Flag_of_Bangladesh.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/f/f9/Flag_of_Bangladesh.svg
+export data length 165
+export fileName BGD.svg
+index 18 alpha3 BRB
+index 18 name Barbados
+index 18 file_url //upload.wikimedia.org/wikipedia/commons/e/ef/Flag_of_Barbados.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/e/ef/Flag_of_Barbados.svg
+export data length 638
+export fileName BRB.svg
+index 19 alpha3 BLR
+index 19 name Belarus
+index 19 file_url //upload.wikimedia.org/wikipedia/commons/8/85/Flag_of_Belarus.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/8/85/Flag_of_Belarus.svg
+export data length 2040
+export fileName BLR.svg
+index 20 alpha3 BEL
+index 20 name Belgium
+index 20 file_url //upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Belgium.svg
+nw_connection_add_timestamp_locked_on_nw_queue [C1] Hit maximum timestamp count, will start dropping events
+export durl https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Belgium.svg
+export data length 182
+export fileName BEL.svg
+index 21 alpha3 BLZ
+index 21 name Belize
+index 21 file_url //upload.wikimedia.org/wikipedia/commons/e/e7/Flag_of_Belize.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/e/e7/Flag_of_Belize.svg
+export data length 71903
+export fileName BLZ.svg
+index 22 alpha3 BEN
+index 22 name Benin
+index 22 file_url //upload.wikimedia.org/wikipedia/commons/0/0a/Flag_of_Benin.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/0/0a/Flag_of_Benin.svg
+export data length 197
+export fileName BEN.svg
+index 23 alpha3 BMU
+index 23 name Bermuda
+index 23 file_url //upload.wikimedia.org/wikipedia/commons/b/bf/Flag_of_Bermuda.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/b/bf/Flag_of_Bermuda.svg
+export data length 33442
+export fileName BMU.svg
+index 24 alpha3 BTN
+index 24 name Bhutan
+index 24 file_url //upload.wikimedia.org/wikipedia/commons/9/91/Flag_of_Bhutan.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/9/91/Flag_of_Bhutan.svg
+export data length 36864
+export fileName BTN.svg
+index 25 alpha3 BOL
+index 25 name Bolivia (Plurinational State of)
+index 25 file_url //upload.wikimedia.org/wikipedia/commons/b/b3/Bandera_de_Bolivia_%28Estado%29.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/b/b3/Bandera_de_Bolivia_%28Estado%29.svg
+export data length 343035
+export fileName BOL.svg
+index 26 alpha3 BES
+index 26 name Bonaire - Sint Eustatius and Saba
+index 26 file_url //upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_the_Netherlands.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_the_Netherlands.svg
+export data length 223
+export fileName BES.svg
+index 27 alpha3 BIH
+index 27 name Bosnia and Herzegovina
+index 27 file_url //upload.wikimedia.org/wikipedia/commons/b/bf/Flag_of_Bosnia_and_Herzegovina.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/b/bf/Flag_of_Bosnia_and_Herzegovina.svg
+export data length 512
+export fileName BIH.svg
+index 28 alpha3 BWA
+index 28 name Botswana
+index 28 file_url //upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_Botswana.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_Botswana.svg
+export data length 268
+export fileName BWA.svg
+index 29 alpha3 BRA
+index 29 name Brazil
+index 29 file_url //upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg
+export durl https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg
+export data length 5352
+export fileName BRA.svg
+index 30 alpha3 IOT
+index 30 name British Indian Ocean Territory
+index 30 file_url //upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_the_Commissioner_of_the_British_Indian_Ocean_Territory.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_the_Commissioner_of_the_British_Indian_Ocean_Territory.svg
+export data length 83791
+export fileName IOT.svg
+index 31 alpha3 BRN
+index 31 name Brunei Darussalam
+index 31 file_url //upload.wikimedia.org/wikipedia/commons/9/9c/Flag_of_Brunei.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/9/9c/Flag_of_Brunei.svg
+export data length 31244
+export fileName BRN.svg
+index 32 alpha3 BGR
+index 32 name Bulgaria
+index 32 file_url //upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Bulgaria.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Bulgaria.svg
+export data length 288
+export fileName BGR.svg
+index 33 alpha3 BFA
+index 33 name Burkina Faso
+index 33 file_url //upload.wikimedia.org/wikipedia/commons/3/31/Flag_of_Burkina_Faso.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/3/31/Flag_of_Burkina_Faso.svg
+export data length 218
+export fileName BFA.svg
+index 34 alpha3 BDI
+index 34 name Burundi
+index 34 file_url //upload.wikimedia.org/wikipedia/commons/5/50/Flag_of_Burundi.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/5/50/Flag_of_Burundi.svg
+export data length 693
+export fileName BDI.svg
+index 35 alpha3 CPV
+index 35 name Cabo Verde
+index 35 file_url //upload.wikimedia.org/wikipedia/commons/3/38/Flag_of_Cape_Verde.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/3/38/Flag_of_Cape_Verde.svg
+export data length 1690
+export fileName CPV.svg
+index 36 alpha3 KHM
+index 36 name Cambodia
+index 36 file_url //upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_Cambodia.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_Cambodia.svg
+export data length 10374
+export fileName KHM.svg
+index 37 alpha3 CMR
+index 37 name Cameroon
+index 37 file_url //upload.wikimedia.org/wikipedia/commons/4/4f/Flag_of_Cameroon.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/4/4f/Flag_of_Cameroon.svg
+export data length 508
+export fileName CMR.svg
+index 38 alpha3 CAN
+index 38 name Canada
+index 38 file_url //upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Canada_%28Pantone%29.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Canada_%28Pantone%29.svg
+export data length 720
+export fileName CAN.svg
+index 39 alpha3 CYM
+index 39 name Cayman Islands
+index 39 file_url //upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_the_Cayman_Islands.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_the_Cayman_Islands.svg
+export data length 56398
+export fileName CYM.svg
+index 40 alpha3 CAF
+index 40 name Central African Republic
+index 40 file_url //upload.wikimedia.org/wikipedia/commons/6/6f/Flag_of_the_Central_African_Republic.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/6/6f/Flag_of_the_Central_African_Republic.svg
+export data length 400
+export fileName CAF.svg
+index 41 alpha3 TCD
+index 41 name Chad
+index 41 file_url //upload.wikimedia.org/wikipedia/commons/4/4b/Flag_of_Chad.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/4/4b/Flag_of_Chad.svg
+export data length 197
+export fileName TCD.svg
+index 42 alpha3 CHL
+index 42 name Chile
+index 42 file_url //upload.wikimedia.org/wikipedia/commons/7/78/Flag_of_Chile.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/7/78/Flag_of_Chile.svg
+export data length 295
+export fileName CHL.svg
+index 43 alpha3 CHN
+index 43 name China
+index 43 file_url //upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg
+export data length 587
+export fileName CHN.svg
+index 44 alpha3 CXR
+index 44 name Christmas Island
+index 44 file_url //upload.wikimedia.org/wikipedia/commons/6/67/Flag_of_Christmas_Island.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/6/67/Flag_of_Christmas_Island.svg
+export data length 3015
+export fileName CXR.svg
+index 45 alpha3 CCK
+index 45 name Cocos (Keeling) Islands
+index 45 file_url //upload.wikimedia.org/wikipedia/commons/7/74/Flag_of_the_Cocos_%28Keeling%29_Islands.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/7/74/Flag_of_the_Cocos_%28Keeling%29_Islands.svg
+export data length 5080
+export fileName CCK.svg
+index 46 alpha3 COL
+index 46 name Colombia
+index 46 file_url //upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg
+export data length 255
+export fileName COL.svg
+index 47 alpha3 COM
+index 47 name Comoros
+index 47 file_url //upload.wikimedia.org/wikipedia/commons/9/94/Flag_of_the_Comoros.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/9/94/Flag_of_the_Comoros.svg
+export data length 620
+export fileName COM.svg
+index 48 alpha3 COG
+index 48 name Congo
+index 48 file_url //upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_the_Republic_of_the_Congo.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_the_Republic_of_the_Congo.svg
+export data length 241
+export fileName COG.svg
+index 49 alpha3 COD
+index 49 name Congo - Democratic Republic of the
+index 49 file_url //upload.wikimedia.org/wikipedia/commons/6/6f/Flag_of_the_Democratic_Republic_of_the_Congo.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/6/6f/Flag_of_the_Democratic_Republic_of_the_Congo.svg
+export data length 542
+export fileName COD.svg
+index 50 alpha3 COK
+index 50 name Cook Islands
+index 50 file_url //upload.wikimedia.org/wikipedia/commons/3/35/Flag_of_the_Cook_Islands.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/3/35/Flag_of_the_Cook_Islands.svg
+export data length 1179
+export fileName COK.svg
+index 51 alpha3 CRI
+index 51 name Costa Rica
+index 51 file_url //upload.wikimedia.org/wikipedia/commons/f/f2/Flag_of_Costa_Rica.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/f/f2/Flag_of_Costa_Rica.svg
+export data length 266
+export fileName CRI.svg
+index 52 alpha3 CIV
+index 52 name Côte d'Ivoire
+index 52 file_url //upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_C%C3%B4te_d%27Ivoire.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_C%C3%B4te_d%27Ivoire.svg
+export data length 194
+export fileName CIV.svg
+index 53 alpha3 HRV
+index 53 name Croatia
+index 53 file_url //upload.wikimedia.org/wikipedia/commons/1/1b/Flag_of_Croatia.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/1/1b/Flag_of_Croatia.svg
+export data length 68547
+export fileName HRV.svg
+index 54 alpha3 CUB
+index 54 name Cuba
+index 54 file_url //upload.wikimedia.org/wikipedia/commons/b/bd/Flag_of_Cuba.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/b/bd/Flag_of_Cuba.svg
+export data length 322
+export fileName CUB.svg
+index 55 alpha3 CUW
+index 55 name Curaçao
+index 55 file_url //upload.wikimedia.org/wikipedia/commons/b/b1/Flag_of_Cura%C3%A7ao.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/b/b1/Flag_of_Cura%C3%A7ao.svg
+export data length 672
+export fileName CUW.svg
+index 56 alpha3 CYP
+index 56 name Cyprus
+index 56 file_url //upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Cyprus.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Cyprus.svg
+export data length 14140
+export fileName CYP.svg
+index 57 alpha3 CZE
+index 57 name Czechia
+index 57 file_url //upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_Czech_Republic.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_Czech_Republic.svg
+export data length 275
+export fileName CZE.svg
+index 58 alpha3 DNK
+index 58 name Denmark
+index 58 file_url //upload.wikimedia.org/wikipedia/commons/9/9c/Flag_of_Denmark.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/9/9c/Flag_of_Denmark.svg
+export data length 186
+export fileName DNK.svg
+index 59 alpha3 DJI
+index 59 name Djibouti
+index 59 file_url //upload.wikimedia.org/wikipedia/commons/3/34/Flag_of_Djibouti.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/3/34/Flag_of_Djibouti.svg
+export data length 371
+export fileName DJI.svg
+index 60 alpha3 DMA
+index 60 name Dominica
+index 60 file_url //upload.wikimedia.org/wikipedia/commons/c/c4/Flag_of_Dominica.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/c/c4/Flag_of_Dominica.svg
+export data length 5157
+export fileName DMA.svg
+index 61 alpha3 DOM
+index 61 name Dominican Republic
+index 61 file_url //upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_the_Dominican_Republic.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_the_Dominican_Republic.svg
+export data length 203618
+export fileName DOM.svg
+index 62 alpha3 ECU
+index 62 name Ecuador
+index 62 file_url //upload.wikimedia.org/wikipedia/commons/e/e8/Flag_of_Ecuador.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/e/e8/Flag_of_Ecuador.svg
+export data length 279145
+export fileName ECU.svg
+index 63 alpha3 EGY
+index 63 name Egypt
+index 63 file_url //upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Egypt.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Egypt.svg
+export data length 18439
+export fileName EGY.svg
+index 64 alpha3 SLV
+index 64 name El Salvador
+index 64 file_url //upload.wikimedia.org/wikipedia/commons/3/34/Flag_of_El_Salvador.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/3/34/Flag_of_El_Salvador.svg
+export data length 280714
+export fileName SLV.svg
+index 65 alpha3 GNQ
+index 65 name Equatorial Guinea
+index 65 file_url //upload.wikimedia.org/wikipedia/commons/3/31/Flag_of_Equatorial_Guinea.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/3/31/Flag_of_Equatorial_Guinea.svg
+export data length 5890
+export fileName GNQ.svg
+index 66 alpha3 ERI
+index 66 name Eritrea
+index 66 file_url //upload.wikimedia.org/wikipedia/commons/2/29/Flag_of_Eritrea.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/2/29/Flag_of_Eritrea.svg
+export data length 3309
+export fileName ERI.svg
+index 67 alpha3 EST
+index 67 name Estonia
+index 67 file_url //upload.wikimedia.org/wikipedia/commons/8/8f/Flag_of_Estonia.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/8/8f/Flag_of_Estonia.svg
+export data length 192
+export fileName EST.svg
+index 68 alpha3 SWZ
+index 68 name Eswatini
+index 68 file_url //upload.wikimedia.org/wikipedia/commons/f/fb/Flag_of_Eswatini.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/f/fb/Flag_of_Eswatini.svg
+export data length 6733
+export fileName SWZ.svg
+index 69 alpha3 ETH
+index 69 name Ethiopia
+index 69 file_url //upload.wikimedia.org/wikipedia/commons/7/71/Flag_of_Ethiopia.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/7/71/Flag_of_Ethiopia.svg
+export data length 864
+export fileName ETH.svg
+index 70 alpha3 FLK
+index 70 name Falkland Islands (Malvinas)
+index 70 file_url //upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_the_Falkland_Islands.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_the_Falkland_Islands.svg
+export data length 131263
+export fileName FLK.svg
+index 71 alpha3 FRO
+index 71 name Faroe Islands
+index 71 file_url //upload.wikimedia.org/wikipedia/commons/3/3c/Flag_of_the_Faroe_Islands.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/3/3c/Flag_of_the_Faroe_Islands.svg
+export data length 378
+export fileName FRO.svg
+index 72 alpha3 FJI
+index 72 name Fiji
+index 72 file_url //upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Fiji.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Fiji.svg
+export data length 40121
+export fileName FJI.svg
+index 73 alpha3 FIN
+index 73 name Finland
+index 73 file_url //upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Finland.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Finland.svg
+export data length 241
+export fileName FIN.svg
+index 74 alpha3 FRA
+index 74 name France
+index 74 file_url //upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg
+export durl https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg
+export data length 262
+export fileName FRA.svg
+index 75 alpha3 PYF
+index 75 name French Polynesia
+index 75 file_url //upload.wikimedia.org/wikipedia/commons/d/db/Flag_of_French_Polynesia.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/d/db/Flag_of_French_Polynesia.svg
+export data length 7332
+export fileName PYF.svg
+index 76 alpha3 ATF
+index 76 name French Southern Territories
+index 76 file_url //upload.wikimedia.org/wikipedia/commons/a/a7/Flag_of_the_French_Southern_and_Antarctic_Lands.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/a/a7/Flag_of_the_French_Southern_and_Antarctic_Lands.svg
+export data length 1685
+export fileName ATF.svg
+index 77 alpha3 GAB
+index 77 name Gabon
+index 77 file_url //upload.wikimedia.org/wikipedia/commons/0/04/Flag_of_Gabon.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/0/04/Flag_of_Gabon.svg
+export data length 177
+export fileName GAB.svg
+index 78 alpha3 GMB
+index 78 name Gambia
+index 78 file_url //upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_The_Gambia.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_The_Gambia.svg
+export data length 291
+export fileName GMB.svg
+index 79 alpha3 GEO
+index 79 name Georgia
+index 79 file_url //upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Georgia.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Georgia.svg
+export data length 545
+export fileName GEO.svg
+index 80 alpha3 DEU
+index 80 name Germany
+index 80 file_url //upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg
+export durl https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg
+export data length 502
+export fileName DEU.svg
+index 81 alpha3 GHA
+index 81 name Ghana
+index 81 file_url //upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Ghana.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Ghana.svg
+export data length 262
+export fileName GHA.svg
+index 82 alpha3 GIB
+index 82 name Gibraltar
+index 82 file_url //upload.wikimedia.org/wikipedia/commons/0/02/Flag_of_Gibraltar.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/0/02/Flag_of_Gibraltar.svg
+export data length 5984
+export fileName GIB.svg
+index 83 alpha3 GRC
+index 83 name Greece
+index 83 file_url //upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Greece.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Greece.svg
+export data length 284
+export fileName GRC.svg
+index 84 alpha3 GRL
+index 84 name Greenland
+index 84 file_url //upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_Greenland.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_Greenland.svg
+export data length 246
+export fileName GRL.svg
+index 85 alpha3 GRD
+index 85 name Grenada
+index 85 file_url //upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Grenada.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Grenada.svg
+export data length 1101
+export fileName GRD.svg
+index 86 alpha3 GUM
+index 86 name Guam
+index 86 file_url //upload.wikimedia.org/wikipedia/commons/0/07/Flag_of_Guam.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/0/07/Flag_of_Guam.svg
+export data length 10613
+export fileName GUM.svg
+index 87 alpha3 GTM
+index 87 name Guatemala
+index 87 file_url //upload.wikimedia.org/wikipedia/commons/e/ec/Flag_of_Guatemala.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/e/ec/Flag_of_Guatemala.svg
+export data length 55848
+export fileName GTM.svg
+index 88 alpha3 GGY
+index 88 name Guernsey
+index 88 file_url //upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_Guernsey.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_Guernsey.svg
+export data length 338
+export fileName GGY.svg
+index 89 alpha3 GIN
+index 89 name Guinea
+index 89 file_url //upload.wikimedia.org/wikipedia/commons/e/ed/Flag_of_Guinea.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/e/ed/Flag_of_Guinea.svg
+export data length 205
+export fileName GIN.svg
+index 90 alpha3 GNB
+index 90 name Guinea-Bissau
+index 90 file_url //upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_Guinea-Bissau.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_Guinea-Bissau.svg
+export data length 710
+export fileName GNB.svg
+index 91 alpha3 GUY
+index 91 name Guyana
+index 91 file_url //upload.wikimedia.org/wikipedia/commons/9/99/Flag_of_Guyana.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/9/99/Flag_of_Guyana.svg
+export data length 510
+export fileName GUY.svg
+index 92 alpha3 HTI
+index 92 name Haiti
+index 92 file_url //upload.wikimedia.org/wikipedia/commons/5/56/Flag_of_Haiti.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/5/56/Flag_of_Haiti.svg
+export data length 117387
+export fileName HTI.svg
+index 93 alpha3 HMD
+index 93 name Heard Island and McDonald Islands
+index 93 file_url //upload.wikimedia.org/wikipedia/commons/b/bb/Proposed_flag_of_Antarctica_%28Graham_Bartram%29.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/b/bb/Proposed_flag_of_Antarctica_%28Graham_Bartram%29.svg
+export data length 6060
+export fileName HMD.svg
+index 94 alpha3 VAT
+index 94 name Holy See
+index 94 file_url //upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_the_Vatican_City.svg
+export no data durl https://upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_the_Vatican_City.svg
+index 95 alpha3 HND
+index 95 name Honduras
+index 95 file_url //upload.wikimedia.org/wikipedia/commons/8/82/Flag_of_Honduras.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/8/82/Flag_of_Honduras.svg
+export data length 461
+export fileName HND.svg
+index 96 alpha3 HKG
+index 96 name Hong Kong
+index 96 file_url //upload.wikimedia.org/wikipedia/commons/5/5b/Flag_of_Hong_Kong.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/5/5b/Flag_of_Hong_Kong.svg
+export data length 845
+export fileName HKG.svg
+index 97 alpha3 HUN
+index 97 name Hungary
+index 97 file_url //upload.wikimedia.org/wikipedia/commons/c/c1/Flag_of_Hungary.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/c/c1/Flag_of_Hungary.svg
+export data length 197
+export fileName HUN.svg
+index 98 alpha3 ISL
+index 98 name Iceland
+index 98 file_url //upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Iceland.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Iceland.svg
+export data length 281
+export fileName ISL.svg
+index 99 alpha3 IND
+index 99 name India
+index 99 file_url //upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg
+export durl https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg
+export data length 848
+export fileName IND.svg
+index 100 alpha3 IDN
+index 100 name Indonesia
+index 100 file_url //upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg
+export data length 148
+export fileName IDN.svg
+index 101 alpha3 IRN
+index 101 name Iran (Islamic Republic of)
+index 101 file_url //upload.wikimedia.org/wikipedia/commons/c/ca/Flag_of_Iran.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/c/ca/Flag_of_Iran.svg
+export data length 1439
+export fileName IRN.svg
+index 102 alpha3 IRQ
+index 102 name Iraq
+index 102 file_url //upload.wikimedia.org/wikipedia/commons/f/f6/Flag_of_Iraq.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/f/f6/Flag_of_Iraq.svg
+export data length 1204
+export fileName IRQ.svg
+index 103 alpha3 IRL
+index 103 name Ireland
+index 103 file_url //upload.wikimedia.org/wikipedia/commons/4/45/Flag_of_Ireland.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/4/45/Flag_of_Ireland.svg
+export data length 282
+export fileName IRL.svg
+index 104 alpha3 IMN
+index 104 name Isle of Man
+index 104 file_url //upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_the_Isle_of_Man.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_the_Isle_of_Man.svg
+export data length 7838
+export fileName IMN.svg
+index 105 alpha3 ISR
+index 105 name Israel
+index 105 file_url //upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Israel.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Israel.svg
+export data length 398
+export fileName ISR.svg
+index 106 alpha3 ITA
+index 106 name Italy
+index 106 file_url //upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg
+export durl https://upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg
+export data length 273
+export fileName ITA.svg
+index 107 alpha3 JAM
+index 107 name Jamaica
+index 107 file_url //upload.wikimedia.org/wikipedia/commons/0/0a/Flag_of_Jamaica.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/0/0a/Flag_of_Jamaica.svg
+export data length 311
+export fileName JAM.svg
+index 108 alpha3 JPN
+index 108 name Japan
+index 108 file_url //upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg
+export durl https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg
+export data length 209
+export fileName JPN.svg
+index 109 alpha3 JEY
+index 109 name Jersey
+index 109 file_url //upload.wikimedia.org/wikipedia/commons/1/1c/Flag_of_Jersey.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/1/1c/Flag_of_Jersey.svg
+export data length 76724
+export fileName JEY.svg
+index 110 alpha3 JOR
+index 110 name Jordan
+index 110 file_url //upload.wikimedia.org/wikipedia/commons/c/c0/Flag_of_Jordan.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/c/c0/Flag_of_Jordan.svg
+export data length 412
+export fileName JOR.svg
+index 111 alpha3 KAZ
+index 111 name Kazakhstan
+index 111 file_url //upload.wikimedia.org/wikipedia/commons/d/d3/Flag_of_Kazakhstan.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/d/d3/Flag_of_Kazakhstan.svg
+export data length 9668
+export fileName KAZ.svg
+index 112 alpha3 KEN
+index 112 name Kenya
+index 112 file_url //upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Kenya.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Kenya.svg
+export data length 1033
+export fileName KEN.svg
+index 113 alpha3 KIR
+index 113 name Kiribati
+index 113 file_url //upload.wikimedia.org/wikipedia/commons/d/d3/Flag_of_Kiribati.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/d/d3/Flag_of_Kiribati.svg
+export data length 8117
+export fileName KIR.svg
+index 114 alpha3 PRK
+index 114 name Korea (Democratic People's Republic of)
+index 114 file_url //upload.wikimedia.org/wikipedia/commons/5/51/Flag_of_North_Korea.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/5/51/Flag_of_North_Korea.svg
+export data length 873
+export fileName PRK.svg
+index 115 alpha3 KOR
+index 115 name Korea - Republic of
+index 115 file_url //upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg
+export data length 628
+export fileName KOR.svg
+index 116 alpha3 KWT
+index 116 name Kuwait
+index 116 file_url //upload.wikimedia.org/wikipedia/commons/a/aa/Flag_of_Kuwait.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/a/aa/Flag_of_Kuwait.svg
+export data length 317
+export fileName KWT.svg
+index 117 alpha3 KGZ
+index 117 name Kyrgyzstan
+index 117 file_url //upload.wikimedia.org/wikipedia/commons/c/c7/Flag_of_Kyrgyzstan.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/c/c7/Flag_of_Kyrgyzstan.svg
+export data length 14078
+export fileName KGZ.svg
+index 118 alpha3 LAO
+index 118 name Lao People's Democratic Republic
+index 118 file_url //upload.wikimedia.org/wikipedia/commons/5/56/Flag_of_Laos.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/5/56/Flag_of_Laos.svg
+export data length 233
+export fileName LAO.svg
+index 119 alpha3 LVA
+index 119 name Latvia
+index 119 file_url //upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Latvia.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Latvia.svg
+export data length 161
+export fileName LVA.svg
+index 120 alpha3 LBN
+index 120 name Lebanon
+index 120 file_url //upload.wikimedia.org/wikipedia/commons/5/59/Flag_of_Lebanon.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/5/59/Flag_of_Lebanon.svg
+export data length 6015
+export fileName LBN.svg
+index 121 alpha3 LSO
+index 121 name Lesotho
+index 121 file_url //upload.wikimedia.org/wikipedia/commons/4/4a/Flag_of_Lesotho.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/4/4a/Flag_of_Lesotho.svg
+export data length 1484
+export fileName LSO.svg
+index 122 alpha3 LBR
+index 122 name Liberia
+index 122 file_url //upload.wikimedia.org/wikipedia/commons/b/b8/Flag_of_Liberia.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/b/b8/Flag_of_Liberia.svg
+export data length 729
+export fileName LBR.svg
+index 123 alpha3 LBY
+index 123 name Libya
+index 123 file_url //upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Libya.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Libya.svg
+export data length 479
+export fileName LBY.svg
+index 124 alpha3 LIE
+index 124 name Liechtenstein
+index 124 file_url //upload.wikimedia.org/wikipedia/commons/4/47/Flag_of_Liechtenstein.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/4/47/Flag_of_Liechtenstein.svg
+export data length 23762
+export fileName LIE.svg
+index 125 alpha3 LTU
+index 125 name Lithuania
+index 125 file_url //upload.wikimedia.org/wikipedia/commons/1/11/Flag_of_Lithuania.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/1/11/Flag_of_Lithuania.svg
+export data length 201
+export fileName LTU.svg
+index 126 alpha3 LUX
+index 126 name Luxembourg
+index 126 file_url //upload.wikimedia.org/wikipedia/commons/d/da/Flag_of_Luxembourg.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/d/da/Flag_of_Luxembourg.svg
+export data length 213
+export fileName LUX.svg
+index 127 alpha3 MAC
+index 127 name Macao
+index 127 file_url //upload.wikimedia.org/wikipedia/commons/6/63/Flag_of_Macau.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/6/63/Flag_of_Macau.svg
+export data length 2365
+export fileName MAC.svg
+index 128 alpha3 MDG
+index 128 name Madagascar
+index 128 file_url //upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Madagascar.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Madagascar.svg
+export data length 244
+export fileName MDG.svg
+index 129 alpha3 MWI
+index 129 name Malawi
+index 129 file_url //upload.wikimedia.org/wikipedia/commons/d/d1/Flag_of_Malawi.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/d/d1/Flag_of_Malawi.svg
+export data length 1071
+export fileName MWI.svg
+index 130 alpha3 MYS
+index 130 name Malaysia
+index 130 file_url //upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg
+export data length 683
+export fileName MYS.svg
+index 131 alpha3 MDV
+index 131 name Maldives
+index 131 file_url //upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Maldives.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Maldives.svg
+export data length 322
+export fileName MDV.svg
+index 132 alpha3 MLI
+index 132 name Mali
+index 132 file_url //upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_Mali.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_Mali.svg
+export data length 197
+export fileName MLI.svg
+index 133 alpha3 MLT
+index 133 name Malta
+index 133 file_url //upload.wikimedia.org/wikipedia/commons/7/73/Flag_of_Malta.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/7/73/Flag_of_Malta.svg
+export data length 15715
+export fileName MLT.svg
+index 134 alpha3 MHL
+index 134 name Marshall Islands
+index 134 file_url //upload.wikimedia.org/wikipedia/commons/2/2e/Flag_of_the_Marshall_Islands.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/2/2e/Flag_of_the_Marshall_Islands.svg
+export data length 1666
+export fileName MHL.svg
+index 135 alpha3 MRT
+index 135 name Mauritania
+index 135 file_url //upload.wikimedia.org/wikipedia/commons/4/43/Flag_of_Mauritania.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/4/43/Flag_of_Mauritania.svg
+export data length 343
+export fileName MRT.svg
+index 136 alpha3 MUS
+index 136 name Mauritius
+index 136 file_url //upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_Mauritius.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_Mauritius.svg
+export data length 239
+export fileName MUS.svg
+index 137 alpha3 MEX
+index 137 name Mexico
+index 137 file_url //upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg
+export data length 139551
+export fileName MEX.svg
+index 138 alpha3 FSM
+index 138 name Micronesia (Federated States of)
+index 138 file_url //upload.wikimedia.org/wikipedia/commons/e/e4/Flag_of_the_Federated_States_of_Micronesia.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/e/e4/Flag_of_the_Federated_States_of_Micronesia.svg
+export data length 814
+export fileName FSM.svg
+index 139 alpha3 MDA
+index 139 name Moldova - Republic of
+index 139 file_url //upload.wikimedia.org/wikipedia/commons/2/27/Flag_of_Moldova.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/2/27/Flag_of_Moldova.svg
+export data length 34587
+export fileName MDA.svg
+index 140 alpha3 MCO
+index 140 name Monaco
+index 140 file_url //upload.wikimedia.org/wikipedia/commons/e/ea/Flag_of_Monaco.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/e/ea/Flag_of_Monaco.svg
+export data length 197
+export fileName MCO.svg
+index 141 alpha3 MNG
+index 141 name Mongolia
+index 141 file_url //upload.wikimedia.org/wikipedia/commons/4/4c/Flag_of_Mongolia.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/4/4c/Flag_of_Mongolia.svg
+export data length 1526
+export fileName MNG.svg
+index 142 alpha3 MNE
+index 142 name Montenegro
+index 142 file_url //upload.wikimedia.org/wikipedia/commons/6/64/Flag_of_Montenegro.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/6/64/Flag_of_Montenegro.svg
+export data length 123773
+export fileName MNE.svg
+index 143 alpha3 MSR
+index 143 name Montserrat
+index 143 file_url //upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_Montserrat.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_Montserrat.svg
+export data length 12949
+export fileName MSR.svg
+index 144 alpha3 MAR
+index 144 name Morocco
+index 144 file_url //upload.wikimedia.org/wikipedia/commons/2/2c/Flag_of_Morocco.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/2/2c/Flag_of_Morocco.svg
+export data length 264
+export fileName MAR.svg
+index 145 alpha3 MOZ
+index 145 name Mozambique
+index 145 file_url //upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_Mozambique.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_Mozambique.svg
+export data length 2789
+export fileName MOZ.svg
+index 146 alpha3 MMR
+index 146 name Myanmar
+index 146 file_url //upload.wikimedia.org/wikipedia/commons/8/8c/Flag_of_Myanmar.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/8/8c/Flag_of_Myanmar.svg
+export data length 636
+export fileName MMR.svg
+index 147 alpha3 NAM
+index 147 name Namibia
+index 147 file_url //upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_Namibia.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_Namibia.svg
+export data length 788
+export fileName NAM.svg
+index 148 alpha3 NRU
+index 148 name Nauru
+index 148 file_url //upload.wikimedia.org/wikipedia/commons/3/30/Flag_of_Nauru.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/3/30/Flag_of_Nauru.svg
+export data length 616
+export fileName NRU.svg
+index 149 alpha3 NPL
+index 149 name Nepal
+index 149 file_url //upload.wikimedia.org/wikipedia/commons/9/9b/Flag_of_Nepal.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/9/9b/Flag_of_Nepal.svg
+export data length 1523
+export fileName NPL.svg
+index 150 alpha3 NLD
+index 150 name Netherlands
+index 150 file_url //upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_the_Netherlands.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_the_Netherlands.svg
+export data length 223
+export fileName NLD.svg
+index 151 alpha3 NCL
+index 151 name New Caledonia
+index 151 file_url //upload.wikimedia.org/wikipedia/commons/0/0c/Drapeau_de_Nouvelle-Cal%C3%A9donie.png
+export durl https://upload.wikimedia.org/wikipedia/commons/0/0c/Drapeau_de_Nouvelle-Cal%C3%A9donie.png
+export data length 45418
+export fileName NCL.svg
+index 152 alpha3 NZL
+index 152 name New Zealand
+index 152 file_url //upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_New_Zealand.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_New_Zealand.svg
+export data length 2406
+export fileName NZL.svg
+index 153 alpha3 NIC
+index 153 name Nicaragua
+index 153 file_url //upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Nicaragua.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Nicaragua.svg
+export data length 23964
+export fileName NIC.svg
+index 154 alpha3 NER
+index 154 name Niger
+index 154 file_url //upload.wikimedia.org/wikipedia/commons/f/f4/Flag_of_Niger.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/f/f4/Flag_of_Niger.svg
+export data length 296
+export fileName NER.svg
+index 155 alpha3 NGA
+index 155 name Nigeria
+index 155 file_url //upload.wikimedia.org/wikipedia/commons/7/79/Flag_of_Nigeria.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/7/79/Flag_of_Nigeria.svg
+export data length 201
+export fileName NGA.svg
+index 156 alpha3 NIU
+index 156 name Niue
+index 156 file_url //upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_Niue.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_Niue.svg
+export data length 1221
+export fileName NIU.svg
+index 157 alpha3 NFK
+index 157 name Norfolk Island
+index 157 file_url //upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Norfolk_Island.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Norfolk_Island.svg
+export data length 23635
+export fileName NFK.svg
+index 158 alpha3 MKD
+index 158 name North Macedonia
+index 158 file_url //upload.wikimedia.org/wikipedia/commons/7/79/Flag_of_North_Macedonia.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/7/79/Flag_of_North_Macedonia.svg
+export data length 416
+export fileName MKD.svg
+index 159 alpha3 MNP
+index 159 name Northern Mariana Islands
+index 159 file_url //upload.wikimedia.org/wikipedia/commons/e/e0/Flag_of_the_Northern_Mariana_Islands.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/e/e0/Flag_of_the_Northern_Mariana_Islands.svg
+export data length 164863
+export fileName MNP.svg
+index 160 alpha3 NOR
+index 160 name Norway
+index 160 file_url //upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Norway.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Norway.svg
+export data length 319
+export fileName NOR.svg
+index 161 alpha3 OMN
+index 161 name Oman
+index 161 file_url //upload.wikimedia.org/wikipedia/commons/d/dd/Flag_of_Oman.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/d/dd/Flag_of_Oman.svg
+export data length 17172
+export fileName OMN.svg
+index 162 alpha3 PAK
+index 162 name Pakistan
+index 162 file_url //upload.wikimedia.org/wikipedia/commons/3/32/Flag_of_Pakistan.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/3/32/Flag_of_Pakistan.svg
+export data length 707
+export fileName PAK.svg
+index 163 alpha3 PLW
+index 163 name Palau
+index 163 file_url //upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Palau.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Palau.svg
+export data length 214
+export fileName PLW.svg
+index 164 alpha3 PSE
+index 164 name Palestine - State of
+index 164 file_url //upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_Palestine.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_Palestine.svg
+export data length 281
+export fileName PSE.svg
+index 165 alpha3 PAN
+index 165 name Panama
+index 165 file_url //upload.wikimedia.org/wikipedia/commons/a/ab/Flag_of_Panama.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/a/ab/Flag_of_Panama.svg
+export data length 331
+export fileName PAN.svg
+index 166 alpha3 PNG
+index 166 name Papua New Guinea
+index 166 file_url //upload.wikimedia.org/wikipedia/commons/e/e3/Flag_of_Papua_New_Guinea.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/e/e3/Flag_of_Papua_New_Guinea.svg
+export data length 3818
+export fileName PNG.svg
+index 167 alpha3 PRY
+index 167 name Paraguay
+index 167 file_url //upload.wikimedia.org/wikipedia/commons/2/27/Flag_of_Paraguay.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/2/27/Flag_of_Paraguay.svg
+export data length 23523
+export fileName PRY.svg
+index 168 alpha3 PER
+index 168 name Peru
+index 168 file_url //upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Peru.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Peru.svg
+export data length 381
+export fileName PER.svg
+index 169 alpha3 PHL
+index 169 name Philippines
+index 169 file_url //upload.wikimedia.org/wikipedia/commons/9/99/Flag_of_the_Philippines.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/9/99/Flag_of_the_Philippines.svg
+export data length 892
+export fileName PHL.svg
+index 170 alpha3 PCN
+index 170 name Pitcairn
+index 170 file_url //upload.wikimedia.org/wikipedia/commons/8/88/Flag_of_the_Pitcairn_Islands.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/8/88/Flag_of_the_Pitcairn_Islands.svg
+export data length 20227
+export fileName PCN.svg
+index 171 alpha3 POL
+index 171 name Poland
+index 171 file_url //upload.wikimedia.org/wikipedia/en/1/12/Flag_of_Poland.svg
+export durl https://upload.wikimedia.org/wikipedia/en/1/12/Flag_of_Poland.svg
+export data length 244
+export fileName POL.svg
+index 172 alpha3 PRT
+index 172 name Portugal
+index 172 file_url //upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg
+export data length 13160
+export fileName PRT.svg
+index 173 alpha3 PRI
+index 173 name Puerto Rico
+index 173 file_url //upload.wikimedia.org/wikipedia/commons/2/28/Flag_of_Puerto_Rico.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/2/28/Flag_of_Puerto_Rico.svg
+export data length 334
+export fileName PRI.svg
+index 174 alpha3 QAT
+index 174 name Qatar
+index 174 file_url //upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Qatar.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Qatar.svg
+export data length 269
+export fileName QAT.svg
+index 175 alpha3 ROU
+index 175 name Romania
+index 175 file_url //upload.wikimedia.org/wikipedia/commons/7/73/Flag_of_Romania.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/7/73/Flag_of_Romania.svg
+export data length 297
+export fileName ROU.svg
+index 176 alpha3 RUS
+index 176 name Russian Federation
+index 176 file_url //upload.wikimedia.org/wikipedia/en/f/f3/Flag_of_Russia.svg
+export durl https://upload.wikimedia.org/wikipedia/en/f/f3/Flag_of_Russia.svg
+export data length 265
+export fileName RUS.svg
+index 177 alpha3 RWA
+index 177 name Rwanda
+index 177 file_url //upload.wikimedia.org/wikipedia/commons/1/17/Flag_of_Rwanda.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/1/17/Flag_of_Rwanda.svg
+export data length 939
+export fileName RWA.svg
+index 178 alpha3 BLM
+index 178 name Saint Barthélemy
+index 178 file_url //upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg
+export durl https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg
+export data length 262
+export fileName BLM.svg
+index 179 alpha3 SHN
+index 179 name Saint Helena - Ascension and Tristan da Cunha
+index 179 file_url //upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg
+export durl https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg
+export data length 672
+export fileName SHN.svg
+index 180 alpha3 KNA
+index 180 name Saint Kitts and Nevis
+index 180 file_url //upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Saint_Kitts_and_Nevis.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Saint_Kitts_and_Nevis.svg
+export data length 621
+export fileName KNA.svg
+index 181 alpha3 LCA
+index 181 name Saint Lucia
+index 181 file_url //upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Saint_Lucia.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Saint_Lucia.svg
+export data length 309
+export fileName LCA.svg
+index 182 alpha3 MAF
+index 182 name Saint Martin (French part)
+index 182 file_url //upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg
+export durl https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg
+export data length 262
+export fileName MAF.svg
+index 183 alpha3 VCT
+index 183 name Saint Vincent and the Grenadines
+index 183 file_url //upload.wikimedia.org/wikipedia/commons/6/6d/Flag_of_Saint_Vincent_and_the_Grenadines.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/6/6d/Flag_of_Saint_Vincent_and_the_Grenadines.svg
+export data length 404
+export fileName VCT.svg
+index 184 alpha3 WSM
+index 184 name Samoa
+index 184 file_url //upload.wikimedia.org/wikipedia/commons/3/31/Flag_of_Samoa.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/3/31/Flag_of_Samoa.svg
+export data length 724
+export fileName WSM.svg
+index 185 alpha3 SMR
+index 185 name San Marino
+index 185 file_url //upload.wikimedia.org/wikipedia/commons/b/b1/Flag_of_San_Marino.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/b/b1/Flag_of_San_Marino.svg
+export data length 132841
+export fileName SMR.svg
+index 186 alpha3 STP
+index 186 name Sao Tome and Principe
+index 186 file_url //upload.wikimedia.org/wikipedia/commons/4/4f/Flag_of_Sao_Tome_and_Principe.svg
+export no data durl https://upload.wikimedia.org/wikipedia/commons/4/4f/Flag_of_Sao_Tome_and_Principe.svg
+index 187 alpha3 SEN
+index 187 name Senegal
+index 187 file_url //upload.wikimedia.org/wikipedia/commons/f/fd/Flag_of_Senegal.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/f/fd/Flag_of_Senegal.svg
+export data length 255
+export fileName SEN.svg
+index 188 alpha3 SRB
+index 188 name Serbia
+index 188 file_url //upload.wikimedia.org/wikipedia/commons/f/ff/Flag_of_Serbia.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/f/ff/Flag_of_Serbia.svg
+export data length 37943
+export fileName SRB.svg
+index 189 alpha3 SYC
+index 189 name Seychelles
+index 189 file_url //upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Seychelles.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Seychelles.svg
+export data length 320
+export fileName SYC.svg
+index 190 alpha3 SLE
+index 190 name Sierra Leone
+index 190 file_url //upload.wikimedia.org/wikipedia/commons/1/17/Flag_of_Sierra_Leone.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/1/17/Flag_of_Sierra_Leone.svg
+export data length 194
+export fileName SLE.svg
+index 191 alpha3 SGP
+index 191 name Singapore
+index 191 file_url //upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Singapore.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Singapore.svg
+export data length 593
+export fileName SGP.svg
+index 192 alpha3 SXM
+index 192 name Sint Maarten (Dutch part)
+index 192 file_url //upload.wikimedia.org/wikipedia/commons/d/d3/Flag_of_Sint_Maarten.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/d/d3/Flag_of_Sint_Maarten.svg
+export data length 26259
+export fileName SXM.svg
+index 193 alpha3 SVK
+index 193 name Slovakia
+index 193 file_url //upload.wikimedia.org/wikipedia/commons/e/e6/Flag_of_Slovakia.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/e/e6/Flag_of_Slovakia.svg
+export data length 1103
+export fileName SVK.svg
+index 194 alpha3 SVN
+index 194 name Slovenia
+index 194 file_url //upload.wikimedia.org/wikipedia/commons/f/f0/Flag_of_Slovenia.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/f/f0/Flag_of_Slovenia.svg
+export data length 1617
+export fileName SVN.svg
+index 195 alpha3 SLB
+index 195 name Solomon Islands
+index 195 file_url //upload.wikimedia.org/wikipedia/commons/7/74/Flag_of_the_Solomon_Islands.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/7/74/Flag_of_the_Solomon_Islands.svg
+export data length 1013
+export fileName SLB.svg
+index 196 alpha3 SOM
+index 196 name Somalia
+index 196 file_url //upload.wikimedia.org/wikipedia/commons/a/a0/Flag_of_Somalia.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/a/a0/Flag_of_Somalia.svg
+export data length 1484
+export fileName SOM.svg
+index 197 alpha3 ZAF
+index 197 name South Africa
+index 197 file_url //upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_South_Africa.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_South_Africa.svg
+export data length 646
+export fileName ZAF.svg
+index 198 alpha3 SGS
+index 198 name South Georgia and the South Sandwich Islands
+index 198 file_url //upload.wikimedia.org/wikipedia/commons/e/ed/Flag_of_South_Georgia_and_the_South_Sandwich_Islands.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/e/ed/Flag_of_South_Georgia_and_the_South_Sandwich_Islands.svg
+export data length 52914
+export fileName SGS.svg
+index 199 alpha3 SSD
+index 199 name South Sudan
+index 199 file_url //upload.wikimedia.org/wikipedia/commons/7/7a/Flag_of_South_Sudan.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/7/7a/Flag_of_South_Sudan.svg
+export data length 1584
+export fileName SSD.svg
+index 200 alpha3 ESP
+index 200 name Spain
+index 200 file_url //upload.wikimedia.org/wikipedia/commons/8/89/Bandera_de_Espa%C3%B1a.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/8/89/Bandera_de_Espa%C3%B1a.svg
+export data length 155197
+export fileName ESP.svg
+index 201 alpha3 LKA
+index 201 name Sri Lanka
+index 201 file_url //upload.wikimedia.org/wikipedia/commons/1/11/Flag_of_Sri_Lanka.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/1/11/Flag_of_Sri_Lanka.svg
+export data length 19062
+export fileName LKA.svg
+index 202 alpha3 SDN
+index 202 name Sudan
+index 202 file_url //upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_Sudan.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_Sudan.svg
+export data length 229
+export fileName SDN.svg
+index 203 alpha3 SUR
+index 203 name Suriname
+index 203 file_url //upload.wikimedia.org/wikipedia/commons/6/60/Flag_of_Suriname.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/6/60/Flag_of_Suriname.svg
+export data length 393
+export fileName SUR.svg
+index 204 alpha3 SJM
+index 204 name Svalbard and Jan Mayen
+index 204 file_url //upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Norway.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Norway.svg
+export data length 319
+export fileName SJM.svg
+index 205 alpha3 SWE
+index 205 name Sweden
+index 205 file_url //upload.wikimedia.org/wikipedia/en/4/4c/Flag_of_Sweden.svg
+export durl https://upload.wikimedia.org/wikipedia/en/4/4c/Flag_of_Sweden.svg
+export data length 286
+export fileName SWE.svg
+index 206 alpha3 CHE
+index 206 name Switzerland
+index 206 file_url //upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Switzerland.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Switzerland.svg
+export data length 213
+export fileName CHE.svg
+index 207 alpha3 SYR
+index 207 name Syrian Arab Republic
+index 207 file_url //upload.wikimedia.org/wikipedia/commons/5/53/Flag_of_Syria.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/5/53/Flag_of_Syria.svg
+export data length 311
+export fileName SYR.svg
+index 208 alpha3 TJK
+index 208 name Tajikistan
+index 208 file_url //upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_Tajikistan.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_Tajikistan.svg
+export data length 1866
+export fileName TJK.svg
+index 209 alpha3 TZA
+index 209 name Tanzania - United Republic of
+index 209 file_url //upload.wikimedia.org/wikipedia/commons/3/38/Flag_of_Tanzania.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/3/38/Flag_of_Tanzania.svg
+export data length 458
+export fileName TZA.svg
+index 210 alpha3 THA
+index 210 name Thailand
+index 210 file_url //upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_Thailand.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_Thailand.svg
+export data length 259
+export fileName THA.svg
+index 211 alpha3 TLS
+index 211 name Timor-Leste
+index 211 file_url //upload.wikimedia.org/wikipedia/commons/2/26/Flag_of_East_Timor.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/2/26/Flag_of_East_Timor.svg
+export data length 338
+export fileName TLS.svg
+index 212 alpha3 TGO
+index 212 name Togo
+index 212 file_url //upload.wikimedia.org/wikipedia/commons/6/68/Flag_of_Togo.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/6/68/Flag_of_Togo.svg
+export data length 772
+export fileName TGO.svg
+index 213 alpha3 TKL
+index 213 name Tokelau
+index 213 file_url //upload.wikimedia.org/wikipedia/commons/8/8e/Flag_of_Tokelau.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/8/8e/Flag_of_Tokelau.svg
+export data length 1459
+export fileName TKL.svg
+index 214 alpha3 TON
+index 214 name Tonga
+index 214 file_url //upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Tonga.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Tonga.svg
+export data length 315
+export fileName TON.svg
+index 215 alpha3 TTO
+index 215 name Trinidad and Tobago
+index 215 file_url //upload.wikimedia.org/wikipedia/commons/6/64/Flag_of_Trinidad_and_Tobago.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/6/64/Flag_of_Trinidad_and_Tobago.svg
+export data length 307
+export fileName TTO.svg
+index 216 alpha3 TUN
+index 216 name Tunisia
+index 216 file_url //upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Tunisia.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Tunisia.svg
+export data length 278
+export fileName TUN.svg
+index 217 alpha3 TUR
+index 217 name Türkiye
+index 217 file_url //upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg
+export data length 324
+export fileName TUR.svg
+index 218 alpha3 TKM
+index 218 name Turkmenistan
+index 218 file_url //upload.wikimedia.org/wikipedia/commons/1/1b/Flag_of_Turkmenistan.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/1/1b/Flag_of_Turkmenistan.svg
+export data length 75449
+export fileName TKM.svg
+index 219 alpha3 TCA
+index 219 name Turks and Caicos Islands
+index 219 file_url //upload.wikimedia.org/wikipedia/commons/a/a0/Flag_of_the_Turks_and_Caicos_Islands.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/a/a0/Flag_of_the_Turks_and_Caicos_Islands.svg
+export data length 6940
+export fileName TCA.svg
+index 220 alpha3 TUV
+index 220 name Tuvalu
+index 220 file_url //upload.wikimedia.org/wikipedia/commons/3/38/Flag_of_Tuvalu.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/3/38/Flag_of_Tuvalu.svg
+export data length 1239
+export fileName TUV.svg
+index 221 alpha3 UGA
+index 221 name Uganda
+index 221 file_url //upload.wikimedia.org/wikipedia/commons/4/4e/Flag_of_Uganda.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/4/4e/Flag_of_Uganda.svg
+export data length 6572
+export fileName UGA.svg
+index 222 alpha3 UKR
+index 222 name Ukraine
+index 222 file_url //upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Ukraine.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Ukraine.svg
+export data length 182
+export fileName UKR.svg
+index 223 alpha3 ARE
+index 223 name United Arab Emirates
+index 223 file_url //upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_United_Arab_Emirates.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_United_Arab_Emirates.svg
+export data length 325
+export fileName ARE.svg
+index 224 alpha3 GBR
+index 224 name United Kingdom of Great Britain and Northern Ireland
+index 224 file_url //upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg
+export durl https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg
+export data length 672
+export fileName GBR.svg
+index 225 alpha3 USA
+index 225 name United States of America
+index 225 file_url //upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg
+export durl https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg
+export data length 899
+export fileName USA.svg
+index 226 alpha3 UMI
+index 226 name United States Minor Outlying Islands
+index 226 file_url //upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg
+export durl https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg
+export data length 899
+export fileName UMI.svg
+index 227 alpha3 URY
+index 227 name Uruguay
+index 227 file_url //upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Uruguay.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Uruguay.svg
+export data length 9589
+export fileName URY.svg
+index 228 alpha3 UZB
+index 228 name Uzbekistan
+index 228 file_url //upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Uzbekistan.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Uzbekistan.svg
+export data length 1243
+export fileName UZB.svg
+index 229 alpha3 VUT
+index 229 name Vanuatu
+index 229 file_url //upload.wikimedia.org/wikipedia/commons/6/6e/Flag_of_Vanuatu_%28official%29.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/6/6e/Flag_of_Vanuatu_%28official%29.svg
+export data length 2141
+export fileName VUT.svg
+index 230 alpha3 VEN
+index 230 name Venezuela (Bolivarian Republic of)
+index 230 file_url //upload.wikimedia.org/wikipedia/commons/0/06/Flag_of_Venezuela.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/0/06/Flag_of_Venezuela.svg
+export data length 1886
+export fileName VEN.svg
+index 231 alpha3 VNM
+index 231 name Viet Nam
+index 231 file_url //upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg
+export data length 283
+export fileName VNM.svg
+index 232 alpha3 VGB
+index 232 name Virgin Islands (British)
+index 232 file_url //upload.wikimedia.org/wikipedia/commons/4/42/Flag_of_the_British_Virgin_Islands.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/4/42/Flag_of_the_British_Virgin_Islands.svg
+export data length 21651
+export fileName VGB.svg
+index 233 alpha3 VIR
+index 233 name Virgin Islands (U.S.)
+index 233 file_url //upload.wikimedia.org/wikipedia/commons/f/f8/Flag_of_the_United_States_Virgin_Islands.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/f/f8/Flag_of_the_United_States_Virgin_Islands.svg
+export data length 20210
+export fileName VIR.svg
+index 234 alpha3 WLF
+index 234 name Wallis and Futuna
+index 234 file_url //upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg
+export durl https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg
+export data length 262
+export fileName WLF.svg
+index 235 alpha3 YEM
+index 235 name Yemen
+index 235 file_url //upload.wikimedia.org/wikipedia/commons/8/89/Flag_of_Yemen.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/8/89/Flag_of_Yemen.svg
+export data length 179
+export fileName YEM.svg
+index 236 alpha3 ZMB
+index 236 name Zambia
+index 236 file_url //upload.wikimedia.org/wikipedia/commons/0/06/Flag_of_Zambia.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/0/06/Flag_of_Zambia.svg
+export data length 5360
+export fileName ZMB.svg
+index 237 alpha3 ZWE
+index 237 name Zimbabwe
+index 237 file_url //upload.wikimedia.org/wikipedia/commons/6/6a/Flag_of_Zimbabwe.svg
+export durl https://upload.wikimedia.org/wikipedia/commons/6/6a/Flag_of_Zimbabwe.svg
+export data length 1801
+export fileName ZWE.svg
+outputString.count 52974
+No error handler for XPC error: <private>
+Program ended with exit code: 0
+
+# --
 2023-11-12 11:12:11
 
 

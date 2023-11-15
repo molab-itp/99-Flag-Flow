@@ -14,7 +14,7 @@ struct App: ParsableCommand {
     @Argument(help: "The filename you want to process.")
 //    var fileIn: String = "/Users/jht2/Downloads/countries-STP-VAT.json"
 //    var outDirName = "exported_svgs-imageset";
-    var fileIn: String = "/Users/jht2/Downloads/countries.json"
+    var fileIn: String = "/Users/jht2/Downloads/countries-2.json"
     var outDirName = "exported-svgs";
 
     // Not used yet
@@ -86,11 +86,11 @@ struct App: ParsableCommand {
                 continue;
             }
             print("index", index, "file_url", file_url)
-//            export_imageset(alpha3: alpha3, file_url: file_url, name: name, outDir: outDir)
+            // export_imageset(alpha3: alpha3, file_url: file_url, name: name, outDir: outDir)
             export_svgs(alpha3: alpha3, file_url: file_url, name: name, outDir: outDir)
-            if index == 1 {
-                break
-            }
+//            if index == 1 {
+//                break
+//            }
         }
         // if let info = dict["info"] as? NSDictionary {
         // print("info", info);
