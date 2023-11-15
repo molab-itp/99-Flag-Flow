@@ -23,16 +23,10 @@ class Model : ObservableObject {
     }
     
     @MainActor func render(_ displayScale: CGFloat) {
-        // let text = ["ONE", "TWO", "THREE", "MILLIONS"].randomElement();
-        // let renderer = ImageRenderer(content: RenderView(text: text!))
-        // let renderer = ImageRenderer(content: SVGViewAsync(strRef: strRef))
-        // let renderer = ImageRenderer(content: svgView)
         let content = SVGViewSync(strRef: strRef)
         let renderer = ImageRenderer(content: content)
-        
         // make sure and use the correct display scale for this device
         renderer.scale = displayScale
-        
         if let uiImage = renderer.uiImage {
             renderedImage = Image(uiImage: uiImage)
             print("Model render uiImage", uiImage)
@@ -41,7 +35,6 @@ class Model : ObservableObject {
             print("render no uiImage")
         }
     }
-
 }
 
 func getCountriesFromJSON() -> [FlagItem] {

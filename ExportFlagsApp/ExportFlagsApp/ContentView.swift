@@ -13,10 +13,10 @@ import SVGView
 //let strRef2 = "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg"
 
 struct ContentView: View {
-
+    
     @EnvironmentObject var model:Model
     @Environment(\.displayScale) var displayScale
-
+    
     var body: some View {
         VStack {
             ExportingView(strRef: model.strRef)
@@ -37,7 +37,7 @@ struct ContentView: View {
                 .background(Color(.systemIndigo))
                 .cornerRadius(12)
                 .padding(5)
-
+                
             }
         }
     }
@@ -46,12 +46,12 @@ struct ContentView: View {
 struct ExportingView: View {
     var strRef: String;
     
-//    @State var renderedImage = Image(systemName: "photo")
+    //    @State var renderedImage = Image(systemName: "photo")
     @EnvironmentObject var model:Model
-
+    
     @Environment(\.displayScale) var displayScale
     
-//    let svgView = SVGViewSync(strRef: strRef);
+    //    let svgView = SVGViewSync(strRef: strRef);
     
     var body: some View {
         VStack {
@@ -62,50 +62,50 @@ struct ExportingView: View {
             Text("Hello, world!")
             
             SVGViewSync(strRef: strRef)
-
+            
             Text("rendered:")
             
             if let renderedImage = model.renderedImage {
                 renderedImage
             }
-                        
-//            Button(action: {
-//                exportAction()
-//            }) {
-//                Text("Export")
-//                    .foregroundColor(.white)
-//                    .padding(10)
-//                    .background(Color(.systemIndigo))
-//                    .cornerRadius(12)
-//                    .padding(5)
-//            }
+            
+            //            Button(action: {
+            //                exportAction()
+            //            }) {
+            //                Text("Export")
+            //                    .foregroundColor(.white)
+            //                    .padding(10)
+            //                    .background(Color(.systemIndigo))
+            //                    .cornerRadius(12)
+            //                    .padding(5)
+            //            }
         }
         .padding()
     }
     
-//    @MainActor func exportAction() {
-//        //
-//        render();
-//    }
-//    
-//    @MainActor func render() {
-//        // let text = ["ONE", "TWO", "THREE", "MILLIONS"].randomElement();
-//        // let renderer = ImageRenderer(content: RenderView(text: text!))
-//        // let renderer = ImageRenderer(content: SVGViewAsync(strRef: strRef))
-//// let renderer = ImageRenderer(content: svgView)
-//        let content = SVGViewSync(strRef: strRef)
-//        let renderer = ImageRenderer(content: content)
-//
-//        // make sure and use the correct display scale for this device
-//        renderer.scale = displayScale
-//        
-//        if let uiImage = renderer.uiImage {
-////            renderedImage = Image(uiImage: uiImage)
-//        }
-//        else {
-//            print("render no uiImage")
-//        }
-//    }
+    //    @MainActor func exportAction() {
+    //        //
+    //        render();
+    //    }
+    //    
+    //    @MainActor func render() {
+    //        // let text = ["ONE", "TWO", "THREE", "MILLIONS"].randomElement();
+    //        // let renderer = ImageRenderer(content: RenderView(text: text!))
+    //        // let renderer = ImageRenderer(content: SVGViewAsync(strRef: strRef))
+    //// let renderer = ImageRenderer(content: svgView)
+    //        let content = SVGViewSync(strRef: strRef)
+    //        let renderer = ImageRenderer(content: content)
+    //
+    //        // make sure and use the correct display scale for this device
+    //        renderer.scale = displayScale
+    //        
+    //        if let uiImage = renderer.uiImage {
+    ////            renderedImage = Image(uiImage: uiImage)
+    //        }
+    //        else {
+    //            print("render no uiImage")
+    //        }
+    //    }
 }
 
 // An example view to render
