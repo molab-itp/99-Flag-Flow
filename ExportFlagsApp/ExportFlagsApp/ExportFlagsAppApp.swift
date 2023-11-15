@@ -12,6 +12,7 @@ struct ExportFlagsAppApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(Model())
         }
     }
 }

@@ -11,9 +11,7 @@
 		AB4E84992B052E3B00582923 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4E84982B052E3B00582923 /* ContentView.swift */; };
 		AB4E849B2B052E3C00582923 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB4E849A2B052E3C00582923 /* Assets.xcassets */; };
 		AB4E849F2B052E3C00582923 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB4E849E2B052E3C00582923 /* Preview Assets.xcassets */; };
-		AB4E84A82B0531EA00582923 /* RenderImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4E84A72B0531EA00582923 /* RenderImage.swift */; };
 		AB4E84AB2B054F3600582923 /* SVGView in Frameworks */ = {isa = PBXBuildFile; productRef = AB4E84AA2B054F3600582923 /* SVGView */; };
-		AB4E84AD2B054FFF00582923 /* dataFor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4E84AC2B054FFF00582923 /* dataFor.swift */; };
 		ABC991272B055FD800CA01D5 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC991262B055FD800CA01D5 /* Model.swift */; };
 		ABC9912A2B0560AA00CA01D5 /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC991292B0560AA00CA01D5 /* countries.json */; };
 /* End PBXBuildFile section */
@@ -27,8 +25,6 @@
 		AB4E849E2B052E3C00582923 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AB4E84A52B052E9500582923 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AB4E84A62B052EBE00582923 /* _notes.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = _notes.txt; sourceTree = "<group>"; };
-		AB4E84A72B0531EA00582923 /* RenderImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderImage.swift; sourceTree = "<group>"; };
-		AB4E84AC2B054FFF00582923 /* dataFor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dataFor.swift; sourceTree = "<group>"; };
 		ABC991262B055FD800CA01D5 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		ABC991292B0560AA00CA01D5 /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,8 +65,6 @@
 				AB4E84962B052E3B00582923 /* ExportFlagsAppApp.swift */,
 				AB4E84982B052E3B00582923 /* ContentView.swift */,
 				ABC991262B055FD800CA01D5 /* Model.swift */,
-				AB4E84A72B0531EA00582923 /* RenderImage.swift */,
-				AB4E84AC2B054FFF00582923 /* dataFor.swift */,
 				ABC991282B0560AA00CA01D5 /* Resources */,
 				AB4E849A2B052E3C00582923 /* Assets.xcassets */,
 				AB4E849C2B052E3C00582923 /* ExportFlagsApp.entitlements */,
@@ -174,9 +168,7 @@
 			files = (
 				ABC991272B055FD800CA01D5 /* Model.swift in Sources */,
 				AB4E84992B052E3B00582923 /* ContentView.swift in Sources */,
-				AB4E84AD2B054FFF00582923 /* dataFor.swift in Sources */,
 				AB4E84972B052E3B00582923 /* ExportFlagsAppApp.swift in Sources */,
-				AB4E84A82B0531EA00582923 /* RenderImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,8 +12,8 @@ class Model : ObservableObject {
     
     @Published var strRef = "https://upload.wikimedia.org/wikipedia/commons/0/0a/Flag_of_Jamaica.svg"
     
-    @Published var renderedImage:Image?
-    
+    @Published var uiImage:UIImage?
+
     var index = 0
     var countries = getCountriesFromJSON()
 
@@ -22,13 +22,13 @@ class Model : ObservableObject {
         strRef = "https:" + countries[index].file_url;
     }
     
-    @MainActor func render(_ displayScale: CGFloat) {
+    @MainActor func export(_ displayScale: CGFloat) {
         let content = SVGViewSync(strRef: strRef)
         let renderer = ImageRenderer(content: content)
         // make sure and use the correct display scale for this device
         renderer.scale = displayScale
-        if let uiImage = renderer.uiImage {
-            renderedImage = Image(uiImage: uiImage)
+        uiImage = renderer.uiImage
+        if let uiImage {
             print("Model render uiImage", uiImage)
         }
         else {

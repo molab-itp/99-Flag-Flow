@@ -46,3 +46,17 @@ struct ContentView_Render: View {
         }
     }
 }
+
+// An example view to render
+struct RenderView: View {
+    let text: String
+    
+    var body: some View {
+        Text(text)
+            .font(.largeTitle)
+            .foregroundStyle(.white)
+            .padding()
+            .background(.blue)
+            .clipShape(Capsule())
+    }
+}
