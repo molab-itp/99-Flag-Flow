@@ -15,8 +15,43 @@ import Foundation
 //            "license": "Public domain"
 //        },
 
+
+func export_svgs(alpha3: String, file_url: String, name: String, outDir: URL) {
+    guard let durl = URL(string: "https:" + file_url) else {
+        return;
+    }
+    guard let data = try? Data(contentsOf: durl) else {
+        print("export no data durl", durl)
+        return;
+    }
+    print("export durl", durl)
+    print("export data length", data.count)
+    let fileName = alpha3 + ".svg"
+    print("export fileName", fileName)
+    let outFile = outDir.appendingPathComponent(fileName);
+    do {
+        try data.write(to: outFile)
+    }
+    catch {
+        print("export data write error", error)
+    }
+}
+
+//        {
+//            "url": "/wiki/Jamaica",
+//            "alpha3": "JAM",
+//            "name": "Jamaica",
+//            "file_url": "//upload.wikimedia.org/wikipedia/commons/0/0a/Flag_of_Jamaica.svg",
+//            "license": "Public domain"
+//        },
+
+// write svg to directory outDir
+//  eg flag-JAM.imageset
+//      Contents.json
+//      fileName -- eg Flag_of_Jamaica.svg
+
 // Write out svg
-func export(alpha3: String, file_url: String, name: String, outDir: URL) {
+func export_imageset(alpha3: String, file_url: String, name: String, outDir: URL) {
     guard let durl = URL(string: "https:" + file_url) else {
         return;
     }
@@ -40,28 +75,28 @@ func export(alpha3: String, file_url: String, name: String, outDir: URL) {
         print("export data write error", error)
     }
     let contentsJSON = """
-{
-  "images" : [
-    {
-      "filename" : "\(fileName)",
-      "idiom" : "universal",
-      "scale" : "1x"
-    },
-    {
-      "idiom" : "universal",
-      "scale" : "2x"
-    },
-    {
-      "idiom" : "universal",
-      "scale" : "3x"
-    }
-  ],
-  "info" : {
-    "author" : "xcode",
-    "version" : 1
-  }
-}
-""";
+        {
+          "images" : [
+            {
+              "filename" : "\(fileName)",
+              "idiom" : "universal",
+              "scale" : "1x"
+            },
+            {
+              "idiom" : "universal",
+              "scale" : "2x"
+            },
+            {
+              "idiom" : "universal",
+              "scale" : "3x"
+            }
+          ],
+          "info" : {
+            "author" : "xcode",
+            "version" : 1
+          }
+        }
+        """;
     let cjsonOutFile = subDir.appendingPathComponent("Contents.json");
     do {
         try contentsJSON.write(to: cjsonOutFile, atomically: true, encoding: .utf8)

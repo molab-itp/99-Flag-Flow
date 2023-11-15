@@ -10,10 +10,14 @@ import Foundation
 struct App: ParsableCommand {
     @Option(name: .shortAndLong, help: "Writes the output to a file rather than to standard output.")
     var output: String?
-    
+
     @Argument(help: "The filename you want to process.")
-    var fileIn: String = "/Users/jht2/Downloads/countries-STP-VAT.json"
-    
+//    var fileIn: String = "/Users/jht2/Downloads/countries-STP-VAT.json"
+//    var outDirName = "exported_svgs-imageset";
+    var fileIn: String = "/Users/jht2/Downloads/countries.json"
+    var outDirName = "exported-svgs";
+
+    // Not used yet
     var forceOverwrite = false
     
     static var configuration: CommandConfiguration {
@@ -22,7 +26,6 @@ struct App: ParsableCommand {
             abstract: "convert svg country flags to Assets.xcassets format")
     }
     
-    var outDirName = "exported_svgs-STP-VAT";
     
     func run() {
         let url = URL(fileURLWithPath: fileIn)
@@ -83,10 +86,11 @@ struct App: ParsableCommand {
                 continue;
             }
             print("index", index, "file_url", file_url)
-            export(alpha3: alpha3, file_url: file_url, name: name, outDir: outDir)
-//            if index == 1 {
-//                break
-//            }
+//            export_imageset(alpha3: alpha3, file_url: file_url, name: name, outDir: outDir)
+            export_svgs(alpha3: alpha3, file_url: file_url, name: name, outDir: outDir)
+            if index == 1 {
+                break
+            }
         }
         // if let info = dict["info"] as? NSDictionary {
         // print("info", info);
