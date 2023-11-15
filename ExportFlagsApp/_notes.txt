@@ -3,6 +3,10 @@ _notes.txt
 # --
 2023-11-15 11:52:36
 
+https://developer.apple.com/documentation/swiftui/imagerenderer
+
+
+
 .../projects/_planning-molab-repos/_course-repos/01-UIRender-playground/UIRender.playground
 01-UIRender-playground/UIRender.playground
 
