@@ -3,6 +3,11 @@ _notes.txt
 # --
 2023-11-15 11:52:36
 
+
+Disabled sandbox to access Downloads folder and web
+
+
+
 https://developer.apple.com/documentation/swiftui/imagerenderer
 
 

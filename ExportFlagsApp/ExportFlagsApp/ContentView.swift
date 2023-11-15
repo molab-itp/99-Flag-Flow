@@ -65,9 +65,6 @@ struct ExportingView: View {
             if let uiImage = model.uiImage {
                 Image(uiImage: uiImage)
             }
-//            if let renderedImage = model.renderedImage {
-//                renderedImage
-//            }
         }
         .padding()
     }

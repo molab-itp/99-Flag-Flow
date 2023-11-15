@@ -14,6 +14,8 @@ class Model : ObservableObject {
     
     @Published var uiImage:UIImage?
 
+    var outDir = createDirectory(dirName: "export_jpeg")
+    
     var index = 0
     var countries = getCountriesFromJSON()
 
@@ -23,13 +25,19 @@ class Model : ObservableObject {
     }
     
     @MainActor func export(_ displayScale: CGFloat) {
+        guard let outDir else {
+            print("export no outDir")
+            return;
+        }
         let content = SVGViewSync(strRef: strRef)
         let renderer = ImageRenderer(content: content)
         // make sure and use the correct display scale for this device
         renderer.scale = displayScale
         uiImage = renderer.uiImage
         if let uiImage {
-            print("Model render uiImage", uiImage)
+            print("Model export uiImage", uiImage)
+            let name = countries[index].alpha3
+            export_jpeg(uiImage: uiImage, quality: 0.5, name: name, outDir: outDir)
         }
         else {
             print("render no uiImage")
