@@ -26,39 +26,37 @@ class Model : ObservableObject {
         strRef = "https:" + countries[index].file_url;
     }
     
-    @MainActor func exportAll() {
+    @MainActor func exportAll() async {
         for findex in 0..<countries.count {
-            export1(findex);
+            await export1(findex);
         }
     }
-    @MainActor func export() {
-        export1(index);
+    @MainActor func export() async {
+        await export1(index);
     }
     
-    @MainActor func export1(_ index:Int) {
+    @MainActor func export1(_ index:Int) async {
         guard let outDir else {
-            print("export no outDir")
+            print("Model export1 no outDir")
             return;
         }
         let strRef = "https:" + countries[index].file_url;
-        print("export1 index", index, strRef)
+        print("Model export1 index", index, strRef)
         let content = SVGViewSync(strRef: strRef)
         let renderer = ImageRenderer(content: content)
         // make sure and use the correct display scale for this device
         renderer.scale = displayScale
         uiImage = renderer.uiImage
         if let uiImage {
-            print("Model export uiImage", uiImage)
+            print("Model export1 uiImage", uiImage)
             let fitem = countries[index]
-//            let name = fitem.alpha3
-//            export_jpeg(uiImage: uiImage, quality: 0.5, name: name, outDir: outDir)
             export_imageset(uiImage: uiImage, quality: jpegQuality, outDir:outDir,
                             alpha3: fitem.alpha3,
                             file_url: fitem.file_url,
                             name: fitem.name )
         }
         else {
-            print("render no uiImage")
+            print("Model export1 no uiImage")
         }
     }
 }

@@ -30,7 +30,9 @@ struct ContentView: View {
                 .cornerRadius(12)
                 .padding(5)
                 Button("Export") {
-                    model.export( );
+                    Task {
+                        await model.export();
+                    }
                 }
                 .foregroundColor(.white)
                 .padding(10)
@@ -38,7 +40,9 @@ struct ContentView: View {
                 .cornerRadius(12)
                 .padding(5)
                 Button("Export All") {
-                    model.exportAll( );
+                    Task {
+                        await model.exportAll( );
+                    }
                 }
                 .foregroundColor(.white)
                 .padding(10)
