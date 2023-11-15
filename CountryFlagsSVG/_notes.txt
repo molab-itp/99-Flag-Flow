@@ -2,6 +2,48 @@ _notes.txt
 
 
 # --
+2023-11-15 09:36:10
+
+Added CountryFlagsSVG/CountryFlagsSVG/Resources/flags-svg
+
+  NSBundle *bundle = [NSBundle mainBundle];
+  NSString *appPath = [bundle bundlePath];
+  NSString *path = [appPath stringByAppendingPathComponent: @"html-src/index-p5js.html"];
+  NSURL   *url = [NSURL fileURLWithPath: path];
+
+https://swdevnotes.com/swift/2020/timing_swift_functions/
+
+import Foundation
+
+func timeFunctionUsingDate(repeats: Int, function: ([Int])->Int, list: [Int]) -> (Double, [Double], [Int]) {
+    /// Calculate the average execution time by executing the passed in function
+    /// with the specified list for the number of repeats specified.
+    /// Calculate the average execution time.
+    /// Uses Date to measure time duration.
+    ///
+    /// Returns a tuple containing the following:
+    ///   - average execution time in milliseconds  
+    ///   - the list of each execution time in milliseconds  
+    ///   - the list of the function results (to ensure these are the same)  
+
+    var funcResults = [Int]()
+    funcResults.reserveCapacity(repeats)
+    var results = [Double]()
+    results.reserveCapacity(repeats)
+    var averageTime = 0.0
+    for _ in 1 ... repeats {
+        let startTime = Date()
+        funcResults.append(function(list))
+        let endTime = Date()
+        let timetaken = DateInterval(start: startTime, end: endTime)
+        results.append(timetaken.duration * 1000.0)
+    }
+    averageTime = results.reduce(0,+) / Double(results.count)
+    return (averageTime, results, funcResults)
+}
+
+
+# --
 2023-11-14 10:56:48
 
 ?? Is this an download rate trottling on wiki server?
