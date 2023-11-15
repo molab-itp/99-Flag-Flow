@@ -22,17 +22,13 @@ struct ContentView: View {
             List {
                 VStack {
                     CountryFlagView(code: "JAM", width: 300, height: 240, data: dataFor(country: "JAM"))
-// CountryFlagView(code: "GUY", width: 300, height: 240, data: dataFor(country: "GUY"))
-// CountryFlagView(code: "USA", width: 300, height: 240, data: dataFor(country: "USA"))
-//                    SVGViewAsync(strRef: strRef, width: 300, height: 240)
-//                    SVGViewAsync(strRef: strRef1)
-//                    SVGViewAsync(strRef: strRef2)
+ CountryFlagView(code: "GUY", width: 300, height: 240, data: dataFor(country: "GUY"))
+ CountryFlagView(code: "USA", width: 300, height: 240, data: dataFor(country: "USA"))
                     Text("Hello, world!")
                 }
                 ForEach(fitems, id: \.alpha3) { fitem in
                     VStack {
                         CountryFlagView(code: fitem.alpha3, width: 300, height: 240, data: dataFor(country: fitem.alpha3))
-//                        SVGViewAsync(strRef: "https:"+fitem.file_url, label: label(fitem: fitem)  )
                         HStack {
                             Text( label(fitem: fitem) + " "+fitem.name)
                             Spacer()
@@ -59,21 +55,15 @@ struct CountryFlagView: View {
     var data: Data?
     var body: some View {
         VStack {
-//            if let data {
-//                SVGView(data: data)
-//                    .frame(width: width, height: height)
-//            }
-            Image("JAM")
-                .resizable()
-                .scaledToFit()
-                .frame(height: height)
+            if let data {
+                SVGView(data: data)
+                    .frame(width: width, height: height)
+            }
+//            Image("JAM")
+//                .resizable()
+//                .scaledToFit()
+//                .frame(height: height)
         }
-//        .onAppear() {
-//            let url = urlFor(country: code);
-//            data = dataFor(url: url)
-//            // print("task data after", data ?? "-none-")
-//            print("ViewCountry url", label, url)
-//        }
     }
 }
 

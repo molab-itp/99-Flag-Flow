@@ -1,0 +1,28 @@
+_notes.txt
+
+# --
+2023-11-15 11:52:36
+
+.../projects/_planning-molab-repos/_course-repos/01-UIRender-playground/UIRender.playground
+01-UIRender-playground/UIRender.playground
+
+let data = image.pngData()
+
+let folder = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
+// Output path for the file in the Documents folder
+let filePath = folder!.appendingPathComponent("10print.png");
+
+let err: ()? = try? data?.write(to: filePath)
+print("err \(String(describing: err))\nfilePath \(filePath)")
+// Terminal command string to copy output file to Downloads folder
+print("cp \(filePath.absoluteString.dropFirst(7)) ~/Downloads/10print.png" )
+
+
+            Button(action: lobbyModel.signOut) {
+                Text("Sign Out")
+                    .foregroundColor(.white)
+                    .padding()
+                    .background(Color(.systemIndigo))
+                    .cornerRadius(12)
+                    .padding(5)
+            }
