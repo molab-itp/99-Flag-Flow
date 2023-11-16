@@ -39,6 +39,8 @@
 
 - from
   - [Meet MusicKit for Swift](https://developer.apple.com/videos/play/wwdc2021/10294/)
+- video
+  - [2023 11 16 UsingMusicKitToIntegrateWithAppleMusic](https://youtu.be/Tu2UkN5aoaA)
 
 ## ViewFlags
 
