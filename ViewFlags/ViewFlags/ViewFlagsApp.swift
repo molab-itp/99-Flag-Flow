@@ -1,9 +1,4 @@
-//
-//  ImageUiDemo_urlsApp.swift
-//  ImageUiDemo-urls
-//
-//  Created by jht2 on 9/14/23.
-//
+// # ViewFlags
 
 import SwiftUI
 
