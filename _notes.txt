@@ -2,6 +2,8 @@ _notes.txt
 
 # --
 
+https://music.apple.com/us/album/streets-of-gold/1479589293?i=1479590128
+
 https://youtu.be/Tu2UkN5aoaA
 2023 11 16 UsingMusicKitToIntegrateWithAppleMusic
 
