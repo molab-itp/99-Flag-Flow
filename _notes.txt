@@ -1,5 +1,11 @@
 _notes.txt
 
+
+# --
+
+https://developer.apple.com/videos/play/wwdc2021/10294/
+
+
 # --
 
 https://chat.openai.com/share/f2b3b313-9913-44d2-a280-be0c7f0894da
