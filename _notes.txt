@@ -1,10 +1,46 @@
 _notes.txt
 
+# --
+
+https://youtu.be/Tu2UkN5aoaA
+2023 11 16 UsingMusicKitToIntegrateWithAppleMusic
+
+https://music.apple.com/us/album/young-americans/1195107061?i=1195108148
+Young Americans
+
+https://music.apple.com/us/album/gimme-shelter/1500642838?i=1500642840
+Gimme Shelter
+
+https://music.apple.com/us/album/bad-to-the-bone/715718385?i=715718679
+
+https://music.apple.com/us/album/i-drink-alone/715718385?i=715718827
+
+https://music.apple.com/us/album/addicted-to-love/1440650966?i=1440651176
+
+https://music.apple.com/us/album/voodoo-child-slight-return/344799413?i=344800179
+
+https://music.apple.com/us/album/hey-joe/344799413?i=344799698
+
+https://music.apple.com/us/album/voodoo-child-slight-return/202738300?i=202739347
+
+https://music.apple.com/us/album/texas-flood/193063151?i=193063260
+
+https://music.apple.com/us/album/church/321076077?i=321076095
+
+https://music.apple.com/us/album/timeless/719341872?i=719341963
+
+https://music.apple.com/us/album/house-people/78911260?i=78911184
+
+https://music.apple.com/us/album/pleasure-control/719341872?i=719341964
+
+https://music.apple.com/us/album/heartbreaker/715718385?i=715718831
+
+https://music.apple.com/us/album/back-in-my-arms-again-promo-version/1449521879?i=1449522099
 
 # --
 
 https://developer.apple.com/videos/play/wwdc2021/10294/
-
+Meet MusicKit for Swift
 
 # --
 
