@@ -38,3 +38,5 @@
 ## ViewFlags
 
 ## ViewFlags-svg
+
+## WebViewSVG
