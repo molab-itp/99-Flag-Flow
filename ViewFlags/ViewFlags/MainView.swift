@@ -15,7 +15,7 @@ enum TabTag {
 struct MainView: View {
     var body: some View {
         TabView() {
-            CountryListView()
+            FlagListView()
                 .tabItem {
                     Label("List", systemImage: "list.bullet")
                 }
