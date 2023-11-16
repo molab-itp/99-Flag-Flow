@@ -11,6 +11,7 @@ let urlRef = "https://github.com/molab-itp/99-Flag-Flow/tree/main/ViewFlags"
     "file_url": "//upload.wikimedia.org/wikipedia/commons/0/0a/Flag_of_Jamaica.svg",
     "license": "Public domain"
   },
+https://en.wikipedia.org/wiki/Jamaica
 
 https://upload.wikimedia.org/wikipedia/commons/0/0a/Flag_of_Jamaica.svg
 
