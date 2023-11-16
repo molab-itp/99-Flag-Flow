@@ -2,6 +2,20 @@ _notes.txt
 
 # --
 
+https://chat.openai.com/share/f2b3b313-9913-44d2-a280-be0c7f0894da
+
+nano ~/.zshrc
+alias ll='ls -l -a'
+alias og='open -a /Applications/GitHub\ Desktop.app'
+source ~/.zshrc
+
+# --
+
+og .
+
+
+# --
+
 let urlRef = "https://github.com/molab-itp/99-Flag-Flow/tree/main/ViewFlags"
 
   {
@@ -59,3 +73,4 @@ og .
 https://www.hackingwithswift.com/quick-start/swiftui/how-to-convert-a-swiftui-view-to-an-image
 
 
+# --
