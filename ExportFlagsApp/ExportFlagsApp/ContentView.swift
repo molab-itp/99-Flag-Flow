@@ -87,8 +87,8 @@ struct ExportingView: View {
 
 struct SVGViewSync: View {
     var strRef: String
-    var width: CGFloat = 300
-    var height: CGFloat = 200
+    var width: CGFloat = 600
+    var height: CGFloat = 400
     var label: String = ""
     var body: some View {
         VStack {

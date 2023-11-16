@@ -1,0 +1,86 @@
+
+# --
+2023-11-14 09:05:50
+
+run on iphone --> crash taking up too much memory
+
+The app “ViewFlags” has been killed by the operating system 
+because it is using too much memory.
+Domain: IDEDebugSessionErrorDomain
+Code: 11
+Recovery Suggestion: Use a memory profiling tool to track the process memory usage.
+User Info: {
+    DVTErrorCreationDateKey = "2023-11-14 14:06:50 +0000";
+    IDERunOperationFailingWorker = DBGLLDBLauncher;
+}
+--
+...
+
+System Information
+
+macOS Version 13.6 (Build 22G120)
+Xcode 15.0 (22265) (Build 15A240d)
+Timestamp: 2023-11-14T09:06:50-05:00
+
+
+
+# --
+2023-11-12 15:17:54
+
+First preview / simulator run very slow
+
+>> Went to details >> Use this file >> on the web
+
+
+https://en.wikipedia.org/wiki/Afghanistan
+  {
+    "url": "/wiki/Afghanistan",
+    "alpha3": "AFG",
+    "name": "Afghanistan",
+    "file_url": "//upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_the_Taliban.svg",
+    "license": "Public domain"
+  },
+https://en.wikipedia.org/wiki/Flag_of_Afghanistan#/media/File:Flag_of_the_Taliban_(Shahada_v2).svg
+https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_the_Taliban.svg
+https://commons.wikimedia.org/wiki/File:Flag_of_the_Taliban_(Shahada_v2).svg
+
+index 94 alpha3 VAT
+index 94 name Holy See
+index 94 file_url //upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_the_Vatican_City.svg
+export no data durl https://upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_the_Vatican_City.svg
+index 186 alpha3 STP
+index 186 name Sao Tome and Principe
+index 186 file_url //upload.wikimedia.org/wikipedia/commons/4/4f/Flag_of_Sao_Tome_and_Principe.svg
+export no data durl https://upload.wikimedia.org/wikipedia/commons/4/4f/Flag_of_Sao_Tome_and_Principe.svg
+outputString.count 52974
+
+
+No image named 'flag-STP' found in asset catalog
+
+No image named 'flag-VAT' found in asset catalog 
+
+https://en.wikipedia.org/wiki/S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe
+https://en.wikipedia.org/wiki/Flag_of_S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe#/media/File:Flag_of_S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe.svg
+
+https://upload.wikimedia.org/wikipedia/commons/0/0a/Flag_of_S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe.svg
+
+  {
+    "url": "/wiki/S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe",
+    "alpha3": "STP",
+    "name": "Sao Tome and Principe",
+    "file_url": "//upload.wikimedia.org/wikipedia/commons/4/4f/Flag_of_Sao_Tome_and_Principe.svg",
+    "license": "Public domain"
+  },
+
+https://en.wikipedia.org/wiki/Vatican_City
+https://en.wikipedia.org/wiki/Flag_of_Vatican_City#/media/File:Flag_of_the_Vatican_City_(2023%E2%80%93present).svg
+
+https://upload.wikimedia.org/wikipedia/commons/3/39/Flag_of_the_Vatican_City_%282023%E2%80%93present%29.svg
+
+  {
+    "url": "/wiki/Vatican_City",
+    "alpha3": "VAT",
+    "name": "Holy See",
+    "file_url": "//upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_the_Vatican_City.svg",
+    "license": "Public domain"
+  },
