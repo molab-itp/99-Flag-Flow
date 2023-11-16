@@ -7,7 +7,7 @@ import UIKit
 
 let urlRef = "https://github.com/molab-itp/99-Flag-Flow/tree/main/ViewFlags"
 
-struct ContentView: View {
+struct CountryListView: View {
     
     @Environment(\.openURL) var openURL
 
@@ -63,8 +63,6 @@ func label(fitem: FlagItem) -> String {
     return "\(sindex) \(fitem.alpha3) \(fitem.name)"
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+#Preview {
+    CountryListView()
 }
