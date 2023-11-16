@@ -4,6 +4,8 @@ _notes.txt
 # --
 2023-11-15 18:55:25
 
+No image named 'flag-NCL' found in asset catalog
+
 jpg assests to fix crash
 
 

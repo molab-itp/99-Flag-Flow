@@ -2,6 +2,39 @@ _notes.txt
 
 # --
 
+  {
+    "url": "/wiki/Jamaica",
+    "alpha3": "JAM",
+    "name": "Jamaica",
+    "file_url": "//upload.wikimedia.org/wikipedia/commons/0/0a/Flag_of_Jamaica.svg",
+    "license": "Public domain"
+  },
+
+https://upload.wikimedia.org/wikipedia/commons/0/0a/Flag_of_Jamaica.svg
+
+  {
+    "url": "/wiki/Bolivia",
+    "alpha3": "BOL",
+    "name": "Bolivia (Plurinational State of)",
+    "file_url": "//upload.wikimedia.org/wikipedia/commons/b/b3/Bandera_de_Bolivia_%28Estado%29.svg",
+    "license": "Public domain"
+  },
+https://upload.wikimedia.org/wikipedia/commons/b/b3/Bandera_de_Bolivia_%28Estado%29.svg
+
+https://upload.wikimedia.org/wikipedia/commons/2/26/Flags_of_New_Caledonia.svg
+
+  {
+    "url": "/wiki/New_Caledonia",
+    "alpha3": "NCL",
+    "name": "New Caledonia",
+    "file_url": "//upload.wikimedia.org/wikipedia/commons/0/0c/Drapeau_de_Nouvelle-Cal%C3%A9donie.png",
+    "license": "Creative Commons Attribution-Share Alike 4.0 International"
+  },
+
+https://en.wikipedia.org/wiki/New_Caledonia
+https://upload.wikimedia.org/wikipedia/commons/0/0c/Drapeau_de_Nouvelle-Cal%C3%A9donie.png
+
+
 4 minute stall during svg to jpg
 
 
