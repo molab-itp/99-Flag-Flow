@@ -2,6 +2,40 @@ _notes.txt
 
 
 # --
+2023-11-16 23:50:28
+
+
+https://www.hackingwithswift.com/quick-start/swiftui/how-to-add-a-search-bar-to-filter-your-data
+
+        NavigationStack {
+
+
+struct GalleryTabView: View {
+
+                LazyVGrid(columns: columns, spacing: Self.itemSpacing) {
+                    ForEach(galleryModel.gallery) { item in
+                        NavigationLink(value: item.id) {
+                            MediaThumbView(item: item, itemSize: Self.itemSize)
+                        }
+                        .buttonStyle(.borderless)
+                    }
+                }
+                .padding([.vertical], Self.itemSpacing)
+
+            .navigationDestination(for: String.self) { id in
+                if id.isEmpty {
+                    GalleryPickerView(galleryKeys: app.settings.galleryKeys,
+                                      selection: $selection)
+                    
+                }
+                else if let item = galleryModel.itemFor(id: id) {
+                    MediaDetailView(item: item,
+                                    priorSelection: app.settings.storeGalleryKey)
+                }
+            }
+
+
+# --
 2023-11-15 18:55:25
 
 No image named 'flag-NCL' found in asset catalog
