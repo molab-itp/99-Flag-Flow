@@ -5,6 +5,7 @@ _notes.txt
 
 https://github.com/dmojdehi/SwiftGlobe
 >> Builds and runs on simulator A-OK!
+>> Apple Watch target for SceneView
 
 # --
 https://github.com/miftahulbagusp/iOS3DModelViewer
