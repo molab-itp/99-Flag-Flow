@@ -8,9 +8,11 @@ import UIKit
 let titleRef = "https://github.com/molab-itp/99-Flag-Flow/tree/main/ViewFlags"
 
 struct FlagListView: View {
-
+    
     @EnvironmentObject var model: Model
     @Environment(\.openURL) var openURL
+    
+    @State private var searchText = ""
     
     var body: some View {
         ZStack {
@@ -22,14 +24,26 @@ struct FlagListView: View {
                      destination: URL(string: titleRef)!)
                 // .font(.largeTitle)
                 .padding()
-                List {
-                    ForEach(model.flagItems, id: \.alpha3) { fitem in
-                        FlagItemRowView(flagItem: fitem)
+                NavigationStack {
+                    List {
+                        ForEach(searchResults, id: \.alpha3) { fitem in
+                            FlagItemRowView(flagItem: fitem)
+                        }
                     }
                 }
             }
         }
+        .searchable(text: $searchText)
     }
+    
+    var searchResults: [FlagItem] {
+        if searchText.isEmpty {
+            return model.flagItems
+        } else {
+            return model.flagItems.filter { $0.name.contains(searchText) }
+        }
+    }
+
 }
 
 struct FlagItemRowView: View {
