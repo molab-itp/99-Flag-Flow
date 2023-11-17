@@ -9,6 +9,7 @@ import SwiftUI
 
 enum TabTag {
     case list
+    case favs
     case detail
 }
 
@@ -23,6 +24,11 @@ struct MainTabView: View {
                     Label("List", systemImage: "list.bullet")
                 }
                 .tag(TabTag.list)
+            FlagFavsView()
+                .tabItem {
+                    Label("Favs", systemImage: "heart.rectangle")
+                }
+                .tag(TabTag.favs)
             FlagWebView()
                 .tabItem {
                     Label("Detail", systemImage: "info.circle")

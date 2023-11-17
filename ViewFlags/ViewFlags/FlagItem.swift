@@ -22,6 +22,7 @@ struct FlagItem : Decodable {
     var file_url: String;
     var license: String;
     var index: Int?
+//    var isFavorite: Bool = false
     
     func wikiUrl() -> URL? {
         URL(string: "https://en.wikipedia.org" + url)
