@@ -41,7 +41,7 @@ struct FlagWebView: View {
             WebView(url: "https://en.wikipedia.org"+fitem.url);
         }
         else {
-            EmptyView()
+            WebView(url: "https://en.wikipedia.org/wiki/Earth");
         }
     }
 }
