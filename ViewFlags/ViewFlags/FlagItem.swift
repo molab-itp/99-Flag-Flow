@@ -22,4 +22,14 @@ struct FlagItem : Decodable {
     var file_url: String;
     var license: String;
     var index: Int?
+    
+    func wikiUrlFor() -> URL? {
+        URL(string: "https://en.wikipedia.org" + url)
+    }
+    
+    func label() -> String {
+        let sindex = index ?? 0
+        return "\(sindex) \(alpha3) \(name)"
+    }
+
 }

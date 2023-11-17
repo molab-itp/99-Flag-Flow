@@ -35,9 +35,9 @@ struct FlagListView: View {
                                     model.selectedTab = .detail
                                 }
                             HStack {
-                                Text(label(fitem: fitem))
+                                Text(fitem.label())
                                 Spacer()
-                                Link(destination: wikiUrlFor(fitem)!) {
+                                Link(destination: fitem.wikiUrlFor()!) {
                                     Image(systemName: "safari")
                                 }
                             }
@@ -47,15 +47,6 @@ struct FlagListView: View {
             }
         }
     }
-}
-
-func wikiUrlFor(_ fitem:FlagItem) -> URL? {
-    URL(string: "https://en.wikipedia.org" + fitem.url)
-}
-
-func label(fitem: FlagItem) -> String {
-    let sindex = fitem.index ?? 0
-    return "\(sindex) \(fitem.alpha3) \(fitem.name)"
 }
 
 #Preview {

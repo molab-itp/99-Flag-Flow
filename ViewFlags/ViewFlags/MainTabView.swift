@@ -32,27 +32,6 @@ struct MainTabView: View {
     }
 }
 
-struct FlagWebView: View {
-    
-    @EnvironmentObject var model: Model
-    
-    var body: some View {
-        VStack {
-            // label(fitem: FlagItem)
-            if let flagItem = model.flagItem {
-                Text(label(fitem: flagItem))
-                    .font(.title)
-            }
-            if let fitem = model.flagItem {
-                WebView(url: "https://en.wikipedia.org"+fitem.url);
-            }
-            else {
-                WebView(url: "https://en.wikipedia.org/wiki/Earth");
-            }
-        }
-    }
-}
-
 #Preview {
     MainTabView()
         .environmentObject(Model())

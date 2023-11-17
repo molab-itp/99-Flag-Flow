@@ -13,6 +13,7 @@
 		AB4E84832B03B58D00582923 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AB4E84822B03B58D00582923 /* README.md */; };
 		AB4E84872B03DFB500582923 /* _notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = AB4E84862B03DFB500582923 /* _notes.txt */; };
 		ABCA885C2B07219700F09268 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCA885B2B07219700F09268 /* Model.swift */; };
+		ABCA885E2B077E6700F09268 /* FlagWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCA885D2B077E6700F09268 /* FlagWebView.swift */; };
 		ABD9F5562B05AB4500020D0B /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD9F5552B05AB4500020D0B /* WebView.swift */; };
 		ABE29FCC2AB3A03D0072F7C2 /* ViewFlagsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE29FCB2AB3A03D0072F7C2 /* ViewFlagsApp.swift */; };
 		ABE29FD02AB3A03E0072F7C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABE29FCF2AB3A03E0072F7C2 /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 		AB4E84822B03B58D00582923 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AB4E84862B03DFB500582923 /* _notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = _notes.txt; sourceTree = "<group>"; };
 		ABCA885B2B07219700F09268 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		ABCA885D2B077E6700F09268 /* FlagWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagWebView.swift; sourceTree = "<group>"; };
 		ABD9F5552B05AB4500020D0B /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		ABE29FC82AB3A03D0072F7C2 /* ViewFlags.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewFlags.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE29FCB2AB3A03D0072F7C2 /* ViewFlagsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFlagsApp.swift; sourceTree = "<group>"; };
@@ -73,10 +75,11 @@
 			children = (
 				ABE29FCB2AB3A03D0072F7C2 /* ViewFlagsApp.swift */,
 				ABF2F1CD2B05A83200696485 /* MainTabView.swift */,
+				ABCA885D2B077E6700F09268 /* FlagWebView.swift */,
 				ABE29FD92AB3A0860072F7C2 /* FlagListView.swift */,
 				ABCA885B2B07219700F09268 /* Model.swift */,
-				ABD9F5552B05AB4500020D0B /* WebView.swift */,
 				AB32E6442B016386009C8E7C /* FlagItem.swift */,
+				ABD9F5552B05AB4500020D0B /* WebView.swift */,
 				AB32E6422B01632F009C8E7C /* Bundle-decode.swift */,
 				ABE29FCF2AB3A03E0072F7C2 /* Assets.xcassets */,
 				ABE29FE52AB3A1E70072F7C2 /* Resources */,
@@ -183,6 +186,7 @@
 				ABD9F5562B05AB4500020D0B /* WebView.swift in Sources */,
 				ABF2F1CE2B05A83200696485 /* MainTabView.swift in Sources */,
 				ABE29FCC2AB3A03D0072F7C2 /* ViewFlagsApp.swift in Sources */,
+				ABCA885E2B077E6700F09268 /* FlagWebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
