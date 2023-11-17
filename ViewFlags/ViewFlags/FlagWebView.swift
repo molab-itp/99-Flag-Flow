@@ -22,9 +22,7 @@ struct FlagWebView: View {
                         .resizable()
                         .frame(width: 200, height: 100)
                 }
-            }
-            if let fitem = model.flagItem {
-                WebView(url: "https://en.wikipedia.org"+fitem.url);
+                WebView(url: "https://en.wikipedia.org"+flagItem.url);
             }
             else {
                 WebView(url: "https://en.wikipedia.org/wiki/Earth");

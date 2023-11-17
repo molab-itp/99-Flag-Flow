@@ -75,8 +75,8 @@
 			children = (
 				ABE29FCB2AB3A03D0072F7C2 /* ViewFlagsApp.swift */,
 				ABF2F1CD2B05A83200696485 /* MainTabView.swift */,
-				ABCA885D2B077E6700F09268 /* FlagWebView.swift */,
 				ABE29FD92AB3A0860072F7C2 /* FlagListView.swift */,
+				ABCA885D2B077E6700F09268 /* FlagWebView.swift */,
 				ABCA885B2B07219700F09268 /* Model.swift */,
 				AB32E6442B016386009C8E7C /* FlagItem.swift */,
 				ABD9F5552B05AB4500020D0B /* WebView.swift */,

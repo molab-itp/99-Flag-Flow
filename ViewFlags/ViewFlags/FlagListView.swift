@@ -12,7 +12,6 @@ struct FlagListView: View {
     @EnvironmentObject var model: Model
     @Environment(\.openURL) var openURL
     
-    
     var body: some View {
         ZStack {
             Rectangle()
@@ -25,24 +24,32 @@ struct FlagListView: View {
                 .padding()
                 List {
                     ForEach(model.flagItems, id: \.alpha3) { fitem in
-                        VStack {
-                            Image("flag-"+fitem.alpha3)
-                                .resizable()
-                                .frame(width: 200, height: 100)
-                                .onTapGesture {
-                                    print("tapped", fitem)
-                                    model.flagItem = fitem
-                                    model.selectedTab = .detail
-                                }
-                            HStack {
-                                Text(fitem.label())
-                                Spacer()
-                                Link(destination: fitem.wikiUrl()!) {
-                                    Image(systemName: "safari")
-                                }
-                            }
-                        }
+                        FlagItemRowView(flagItem: fitem)
                     }
+                }
+            }
+        }
+    }
+}
+
+struct FlagItemRowView: View {
+    @EnvironmentObject var model: Model
+    var flagItem:FlagItem
+    var body: some View {
+        VStack {
+            Image("flag-"+flagItem.alpha3)
+                .resizable()
+                .frame(width: 200, height: 100)
+                .onTapGesture {
+                    print("tapped", flagItem)
+                    model.flagItem = flagItem
+                    model.selectedTab = .detail
+                }
+            HStack {
+                Text(flagItem.label())
+                Spacer()
+                Link(destination: flagItem.wikiUrl()!) {
+                    Image(systemName: "safari")
                 }
             }
         }
