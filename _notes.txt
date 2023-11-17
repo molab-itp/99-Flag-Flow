@@ -2,7 +2,8 @@ _notes.txt
 
 # --
 https://github.com/miftahulbagusp/iOS3DModelViewer
-
+https://github.com/jht9629-nyu/iOS3DModelViewer.git
+  jht-swiftui branch
 
 # --
 
