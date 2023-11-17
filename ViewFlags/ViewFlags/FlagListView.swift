@@ -37,7 +37,7 @@ struct FlagListView: View {
                             HStack {
                                 Text(fitem.label())
                                 Spacer()
-                                Link(destination: fitem.wikiUrlFor()!) {
+                                Link(destination: fitem.wikiUrl()!) {
                                     Image(systemName: "safari")
                                 }
                             }
@@ -51,5 +51,5 @@ struct FlagListView: View {
 
 #Preview {
     FlagListView()
-        .environmentObject(Model())
+        .environmentObject(Model.example)
 }

@@ -34,7 +34,7 @@ struct MainTabView: View {
 
 #Preview {
     MainTabView()
-        .environmentObject(Model())
+        .environmentObject(Model.example)
 }
 
 // "https://en.wikipedia.org/wiki/Jamaica"

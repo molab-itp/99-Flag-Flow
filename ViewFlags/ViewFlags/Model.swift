@@ -12,6 +12,12 @@ class Model: ObservableObject
     @Published var selectedTab = TabTag.list
     @Published var flagItem: FlagItem?
     @Published var flagItems = getCountriesFromJSON()
+
+    static var example:Model {
+        let model = Model();
+        model.flagItem = model.flagItems[107] // JAM
+        return model
+    }
 }
 
 

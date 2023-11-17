@@ -13,7 +13,6 @@ struct FlagWebView: View {
     
     var body: some View {
         VStack {
-            // label(fitem: FlagItem)
             if let flagItem = model.flagItem {
                 VStack {
                     Text(flagItem.label())
@@ -36,5 +35,5 @@ struct FlagWebView: View {
 
 #Preview {
     FlagWebView()
-        .environmentObject(Model())
+        .environmentObject(Model.example)
 }

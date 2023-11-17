@@ -23,7 +23,7 @@ struct FlagItem : Decodable {
     var license: String;
     var index: Int?
     
-    func wikiUrlFor() -> URL? {
+    func wikiUrl() -> URL? {
         URL(string: "https://en.wikipedia.org" + url)
     }
     
@@ -31,5 +31,12 @@ struct FlagItem : Decodable {
         let sindex = index ?? 0
         return "\(sindex) \(alpha3) \(name)"
     }
-
+    
 }
+
+let FlagItem_Sample = FlagItem(
+    url: "/wiki/Jamaica",
+    alpha3: "JAM", 
+    name: "Jamaica", 
+    file_url: "//upload.wikimedia.org/wikipedia/commons/0/0a/Flag_of_Jamaica.svg", 
+    license: "Public domain")
