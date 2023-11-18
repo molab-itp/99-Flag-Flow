@@ -15,6 +15,25 @@
 		ABCA885C2B07219700F09268 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCA885B2B07219700F09268 /* Model.swift */; };
 		ABCA885E2B077E6700F09268 /* FlagWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCA885D2B077E6700F09268 /* FlagWebView.swift */; };
 		ABCA88602B07D0E300F09268 /* FlagMarkedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCA885F2B07D0E300F09268 /* FlagMarkedView.swift */; };
+		ABCA88912B08BA5000F09268 /* SwiftGlobe.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCA88622B08BA5000F09268 /* SwiftGlobe.swift */; };
+		ABCA88922B08BA5000F09268 /* GlowingMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCA88632B08BA5000F09268 /* GlowingMarker.swift */; };
+		ABCA88932B08BA5000F09268 /* yellowGlow-32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = ABCA88662B08BA5000F09268 /* yellowGlow-32x32.png */; };
+		ABCA88942B08BA5000F09268 /* whiteGlow-32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = ABCA88672B08BA5000F09268 /* whiteGlow-32x32.png */; };
+		ABCA88AC2B08BA5000F09268 /* eso0932a_left.png in Resources */ = {isa = PBXBuildFile; fileRef = ABCA88822B08BA5000F09268 /* eso0932a_left.png */; };
+		ABCA88AD2B08BA5000F09268 /* world-large.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCA88832B08BA5000F09268 /* world-large.jpg */; };
+		ABCA88AE2B08BA5000F09268 /* earth-specular.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCA88842B08BA5000F09268 /* earth-specular.jpg */; };
+		ABCA88AF2B08BA5000F09268 /* metalness.png in Resources */ = {isa = PBXBuildFile; fileRef = ABCA88852B08BA5000F09268 /* metalness.png */; };
+		ABCA88B02B08BA5000F09268 /* earth-bump.png in Resources */ = {isa = PBXBuildFile; fileRef = ABCA88862B08BA5000F09268 /* earth-bump.png */; };
+		ABCA88B12B08BA5000F09268 /* eso0932a_back.png in Resources */ = {isa = PBXBuildFile; fileRef = ABCA88872B08BA5000F09268 /* eso0932a_back.png */; };
+		ABCA88B22B08BA5000F09268 /* eso0932a_right.png in Resources */ = {isa = PBXBuildFile; fileRef = ABCA88882B08BA5000F09268 /* eso0932a_right.png */; };
+		ABCA88B32B08BA5000F09268 /* eso0932a_front.png in Resources */ = {isa = PBXBuildFile; fileRef = ABCA88892B08BA5000F09268 /* eso0932a_front.png */; };
+		ABCA88B42B08BA5000F09268 /* world-ultra.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCA888A2B08BA5000F09268 /* world-ultra.jpg */; };
+		ABCA88B52B08BA5000F09268 /* earth-emissive.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCA888B2B08BA5000F09268 /* earth-emissive.jpg */; };
+		ABCA88B62B08BA5000F09268 /* eso0932a_top.png in Resources */ = {isa = PBXBuildFile; fileRef = ABCA888C2B08BA5000F09268 /* eso0932a_top.png */; };
+		ABCA88B72B08BA5000F09268 /* roughness.png in Resources */ = {isa = PBXBuildFile; fileRef = ABCA888D2B08BA5000F09268 /* roughness.png */; };
+		ABCA88B82B08BA5000F09268 /* eso0932a_bottom.png in Resources */ = {isa = PBXBuildFile; fileRef = ABCA888E2B08BA5000F09268 /* eso0932a_bottom.png */; };
+		ABCA88B92B08BA5000F09268 /* SwiftGlobe+DemoMarkers.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCA888F2B08BA5000F09268 /* SwiftGlobe+DemoMarkers.swift */; };
+		ABCA88BA2B08BA5000F09268 /* SwiftGlobeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCA88902B08BA5000F09268 /* SwiftGlobeView.swift */; };
 		ABD9F5562B05AB4500020D0B /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD9F5552B05AB4500020D0B /* WebView.swift */; };
 		ABE29FCC2AB3A03D0072F7C2 /* EarthFlagsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE29FCB2AB3A03D0072F7C2 /* EarthFlagsApp.swift */; };
 		ABE29FD02AB3A03E0072F7C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABE29FCF2AB3A03E0072F7C2 /* Assets.xcassets */; };
@@ -33,6 +52,25 @@
 		ABCA885B2B07219700F09268 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		ABCA885D2B077E6700F09268 /* FlagWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagWebView.swift; sourceTree = "<group>"; };
 		ABCA885F2B07D0E300F09268 /* FlagMarkedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagMarkedView.swift; sourceTree = "<group>"; };
+		ABCA88622B08BA5000F09268 /* SwiftGlobe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftGlobe.swift; sourceTree = "<group>"; };
+		ABCA88632B08BA5000F09268 /* GlowingMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlowingMarker.swift; sourceTree = "<group>"; };
+		ABCA88662B08BA5000F09268 /* yellowGlow-32x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yellowGlow-32x32.png"; sourceTree = "<group>"; };
+		ABCA88672B08BA5000F09268 /* whiteGlow-32x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whiteGlow-32x32.png"; sourceTree = "<group>"; };
+		ABCA88822B08BA5000F09268 /* eso0932a_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eso0932a_left.png; sourceTree = "<group>"; };
+		ABCA88832B08BA5000F09268 /* world-large.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "world-large.jpg"; sourceTree = "<group>"; };
+		ABCA88842B08BA5000F09268 /* earth-specular.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "earth-specular.jpg"; sourceTree = "<group>"; };
+		ABCA88852B08BA5000F09268 /* metalness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = metalness.png; sourceTree = "<group>"; };
+		ABCA88862B08BA5000F09268 /* earth-bump.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "earth-bump.png"; sourceTree = "<group>"; };
+		ABCA88872B08BA5000F09268 /* eso0932a_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eso0932a_back.png; sourceTree = "<group>"; };
+		ABCA88882B08BA5000F09268 /* eso0932a_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eso0932a_right.png; sourceTree = "<group>"; };
+		ABCA88892B08BA5000F09268 /* eso0932a_front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eso0932a_front.png; sourceTree = "<group>"; };
+		ABCA888A2B08BA5000F09268 /* world-ultra.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "world-ultra.jpg"; sourceTree = "<group>"; };
+		ABCA888B2B08BA5000F09268 /* earth-emissive.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "earth-emissive.jpg"; sourceTree = "<group>"; };
+		ABCA888C2B08BA5000F09268 /* eso0932a_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eso0932a_top.png; sourceTree = "<group>"; };
+		ABCA888D2B08BA5000F09268 /* roughness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = roughness.png; sourceTree = "<group>"; };
+		ABCA888E2B08BA5000F09268 /* eso0932a_bottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eso0932a_bottom.png; sourceTree = "<group>"; };
+		ABCA888F2B08BA5000F09268 /* SwiftGlobe+DemoMarkers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwiftGlobe+DemoMarkers.swift"; sourceTree = "<group>"; };
+		ABCA88902B08BA5000F09268 /* SwiftGlobeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftGlobeView.swift; sourceTree = "<group>"; };
 		ABD9F5552B05AB4500020D0B /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		ABE29FC82AB3A03D0072F7C2 /* EarthFlags.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EarthFlags.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE29FCB2AB3A03D0072F7C2 /* EarthFlagsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthFlagsApp.swift; sourceTree = "<group>"; };
@@ -54,6 +92,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ABCA88612B08BA5000F09268 /* SwiftGlobe */ = {
+			isa = PBXGroup;
+			children = (
+				ABCA88622B08BA5000F09268 /* SwiftGlobe.swift */,
+				ABCA88632B08BA5000F09268 /* GlowingMarker.swift */,
+				ABCA88642B08BA5000F09268 /* Resources */,
+				ABCA888F2B08BA5000F09268 /* SwiftGlobe+DemoMarkers.swift */,
+				ABCA88902B08BA5000F09268 /* SwiftGlobeView.swift */,
+			);
+			path = SwiftGlobe;
+			sourceTree = "<group>";
+		};
+		ABCA88642B08BA5000F09268 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ABCA88652B08BA5000F09268 /* images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		ABCA88652B08BA5000F09268 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				ABCA88662B08BA5000F09268 /* yellowGlow-32x32.png */,
+				ABCA88672B08BA5000F09268 /* whiteGlow-32x32.png */,
+				ABCA88812B08BA5000F09268 /* earth */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		ABCA88812B08BA5000F09268 /* earth */ = {
+			isa = PBXGroup;
+			children = (
+				ABCA88822B08BA5000F09268 /* eso0932a_left.png */,
+				ABCA88832B08BA5000F09268 /* world-large.jpg */,
+				ABCA88842B08BA5000F09268 /* earth-specular.jpg */,
+				ABCA88852B08BA5000F09268 /* metalness.png */,
+				ABCA88862B08BA5000F09268 /* earth-bump.png */,
+				ABCA88872B08BA5000F09268 /* eso0932a_back.png */,
+				ABCA88882B08BA5000F09268 /* eso0932a_right.png */,
+				ABCA88892B08BA5000F09268 /* eso0932a_front.png */,
+				ABCA888A2B08BA5000F09268 /* world-ultra.jpg */,
+				ABCA888B2B08BA5000F09268 /* earth-emissive.jpg */,
+				ABCA888C2B08BA5000F09268 /* eso0932a_top.png */,
+				ABCA888D2B08BA5000F09268 /* roughness.png */,
+				ABCA888E2B08BA5000F09268 /* eso0932a_bottom.png */,
+			);
+			path = earth;
+			sourceTree = "<group>";
+		};
 		ABE29FBF2AB3A03D0072F7C2 = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +172,7 @@
 				AB32E6442B016386009C8E7C /* FlagItem.swift */,
 				ABD9F5552B05AB4500020D0B /* WebView.swift */,
 				AB32E6422B01632F009C8E7C /* Bundle-decode.swift */,
+				ABCA88612B08BA5000F09268 /* SwiftGlobe */,
 				ABE29FCF2AB3A03E0072F7C2 /* Assets.xcassets */,
 				ABE29FE52AB3A1E70072F7C2 /* Resources */,
 				ABE29FD12AB3A03E0072F7C2 /* Preview Content */,
@@ -166,12 +255,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABCA88B42B08BA5000F09268 /* world-ultra.jpg in Resources */,
+				ABCA88AC2B08BA5000F09268 /* eso0932a_left.png in Resources */,
+				ABCA88B62B08BA5000F09268 /* eso0932a_top.png in Resources */,
 				ABE29FE72AB3A22E0072F7C2 /* jht.jpg in Resources */,
 				ABE29FD32AB3A03E0072F7C2 /* Preview Assets.xcassets in Resources */,
+				ABCA88AE2B08BA5000F09268 /* earth-specular.jpg in Resources */,
+				ABCA88932B08BA5000F09268 /* yellowGlow-32x32.png in Resources */,
 				AB4E84872B03DFB500582923 /* _notes.txt in Resources */,
+				ABCA88B82B08BA5000F09268 /* eso0932a_bottom.png in Resources */,
+				ABCA88B02B08BA5000F09268 /* earth-bump.png in Resources */,
+				ABCA88AF2B08BA5000F09268 /* metalness.png in Resources */,
+				ABCA88B72B08BA5000F09268 /* roughness.png in Resources */,
 				AB4E84832B03B58D00582923 /* README.md in Resources */,
 				AB32E6412B014EA5009C8E7C /* countries.json in Resources */,
+				ABCA88B12B08BA5000F09268 /* eso0932a_back.png in Resources */,
+				ABCA88B32B08BA5000F09268 /* eso0932a_front.png in Resources */,
+				ABCA88B22B08BA5000F09268 /* eso0932a_right.png in Resources */,
 				ABE29FD02AB3A03E0072F7C2 /* Assets.xcassets in Resources */,
+				ABCA88AD2B08BA5000F09268 /* world-large.jpg in Resources */,
+				ABCA88B52B08BA5000F09268 /* earth-emissive.jpg in Resources */,
+				ABCA88942B08BA5000F09268 /* whiteGlow-32x32.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,7 +293,11 @@
 				AB32E6432B01632F009C8E7C /* Bundle-decode.swift in Sources */,
 				ABD9F5562B05AB4500020D0B /* WebView.swift in Sources */,
 				ABF2F1CE2B05A83200696485 /* MainTabView.swift in Sources */,
+				ABCA88912B08BA5000F09268 /* SwiftGlobe.swift in Sources */,
+				ABCA88922B08BA5000F09268 /* GlowingMarker.swift in Sources */,
 				ABE29FCC2AB3A03D0072F7C2 /* EarthFlagsApp.swift in Sources */,
+				ABCA88B92B08BA5000F09268 /* SwiftGlobe+DemoMarkers.swift in Sources */,
+				ABCA88BA2B08BA5000F09268 /* SwiftGlobeView.swift in Sources */,
 				ABCA885E2B077E6700F09268 /* FlagWebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
