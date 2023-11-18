@@ -135,6 +135,6 @@ let locationFont = Font
     .monospaced()
 
 #Preview {
-    MapTabView(locs: [])
+    MapTabView(locs: Model.example.mapRegion.locs)
         .environmentObject(Model.example)
 }
