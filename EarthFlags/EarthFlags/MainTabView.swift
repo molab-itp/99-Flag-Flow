@@ -35,7 +35,8 @@ struct MainTabView: View {
                     Label("Detail", systemImage: "info.circle")
                 }
                 .tag(TabTag.detail)
-            SwiftGlobeView()
+//            SwiftGlobeView()
+            SwiftGlobeBridgeView()
                 .tabItem {
                     Label("Earth", systemImage: "globe")
                 }

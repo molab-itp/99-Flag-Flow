@@ -18,10 +18,11 @@ struct SwiftGlobeView: View {
             SceneView(scene: swiftGlobe.scene)
                 .onAppear() {
                     print("SwiftGlobeView onAppear")
-//                    swiftGlobe.setupOnAppear(enableAutomaticSpin: false)
-                    swiftGlobe.setupOnAppear(enableAutomaticSpin: true)
+                    swiftGlobe.setupOnAppear(enableAutomaticSpin: false)
+//                    swiftGlobe.setupOnAppear(enableAutomaticSpin: true)
 //                    swiftGlobe.zoomFov = 26.0
                     swiftGlobe.addDemoMarkers()
+                    swiftGlobe.focusOnLatLon( 40.630566, -73.922013)
                 }
                  // allow finger swipes to zoom in & rotate the globe
                 .gesture(DragGesture(minimumDistance: 0.0, coordinateSpace: .local)

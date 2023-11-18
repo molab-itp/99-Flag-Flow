@@ -10,6 +10,9 @@
 		AB32E6412B014EA5009C8E7C /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = AB32E6402B014EA5009C8E7C /* countries.json */; };
 		AB32E6432B01632F009C8E7C /* Bundle-decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB32E6422B01632F009C8E7C /* Bundle-decode.swift */; };
 		AB32E6452B016386009C8E7C /* FlagItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB32E6442B016386009C8E7C /* FlagItem.swift */; };
+		AB3DC89D2B0903F000F0E631 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3DC89B2B0903F000F0E631 /* ViewController.swift */; };
+		AB3DC89E2B0903F000F0E631 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB3DC89C2B0903F000F0E631 /* Main.storyboard */; };
+		AB3DC8A02B0904DA00F0E631 /* SwiftGlobeBridgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3DC89F2B0904DA00F0E631 /* SwiftGlobeBridgeView.swift */; };
 		AB4E84832B03B58D00582923 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AB4E84822B03B58D00582923 /* README.md */; };
 		AB4E84872B03DFB500582923 /* _notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = AB4E84862B03DFB500582923 /* _notes.txt */; };
 		ABCA885C2B07219700F09268 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCA885B2B07219700F09268 /* Model.swift */; };
@@ -47,6 +50,9 @@
 		AB32E6402B014EA5009C8E7C /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
 		AB32E6422B01632F009C8E7C /* Bundle-decode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle-decode.swift"; sourceTree = "<group>"; };
 		AB32E6442B016386009C8E7C /* FlagItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagItem.swift; sourceTree = "<group>"; };
+		AB3DC89B2B0903F000F0E631 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AB3DC89C2B0903F000F0E631 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		AB3DC89F2B0904DA00F0E631 /* SwiftGlobeBridgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftGlobeBridgeView.swift; sourceTree = "<group>"; };
 		AB4E84822B03B58D00582923 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AB4E84862B03DFB500582923 /* _notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = _notes.txt; sourceTree = "<group>"; };
 		ABCA885B2B07219700F09268 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
@@ -92,6 +98,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB3DC89A2B0903F000F0E631 /* SwiftGlobe-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				AB3DC89F2B0904DA00F0E631 /* SwiftGlobeBridgeView.swift */,
+				AB3DC89B2B0903F000F0E631 /* ViewController.swift */,
+				AB3DC89C2B0903F000F0E631 /* Main.storyboard */,
+			);
+			path = "SwiftGlobe-iOS";
+			sourceTree = "<group>";
+		};
 		ABCA88612B08BA5000F09268 /* SwiftGlobe */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +189,7 @@
 				ABD9F5552B05AB4500020D0B /* WebView.swift */,
 				AB32E6422B01632F009C8E7C /* Bundle-decode.swift */,
 				ABCA88612B08BA5000F09268 /* SwiftGlobe */,
+				AB3DC89A2B0903F000F0E631 /* SwiftGlobe-iOS */,
 				ABE29FCF2AB3A03E0072F7C2 /* Assets.xcassets */,
 				ABE29FE52AB3A1E70072F7C2 /* Resources */,
 				ABE29FD12AB3A03E0072F7C2 /* Preview Content */,
@@ -260,6 +277,7 @@
 				ABE29FE72AB3A22E0072F7C2 /* jht.jpg in Resources */,
 				ABE04E552B08C75600D46152 /* earth-specular.jpg in Resources */,
 				ABE04E5D2B08C75600D46152 /* eso0932a_top.png in Resources */,
+				AB3DC89E2B0903F000F0E631 /* Main.storyboard in Resources */,
 				ABE04E5A2B08C75600D46152 /* eso0932a_front.png in Resources */,
 				ABE04E532B08C75600D46152 /* eso0932a_left.png in Resources */,
 				ABE29FD32AB3A03E0072F7C2 /* Preview Assets.xcassets in Resources */,
@@ -290,11 +308,13 @@
 				ABCA88602B07D0E300F09268 /* FlagMarkedView.swift in Sources */,
 				ABE29FDE2AB3A0860072F7C2 /* FlagListView.swift in Sources */,
 				AB32E6452B016386009C8E7C /* FlagItem.swift in Sources */,
+				AB3DC89D2B0903F000F0E631 /* ViewController.swift in Sources */,
 				AB32E6432B01632F009C8E7C /* Bundle-decode.swift in Sources */,
 				ABD9F5562B05AB4500020D0B /* WebView.swift in Sources */,
 				ABF2F1CE2B05A83200696485 /* MainTabView.swift in Sources */,
 				ABCA88912B08BA5000F09268 /* SwiftGlobe.swift in Sources */,
 				ABCA88922B08BA5000F09268 /* GlowingMarker.swift in Sources */,
+				AB3DC8A02B0904DA00F0E631 /* SwiftGlobeBridgeView.swift in Sources */,
 				ABE29FCC2AB3A03D0072F7C2 /* EarthFlagsApp.swift in Sources */,
 				ABCA88B92B08BA5000F09268 /* SwiftGlobe+DemoMarkers.swift in Sources */,
 				ABCA88BA2B08BA5000F09268 /* SwiftGlobeView.swift in Sources */,

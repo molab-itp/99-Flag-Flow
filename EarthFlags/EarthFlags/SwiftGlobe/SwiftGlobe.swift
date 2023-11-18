@@ -25,7 +25,9 @@ let kCameraAltitude = Float(2.2)
 let kGlowPointAltitude = Float(kGlobeRadius * 1.001)
 let kDistanceToTheSun = Float(200)
 
-let kDefaultCameraFov = CGFloat(60.0)
+//let kDefaultCameraFov = CGFloat(60.0)
+let kDefaultCameraFov = CGFloat(38.0)
+
 let kGlowPointWidth = CGFloat(0.025)
 let kMinLatLonPerUnity = -0.1
 let kMaxLatLonPerUnity = 1.1
@@ -242,6 +244,7 @@ class SwiftGlobe {
         finishNonARSetup(enableAutomaticSpin)
     }
     
+    // !!@ Not used
     internal func setupForSceneView(_ v: SceneView, forARKit : Bool, enableAutomaticSpin: Bool) -> (SCNScene, SCNNode) {
         
         return (scene, cameraNode)
@@ -257,51 +260,51 @@ class SwiftGlobe {
         
     }
 //#else
-//    internal func setupInSceneView(_ v: SCNView, forARKit : Bool, enableAutomaticSpin: Bool) {
-//                
-//        print("SwiftGlobe setupInSceneView")
-//        
-//        v.autoenablesDefaultLighting = false
-//        v.scene = self.scene
-//
-//        //v.showsStatistics = true
-//        
-//        self.gestureHost = v
-//        
-//        if forARKit {
-//            v.allowsCameraControl = true
-//            
-//            skybox.removeFromParentNode()
-//
-//        } else {
-//            finishNonARSetup(enableAutomaticSpin)
-//            
-//            v.pointOfView = cameraNode
-//
-//            v.allowsCameraControl = false
-//            
-//            #if os(iOS)
-//                let pan = UIPanGestureRecognizer(target: self, action:#selector(SwiftGlobe.onPanGesture(pan:) ) )
-//                let pinch = UIPinchGestureRecognizer(target: self, action: #selector(SwiftGlobe.onPinchGesture(pinch:) ) )
-//                v.addGestureRecognizer(pan)
-//                v.addGestureRecognizer(pinch)
-//            #elseif os(tvOS)
-//                
-//                NotificationCenter.default.addObserver(self, selector: #selector( SwiftGlobe.handleControllerDidConnectNotification(notification:) ), name: NSNotification.Name.GCControllerDidConnect, object: nil)
-//            #elseif os(watchOS)
-//                let pan = WKPanGestureRegognizer()
-//            
-//            #elseif os(OSX)
-//                let pan = NSPanGestureRecognizer(target: self, action:#selector(SwiftGlobe.onPanGesture(pan:) ) )
-//                let pinch = NSMagnificationGestureRecognizer(target: self, action: #selector(SwiftGlobe.onPinchGesture(pinch:) ) )
-//                v.addGestureRecognizer(pan)
-//                v.addGestureRecognizer(pinch)
-//            #endif
-//        }
-//
-//
-//    }
-//    
+    internal func setupInSceneView(_ v: SCNView, forARKit : Bool, enableAutomaticSpin: Bool) {
+                
+        print("SwiftGlobe setupInSceneView")
+        
+        v.autoenablesDefaultLighting = false
+        v.scene = self.scene
+
+        //v.showsStatistics = true
+        
+        self.gestureHost = v
+        
+        if forARKit {
+            v.allowsCameraControl = true
+            
+            skybox.removeFromParentNode()
+
+        } else {
+            finishNonARSetup(enableAutomaticSpin)
+            
+            v.pointOfView = cameraNode
+
+            v.allowsCameraControl = false
+            
+            #if os(iOS)
+                let pan = UIPanGestureRecognizer(target: self, action:#selector(SwiftGlobe.onPanGesture(pan:) ) )
+                let pinch = UIPinchGestureRecognizer(target: self, action: #selector(SwiftGlobe.onPinchGesture(pinch:) ) )
+                v.addGestureRecognizer(pan)
+                v.addGestureRecognizer(pinch)
+            #elseif os(tvOS)
+                
+                NotificationCenter.default.addObserver(self, selector: #selector( SwiftGlobe.handleControllerDidConnectNotification(notification:) ), name: NSNotification.Name.GCControllerDidConnect, object: nil)
+            #elseif os(watchOS)
+                let pan = WKPanGestureRegognizer()
+            
+            #elseif os(OSX)
+                let pan = NSPanGestureRecognizer(target: self, action:#selector(SwiftGlobe.onPanGesture(pan:) ) )
+                let pinch = NSMagnificationGestureRecognizer(target: self, action: #selector(SwiftGlobe.onPinchGesture(pinch:) ) )
+                v.addGestureRecognizer(pan)
+                v.addGestureRecognizer(pinch)
+            #endif
+        }
+
+
+    }
+    
 //#endif
     
     private func finishNonARSetup(_ enableAutomaticSpin: Bool) {
