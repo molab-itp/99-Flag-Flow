@@ -12,6 +12,7 @@ enum TabTag {
     case marks
     case detail
     case earth
+    case map
 }
 
 struct MainTabView: View {
@@ -35,7 +36,11 @@ struct MainTabView: View {
                     Label("Detail", systemImage: "info.circle")
                 }
                 .tag(TabTag.detail)
-//            SwiftGlobeView()
+            MapTabView(locs: model.mapRegion.locs)
+                .tabItem {
+                    Label("Map", systemImage: "map")
+                }
+                .tag(TabTag.map)
             SwiftGlobeBridgeView()
                 .tabItem {
                     Label("Earth", systemImage: "globe")

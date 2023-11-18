@@ -15,6 +15,8 @@ class Model: ObservableObject
 
     @Published var settings:Settings = Model.loadSettings()
 
+    @Published var mapRegion = MapRegionModel()
+
     static var example:Model {
         let model = Model();
         model.flagItem = model.flagItems[107] // JAM
