@@ -18,8 +18,8 @@ struct SwiftGlobeView: View {
             SceneView(scene: swiftGlobe.scene)
                 .onAppear() {
                     print("SwiftGlobeView onAppear")
-                    swiftGlobe.setupOnAppear(enableAutomaticSpin: false)
-//                    swiftGlobe.setupOnAppear(enableAutomaticSpin: true)
+//                    swiftGlobe.setupOnAppear(enableAutomaticSpin: false)
+                    swiftGlobe.setupOnAppear(enableAutomaticSpin: true)
 //                    swiftGlobe.zoomFov = 26.0
                     swiftGlobe.addDemoMarkers()
                 }
