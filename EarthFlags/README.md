@@ -1,4 +1,4 @@
-# ViewFlags
+# EarthFlags
 
 - view flags stored as jpg in Assets.xcassets
 

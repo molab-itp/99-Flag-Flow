@@ -20,14 +20,16 @@ struct MapRegionModel {
     )
     var locIndex = 0
     var regionLabel = ""
-    var locs: [Location] = [Location(id: "id", latitude: 40.630566, longitude: -73.922013, label: "USA")]
+    var locs: [Location] = [Location()]
 }
 
 struct Location: Identifiable, Codable, Equatable {
-    var id: String
-    let latitude: Double
-    let longitude: Double
-    let label: String
+    var id: String = "id"
+    var latitude: Double = 40.630566
+    var longitude: Double = -73.922013
+    var label: String = "USA"
+    var delta = 100.0
+    
     var coordinate: CLLocationCoordinate2D {
         CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
     }
