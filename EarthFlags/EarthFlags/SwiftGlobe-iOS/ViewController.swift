@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     var swiftGlobe = SwiftGlobe(alignment: .poles)
     
     override func viewDidLoad() {
-        print("ViewController viewDidAppear")
+        print("ViewController viewDidLoad")
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
