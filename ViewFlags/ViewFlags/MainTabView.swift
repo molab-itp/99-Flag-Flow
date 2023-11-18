@@ -24,9 +24,9 @@ struct MainTabView: View {
                     Label("List", systemImage: "list.bullet")
                 }
                 .tag(TabTag.list)
-            FlagFavsView()
+            FlagMarkedView()
                 .tabItem {
-                    Label("Favs", systemImage: "heart.rectangle")
+                    Label("Marked", systemImage: "circle.fill")
                 }
                 .tag(TabTag.favs)
             FlagWebView()

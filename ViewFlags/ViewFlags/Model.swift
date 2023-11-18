@@ -22,27 +22,32 @@ class Model: ObservableObject
     }
     
     
-    func isFavorite(flagItem: FlagItem) -> Bool {
-        settings.favorites.contains(flagItem.alpha3)
+    func isMarked(flagItem: FlagItem) -> Bool {
+        settings.marked.contains(flagItem.alpha3)
     }
     
-    func toggleFavorite(flagItem: FlagItem) {
-        let state = isFavorite(flagItem: flagItem);
-        setFavorite(flagItem: flagItem, state: !state)
+    func toggleMarked(flagItem: FlagItem) {
+        let state = isMarked(flagItem: flagItem);
+        setMarked(flagItem: flagItem, state: !state)
         saveSettings();
     }
     
-    func setFavorite(flagItem: FlagItem, state: Bool) {
+    func setMarked(flagItem: FlagItem, state: Bool) {
         // print("setFavorite state", state)
         if state {
-            settings.favorites.insert(flagItem.alpha3)
+            settings.marked.insert(flagItem.alpha3)
         }
         else {
-            settings.favorites.remove(flagItem.alpha3)
+            settings.marked.remove(flagItem.alpha3)
+        }
+    }
+    
+    func marked() -> [FlagItem] {
+        flagItems.filter {
+            isMarked(flagItem: $0)
         }
     }
 }
-
 
 func getCountriesFromJSON() -> [FlagItem] {
     var flags = Bundle.main.decode([FlagItem].self, from: "countries.json")
@@ -100,6 +105,6 @@ extension FileManager {
 
 struct Settings: Codable {
     
-    var favorites: Set<String> = [];
+    var marked: Set<String> = [];
 }
 

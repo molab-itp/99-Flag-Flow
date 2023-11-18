@@ -68,11 +68,11 @@ struct FlagItemRowView: View {
                 Spacer()
                 Button {
                     Task {
-                        model.toggleFavorite(flagItem: flagItem);
+                        model.toggleMarked(flagItem: flagItem);
                     }
                 } label: {
-                    let state = model.isFavorite(flagItem: flagItem)
-                    Image(systemName: state ? "heart.fill" : "heart")
+                    let state = model.isMarked(flagItem: flagItem)
+                    Image(systemName: state ? "circle.fill" : "circle")
                 }
 //                Spacer()
 //                Link(destination: flagItem.wikiUrl()!) {
