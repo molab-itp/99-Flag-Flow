@@ -11,6 +11,9 @@ import Foundation
 extension SwiftGlobe {
     
     public func addDemoMarkers() {
+        
+        print("SwiftGlobe addDemoMarkers")
+        
         //------------------------------------------
         // make some glowing nodes
         // x: 0.0, y: 0.0, z: 5.05

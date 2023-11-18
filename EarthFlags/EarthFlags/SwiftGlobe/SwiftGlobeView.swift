@@ -17,6 +17,7 @@ struct SwiftGlobeView: View {
         GeometryReader { geo in
             SceneView(scene: swiftGlobe.scene)
                 .onAppear() {
+                    print("SwiftGlobeView onAppear")
                     swiftGlobe.setupOnAppear(enableAutomaticSpin: false)
 //                    swiftGlobe.setupOnAppear(enableAutomaticSpin: true)
 //                    swiftGlobe.zoomFov = 26.0
