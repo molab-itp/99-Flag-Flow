@@ -2,6 +2,11 @@ _notes.txt
 
 # --
 2023-11-18 03:53:47
+2023-11-18 06:01:17
+
+Massive failure in Xcode 
+- project EarthFlags fails to open
+- clone from github to restore
 
 
 # --
