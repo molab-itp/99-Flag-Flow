@@ -16,7 +16,7 @@
 		ABCA885E2B077E6700F09268 /* FlagWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCA885D2B077E6700F09268 /* FlagWebView.swift */; };
 		ABCA88602B07D0E300F09268 /* FlagMarkedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCA885F2B07D0E300F09268 /* FlagMarkedView.swift */; };
 		ABD9F5562B05AB4500020D0B /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD9F5552B05AB4500020D0B /* WebView.swift */; };
-		ABE29FCC2AB3A03D0072F7C2 /* ViewFlagsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE29FCB2AB3A03D0072F7C2 /* ViewFlagsApp.swift */; };
+		ABE29FCC2AB3A03D0072F7C2 /* EarthFlagApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE29FCB2AB3A03D0072F7C2 /* EarthFlagApp.swift */; };
 		ABE29FD02AB3A03E0072F7C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABE29FCF2AB3A03E0072F7C2 /* Assets.xcassets */; };
 		ABE29FD32AB3A03E0072F7C2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABE29FD22AB3A03E0072F7C2 /* Preview Assets.xcassets */; };
 		ABE29FDE2AB3A0860072F7C2 /* FlagListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE29FD92AB3A0860072F7C2 /* FlagListView.swift */; };
@@ -34,8 +34,8 @@
 		ABCA885D2B077E6700F09268 /* FlagWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagWebView.swift; sourceTree = "<group>"; };
 		ABCA885F2B07D0E300F09268 /* FlagMarkedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagMarkedView.swift; sourceTree = "<group>"; };
 		ABD9F5552B05AB4500020D0B /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
-		ABE29FC82AB3A03D0072F7C2 /* ViewFlags.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewFlags.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		ABE29FCB2AB3A03D0072F7C2 /* ViewFlagsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFlagsApp.swift; sourceTree = "<group>"; };
+		ABE29FC82AB3A03D0072F7C2 /* EarthFlags.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EarthFlags.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABE29FCB2AB3A03D0072F7C2 /* EarthFlagApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthFlagApp.swift; sourceTree = "<group>"; };
 		ABE29FCF2AB3A03E0072F7C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABE29FD22AB3A03E0072F7C2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ABE29FD92AB3A0860072F7C2 /* FlagListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlagListView.swift; sourceTree = "<group>"; };
@@ -59,7 +59,7 @@
 			children = (
 				AB4E84822B03B58D00582923 /* README.md */,
 				AB4E84862B03DFB500582923 /* _notes.txt */,
-				ABE29FCA2AB3A03D0072F7C2 /* ViewFlags */,
+				ABE29FCA2AB3A03D0072F7C2 /* EarthFlags */,
 				ABE29FC92AB3A03D0072F7C2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -67,15 +67,15 @@
 		ABE29FC92AB3A03D0072F7C2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ABE29FC82AB3A03D0072F7C2 /* ViewFlags.app */,
+				ABE29FC82AB3A03D0072F7C2 /* EarthFlags.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ABE29FCA2AB3A03D0072F7C2 /* ViewFlags */ = {
+		ABE29FCA2AB3A03D0072F7C2 /* EarthFlags */ = {
 			isa = PBXGroup;
 			children = (
-				ABE29FCB2AB3A03D0072F7C2 /* ViewFlagsApp.swift */,
+				ABE29FCB2AB3A03D0072F7C2 /* EarthFlagApp.swift */,
 				ABF2F1CD2B05A83200696485 /* MainTabView.swift */,
 				ABE29FD92AB3A0860072F7C2 /* FlagListView.swift */,
 				ABCA885F2B07D0E300F09268 /* FlagMarkedView.swift */,
@@ -88,7 +88,7 @@
 				ABE29FE52AB3A1E70072F7C2 /* Resources */,
 				ABE29FD12AB3A03E0072F7C2 /* Preview Content */,
 			);
-			path = ViewFlags;
+			path = EarthFlags;
 			sourceTree = "<group>";
 		};
 		ABE29FD12AB3A03E0072F7C2 /* Preview Content */ = {
@@ -111,9 +111,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ABE29FC72AB3A03D0072F7C2 /* ViewFlags */ = {
+		ABE29FC72AB3A03D0072F7C2 /* EarthFlags */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ABE29FD62AB3A03E0072F7C2 /* Build configuration list for PBXNativeTarget "ViewFlags" */;
+			buildConfigurationList = ABE29FD62AB3A03E0072F7C2 /* Build configuration list for PBXNativeTarget "EarthFlags" */;
 			buildPhases = (
 				ABE29FC42AB3A03D0072F7C2 /* Sources */,
 				ABE29FC52AB3A03D0072F7C2 /* Frameworks */,
@@ -123,9 +123,9 @@
 			);
 			dependencies = (
 			);
-			name = ViewFlags;
+			name = EarthFlags;
 			productName = "ImageUiDemo-urls";
-			productReference = ABE29FC82AB3A03D0072F7C2 /* ViewFlags.app */;
+			productReference = ABE29FC82AB3A03D0072F7C2 /* EarthFlags.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -143,7 +143,7 @@
 					};
 				};
 			};
-			buildConfigurationList = ABE29FC32AB3A03D0072F7C2 /* Build configuration list for PBXProject "ViewFlags" */;
+			buildConfigurationList = ABE29FC32AB3A03D0072F7C2 /* Build configuration list for PBXProject "EarthFlags" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -156,7 +156,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ABE29FC72AB3A03D0072F7C2 /* ViewFlags */,
+				ABE29FC72AB3A03D0072F7C2 /* EarthFlags */,
 			);
 		};
 /* End PBXProject section */
@@ -189,7 +189,7 @@
 				AB32E6432B01632F009C8E7C /* Bundle-decode.swift in Sources */,
 				ABD9F5562B05AB4500020D0B /* WebView.swift in Sources */,
 				ABF2F1CE2B05A83200696485 /* MainTabView.swift in Sources */,
-				ABE29FCC2AB3A03D0072F7C2 /* ViewFlagsApp.swift in Sources */,
+				ABE29FCC2AB3A03D0072F7C2 /* EarthFlagApp.swift in Sources */,
 				ABCA885E2B077E6700F09268 /* FlagWebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,7 +320,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ViewFlags/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"EarthFlags/Preview Content\"";
 				DEVELOPMENT_TEAM = 3RCW2SSL8G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -349,7 +349,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ViewFlags/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"EarthFlags/Preview Content\"";
 				DEVELOPMENT_TEAM = 3RCW2SSL8G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -374,7 +374,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ABE29FC32AB3A03D0072F7C2 /* Build configuration list for PBXProject "ViewFlags" */ = {
+		ABE29FC32AB3A03D0072F7C2 /* Build configuration list for PBXProject "EarthFlags" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ABE29FD42AB3A03E0072F7C2 /* Debug */,
@@ -383,7 +383,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ABE29FD62AB3A03E0072F7C2 /* Build configuration list for PBXNativeTarget "ViewFlags" */ = {
+		ABE29FD62AB3A03E0072F7C2 /* Build configuration list for PBXNativeTarget "EarthFlags" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ABE29FD72AB3A03E0072F7C2 /* Debug */,

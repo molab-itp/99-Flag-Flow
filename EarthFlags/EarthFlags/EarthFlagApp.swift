@@ -3,7 +3,7 @@
 import SwiftUI
 
 @main
-struct ViewFlagsApp: App {
+struct EarthFlagApp: App {
     var body: some Scene {
         WindowGroup {
             // This is the starting page for the app
