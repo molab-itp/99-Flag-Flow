@@ -95,11 +95,11 @@
 		ABCA88612B08BA5000F09268 /* SwiftGlobe */ = {
 			isa = PBXGroup;
 			children = (
+				ABCA88902B08BA5000F09268 /* SwiftGlobeView.swift */,
 				ABCA88622B08BA5000F09268 /* SwiftGlobe.swift */,
+				ABCA888F2B08BA5000F09268 /* SwiftGlobe+DemoMarkers.swift */,
 				ABCA88632B08BA5000F09268 /* GlowingMarker.swift */,
 				ABCA88642B08BA5000F09268 /* Resources */,
-				ABCA888F2B08BA5000F09268 /* SwiftGlobe+DemoMarkers.swift */,
-				ABCA88902B08BA5000F09268 /* SwiftGlobeView.swift */,
 			);
 			path = SwiftGlobe;
 			sourceTree = "<group>";

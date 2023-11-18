@@ -9,8 +9,9 @@ import SwiftUI
 
 enum TabTag {
     case list
-    case favs
+    case marks
     case detail
+    case earth
 }
 
 struct MainTabView: View {
@@ -28,12 +29,17 @@ struct MainTabView: View {
                 .tabItem {
                     Label("Marked", systemImage: "circle.fill")
                 }
-                .tag(TabTag.favs)
+                .tag(TabTag.marks)
             FlagWebView()
                 .tabItem {
                     Label("Detail", systemImage: "info.circle")
                 }
                 .tag(TabTag.detail)
+            SwiftGlobeView()
+                .tabItem {
+                    Label("Earth", systemImage: "globe")
+                }
+                .tag(TabTag.earth)
         }
     }
 }
