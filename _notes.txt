@@ -1,7 +1,14 @@
 _notes.txt
 
 # --
+2023-11-18 03:53:47
+
+
+# --
 2023-11-17 05:43:50
+
+https://github.com/Thunor/HitTestApp.git
+
 
 https://github.com/dmojdehi/SwiftGlobe
 >> Builds and runs on simulator A-OK!
