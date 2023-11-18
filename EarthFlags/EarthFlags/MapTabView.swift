@@ -8,6 +8,8 @@
 import SwiftUI
 import MapKit
 
+var delta = 100.0
+
 struct MapTabView: View {
     // !!@ causes flood of Publishing changes from within view updates
     //    @StateObject var lobbyModel: LobbyModel
@@ -20,15 +22,20 @@ struct MapTabView: View {
     //    !!@ Publishing changes from within view updates is not allowed, this will cause undefined behavior.
     
     @State var locIndex = 0
-    @State var regionLabel = ""
+    @State var regionLabel = "USA"
+    //    @State var region = MKCoordinateRegion(
+    //        center: CLLocationCoordinate2D(latitude: 40.630566,
+    //                                       longitude: -73.922013),
+    //        latitudinalMeters: 2_000_000,
+    //        longitudinalMeters: 2_000_000
+    //    )
     @State var region = MKCoordinateRegion(
         center: CLLocationCoordinate2D(latitude: 40.630566,
                                        longitude: -73.922013),
-        latitudinalMeters: 2_000_000,
-        longitudinalMeters: 2_000_000
+        span: MKCoordinateSpan(latitudeDelta: delta, longitudeDelta: delta)
     )
-    @State var delta = 100.0
-        
+    //    @State var delta = 100.0
+    
     var body: some View {
         let _ = Self._printChanges()
         ZStack {
@@ -43,12 +50,13 @@ struct MapTabView: View {
                 // MapMarker(coordinate: location.coordinate)
                 MapAnnotation(coordinate: location.coordinate) {
                     VStack {
-                        Image(systemName: "star.circle")
+                        Image("flag-\(location.label)")
+                            // Image(systemName: "star.circle")
                             .resizable()
                             .foregroundColor(.red)
-                            .frame(width: 44, height: 44)
+                            .frame(width: 44, height: 22)
                             .background(.white)
-                            .clipShape(Circle())
+                            // .clipShape(Circle())
                         Text(location.label)
                     }
                 }
@@ -125,3 +133,8 @@ struct MapTabView: View {
 let locationFont = Font
     .system(size: 20)
     .monospaced()
+
+#Preview {
+    MapTabView(locs: [])
+        .environmentObject(Model.example)
+}
