@@ -13,7 +13,8 @@ import SceneKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var sceneView : SCNView!
+//    @IBOutlet weak var sceneView : SCNView!
+    var sceneView : SCNView = SCNView()
     
     var swiftGlobe = SwiftGlobe(alignment: .poles)
     
