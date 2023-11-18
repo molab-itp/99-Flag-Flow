@@ -16,22 +16,24 @@ struct SwiftGlobeView: View {
     var body: some View {
         GeometryReader { geo in
             SceneView(scene: swiftGlobe.scene)
-//                .onAppear() {
+                .onAppear() {
+                    swiftGlobe.setupOnAppear(enableAutomaticSpin: false)
 //                    swiftGlobe.setupOnAppear(enableAutomaticSpin: true)
 //                    swiftGlobe.zoomFov = 26.0
-//                }
-                // allow finger swipes to zoom in & rotate the globe
-//                .gesture(DragGesture(minimumDistance: 0.0, coordinateSpace: .local)
-//                         
-//                    .onChanged({ newValue in
-//                        // reduce our drag amounts for a less-twitchy response
-//                        let kLessTwitchy = 0.05
-//                        // swipe up and down to tilt the poles
-//                        let deltaV = (-newValue.translation.height / geo.size.height )
-//                        // swipe left and right to rotate
-//                        let deltaH = -newValue.translation.width / geo.size.width
-//                        swiftGlobe.handlePan(deltaPerUnity: CGSize(width: deltaH * kLessTwitchy, height: deltaV * kLessTwitchy))
-//                    }) )
+                    swiftGlobe.addDemoMarkers()
+                }
+                 // allow finger swipes to zoom in & rotate the globe
+                .gesture(DragGesture(minimumDistance: 0.0, coordinateSpace: .local)
+                         
+                    .onChanged({ newValue in
+                        // reduce our drag amounts for a less-twitchy response
+                        let kLessTwitchy = 0.05
+                        // swipe up and down to tilt the poles
+                        let deltaV = (-newValue.translation.height / geo.size.height )
+                        // swipe left and right to rotate
+                        let deltaH = -newValue.translation.width / geo.size.width
+                        swiftGlobe.handlePan(deltaPerUnity: CGSize(width: deltaH * kLessTwitchy, height: deltaV * kLessTwitchy))
+                    }) )
                 // allow the crown to zoom in & out
 //                .focusable(true)
 //                .digitalCrownRotation($crownScrollPerUnity, from: 0.0, through: 1.0, by: 0.05, isContinuous: false, isHapticFeedbackEnabled:true)
