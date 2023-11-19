@@ -8,56 +8,38 @@
 import SwiftUI
 import MapKit
 
-var delta = 100.0
-
 struct MapTabView: View {
-    // !!@ causes flood of Publishing changes from within view updates
-    //    @StateObject var lobbyModel: LobbyModel
-    
-    var locs: [Location]
+
+    @EnvironmentObject var model: LocationModel
+
+//    var locs: [Location]
     
     // !!@ Would like use mapRegion, but fails
     // Get warnings, but at least we don't crash
     //    !!@ Modifying state during view update, this will cause undefined behavior.
     //    !!@ Publishing changes from within view updates is not allowed, this will cause undefined behavior.
     
-    @State var locIndex = 0
-    @State var regionLabel = "USA"
-    //    @State var region = MKCoordinateRegion(
-    //        center: CLLocationCoordinate2D(latitude: 40.630566,
-    //                                       longitude: -73.922013),
-    //        latitudinalMeters: 2_000_000,
-    //        longitudinalMeters: 2_000_000
-    //    )
-    @State var region = MKCoordinateRegion(
-        center: CLLocationCoordinate2D(latitude: 40.630566,
-                                       longitude: -73.922013),
-        span: MKCoordinateSpan(latitudeDelta: delta, longitudeDelta: delta)
-    )
-    //    @State var delta = 100.0
+//    @State var locIndex = 0
+//    @State var regionLabel = "USA"
+//    @State var region =  initRegion()    //    @State var delta = 100.0
     
     var body: some View {
         let _ = Self._printChanges()
         ZStack {
-            //  Map(coordinateRegion: locationManager.region,
-            //  Map(coordinateRegion: $locationManager.region,
-            //  Map(coordinateRegion: $region,
-            //      annotationItems: locs )
-            //            Map(coordinateRegion: $region,
-            Map(coordinateRegion: $region,
-                annotationItems: locs )
-            { location in
-                // MapMarker(coordinate: location.coordinate)
-                MapAnnotation(coordinate: location.coordinate) {
+            Map(coordinateRegion: $model.region,
+                annotationItems: model.locations )
+            { loc in
+                // MapMarker(coordinate: loc.coordinate)
+                MapAnnotation(coordinate: loc.coordinate) {
                     VStack {
-                        Image("flag-\(location.label)")
+                        Image(loc.imageRef)
                             // Image(systemName: "star.circle")
                             .resizable()
-                            .foregroundColor(.red)
                             .frame(width: 44, height: 22)
-                            .background(.white)
+                            // .foregroundColor(.red)
+                            // .background(.white)
                             // .clipShape(Circle())
-                        Text(location.label)
+                        Text(loc.label)
                     }
                 }
             }
@@ -86,46 +68,47 @@ struct MapTabView: View {
                     .font(locationFont)
                 Text("lon: \(centerLongitude)")
                     .font(locationFont)
-                Text(regionLabel)
-                    .font(locationFont)
+//                Text(model.region.label)
+//                    .font(locationFont)
             }
         }
         .onAppear {
-            print("MapView onAppear locs", locs)
-            locIndex = 0
-            setRegionMain(0);
+//            print("MapView onAppear locations", locs)
+//            locIndex = 0
+//            setRegionMain(0);
         }
     }
     
-    func setRegionMain (_ offset: Int) {
-        print("MapView setRegionMain offset", offset)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.0) {
-            setRegionState(offset)
-        }
-    }
-    
-    func setRegionState(_ offset: Int) {
-        print("MapView setRegionState offset", offset)
-        if locIndex >= locs.count || locs.count < 1 { return }
-        locIndex = (locIndex + offset ) % locs.count
-        let loc = locs[locIndex]
-        regionLabel = loc.label
-        region = MKCoordinateRegion(center: loc.coordinate, span: MKCoordinateSpan(latitudeDelta: delta, longitudeDelta: delta))
-        print("MapView setRegionState offset", offset, "loc", loc, "locIndex", locIndex)
-    }
+//    func setRegionMain (_ offset: Int) {
+//        print("MapView setRegionMain offset", offset)
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 0.0) {
+//            setRegionState(offset)
+//        }
+//    }
+//    
+//    func setRegionState(_ offset: Int) {
+//        print("MapView setRegionState offset", offset)
+//        if locIndex >= locs.count || locs.count < 1 { return }
+//        locIndex = (locIndex + offset ) % locs.count
+//        let loc = locs[locIndex]
+//        regionLabel = loc.label
+//        let delta = loc.delta
+////        region = MKCoordinateRegion(center: loc.coordinate, span: MKCoordinateSpan(latitudeDelta: delta, longitudeDelta: delta))
+//        print("MapView setRegionState offset", offset, "loc", loc, "index", locIndex)
+//    }
     
     var centerLatitude: String {
-        String(format: "%+.6f", region.center.latitude)
+        String(format: "%+.6f", model.region.center.latitude)
     }
     
     var centerLongitude: String {
-        String(format: "%+.6f", region.center.longitude)
+        String(format: "%+.6f", model.region.center.longitude)
     }
     
     func centerUserLocationAction() {
         withAnimation {
-            print("centerUserLocationAction locIndex", locIndex, "locs.count", locs.count)
-            setRegionMain(1)
+//            print("centerUserLocationAction index", locIndex, "locations.count", locs.count)
+//            setRegionMain(1)
         }
     }
 }
@@ -135,6 +118,6 @@ let locationFont = Font
     .monospaced()
 
 #Preview {
-    MapTabView(locs: Model.example.mapRegion.locs)
-        .environmentObject(Model.example)
+    MapTabView()
+        .environmentObject(LocationModel())
 }

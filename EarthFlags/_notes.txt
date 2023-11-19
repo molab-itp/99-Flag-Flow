@@ -1,11 +1,43 @@
 _notes.txt
 
+# --
+2023-11-19 04:27:30
+
+Default models for preview / testing
+
+EarthFlags/EarthFlags/EarthFlagsApp.swift
+                .environmentObject(LocationModel())
+
+EarthFlags/EarthFlags/MainTabView.swift
+#Preview {
+    MainTabView()
+        .environmentObject(Model.example)
+        .environmentObject(LocationModel())
+}
+
+EarthFlags/EarthFlags/Map/MapTabView.swift
+#Preview {
+    MapTabView()
+        .environmentObject(LocationModel())
+}
 
 # --
+2023-11-19 03:47:15
+
+https://developer.apple.com/documentation/mapkit/mapstyle
+iOS 17.0 ++
+
+https://developer.apple.com/documentation/mapkit/mapkit_for_swiftui
+
+https://developer.apple.com/documentation/mapkit/mkmaptype
+
+https://developer.apple.com/documentation/mapkit/mkmapview/4010601-preferredconfiguration
+
+# --
+2023-11-18 17:10:55
 
 # --
 2023-11-16 23:50:28
-
 
 https://www.hackingwithswift.com/quick-start/swiftui/how-to-add-a-search-bar-to-filter-your-data
 

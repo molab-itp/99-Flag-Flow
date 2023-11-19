@@ -36,7 +36,7 @@ struct MainTabView: View {
                     Label("Detail", systemImage: "info.circle")
                 }
                 .tag(TabTag.detail)
-            MapTabView(locs: model.mapRegion.locs)
+            MapTabView()
                 .tabItem {
                     Label("Map", systemImage: "map")
                 }
@@ -53,6 +53,7 @@ struct MainTabView: View {
 #Preview {
     MainTabView()
         .environmentObject(Model.example)
+        .environmentObject(LocationModel())
 }
 
 // "https://en.wikipedia.org/wiki/Jamaica"

@@ -15,7 +15,7 @@ class Model: ObservableObject
 
     @Published var settings:Settings = Model.loadSettings()
 
-    @Published var mapRegion = MapRegionModel()
+//    @Published var locationModel = LocationModel()
 
     static var example:Model {
         let model = Model();
