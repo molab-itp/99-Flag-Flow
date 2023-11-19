@@ -1,12 +1,49 @@
 _notes.txt
 
+
+# --
+2023-11-19 12:24:35
+
+    func addPulseAnimation() {
+        let animation = CABasicAnimation(keyPath: "scale")
+        animation.fromValue = SCNVector3(x: Float(0.5), y: Float(0.5), z: Float(0.5))
+        animation.toValue = SCNVector3(x: Float(3.0), y: Float(3.0), z: Float(3.0))
+        animation.duration = 1.0
+        animation.autoreverses = true
+        animation.repeatCount = Float.infinity
+        animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)
+        node.addAnimation(animation, forKey: "throb")
+
+https://stackoverflow.com/questions/46593237/scenekit-animate-scnnode-transform
+
+let originalTransform = cameraOrbit.transform
+cameraOrbit.transform = SCNMatrix4Rotate(cameraOrbit.transform, angle, x, y, 0.0)
+let animation = CABasicAnimation(keyPath: "transform")
+animation.fromValue = originalTransform
+animation.duration = 0.5
+cameraOrbit.addAnimation(animation, forKey: nil)
+
+
+https://developer.apple.com/documentation/scenekit/scnaction
+
+        // !!@ increase in duration does not slow down transition to new location
+//        let spinTo = SCNAction.rotate(toAxisAngle: axisAngle, duration: 3.0)
+
+        // the globe spins once per minute
+        if enableAutomaticSpin {
+            let spinRotation = SCNAction.rotate(by: 2 * .pi, around: SCNVector3(0, 1, 0), duration: kGlobeDefaultRotationSpeedSeconds)
+            let spinAction = SCNAction.repeatForever(spinRotation)
+            globe.runAction(spinAction)
+
+
+
 # --
 2023-11-19 04:48:03
 
 >> Corrected sample data
 EarthFlags/EarthFlags/Map/LocationModel.swift
             Location(id: "JAM", latitude: 17.983333, longitude: -76.8, label: "JAM", capital: "Kingston", delta: 10.0)
-            
+
 >> Test on phone
 EarthFlags/EarthFlags/EarthFlagsApp.swift
                 .environmentObject(LocationModel.example)

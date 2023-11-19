@@ -566,6 +566,8 @@ class SwiftGlobe {
         
         // Remove any rotation the earth may have made (from automatic spin animation)...
         let axisAngle = SCNVector4(0, 1, 0, 0 )
+        // !!@ increase in duration does not slow down transition to new location
+//        let spinTo = SCNAction.rotate(toAxisAngle: axisAngle, duration: 3.0)
         let spinTo = SCNAction.rotate(toAxisAngle: axisAngle, duration: 0.1)
         globe.runAction(spinTo)
     }
@@ -590,6 +592,8 @@ class SwiftGlobe {
             matrix = SCNMatrix4RotateF(matrix, userRotationRadians, 0.0, 1.0, 0.0)
         }
         userTiltAndRotation.transform = matrix
+//        let transTo = SCNAction
+//        userTiltAndRotation.runAction(transTo);
     }
     
 }
