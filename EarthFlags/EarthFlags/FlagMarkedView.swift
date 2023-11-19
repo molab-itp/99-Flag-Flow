@@ -64,3 +64,7 @@ struct FlagMarkedView: View {
     FlagMarkedView(marked: AppModel.sample.marked())
         .environmentObject(AppModel.sample)
 }
+
+//https://github.com/molab-itp/09-Bucketlist
+//https://www.hackingwithswift.com/books/ios-swiftui/bucket-list-introduction
+//https://www.hackingwithswift.com/quick-start/swiftui/how-to-let-users-move-rows-in-a-list
