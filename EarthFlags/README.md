@@ -18,7 +18,7 @@
 - for country to appears on maps must add lat+lon here:
 
   - LocationModel
-    let knownLocations = [
+    - let knownLocations = [
 
 - MapView
 
