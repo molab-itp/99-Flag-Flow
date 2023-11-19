@@ -3,7 +3,24 @@ _notes.txt
 # --
 2023-11-19 08:34:04
 
+>> Sharing model state
+    static let main = AppModel()
+https://developer.apple.com/documentation/swift/managing-a-shared-resource-using-a-singleton
+
+
 rename Model to AppModel
+
+https://developer.apple.com/documentation/swiftui/observedobject
+
+https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app
+@Observable class Book: Identifiable {
+>> iOS 7
+
+>> Control-Option mouse click for pinch to zoom in preview
+
+>> Debug View changes:
+    var body: some View {
+//        let _ = Self._printChanges()
 
 # --
 2023-11-19 05:17:51

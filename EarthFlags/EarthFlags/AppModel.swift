@@ -1,6 +1,6 @@
 //
-//  Model.swift
-//  ViewFlags
+//  AppModel.swift
+//  EarthFlags
 //
 //  Created by jht2 on 11/16/23.
 //
@@ -15,6 +15,8 @@ class AppModel: ObservableObject
 
     @Published var settings:Settings = AppModel.loadSettings()
 
+    static let main = AppModel()
+    
     static var sample:AppModel {
         let model = AppModel();
         model.flagItem = model.flagItems[107] // JAM
@@ -46,6 +48,7 @@ class AppModel: ObservableObject
             isMarked(flagItem: $0)
         }
     }
+    
 }
 
 func getCountriesFromJSON() -> [FlagItem] {
@@ -64,6 +67,8 @@ extension AppModel {
     static let savePath = FileManager.documentsDirectory.appendingPathComponent("AppSetting")
     
     static func loadSettings() -> Settings {
+        print("AppModel loadSettings")
+
         var settings:Settings;
         do {
             let data = try Data(contentsOf: Self.savePath)
@@ -72,17 +77,22 @@ extension AppModel {
             print("AppModel loadSettings error", error)
             settings = Settings();
         }
+        
+        LocationModel.main.restoreFrom(marked: settings.marked)
+        
         return settings;
     }
     
     func saveSettings() {
-        // print("saveSettings", settings)
+        print("AppModel saveSettings", settings)
         do {
             let data = try JSONEncoder().encode(settings)
             try data.write(to: Self.savePath, options: [.atomic, .completeFileProtection])
         } catch {
             print("AppModel saveSettings error", error)
         }
+        
+        LocationModel.main.restoreFrom(marked: settings.marked)
     }
     
     static func bundleVersion() -> String {
@@ -106,4 +116,6 @@ struct Settings: Codable {
     
     var marked: Set<String> = [];
 }
+
+// https://developer.apple.com/documentation/swiftui/observedobject
 
