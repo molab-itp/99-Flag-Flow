@@ -85,5 +85,5 @@ struct FlagItemRowView: View {
 
 #Preview {
     FlagListView()
-        .environmentObject(Model.example)
+        .environmentObject(Model.sample)
 }

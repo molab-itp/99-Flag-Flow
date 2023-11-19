@@ -10,7 +10,7 @@ struct EarthFlagsApp: App {
             MainTabView()
                 .environmentObject(Model())
 //                .environmentObject(LocationModel())
-                .environmentObject(LocationModel.example)
+                .environmentObject(LocationModel.sample)
         }
     }
 }

@@ -1,6 +1,15 @@
 _notes.txt
 
 # --
+2023-11-19 05:17:51
+
+>> Location example gives warning using Map view
+_course-repos/09-Location
+  Publishing changes from within view updates is not allowed, this will cause undefined behavior
+      Map(coordinateRegion: $locationManager.region,
+
+
+# --
 2023-11-18 13:52:07
 
 https://developer.apple.com/documentation/mapkit/map

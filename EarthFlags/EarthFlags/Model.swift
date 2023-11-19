@@ -17,7 +17,7 @@ class Model: ObservableObject
 
 //    @Published var locationModel = LocationModel()
 
-    static var example:Model {
+    static var sample:Model {
         let model = Model();
         model.flagItem = model.flagItems[107] // JAM
         return model

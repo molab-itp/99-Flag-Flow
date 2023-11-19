@@ -29,11 +29,11 @@ class LocationModel: ObservableObject {
     var currentLocation = Location()
     var index = 0
 
-    static var example:LocationModel {
+    static var sample:LocationModel {
         let model = LocationModel();
         model.locations = [
             Location(),
-            Location(id: "JAM", latitude: 17.983333, longitude: -76.8, label: "JAM", capital: "Kingston", delta: 10.0)
+            Location(id: "JAM", latitude: 17.983333, longitude: -76.8, label: "JAM", capital: "Kingston", delta: 5.0)
         ]
         return model
     }

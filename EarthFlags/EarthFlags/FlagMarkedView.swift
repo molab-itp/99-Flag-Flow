@@ -43,6 +43,6 @@ struct FlagMarkedView: View {
 
 
 #Preview {
-    FlagMarkedView(marked: Model.example.marked())
-        .environmentObject(Model.example)
+    FlagMarkedView(marked: Model.sample.marked())
+        .environmentObject(Model.sample)
 }

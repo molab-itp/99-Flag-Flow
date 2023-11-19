@@ -33,5 +33,5 @@ struct FlagWebView: View {
 
 #Preview {
     FlagWebView()
-        .environmentObject(Model.example)
+        .environmentObject(Model.sample)
 }

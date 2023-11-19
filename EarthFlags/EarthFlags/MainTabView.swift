@@ -52,7 +52,7 @@ struct MainTabView: View {
 
 #Preview {
     MainTabView()
-        .environmentObject(Model.example)
+        .environmentObject(Model.sample)
         .environmentObject(LocationModel())
 }
 

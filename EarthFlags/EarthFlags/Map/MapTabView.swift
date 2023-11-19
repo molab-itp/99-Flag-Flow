@@ -86,5 +86,5 @@ let locationFont = Font
 
 #Preview {
     MapTabView()
-        .environmentObject(LocationModel.example)
+        .environmentObject(LocationModel.sample)
 }
