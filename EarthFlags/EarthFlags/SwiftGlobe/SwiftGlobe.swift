@@ -591,9 +591,15 @@ class SwiftGlobe {
             // first, apply the rotation (along the Y axis)
             matrix = SCNMatrix4RotateF(matrix, userRotationRadians, 0.0, 1.0, 0.0)
         }
+        //userTiltAndRotation.transform = matrix
+        // Animate the transform
+        let originalTransform = userTiltAndRotation.transform
         userTiltAndRotation.transform = matrix
-//        let transTo = SCNAction
-//        userTiltAndRotation.runAction(transTo);
+        let animation = CABasicAnimation(keyPath: "transform")
+        animation.fromValue = originalTransform
+        animation.duration = 3.0
+        userTiltAndRotation.addAnimation(animation, forKey: nil)
+
     }
     
 }

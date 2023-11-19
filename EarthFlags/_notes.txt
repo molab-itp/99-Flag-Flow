@@ -4,6 +4,27 @@ _notes.txt
 # --
 2023-11-19 12:24:35
 
+        // Animate the transform
+SwiftGlobe
+    internal func applyUserTiltAndRotation() {
+        // Animate the transform
+        let originalTransform = userTiltAndRotation.transform
+        userTiltAndRotation.transform = matrix
+        let animation = CABasicAnimation(keyPath: "transform")
+        animation.fromValue = originalTransform
+        animation.duration = 3.0
+        userTiltAndRotation.addAnimation(animation, forKey: nil)
+
+
+
+let originalTransform = cameraOrbit.transform
+cameraOrbit.transform = SCNMatrix4Rotate(cameraOrbit.transform, angle, x, y, 0.0)
+let animation = CABasicAnimation(keyPath: "transform")
+animation.fromValue = originalTransform
+animation.duration = 0.5
+cameraOrbit.addAnimation(animation, forKey: nil)
+
+
     func addPulseAnimation() {
         let animation = CABasicAnimation(keyPath: "scale")
         animation.fromValue = SCNVector3(x: Float(0.5), y: Float(0.5), z: Float(0.5))
