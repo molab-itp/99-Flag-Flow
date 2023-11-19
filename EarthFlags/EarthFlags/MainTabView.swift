@@ -17,7 +17,7 @@ enum TabTag {
 
 struct MainTabView: View {
     
-    @EnvironmentObject var model: Model
+    @EnvironmentObject var model: AppModel
     
     var body: some View {
         TabView(selection: $model.selectedTab) {
@@ -52,7 +52,7 @@ struct MainTabView: View {
 
 #Preview {
     MainTabView()
-        .environmentObject(Model.sample)
+        .environmentObject(AppModel.sample)
         .environmentObject(LocationModel.sample)
 }
 

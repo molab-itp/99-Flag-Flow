@@ -7,16 +7,16 @@
 
 import Foundation
 
-class Model: ObservableObject
+class AppModel: ObservableObject
 {
     @Published var selectedTab = TabTag.list
     @Published var flagItem: FlagItem?
     @Published var flagItems = getCountriesFromJSON()
 
-    @Published var settings:Settings = Model.loadSettings()
+    @Published var settings:Settings = AppModel.loadSettings()
 
-    static var sample:Model {
-        let model = Model();
+    static var sample:AppModel {
+        let model = AppModel();
         model.flagItem = model.flagItems[107] // JAM
         return model
     }
@@ -59,7 +59,7 @@ func getCountriesFromJSON() -> [FlagItem] {
 
 // load and save settings
 //
-extension Model {
+extension AppModel {
     
     static let savePath = FileManager.documentsDirectory.appendingPathComponent("AppSetting")
     

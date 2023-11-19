@@ -11,7 +11,7 @@ struct FlagMarkedView: View {
     
     @State var marked: [FlagItem] = []
     
-    @EnvironmentObject var model: Model
+    @EnvironmentObject var model: AppModel
 
     var body: some View {
         ZStack {
@@ -43,6 +43,6 @@ struct FlagMarkedView: View {
 
 
 #Preview {
-    FlagMarkedView(marked: Model.sample.marked())
-        .environmentObject(Model.sample)
+    FlagMarkedView(marked: AppModel.sample.marked())
+        .environmentObject(AppModel.sample)
 }

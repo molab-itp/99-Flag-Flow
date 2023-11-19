@@ -8,7 +8,7 @@ struct EarthFlagsApp: App {
         WindowGroup {
             // This is the starting page for the app
             MainTabView()
-                .environmentObject(Model())
+                .environmentObject(AppModel())
                 .environmentObject(LocationModel())
         }
     }

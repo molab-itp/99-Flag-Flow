@@ -1,6 +1,11 @@
 _notes.txt
 
 # --
+2023-11-19 08:34:04
+
+rename Model to AppModel
+
+# --
 2023-11-19 05:17:51
 
 >> Debugging updates

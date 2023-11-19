@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FlagWebView: View {
     
-    @EnvironmentObject var model: Model
+    @EnvironmentObject var model: AppModel
     
     var body: some View {
         VStack {
@@ -33,5 +33,5 @@ struct FlagWebView: View {
 
 #Preview {
     FlagWebView()
-        .environmentObject(Model.sample)
+        .environmentObject(AppModel.sample)
 }

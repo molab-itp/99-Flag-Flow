@@ -9,7 +9,7 @@ let titleRef = "https://github.com/molab-itp/99-Flag-Flow/tree/main/ViewFlags"
 
 struct FlagListView: View {
     
-    @EnvironmentObject var model: Model
+    @EnvironmentObject var model: AppModel
     
     @State private var searchText = ""
     
@@ -51,7 +51,7 @@ struct FlagListView: View {
 }
 
 struct FlagItemRowView: View {
-    @EnvironmentObject var model: Model
+    @EnvironmentObject var model: AppModel
     var flagItem:FlagItem
     var body: some View {
         VStack {
@@ -85,5 +85,5 @@ struct FlagItemRowView: View {
 
 #Preview {
     FlagListView()
-        .environmentObject(Model.sample)
+        .environmentObject(AppModel.sample)
 }

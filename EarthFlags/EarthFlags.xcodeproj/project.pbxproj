@@ -17,7 +17,7 @@
 		AB3DC8A92B09534A00F0E631 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3DC8A72B09534A00F0E631 /* LocationModel.swift */; };
 		AB4E84832B03B58D00582923 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AB4E84822B03B58D00582923 /* README.md */; };
 		AB4E84872B03DFB500582923 /* _notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = AB4E84862B03DFB500582923 /* _notes.txt */; };
-		ABCA885C2B07219700F09268 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCA885B2B07219700F09268 /* Model.swift */; };
+		ABCA885C2B07219700F09268 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCA885B2B07219700F09268 /* AppModel.swift */; };
 		ABCA885E2B077E6700F09268 /* FlagWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCA885D2B077E6700F09268 /* FlagWebView.swift */; };
 		ABCA88602B07D0E300F09268 /* FlagMarkedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCA885F2B07D0E300F09268 /* FlagMarkedView.swift */; };
 		ABCA88912B08BA5000F09268 /* SwiftGlobe.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCA88622B08BA5000F09268 /* SwiftGlobe.swift */; };
@@ -59,7 +59,7 @@
 		AB3DC8A72B09534A00F0E631 /* LocationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		AB4E84822B03B58D00582923 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AB4E84862B03DFB500582923 /* _notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = _notes.txt; sourceTree = "<group>"; };
-		ABCA885B2B07219700F09268 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		ABCA885B2B07219700F09268 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		ABCA885D2B077E6700F09268 /* FlagWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagWebView.swift; sourceTree = "<group>"; };
 		ABCA885F2B07D0E300F09268 /* FlagMarkedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagMarkedView.swift; sourceTree = "<group>"; };
 		ABCA88622B08BA5000F09268 /* SwiftGlobe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftGlobe.swift; sourceTree = "<group>"; };
@@ -193,7 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				ABE29FCB2AB3A03D0072F7C2 /* EarthFlagsApp.swift */,
-				ABCA885B2B07219700F09268 /* Model.swift */,
+				ABCA885B2B07219700F09268 /* AppModel.swift */,
 				ABF2F1CD2B05A83200696485 /* MainTabView.swift */,
 				ABE29FD92AB3A0860072F7C2 /* FlagListView.swift */,
 				ABCA885F2B07D0E300F09268 /* FlagMarkedView.swift */,
@@ -318,7 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABCA885C2B07219700F09268 /* Model.swift in Sources */,
+				ABCA885C2B07219700F09268 /* AppModel.swift in Sources */,
 				AB3DC8A92B09534A00F0E631 /* LocationModel.swift in Sources */,
 				ABCA88602B07D0E300F09268 /* FlagMarkedView.swift in Sources */,
 				ABE29FDE2AB3A0860072F7C2 /* FlagListView.swift in Sources */,
