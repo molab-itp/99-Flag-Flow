@@ -39,17 +39,25 @@ class AppModel: ObservableObject
     
     func setMarked(flagItem: FlagItem, state: Bool) {
         // print("setFavorite state", state)
-        if state {
-            settings.marked.insert(flagItem.alpha3)
+        // remove flag if in marked
+        if let index = settings.marked.firstIndex(of:flagItem.alpha3) {
+            settings.marked.remove(at:index);
         }
-        else {
-            settings.marked.remove(flagItem.alpha3)
+        // Insert at begining
+        if state {
+            settings.marked.insert(flagItem.alpha3, at:0)
         }
     }
     
     func marked() -> [FlagItem] {
-        flagItems.filter {
-            isMarked(flagItem: $0)
+        // Return the flag items in the order that they appear in settings.marked
+        return settings.marked.compactMap { mark in
+            if let index = flagItems.firstIndex(where: { flag in
+                flag.alpha3 == mark
+            }) {
+                return flagItems[index]
+            }
+            return nil;
         }
     }
     
@@ -121,7 +129,7 @@ extension FileManager {
 
 struct Settings: Codable {
     
-    var marked: Set<String> = [];
+    var marked: Array<String> = [];
 }
 
 // https://developer.apple.com/documentation/swiftui/observedobject

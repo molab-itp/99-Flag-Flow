@@ -51,7 +51,7 @@ import MapKit
         // print("LocationModel next currentLocation", currentLocation)
     }
     
-    func restoreFrom(marked: Set<String>) {
+    func restoreFrom(marked: Array<String>) {
         print("LocationModel restoreFrom marked", marked)
         var newLocs = [Location]()
         for ccode in marked {
