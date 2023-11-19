@@ -68,11 +68,11 @@ struct MapTabView: View {
     
     func starAction() {
         print("starAction")
-//        withAnimation {
-//            print("starAction withAnimation")
-//            model.next()
-//        }
-        model.next()
+        withAnimation {
+            print("starAction withAnimation")
+            model.next()
+        }
+//        model.next()
     }
 }
 
