@@ -52,7 +52,7 @@ struct MapTabView: View {
                 Spacer()
                 HStack {
                     Spacer()
-                    Button(action: centerUserLocationAction ) {
+                    Button(action: starAction ) {
                         Image(systemName: "star")
                     }
                     .padding()
@@ -73,7 +73,7 @@ struct MapTabView: View {
             }
         }
         .onAppear {
-//            print("MapView onAppear locations", locs)
+            print("MapView onAppear locations", model.locations)
 //            locIndex = 0
 //            setRegionMain(0);
         }
@@ -105,10 +105,13 @@ struct MapTabView: View {
         String(format: "%+.6f", model.region.center.longitude)
     }
     
-    func centerUserLocationAction() {
+    func starAction() {
+        print("starAction")
         withAnimation {
-//            print("centerUserLocationAction index", locIndex, "locations.count", locs.count)
+//            print("starAction index", locIndex, "locations.count", locs.count)
 //            setRegionMain(1)
+            print("starAction withAnimation")
+            model.next()
         }
     }
 }
@@ -119,5 +122,5 @@ let locationFont = Font
 
 #Preview {
     MapTabView()
-        .environmentObject(LocationModel())
+        .environmentObject(LocationModel.example)
 }

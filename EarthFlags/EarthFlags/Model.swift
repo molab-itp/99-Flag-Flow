@@ -23,7 +23,6 @@ class Model: ObservableObject
         return model
     }
     
-    
     func isMarked(flagItem: FlagItem) -> Bool {
         settings.marked.contains(flagItem.alpha3)
     }

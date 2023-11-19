@@ -17,14 +17,40 @@ class LocationModel: ObservableObject {
             latitudeDelta: 100.0,
             longitudeDelta: 100.0)
     )
-    var index = 0
-    var regionLabel = ""
     var locations = [Location()]
     var currentLocation = Location()
+    var index = 0
+
+    static var example:LocationModel {
+        let model = LocationModel();
+        model.locations = [
+            Location(),
+            Location(id: "JAM", latitude: 12.2, longitude: 99.9, label: "JAM", capital: "Kingston", delta: 400.0)
+        ]
+        return model
+    }
+
+    func next() {
+        print("LocationModel next index", index, "locations.count", locations.count)
+        index = (index + 1) % locations.count;
+        let cl = locations[index];
+        print("LocationModel next cl", cl)
+        region = MKCoordinateRegion(
+            center: CLLocationCoordinate2D(
+                latitude: cl.latitude,    // Brooklyn Flatlands
+                longitude: cl.longitude),
+            span: MKCoordinateSpan(
+                latitudeDelta: cl.delta,
+                longitudeDelta: cl.delta)
+        )
+        print("LocationModel next region", region)
+        currentLocation = cl;
+        print("LocationModel next currentLocation", currentLocation)
+    }
 }
 
 struct Location: Identifiable, Codable, Equatable {
-    var id = "id"
+    var id = "USA"
     var latitude = 40.630566
     var longitude = -73.922013
     var label = "USA"
