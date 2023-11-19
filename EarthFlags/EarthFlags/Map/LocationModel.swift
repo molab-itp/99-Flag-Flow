@@ -25,7 +25,8 @@ class LocationModel: ObservableObject {
         let model = LocationModel();
         model.locations = [
             Location(delta: 5.0), // USA Brooklyn Flatlands
-            Location(id: "GBR", latitude: 51.5, longitude: -0.116667 , label: "United Kingdom of Great Britain", capital: "London", delta: 5.0),
+//            Location(id: "GBR", latitude: 51.5, longitude: -0.116667 , label: "United Kingdom of Great Britain", capital: "London", delta: 5.0),
+            Location(id: "GBR", latitude: 51.5, longitude: -0.116667 , label: "UK", capital: "London", delta: 5.0),
             Location(id: "JAM", latitude: 17.983333, longitude: -76.8, label: "Jamaica", capital: "Kingston", delta: 5.0),
             Location(id: "GUY", latitude: 6.805833, longitude: -58.150833, label: "Guyana", capital: "Georgetown", delta: 5.0),
             Location(id: "GHA", latitude: 5.555, longitude: -0.1925, label: "Ghana", capital: "Accra", delta: 5.0)
