@@ -51,13 +51,17 @@ struct MapTabView: View {
                     .font(locationFont)
                 Text("lon: \(centerLongitude)")
                     .font(locationFont)
+                if model.locationMatch(model.currentLocation) {
+                    Text(model.currentLocation.label)
+                }
             }
         }
         .onAppear {
             print("MapTabView onAppear locations", model.locations)
         }
     }
-        
+    
+
     var centerLatitude: String {
         String(format: "%+.6f", model.region.center.latitude)
     }

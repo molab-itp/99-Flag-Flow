@@ -23,9 +23,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-//        swiftGlobe.setupInSceneView(sceneView, forARKit: false, enableAutomaticSpin: true)
         swiftGlobe.setupInSceneView(sceneView, forARKit: false, enableAutomaticSpin: false)
-//        swiftGlobe.addDemoMarkers()
+        //swiftGlobe.addDemoMarkers()
         updateLocation()
     }
 

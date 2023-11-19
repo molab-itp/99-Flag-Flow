@@ -29,6 +29,14 @@ import MapKit
         return model
     }
 
+    func locationMatch(_ current:Location) -> Bool {
+        print("locationMatch current", current, "center", region.center)
+        let epsilon = 0.000001;
+        let center = region.center
+        return abs(current.latitude - center.latitude) < epsilon
+            && abs(current.longitude - center.longitude) < epsilon
+    }
+
     func next() {
         print("LocationModel next index", index, "locations.count", locations.count)
         if locations.count <= 0 {
@@ -67,12 +75,12 @@ import MapKit
 
 let knownLocations = [
     Location(delta: 5.0), // USA Brooklyn Flatlands
-    Location(id: "USA", latitude: 38.883333, longitude: -77.016667 , label: "USA", capital: "Washington, D.C."),
+    Location(id: "USA", latitude: 38.883333, longitude: -77.016667, label: "USA", capital: "Washington, D.C."),
     // ... label: "United Kingdom of Great Britain"
-    Location(id: "GBR", latitude: 51.5, longitude: -0.116667 , label: "UK", capital: "London"),
-    Location(id: "JAM", latitude: 17.983333, longitude: -76.8, label: "Jamaica", capital: "Kingston"),
-    Location(id: "GUY", latitude: 6.805833, longitude: -58.150833, label: "Guyana", capital: "Georgetown"),
-    Location(id: "GHA", latitude: 5.555, longitude: -0.1925, label: "Ghana", capital: "Accra")
+    Location(id: "GBR", latitude: 51.500000, longitude: -0.1166670, label: "UK", capital: "London"),
+    Location(id: "JAM", latitude: 17.983333, longitude: -76.800000, label: "Jamaica", capital: "Kingston"),
+    Location(id: "GUY", latitude: 6.8058330, longitude: -58.150833, label: "Guyana", capital: "Georgetown"),
+    Location(id: "GHA", latitude: 5.5550000, longitude: -0.1925000, label: "Ghana", capital: "Accra")
 ];
 
 struct Location: Identifiable, Codable, Equatable {

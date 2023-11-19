@@ -36,10 +36,14 @@ struct SwiftGlobeBridgeView: View {
                 Text("lon: \(centerLongitude)")
                     .font(locationFont)
                     .background(.white)
+                if model.locationMatch(model.currentLocation) {
+                    Text(model.currentLocation.label)
+                    .background(.white)
+                }
             }
         }
     }
-    
+        
     var centerLatitude: String {
         String(format: "%+.6f", model.region.center.latitude)
     }
