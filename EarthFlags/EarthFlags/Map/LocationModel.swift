@@ -17,6 +17,14 @@ class LocationModel: ObservableObject {
             latitudeDelta: 100.0,
             longitudeDelta: 100.0)
     )
+    var region2 = MKCoordinateRegion(
+        center: CLLocationCoordinate2D(
+            latitude: 40.630566,    // Brooklyn Flatlands
+            longitude: -73.922013),
+        span: MKCoordinateSpan(
+            latitudeDelta: 100.0,
+            longitudeDelta: 100.0)
+    )
     var locations = [Location()]
     var currentLocation = Location()
     var index = 0
@@ -35,7 +43,8 @@ class LocationModel: ObservableObject {
         index = (index + 1) % locations.count;
         let cl = locations[index];
         print("LocationModel next cl", cl)
-        region = MKCoordinateRegion(
+        // Crash changing @Published var region
+        region2 = MKCoordinateRegion(
             center: CLLocationCoordinate2D(
                 latitude: cl.latitude,    // Brooklyn Flatlands
                 longitude: cl.longitude),
@@ -43,7 +52,7 @@ class LocationModel: ObservableObject {
                 latitudeDelta: cl.delta,
                 longitudeDelta: cl.delta)
         )
-        print("LocationModel next region", region)
+        print("LocationModel next region2", region2)
         currentLocation = cl;
         print("LocationModel next currentLocation", currentLocation)
     }

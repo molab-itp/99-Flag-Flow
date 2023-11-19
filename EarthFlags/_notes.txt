@@ -3,7 +3,11 @@ _notes.txt
 # --
 2023-11-19 04:48:03
 
-Preview crash LocationModel func next()
+>> Crash changing @Published var region
+EarthFlags/EarthFlags/Map/LocationModel.swift
+        region2 = MKCoordinateRegion(
+
+>> Preview crash LocationModel func next()
     static var example:LocationModel {
 
 EarthFlags/EarthFlags/Map/LocationModel.swift
