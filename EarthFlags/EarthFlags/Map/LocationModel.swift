@@ -33,7 +33,7 @@ class LocationModel: ObservableObject {
         let model = LocationModel();
         model.locations = [
             Location(),
-            Location(id: "JAM", latitude: 12.2, longitude: 99.9, label: "JAM", capital: "Kingston", delta: 400.0)
+            Location(id: "JAM", latitude: 17.983333, longitude: -76.8, label: "JAM", capital: "Kingston", delta: 10.0)
         ]
         return model
     }
@@ -44,7 +44,7 @@ class LocationModel: ObservableObject {
         let cl = locations[index];
         print("LocationModel next cl", cl)
         // Crash changing @Published var region
-        region2 = MKCoordinateRegion(
+        region = MKCoordinateRegion(
             center: CLLocationCoordinate2D(
                 latitude: cl.latitude,    // Brooklyn Flatlands
                 longitude: cl.longitude),
@@ -52,7 +52,7 @@ class LocationModel: ObservableObject {
                 latitudeDelta: cl.delta,
                 longitudeDelta: cl.delta)
         )
-        print("LocationModel next region2", region2)
+        print("LocationModel next region", region)
         currentLocation = cl;
         print("LocationModel next currentLocation", currentLocation)
     }
