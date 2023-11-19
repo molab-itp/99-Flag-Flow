@@ -80,7 +80,8 @@ let knownLocations = [
     Location(id: "GBR", latitude: 51.500000, longitude: -0.1166670, label: "UK", capital: "London"),
     Location(id: "JAM", latitude: 17.983333, longitude: -76.800000, label: "Jamaica", capital: "Kingston"),
     Location(id: "GUY", latitude: 6.8058330, longitude: -58.150833, label: "Guyana", capital: "Georgetown"),
-    Location(id: "GHA", latitude: 5.5550000, longitude: -0.1925000, label: "Ghana", capital: "Accra")
+    Location(id: "GHA", latitude: 5.5550000, longitude: -0.1925000, label: "Ghana", capital: "Accra"),
+    Location(id: "EGY", latitude: 30.033333, longitude: 31.2166670, label: "Egypt", capital: "Cairo")
 ];
 
 struct Location: Identifiable, Codable, Equatable {

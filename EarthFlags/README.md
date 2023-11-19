@@ -13,3 +13,13 @@
 
 - ViewFlags/ViewFlags/Resources/countries.json
   - JSON for each country
+
+- for country to appears on maps must add lat+lon here:
+    - LocationModel
+        let knownLocations = [
+
+- MapView
+    - https://www.hackingwithswift.com/books/ios-swiftui/bucket-list-introduction
+    - https://github.com/twostraws/HackingWithSwift.git
+
+- SwiftGloble

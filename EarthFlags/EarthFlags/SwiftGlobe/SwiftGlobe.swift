@@ -593,12 +593,12 @@ class SwiftGlobe {
         }
         //userTiltAndRotation.transform = matrix
         // Animate the transform
-        let originalTransform = userTiltAndRotation.transform
-        userTiltAndRotation.transform = matrix
         let animation = CABasicAnimation(keyPath: "transform")
-        animation.fromValue = originalTransform
+        animation.fromValue = userTiltAndRotation.transform
         animation.duration = 3.0
         userTiltAndRotation.addAnimation(animation, forKey: nil)
+
+        userTiltAndRotation.transform = matrix
 
     }
     
