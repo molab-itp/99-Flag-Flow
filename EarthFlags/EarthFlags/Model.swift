@@ -15,8 +15,6 @@ class Model: ObservableObject
 
     @Published var settings:Settings = Model.loadSettings()
 
-//    @Published var locationModel = LocationModel()
-
     static var sample:Model {
         let model = Model();
         model.flagItem = model.flagItems[107] // JAM

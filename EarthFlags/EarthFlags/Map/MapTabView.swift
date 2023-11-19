@@ -13,7 +13,7 @@ struct MapTabView: View {
     @EnvironmentObject var model: LocationModel
     
     var body: some View {
-        let _ = Self._printChanges()
+//        let _ = Self._printChanges()
         ZStack {
             Map(coordinateRegion: $model.region,
                 annotationItems: model.locations )

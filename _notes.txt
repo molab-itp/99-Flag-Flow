@@ -3,6 +3,15 @@ _notes.txt
 # --
 2023-11-19 05:17:51
 
+>> Debugging updates
+    var body: some View {
+//        let _ = Self._printChanges()
+
+>> Unit testing with sample data and preview
+EarthFlags/EarthFlags/MainTabView.swift
+    MainTabView()
+            .environmentObject(LocationModel.sample)
+
 >> Location example gives warning using Map view
 _course-repos/09-Location
   Publishing changes from within view updates is not allowed, this will cause undefined behavior
