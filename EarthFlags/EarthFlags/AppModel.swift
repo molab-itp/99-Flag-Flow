@@ -81,12 +81,14 @@ extension AppModel {
             print("AppModel loadSettings error", error)
             settings = Settings();
         }
-        
-//        Task() {
-//            await LocationModel.main.restoreFrom(marked: settings.marked)
-//        }
-        
+                
         return settings;
+    }
+    
+    func restoreLocations() {
+        Task() {
+            await LocationModel.main.restoreFrom(marked: settings.marked)
+        }
     }
     
     func saveSettings() {
@@ -97,9 +99,7 @@ extension AppModel {
         } catch {
             print("AppModel saveSettings error", error)
         }
-        Task() {
-            await LocationModel.main.restoreFrom(marked: settings.marked)
-        }
+        restoreLocations();
     }
     
     static func bundleVersion() -> String {

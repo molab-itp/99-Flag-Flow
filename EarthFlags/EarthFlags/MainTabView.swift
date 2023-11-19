@@ -50,6 +50,7 @@ struct MainTabView: View {
         }
         .onAppear() {
             print("MainTabView onAppear locationModel.locations", locationModel.locations)
+            model.restoreLocations()
         }
     }
 }
