@@ -15,9 +15,13 @@ struct FlagWebView: View {
         VStack {
             if let flagItem = model.flagItem {
                 VStack {
-                    Text(flagItem.label())
-                        .font(.title)
-                    
+                    Link(destination: flagItem.wikiUrl()!) {
+                        HStack {
+                            Image(systemName: "safari")
+                            Text(flagItem.label())
+                                .font(.title)
+                        }
+                    }
                     Image("flag-"+flagItem.alpha3)
                         .resizable()
                         .frame(width: 200, height: 100)

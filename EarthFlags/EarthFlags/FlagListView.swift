@@ -69,6 +69,9 @@ struct FlagItemRowView: View {
                 Button {
                     Task {
                         model.toggleMarked(flagItem: flagItem);
+                        if model.isMarked(flagItem: flagItem) {
+                            model.selectedTab = .marks
+                        }
                     }
                 } label: {
                     let state = model.isMarked(flagItem: flagItem)
