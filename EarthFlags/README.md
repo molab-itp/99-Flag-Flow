@@ -12,14 +12,19 @@
   - https://github.com/linssen/country-flag-icons/blob/master/countries.json
 
 - ViewFlags/ViewFlags/Resources/countries.json
+
   - JSON for each country
 
 - for country to appears on maps must add lat+lon here:
-    - LocationModel
-        let knownLocations = [
+
+  - LocationModel
+    let knownLocations = [
 
 - MapView
-    - https://www.hackingwithswift.com/books/ios-swiftui/bucket-list-introduction
-    - https://github.com/twostraws/HackingWithSwift.git
+
+  - https://github.com/molab-itp/09-Bucketlist
+  - https://www.hackingwithswift.com/books/ios-swiftui/bucket-list-introduction
+  - https://github.com/twostraws/HackingWithSwift.git
 
 - SwiftGloble
+  - https://github.com/dmojdehi/SwiftGlobe.git
