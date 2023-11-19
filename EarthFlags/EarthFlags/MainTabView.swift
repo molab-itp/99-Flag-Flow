@@ -42,11 +42,11 @@ struct MainTabView: View {
                     Label("Map", systemImage: "map")
                 }
                 .tag(TabTag.map)
-//            SwiftGlobeBridgeView()
-//                .tabItem {
-//                    Label("Earth", systemImage: "globe")
-//                }
-//                .tag(TabTag.earth)
+            SwiftGlobeBridgeView()
+                .tabItem {
+                    Label("Earth", systemImage: "globe")
+                }
+                .tag(TabTag.earth)
         }
         .onAppear() {
             print("MainTabView onAppear locationModel.locations", locationModel.locations)

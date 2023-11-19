@@ -9,6 +9,21 @@
 import Foundation
 
 extension SwiftGlobe {
+        
+    public func addDemoLocation(location: Location) {
+        
+        if let demoMarker {
+            self.removeMarker(demoMarker)
+        }
+        
+        let sf = GlowingMarker(lat: Float(location.latitude),
+                               lon: Float(location.longitude),
+                               altitude: kGlobeRadius, markerZindex: 0, style: .dot)
+        sf.addPulseAnimation()
+        self.addMarker(sf)
+        
+        demoMarker = sf;
+    }
     
     public func addDemoMarkers() {
         

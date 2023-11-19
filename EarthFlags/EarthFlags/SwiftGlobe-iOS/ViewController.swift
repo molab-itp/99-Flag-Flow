@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var sceneView : SCNView!
     
     var swiftGlobe = SwiftGlobe(alignment: .poles)
+    var location: Location?
     
     override func viewDidLoad() {
         print("ViewController viewDidLoad")
@@ -24,13 +25,28 @@ class ViewController: UIViewController {
         
 //        swiftGlobe.setupInSceneView(sceneView, forARKit: false, enableAutomaticSpin: true)
         swiftGlobe.setupInSceneView(sceneView, forARKit: false, enableAutomaticSpin: false)
-        swiftGlobe.addDemoMarkers()
-        swiftGlobe.focusOnLatLon( 40.630566, -73.922013)
+//        swiftGlobe.addDemoMarkers()
+        updateLocation()
     }
 
+    func setLocation(newLoc:Location) {
+        location = newLoc;
+        updateLocation();
+    }
+    
+    func updateLocation() {
+        if let location {
+            print("updateLocation", location)
+            swiftGlobe.focusOnLatLon( Float(location.latitude), Float(location.longitude))
+        }
+        else {
+            swiftGlobe.focusOnLatLon( 0.0, 0.0)
+        }
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         print("ViewController viewDidAppear")
-        swiftGlobe.focusOnLatLon( 40.630566, -73.922013)
+        updateLocation();
     }
     
     override func didReceiveMemoryWarning() {

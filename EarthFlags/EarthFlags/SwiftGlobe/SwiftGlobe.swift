@@ -67,7 +67,6 @@ let kAffectedBySpring = 1 << 1
 
 class SwiftGlobe {
     
-    
 #if os(watchOS)
 #else
     var gestureHost : SCNView?
@@ -100,6 +99,8 @@ class SwiftGlobe {
         case dayNightTerminator
     }
     
+    var demoMarker: GlowingMarker?
+
     internal init(alignment: UpDownAlignment) {
         // make the globe
         globeShape.segmentCount = 30
@@ -237,6 +238,13 @@ class SwiftGlobe {
         // (in the future we could track these separately)
         globe.addChildNode(marker.node)
     }
+    
+    public func removeMarker(_ marker: GlowingMarker) {
+        // for now, just add directly to the scene
+        // (in the future we could track these separately)
+        marker.node.removeFromParentNode();
+    }
+
 
 //#if os(watchOS)
     

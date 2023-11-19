@@ -7,6 +7,9 @@ _notes.txt
 2023-11-19 11:21:00.154251-0500 EarthFlags[46818:7063888] 
 [SwiftUI] Publishing changes from within view updates is not allowed, this will cause undefined behavior.
 
+Also get warning in 09-Bucketlist
+ ... _course-repos/09-Bucketlist/Bucketlist/AppModel.swift
+
 
 https://stackoverflow.com/questions/69556237/use-reference-to-captured-variable-in-concurrently-executing-code
 @MainActor

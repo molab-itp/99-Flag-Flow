@@ -72,7 +72,6 @@ struct MapTabView: View {
             print("starAction withAnimation")
             model.next()
         }
-//        model.next()
     }
 }
 

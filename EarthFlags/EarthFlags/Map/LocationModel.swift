@@ -51,7 +51,7 @@ import MapKit
                 $0.id == ccode
             }
             if loc.isEmpty {
-                print("LocationModel restoreFrom !!@ Missing ccode", ccode)
+                print("LocationModel restoreFrom !!@ Unknown ccode", ccode)
                 continue
             }
             newLocs.append(loc[0])
@@ -102,3 +102,7 @@ struct Location: Identifiable, Codable, Equatable {
         )
     }
 }
+
+// https://www.hackingwithswift.com/books/ios-swiftui/bucket-list-introduction
+// https://github.com/twostraws/HackingWithSwift.git
+
