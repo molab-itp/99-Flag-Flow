@@ -61,6 +61,20 @@ class AppModel: ObservableObject
         }
     }
     
+    func markedMove(from source: IndexSet, to destination: Int) {
+        print("markedMove", source, destination)
+        settings.marked.move(fromOffsets: source, toOffset: destination)
+        saveSettings();
+    }
+    
+    func markedDelete(indices: IndexSet) {
+        print("markedDelete", indices)
+        settings.marked.remove(atOffsets: indices)
+        saveSettings();
+    }
+
+    
+    
 }
 
 func getCountriesFromJSON() -> [FlagItem] {

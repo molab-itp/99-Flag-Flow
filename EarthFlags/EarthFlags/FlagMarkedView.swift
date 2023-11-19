@@ -12,19 +12,26 @@ struct FlagMarkedView: View {
     @State var marked: [FlagItem] = []
     
     @EnvironmentObject var model: AppModel
-
+    
     var body: some View {
-        ZStack {
-            Rectangle()
-                .background(Color(white: 0.9))
-                .foregroundStyle(Color(white: 0.8))
-            VStack {
-                // Query count from model to get modified count
-                Text("\(model.marked().count) Marked")
-                    .padding()
-                List {
-                    ForEach(marked, id: \.alpha3) { fitem in
-                        FlagItemRowView(flagItem: fitem)
+        NavigationStack {
+            ZStack {
+                Rectangle()
+                    .background(Color(white: 0.9))
+                    .foregroundStyle(Color(white: 0.8))
+                VStack {
+                    // Query count from model to get modified count
+                    Text("\(model.marked().count) Marked")
+                        .padding()
+                    List {
+                        ForEach(marked, id: \.alpha3) { fitem in
+                            FlagItemRowView(flagItem: fitem)
+                        }
+                        .onMove(perform: move)
+                        .onDelete(perform: delete )
+                    }
+                    .toolbar {
+                        EditButton()
                     }
                 }
             }
@@ -38,9 +45,20 @@ struct FlagMarkedView: View {
             print("FlagMarkedView onDisappear")
         }
     }
+    func move(from source: IndexSet, to destination: Int) {
+        print("FlagMarkedView move", source, destination)
+        model.markedMove(from: source, to: destination)
+        marked = model.marked();
+        // users.move(fromOffsets: source, toOffset: destination)
+    }
+    func delete( indices: IndexSet) {
+        print("onDelete", indices)
+        model.markedDelete(indices: indices)
+        marked = model.marked();
+        // appModel.removeLocation(at: indices)
+    }
     
 }
-
 
 #Preview {
     FlagMarkedView(marked: AppModel.sample.marked())

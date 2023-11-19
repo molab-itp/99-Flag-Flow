@@ -1,6 +1,17 @@
 _notes.txt
 
 # --
+2023-11-19 17:37:07
+
+https://github.com/molab-itp/09-Bucketlist
+
+https://www.hackingwithswift.com/books/ios-swiftui/bucket-list-introduction
+
+https://www.hackingwithswift.com/quick-start/swiftui/how-to-let-users-move-rows-in-a-list
+
+    @Environment(\.editMode) private var editMode
+
+# --
 2023-11-19 08:34:04
 
 >> Still getting
