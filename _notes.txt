@@ -3,6 +3,9 @@ _notes.txt
 # --
 2023-11-19 08:34:04
 
+https://stackoverflow.com/questions/69556237/use-reference-to-captured-variable-in-concurrently-executing-code
+@MainActor
+
 >> Sharing model state
     static let main = AppModel()
 https://developer.apple.com/documentation/swift/managing-a-shared-resource-using-a-singleton

@@ -13,9 +13,13 @@ class AppModel: ObservableObject
     @Published var flagItem: FlagItem?
     @Published var flagItems = getCountriesFromJSON()
 
-    @Published var settings:Settings = AppModel.loadSettings()
+    @Published var settings:Settings
 
     static let main = AppModel()
+    
+    init() {
+        settings = AppModel.loadSettings()
+    }
     
     static var sample:AppModel {
         let model = AppModel();
@@ -78,7 +82,9 @@ extension AppModel {
             settings = Settings();
         }
         
-        LocationModel.main.restoreFrom(marked: settings.marked)
+//        Task() {
+//            await LocationModel.main.restoreFrom(marked: settings.marked)
+//        }
         
         return settings;
     }
@@ -91,8 +97,9 @@ extension AppModel {
         } catch {
             print("AppModel saveSettings error", error)
         }
-        
-        LocationModel.main.restoreFrom(marked: settings.marked)
+        Task() {
+            await LocationModel.main.restoreFrom(marked: settings.marked)
+        }
     }
     
     static func bundleVersion() -> String {

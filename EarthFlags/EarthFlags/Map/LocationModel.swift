@@ -8,7 +8,7 @@
 import Foundation
 import MapKit
 
-class LocationModel: ObservableObject {
+@MainActor class LocationModel: ObservableObject {
     @Published var region = MKCoordinateRegion(
         center: CLLocationCoordinate2D(
             latitude: 40.630566,    // Brooklyn Flatlands
