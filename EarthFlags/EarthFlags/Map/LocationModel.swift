@@ -51,6 +51,19 @@ import MapKit
         // print("LocationModel next currentLocation", currentLocation)
     }
     
+    func nextUnknown() {
+        print("LocationModel nextUnknown index", index, "locations.count", locations.count)
+        if locations.count <= 0 {
+            return;
+        }
+        index = (index + 1) % locations.count;
+        let cl = locations[index];
+        
+        currentLocation = cl;
+        region = cl.region
+
+    }
+    
     func restoreFrom(marked: Array<String>) {
         print("LocationModel restoreFrom marked", marked)
         var newLocs = [Location]()
@@ -60,6 +73,13 @@ import MapKit
             }
             if loc.isEmpty {
                 print("LocationModel restoreFrom !!@ Unknown ccode", ccode)
+                var name = "";
+                if let flagItem = AppModel.main.flagItem(ccode: ccode) {
+                    name = "-"+flagItem.name
+                }
+                let id = "Unk-" + ccode + name
+                let unk = Location(id: id, latitude: 22.0, longitude: -172.0, label: id);
+                newLocs.append(unk)
                 continue
             }
             newLocs.append(loc[0])

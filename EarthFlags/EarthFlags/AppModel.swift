@@ -27,6 +27,12 @@ class AppModel: ObservableObject
         return model
     }
     
+    func flagItem(ccode:String) -> FlagItem? {
+        flagItems.first {
+            $0.alpha3 == ccode
+        }
+    }
+    
     func isMarked(flagItem: FlagItem) -> Bool {
         settings.marked.contains(flagItem.alpha3)
     }

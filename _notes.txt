@@ -1,6 +1,32 @@
 _notes.txt
 
 # --
+2023-11-19 19:04:58
+
+
+    func nextUnknown() {
+
+
+
+>> refactoring
+
+    private func userHeaderView() -> some View {
+        VStack {
+            userDetailRow()
+            Button(action: lobbyModel.signOut) {
+                Text("Sign Out")
+                    .foregroundColor(.white)
+                    .padding()
+                    // .frame(maxWidth: .infinity)
+                    .background(Color(.systemIndigo))
+                    .cornerRadius(12)
+                    .padding(5)
+            }
+        }
+    }
+
+
+# --
 2023-11-19 17:37:07
 
 https://github.com/molab-itp/09-Bucketlist
