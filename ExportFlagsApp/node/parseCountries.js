@@ -98,8 +98,7 @@ for (let index = 0; index < countries.length; index++) {
     console.log('MISSING countries', index, item.alpha3, item.name);
     continue;
   }
-  // item.capital = fitem.properties.city || fitem.properties.country;
-  item.capital = fitem.properties.city;
+  item.capital = fitem.properties.city || fitem.properties.country;
   item.latitude = fitem.geometry.coordinates[1];
   item.longitude = fitem.geometry.coordinates[0];
   // if (index > 4) break;

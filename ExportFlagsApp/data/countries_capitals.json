@@ -115,6 +115,7 @@
     "name": "French Southern Territories",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Flag_of_the_French_Southern_and_Antarctic_Lands.svg",
     "license": "Public domain",
+    "capital": "French Southern Territories",
     "latitude": -37.5,
     "longitude": 77.32
   },
@@ -924,6 +925,7 @@
     "name": "Heard Island and McDonald Islands",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Proposed_flag_of_Antarctica_%28Graham_Bartram%29.svg",
     "license": "Public domain",
+    "capital": "Heard Island and McDonald Islands",
     "latitude": -53.06,
     "longitude": 72.31
   },
@@ -1003,6 +1005,7 @@
     "name": "British Indian Ocean Territory",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_the_Commissioner_of_the_British_Indian_Ocean_Territory.svg",
     "license": "Public domain",
+    "capital": "British Indian Ocean Territory",
     "latitude": -6,
     "longitude": 71.3
   },
@@ -1302,6 +1305,7 @@
     "name": "Macao",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/6/63/Flag_of_Macau.svg",
     "license": "Public domain",
+    "capital": "Macao",
     "latitude": 22.1,
     "longitude": 113.33
   },
@@ -1621,6 +1625,7 @@
     "name": "Nauru",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Flag_of_Nauru.svg",
     "license": "Public domain",
+    "capital": "Nauru",
     "latitude": -0.32,
     "longitude": 166.55
   },
@@ -1770,6 +1775,7 @@
     "name": "Palestine - State of",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_Palestine.svg",
     "license": "Public domain",
+    "capital": "Palestinian Territory",
     "latitude": 31.25,
     "longitude": 34.2
   },
@@ -2099,6 +2105,7 @@
     "name": "Tokelau",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Flag_of_Tokelau.svg",
     "license": "Public domain",
+    "capital": "Tokelau",
     "latitude": -9,
     "longitude": -172
   },
