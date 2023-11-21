@@ -68,15 +68,14 @@ import MapKit
         print("LocationModel restoreFrom marked", marked)
         var newLocs = [Location]()
         for ccode in marked {
-            if let fitem = AppModel.main.flagDict[ccode] {
-                let loc = Location(
-                    id: fitem.alpha3,
-                    latitude: fitem.latitude,
-                    longitude: fitem.longitude,
-                    label: fitem.name,
-                    capital: fitem.capital);
-                newLocs.append(loc)
-            }
+            guard let fitem = AppModel.main.flagDict[ccode] else { continue }
+            let loc = Location(
+                id: fitem.alpha3,
+                latitude: fitem.latitude,
+                longitude: fitem.longitude,
+                label: fitem.name,
+                capital: fitem.capital);
+            newLocs.append(loc)
         }
         locations = newLocs;
         if !newLocs.isEmpty {
@@ -90,7 +89,6 @@ import MapKit
 let knownLocations:[Location] = [
     Location(delta: 5.0), // USA Brooklyn Flatlands
     Location(id: "USA", latitude: 38.883333, longitude: -77.016667, label: "USA", capital: "Washington, D.C."),
-//    // ... label: "United Kingdom of Great Britain"
     Location(id: "GBR", latitude: 51.500000, longitude: -0.1166670, label: "UK", capital: "London"),
     Location(id: "JAM", latitude: 17.983333, longitude: -76.800000, label: "Jamaica", capital: "Kingston"),
     Location(id: "GUY", latitude: 6.8058330, longitude: -58.150833, label: "Guyana", capital: "Georgetown"),

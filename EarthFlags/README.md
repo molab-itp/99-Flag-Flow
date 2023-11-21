@@ -15,11 +15,6 @@
 
   - JSON for each country
 
-- for country to appears on maps must add lat+lon here:
-
-  - LocationModel
-    - let knownLocations = [
-
 - MapView
 
   - https://github.com/molab-itp/09-Bucketlist
