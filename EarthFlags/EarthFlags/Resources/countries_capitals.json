@@ -45,9 +45,9 @@
     "name": "Åland Islands",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Flag_of_%C3%85land.svg",
     "license": "Public domain",
-    "capital": "",
-    "latitude": 0,
-    "longitude": 0
+    "capital": "Mariehamn",
+    "latitude": 60.116667,
+    "longitude": 19.9
   },
   {
     "url": "https://en.wikipedia.org/wiki/Albania",
@@ -195,9 +195,9 @@
     "name": "Bonaire - Sint Eustatius and Saba",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_the_Netherlands.svg",
     "license": "Public domain",
-    "capital": "",
-    "latitude": 0,
-    "longitude": 0
+    "capital": "Kralendijk",
+    "latitude": 12.14881,
+    "longitude": -68.27681
   },
   {
     "url": "https://en.wikipedia.org/wiki/Burkina_Faso",
@@ -525,9 +525,9 @@
     "name": "Curaçao",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Flag_of_Cura%C3%A7ao.svg",
     "license": "Public domain",
-    "capital": "",
-    "latitude": 0,
-    "longitude": 0
+    "capital": "Willemstad",
+    "latitude": 12.116667,
+    "longitude": -68.933333
   },
   {
     "url": "https://en.wikipedia.org/wiki/Christmas_Island",
@@ -1865,9 +1865,9 @@
     "name": "South Georgia and the South Sandwich Islands",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Flag_of_South_Georgia_and_the_South_Sandwich_Islands.svg",
     "license": "Public domain",
-    "capital": "",
-    "latitude": 0,
-    "longitude": 0
+    "capital": "King Edward Point",
+    "latitude": -54.283333,
+    "longitude": -36.5
   },
   {
     "url": "https://en.wikipedia.org/wiki/Saint_Helena,_Ascension_and_Tristan_da_Cunha",
@@ -1955,9 +1955,9 @@
     "name": "South Sudan",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Flag_of_South_Sudan.svg",
     "license": "Public domain",
-    "capital": "",
-    "latitude": 0,
-    "longitude": 0
+    "capital": "Juba",
+    "latitude": 4.85,
+    "longitude": 31.6
   },
   {
     "url": "https://en.wikipedia.org/wiki/S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe",
@@ -2025,9 +2025,9 @@
     "name": "Sint Maarten (Dutch part)",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Flag_of_Sint_Maarten.svg",
     "license": "Public domain",
-    "capital": "",
-    "latitude": 0,
-    "longitude": 0
+    "capital": "Philipsburg",
+    "latitude": 18.033333,
+    "longitude": -63.05
   },
   {
     "url": "https://en.wikipedia.org/wiki/Seychelles",
@@ -2215,9 +2215,9 @@
     "name": "United States Minor Outlying Islands",
     "file_url": "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg",
     "license": "Public domain",
-    "capital": "",
-    "latitude": 0,
-    "longitude": 0
+    "capital": "Wake Island",
+    "latitude": 19.295278,
+    "longitude": 166.631111
   },
   {
     "url": "https://en.wikipedia.org/wiki/Uruguay",

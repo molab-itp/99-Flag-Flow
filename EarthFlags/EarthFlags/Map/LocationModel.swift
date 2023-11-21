@@ -68,21 +68,15 @@ import MapKit
         print("LocationModel restoreFrom marked", marked)
         var newLocs = [Location]()
         for ccode in marked {
-            let loc = knownLocations.filter {
-                $0.id == ccode
+            if let fitem = AppModel.main.flagDict[ccode] {
+                let loc = Location(
+                    id: fitem.alpha3,
+                    latitude: fitem.latitude,
+                    longitude: fitem.longitude,
+                    label: fitem.name,
+                    capital: fitem.capital);
+                newLocs.append(loc)
             }
-            if loc.isEmpty {
-                print("LocationModel restoreFrom !!@ Unknown ccode", ccode)
-//                var name = "";
-//                if let flagItem = AppModel.main.flagItem(ccode: ccode) {
-//                    name = "-"+flagItem.name
-//                }
-//                let id = "Unk-" + ccode + name
-//                let unk = Location(id: id, latitude: 22.0, longitude: -172.0, label: id);
-//                newLocs.append(unk)
-                continue
-            }
-            newLocs.append(loc[0])
         }
         locations = newLocs;
         if !newLocs.isEmpty {
