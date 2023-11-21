@@ -11,14 +11,20 @@ class AppModel: ObservableObject
 {
     @Published var selectedTab = TabTag.list
     @Published var flagItem: FlagItem?
-    @Published var flagItems = getCountriesFromJSON()
-
+    @Published var flagItems: [FlagItem]
+    var flagDict: Dictionary<String,FlagItem>
+    
     @Published var settings:Settings
 
     static let main = AppModel()
     
     init() {
         settings = AppModel.loadSettings()
+        flagItems = getCountriesFromJSON()
+        flagDict = Dictionary<String,FlagItem>()
+        for flag in flagItems {
+            flagDict[flag.alpha3] = flag;
+        }
     }
     
     static var sample:AppModel {
@@ -78,19 +84,17 @@ class AppModel: ObservableObject
         settings.marked.remove(atOffsets: indices)
         saveSettings();
     }
-
-    
-    
 }
 
 func getCountriesFromJSON() -> [FlagItem] {
-    var flags = Bundle.main.decode([FlagItem].self, from: "countries.json")
-    flags = flags.sorted { $0.alpha3 < $1.alpha3 }
+    var flags = Bundle.main.decode([FlagItem].self, from: "countries_capitals.json")
+//    flags = flags.sorted { $0.alpha3 < $1.alpha3 }
     for index in 0..<flags.count {
         flags[index].index = index+1;
     }
     return flags
 }
+
 
 // load and save settings
 //

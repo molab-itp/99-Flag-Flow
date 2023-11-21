@@ -7,12 +7,15 @@
 
 import Foundation
 
-//{
-//    "url": "/wiki/Jamaica",
+//"JAM": {
+//    "url": "https://en.wikipedia.org/wiki/Jamaica",
 //    "alpha3": "JAM",
 //    "name": "Jamaica",
-//    "file_url": "//upload.wikimedia.org/wikipedia/commons/0/0a/Flag_of_Jamaica.svg",
-//    "license": "Public domain"
+//    "file_url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Flag_of_Jamaica.svg",
+//    "license": "Public domain",
+//    "capital": "Kingston",
+//    "latitude": 18,
+//    "longitude": -76.48
 //},
 
 struct FlagItem : Decodable {
@@ -21,6 +24,10 @@ struct FlagItem : Decodable {
     var name: String;
     var file_url: String;
     var license: String;
+    var capital: String;
+    var latitude: Double;
+    var longitude: Double;
+    
     var index: Int?
 //    var isFavorite: Bool = false
     
@@ -40,4 +47,8 @@ let FlagItem_Sample = FlagItem(
     alpha3: "JAM", 
     name: "Jamaica", 
     file_url: "//upload.wikimedia.org/wikipedia/commons/0/0a/Flag_of_Jamaica.svg", 
-    license: "Public domain")
+    license: "Public domain",
+    capital: "Kingston",
+    latitude: 18,
+    longitude: -76.48
+)

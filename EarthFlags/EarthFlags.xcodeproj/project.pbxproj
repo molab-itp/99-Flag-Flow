@@ -17,6 +17,7 @@
 		AB3DC8A92B09534A00F0E631 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3DC8A72B09534A00F0E631 /* LocationModel.swift */; };
 		AB4E84832B03B58D00582923 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AB4E84822B03B58D00582923 /* README.md */; };
 		AB4E84872B03DFB500582923 /* _notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = AB4E84862B03DFB500582923 /* _notes.txt */; };
+		AB8A75912B0D04E300A8CD5F /* countries_capitals.json in Resources */ = {isa = PBXBuildFile; fileRef = AB8A75902B0D04E300A8CD5F /* countries_capitals.json */; };
 		ABCA885C2B07219700F09268 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCA885B2B07219700F09268 /* AppModel.swift */; };
 		ABCA885E2B077E6700F09268 /* FlagWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCA885D2B077E6700F09268 /* FlagWebView.swift */; };
 		ABCA88602B07D0E300F09268 /* FlagMarkedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCA885F2B07D0E300F09268 /* FlagMarkedView.swift */; };
@@ -59,6 +60,7 @@
 		AB3DC8A72B09534A00F0E631 /* LocationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		AB4E84822B03B58D00582923 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AB4E84862B03DFB500582923 /* _notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = _notes.txt; sourceTree = "<group>"; };
+		AB8A75902B0D04E300A8CD5F /* countries_capitals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries_capitals.json; sourceTree = "<group>"; };
 		ABCA885B2B07219700F09268 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		ABCA885D2B077E6700F09268 /* FlagWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagWebView.swift; sourceTree = "<group>"; };
 		ABCA885F2B07D0E300F09268 /* FlagMarkedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagMarkedView.swift; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				AB32E6402B014EA5009C8E7C /* countries.json */,
+				AB8A75902B0D04E300A8CD5F /* countries_capitals.json */,
 				ABE29FE62AB3A22E0072F7C2 /* jht.jpg */,
 			);
 			path = Resources;
@@ -288,6 +291,7 @@
 			files = (
 				ABE04E542B08C75600D46152 /* world-large.jpg in Resources */,
 				ABE04E5C2B08C75600D46152 /* earth-emissive.jpg in Resources */,
+				AB8A75912B0D04E300A8CD5F /* countries_capitals.json in Resources */,
 				ABE29FE72AB3A22E0072F7C2 /* jht.jpg in Resources */,
 				ABE04E552B08C75600D46152 /* earth-specular.jpg in Resources */,
 				ABE04E5D2B08C75600D46152 /* eso0932a_top.png in Resources */,

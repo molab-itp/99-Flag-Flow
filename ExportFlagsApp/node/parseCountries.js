@@ -98,6 +98,7 @@ for (let index = 0; index < countries.length; index++) {
     console.log('MISSING countries', index, item.alpha3, item.name);
     continue;
   }
+  // item.capital = fitem.properties.city || fitem.properties.country;
   item.capital = fitem.properties.city;
   item.latitude = fitem.geometry.coordinates[1];
   item.longitude = fitem.geometry.coordinates[0];
@@ -106,7 +107,8 @@ for (let index = 0; index < countries.length; index++) {
 console.log('countries.length', countries.length);
 console.log('MISSING countries', missingCount);
 
-fs.writeJsonSync(outputPath, countriesDict, { spaces: 2 });
+// fs.writeJsonSync(outputPath, countriesDict, { spaces: 2 });
+fs.writeJsonSync(outputPath, countries, { spaces: 2 });
 
 // features.length 241
 // MISSING countries 1 ALA Åland Islands

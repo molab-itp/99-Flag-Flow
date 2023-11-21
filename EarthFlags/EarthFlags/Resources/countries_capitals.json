@@ -1,0 +1,121 @@
+[
+    {
+        "url": "https://en.wikipedia.org/wiki/Aruba",
+        "alpha3": "ABW",
+        "name": "Aruba",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Flag_of_Aruba.svg",
+        "license": "Public domain",
+        "capital": "Oranjestad",
+        "latitude": 12.31,
+        "longitude": -70.02
+    },
+    {
+        "url": "https://en.wikipedia.org/wiki/Afghanistan",
+        "alpha3": "AFG",
+        "name": "Afghanistan",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_the_Taliban.svg",
+        "license": "Public domain",
+        "capital": "Kabul",
+        "latitude": 34.31,
+        "longitude": 69.11
+    },
+    {
+        "url": "https://en.wikipedia.org/wiki/Angola",
+        "alpha3": "AGO",
+        "name": "Angola",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Flag_of_Angola.svg",
+        "license": "Public domain",
+        "capital": "Luanda",
+        "latitude": -8.5,
+        "longitude": 13.14
+    },
+    {
+        "url": "https://en.wikipedia.org/wiki/Anguilla",
+        "alpha3": "AIA",
+        "name": "Anguilla",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Anguilla.svg",
+        "license": "Public domain",
+        "capital": "The Valley",
+        "latitude": 18.13,
+        "longitude": -63.03
+    },
+    {
+        "url": "https://en.wikipedia.org/wiki/%C3%85land_Islands",
+        "alpha3": "ALA",
+        "name": "Åland Islands",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Flag_of_%C3%85land.svg",
+        "license": "Public domain",
+        "capital": "Mariehamn",
+        "latitude": 60.116667,
+        "longitude": 19.9
+    },
+    {
+        "url": "https://en.wikipedia.org/wiki/Albania",
+        "alpha3": "ALB",
+        "name": "Albania",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Flag_of_Albania.svg",
+        "license": "Public domain",
+        "capital": "Tirana",
+        "latitude": 41.19,
+        "longitude": 19.49
+    },
+    {
+        "url": "https://en.wikipedia.org/wiki/Andorra",
+        "alpha3": "AND",
+        "name": "Andorra",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Andorra.svg",
+        "license": "Public domain",
+        "capital": "Andorra la Vella",
+        "latitude": 42.3,
+        "longitude": 1.31
+    },
+    {
+        "url": "https://en.wikipedia.org/wiki/United_Arab_Emirates",
+        "alpha3": "ARE",
+        "name": "United Arab Emirates",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_United_Arab_Emirates.svg",
+        "license": "Public domain",
+        "capital": "Abu Dhabi",
+        "latitude": 24.28,
+        "longitude": 54.22
+    },
+    {
+        "url": "https://en.wikipedia.org/wiki/Argentina",
+        "alpha3": "ARG",
+        "name": "Argentina",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg",
+        "license": "Public domain",
+        "capital": "Buenos Aires",
+        "latitude": -34.36,
+        "longitude": -58.4
+    },
+    {
+        "url": "https://en.wikipedia.org/wiki/Armenia",
+        "alpha3": "ARM",
+        "name": "Armenia",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Flag_of_Armenia.svg",
+        "license": "Public domain",
+        "capital": "Yerevan",
+        "latitude": 40.1,
+        "longitude": 44.3
+    },
+    {
+        "url": "https://en.wikipedia.org/wiki/American_Samoa",
+        "alpha3": "ASM",
+        "name": "American Samoa",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Flag_of_American_Samoa.svg",
+        "license": "Public domain",
+        "capital": "Pago Pago",
+        "latitude": -14.16,
+        "longitude": -170.42
+    },
+    {
+        "url": "https://en.wikipedia.org/wiki/French_Southern_and_Antarctic_Lands",
+        "alpha3": "ATF",
+        "name": "French Southern Territories",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Flag_of_the_French_Southern_and_Antarctic_Lands.svg",
+        "license": "Public domain",
+        "latitude": -37.5,
+        "longitude": 77.32
+    }
+]

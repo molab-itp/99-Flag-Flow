@@ -1,5 +1,5 @@
-[
-  {
+{
+  "ABW": {
     "url": "https://en.wikipedia.org/wiki/Aruba",
     "alpha3": "ABW",
     "name": "Aruba",
@@ -9,7 +9,7 @@
     "latitude": 12.31,
     "longitude": -70.02
   },
-  {
+  "AFG": {
     "url": "https://en.wikipedia.org/wiki/Afghanistan",
     "alpha3": "AFG",
     "name": "Afghanistan",
@@ -19,7 +19,7 @@
     "latitude": 34.31,
     "longitude": 69.11
   },
-  {
+  "AGO": {
     "url": "https://en.wikipedia.org/wiki/Angola",
     "alpha3": "AGO",
     "name": "Angola",
@@ -29,7 +29,7 @@
     "latitude": -8.5,
     "longitude": 13.14
   },
-  {
+  "AIA": {
     "url": "https://en.wikipedia.org/wiki/Anguilla",
     "alpha3": "AIA",
     "name": "Anguilla",
@@ -39,17 +39,17 @@
     "latitude": 18.13,
     "longitude": -63.03
   },
-  {
+  "ALA": {
     "url": "https://en.wikipedia.org/wiki/%C3%85land_Islands",
     "alpha3": "ALA",
     "name": "Åland Islands",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Flag_of_%C3%85land.svg",
     "license": "Public domain",
-    "capital": "",
-    "latitude": 0,
-    "longitude": 0
+    "capital": "Mariehamn",
+    "latitude": 60.116667,
+    "longitude": 19.9
   },
-  {
+  "ALB": {
     "url": "https://en.wikipedia.org/wiki/Albania",
     "alpha3": "ALB",
     "name": "Albania",
@@ -59,7 +59,7 @@
     "latitude": 41.19,
     "longitude": 19.49
   },
-  {
+  "AND": {
     "url": "https://en.wikipedia.org/wiki/Andorra",
     "alpha3": "AND",
     "name": "Andorra",
@@ -69,7 +69,7 @@
     "latitude": 42.3,
     "longitude": 1.31
   },
-  {
+  "ARE": {
     "url": "https://en.wikipedia.org/wiki/United_Arab_Emirates",
     "alpha3": "ARE",
     "name": "United Arab Emirates",
@@ -79,7 +79,7 @@
     "latitude": 24.28,
     "longitude": 54.22
   },
-  {
+  "ARG": {
     "url": "https://en.wikipedia.org/wiki/Argentina",
     "alpha3": "ARG",
     "name": "Argentina",
@@ -89,7 +89,7 @@
     "latitude": -34.36,
     "longitude": -58.4
   },
-  {
+  "ARM": {
     "url": "https://en.wikipedia.org/wiki/Armenia",
     "alpha3": "ARM",
     "name": "Armenia",
@@ -99,7 +99,7 @@
     "latitude": 40.1,
     "longitude": 44.3
   },
-  {
+  "ASM": {
     "url": "https://en.wikipedia.org/wiki/American_Samoa",
     "alpha3": "ASM",
     "name": "American Samoa",
@@ -109,7 +109,7 @@
     "latitude": -14.16,
     "longitude": -170.42
   },
-  {
+  "ATF": {
     "url": "https://en.wikipedia.org/wiki/French_Southern_and_Antarctic_Lands",
     "alpha3": "ATF",
     "name": "French Southern Territories",
@@ -118,7 +118,7 @@
     "latitude": -37.5,
     "longitude": 77.32
   },
-  {
+  "ATG": {
     "url": "https://en.wikipedia.org/wiki/Antigua_and_Barbuda",
     "alpha3": "ATG",
     "name": "Antigua and Barbuda",
@@ -128,7 +128,7 @@
     "latitude": 17.07,
     "longitude": -61.51
   },
-  {
+  "AUS": {
     "url": "https://en.wikipedia.org/wiki/Australia",
     "alpha3": "AUS",
     "name": "Australia",
@@ -138,7 +138,7 @@
     "latitude": -35.17,
     "longitude": 149.13
   },
-  {
+  "AUT": {
     "url": "https://en.wikipedia.org/wiki/Austria",
     "alpha3": "AUT",
     "name": "Austria",
@@ -148,7 +148,7 @@
     "latitude": 48.12,
     "longitude": 16.22
   },
-  {
+  "AZE": {
     "url": "https://en.wikipedia.org/wiki/Azerbaijan",
     "alpha3": "AZE",
     "name": "Azerbaijan",
@@ -158,7 +158,7 @@
     "latitude": 40.23,
     "longitude": 49.52
   },
-  {
+  "BDI": {
     "url": "https://en.wikipedia.org/wiki/Burundi",
     "alpha3": "BDI",
     "name": "Burundi",
@@ -168,7 +168,7 @@
     "latitude": -3.22,
     "longitude": 29.21
   },
-  {
+  "BEL": {
     "url": "https://en.wikipedia.org/wiki/Belgium",
     "alpha3": "BEL",
     "name": "Belgium",
@@ -178,7 +178,7 @@
     "latitude": 50.5,
     "longitude": 4.2
   },
-  {
+  "BEN": {
     "url": "https://en.wikipedia.org/wiki/Benin",
     "alpha3": "BEN",
     "name": "Benin",
@@ -188,17 +188,17 @@
     "latitude": 6.29,
     "longitude": 2.37
   },
-  {
+  "BES": {
     "url": "https://en.wikipedia.org/wiki/Caribbean_Netherlands",
     "alpha3": "BES",
     "name": "Bonaire - Sint Eustatius and Saba",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_the_Netherlands.svg",
     "license": "Public domain",
-    "capital": "",
-    "latitude": 0,
-    "longitude": 0
+    "capital": "Kralendijk",
+    "latitude": 12.14881,
+    "longitude": -68.27681
   },
-  {
+  "BFA": {
     "url": "https://en.wikipedia.org/wiki/Burkina_Faso",
     "alpha3": "BFA",
     "name": "Burkina Faso",
@@ -208,7 +208,7 @@
     "latitude": 12.22,
     "longitude": -1.31
   },
-  {
+  "BGD": {
     "url": "https://en.wikipedia.org/wiki/Bangladesh",
     "alpha3": "BGD",
     "name": "Bangladesh",
@@ -218,7 +218,7 @@
     "latitude": 23.43,
     "longitude": 90.24
   },
-  {
+  "BGR": {
     "url": "https://en.wikipedia.org/wiki/Bulgaria",
     "alpha3": "BGR",
     "name": "Bulgaria",
@@ -228,7 +228,7 @@
     "latitude": 42.41,
     "longitude": 23.19
   },
-  {
+  "BHR": {
     "url": "https://en.wikipedia.org/wiki/Bahrain",
     "alpha3": "BHR",
     "name": "Bahrain",
@@ -238,7 +238,7 @@
     "latitude": 26.14,
     "longitude": 50.34
   },
-  {
+  "BHS": {
     "url": "https://en.wikipedia.org/wiki/Bahamas",
     "alpha3": "BHS",
     "name": "Bahamas",
@@ -248,7 +248,7 @@
     "latitude": 25.05,
     "longitude": -77.21
   },
-  {
+  "BIH": {
     "url": "https://en.wikipedia.org/wiki/Bosnia_and_Herzegovina",
     "alpha3": "BIH",
     "name": "Bosnia and Herzegovina",
@@ -258,7 +258,7 @@
     "latitude": 43.52,
     "longitude": 18.25
   },
-  {
+  "BLM": {
     "url": "https://en.wikipedia.org/wiki/Saint_Barth%C3%A9lemy",
     "alpha3": "BLM",
     "name": "Saint Barthélemy",
@@ -268,7 +268,7 @@
     "latitude": 17.53,
     "longitude": -62.51
   },
-  {
+  "BLR": {
     "url": "https://en.wikipedia.org/wiki/Belarus",
     "alpha3": "BLR",
     "name": "Belarus",
@@ -278,7 +278,7 @@
     "latitude": 53.54,
     "longitude": 27.34
   },
-  {
+  "BLZ": {
     "url": "https://en.wikipedia.org/wiki/Belize",
     "alpha3": "BLZ",
     "name": "Belize",
@@ -288,7 +288,7 @@
     "latitude": 17.15,
     "longitude": -88.46
   },
-  {
+  "BMU": {
     "url": "https://en.wikipedia.org/wiki/Bermuda",
     "alpha3": "BMU",
     "name": "Bermuda",
@@ -298,7 +298,7 @@
     "latitude": 32.17,
     "longitude": -64.47
   },
-  {
+  "BOL": {
     "url": "https://en.wikipedia.org/wiki/Bolivia",
     "alpha3": "BOL",
     "name": "Bolivia (Plurinational State of)",
@@ -308,7 +308,7 @@
     "latitude": -16.3,
     "longitude": -68.09
   },
-  {
+  "BRA": {
     "url": "https://en.wikipedia.org/wiki/Brazil",
     "alpha3": "BRA",
     "name": "Brazil",
@@ -318,7 +318,7 @@
     "latitude": -15.47,
     "longitude": -47.55
   },
-  {
+  "BRB": {
     "url": "https://en.wikipedia.org/wiki/Barbados",
     "alpha3": "BRB",
     "name": "Barbados",
@@ -328,7 +328,7 @@
     "latitude": 13.06,
     "longitude": -59.37
   },
-  {
+  "BRN": {
     "url": "https://en.wikipedia.org/wiki/Brunei_Darussalam",
     "alpha3": "BRN",
     "name": "Brunei Darussalam",
@@ -338,7 +338,7 @@
     "latitude": 4.53,
     "longitude": 114.56
   },
-  {
+  "BTN": {
     "url": "https://en.wikipedia.org/wiki/Bhutan",
     "alpha3": "BTN",
     "name": "Bhutan",
@@ -348,7 +348,7 @@
     "latitude": 27.29,
     "longitude": 89.36
   },
-  {
+  "BWA": {
     "url": "https://en.wikipedia.org/wiki/Botswana",
     "alpha3": "BWA",
     "name": "Botswana",
@@ -358,7 +358,7 @@
     "latitude": -24.45,
     "longitude": 25.55
   },
-  {
+  "CAF": {
     "url": "https://en.wikipedia.org/wiki/Central_African_Republic",
     "alpha3": "CAF",
     "name": "Central African Republic",
@@ -368,7 +368,7 @@
     "latitude": 4.22,
     "longitude": 18.35
   },
-  {
+  "CAN": {
     "url": "https://en.wikipedia.org/wiki/Canada",
     "alpha3": "CAN",
     "name": "Canada",
@@ -378,7 +378,7 @@
     "latitude": 45.25,
     "longitude": -75.42
   },
-  {
+  "CCK": {
     "url": "https://en.wikipedia.org/wiki/Cocos_(Keeling)_Islands",
     "alpha3": "CCK",
     "name": "Cocos (Keeling) Islands",
@@ -388,7 +388,7 @@
     "latitude": -12.1,
     "longitude": 96.5
   },
-  {
+  "CHE": {
     "url": "https://en.wikipedia.org/wiki/Switzerland",
     "alpha3": "CHE",
     "name": "Switzerland",
@@ -398,7 +398,7 @@
     "latitude": 46.57,
     "longitude": 7.26
   },
-  {
+  "CHL": {
     "url": "https://en.wikipedia.org/wiki/Chile",
     "alpha3": "CHL",
     "name": "Chile",
@@ -408,7 +408,7 @@
     "latitude": -33.27,
     "longitude": -70.4
   },
-  {
+  "CHN": {
     "url": "https://en.wikipedia.org/wiki/China",
     "alpha3": "CHN",
     "name": "China",
@@ -418,7 +418,7 @@
     "latitude": 39.55,
     "longitude": 116.23
   },
-  {
+  "CIV": {
     "url": "https://en.wikipedia.org/wiki/Ivory_Coast",
     "alpha3": "CIV",
     "name": "Côte d'Ivoire",
@@ -428,7 +428,7 @@
     "latitude": 6.49,
     "longitude": -5.17
   },
-  {
+  "CMR": {
     "url": "https://en.wikipedia.org/wiki/Cameroon",
     "alpha3": "CMR",
     "name": "Cameroon",
@@ -438,7 +438,7 @@
     "latitude": 3.52,
     "longitude": 11.31
   },
-  {
+  "COD": {
     "url": "https://en.wikipedia.org/wiki/Democratic_Republic_of_the_Congo",
     "alpha3": "COD",
     "name": "Congo - Democratic Republic of the",
@@ -448,7 +448,7 @@
     "latitude": -4.19,
     "longitude": 15.18
   },
-  {
+  "COG": {
     "url": "https://en.wikipedia.org/wiki/Republic_of_the_Congo",
     "alpha3": "COG",
     "name": "Congo",
@@ -458,7 +458,7 @@
     "latitude": -4.15,
     "longitude": 15.17
   },
-  {
+  "COK": {
     "url": "https://en.wikipedia.org/wiki/Cook_Islands",
     "alpha3": "COK",
     "name": "Cook Islands",
@@ -468,7 +468,7 @@
     "latitude": -21.12,
     "longitude": -159.46
   },
-  {
+  "COL": {
     "url": "https://en.wikipedia.org/wiki/Colombia",
     "alpha3": "COL",
     "name": "Colombia",
@@ -478,7 +478,7 @@
     "latitude": 4.36,
     "longitude": -74.05
   },
-  {
+  "COM": {
     "url": "https://en.wikipedia.org/wiki/Comoros",
     "alpha3": "COM",
     "name": "Comoros",
@@ -488,7 +488,7 @@
     "latitude": -11.42,
     "longitude": 43.14
   },
-  {
+  "CPV": {
     "url": "https://en.wikipedia.org/wiki/Cabo_Verde",
     "alpha3": "CPV",
     "name": "Cabo Verde",
@@ -498,7 +498,7 @@
     "latitude": 14.55,
     "longitude": -23.31
   },
-  {
+  "CRI": {
     "url": "https://en.wikipedia.org/wiki/Costa_Rica",
     "alpha3": "CRI",
     "name": "Costa Rica",
@@ -508,7 +508,7 @@
     "latitude": 9.56,
     "longitude": -84.05
   },
-  {
+  "CUB": {
     "url": "https://en.wikipedia.org/wiki/Cuba",
     "alpha3": "CUB",
     "name": "Cuba",
@@ -518,17 +518,17 @@
     "latitude": 23.07,
     "longitude": -82.21
   },
-  {
+  "CUW": {
     "url": "https://en.wikipedia.org/wiki/Cura%C3%A7ao",
     "alpha3": "CUW",
     "name": "Curaçao",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Flag_of_Cura%C3%A7ao.svg",
     "license": "Public domain",
-    "capital": "",
-    "latitude": 0,
-    "longitude": 0
+    "capital": "Willemstad",
+    "latitude": 12.116667,
+    "longitude": -68.933333
   },
-  {
+  "CXR": {
     "url": "https://en.wikipedia.org/wiki/Christmas_Island",
     "alpha3": "CXR",
     "name": "Christmas Island",
@@ -538,7 +538,7 @@
     "latitude": -10.25,
     "longitude": 105.43
   },
-  {
+  "CYM": {
     "url": "https://en.wikipedia.org/wiki/Cayman_Islands",
     "alpha3": "CYM",
     "name": "Cayman Islands",
@@ -548,7 +548,7 @@
     "latitude": 19.18,
     "longitude": -81.23
   },
-  {
+  "CYP": {
     "url": "https://en.wikipedia.org/wiki/Cyprus",
     "alpha3": "CYP",
     "name": "Cyprus",
@@ -558,7 +558,7 @@
     "latitude": 35.1,
     "longitude": 33.22
   },
-  {
+  "CZE": {
     "url": "https://en.wikipedia.org/wiki/Czech_Republic",
     "alpha3": "CZE",
     "name": "Czechia",
@@ -568,7 +568,7 @@
     "latitude": 50.05,
     "longitude": 14.28
   },
-  {
+  "DEU": {
     "url": "https://en.wikipedia.org/wiki/Germany",
     "alpha3": "DEU",
     "name": "Germany",
@@ -578,7 +578,7 @@
     "latitude": 52.31,
     "longitude": 13.24
   },
-  {
+  "DJI": {
     "url": "https://en.wikipedia.org/wiki/Djibouti",
     "alpha3": "DJI",
     "name": "Djibouti",
@@ -588,7 +588,7 @@
     "latitude": 11.35,
     "longitude": 43.09
   },
-  {
+  "DMA": {
     "url": "https://en.wikipedia.org/wiki/Dominica",
     "alpha3": "DMA",
     "name": "Dominica",
@@ -598,7 +598,7 @@
     "latitude": 15.18,
     "longitude": -61.24
   },
-  {
+  "DNK": {
     "url": "https://en.wikipedia.org/wiki/Denmark",
     "alpha3": "DNK",
     "name": "Denmark",
@@ -608,7 +608,7 @@
     "latitude": 55.4,
     "longitude": 12.35
   },
-  {
+  "DOM": {
     "url": "https://en.wikipedia.org/wiki/Dominican_Republic",
     "alpha3": "DOM",
     "name": "Dominican Republic",
@@ -618,7 +618,7 @@
     "latitude": 18.28,
     "longitude": -69.54
   },
-  {
+  "DZA": {
     "url": "https://en.wikipedia.org/wiki/Algeria",
     "alpha3": "DZA",
     "name": "Algeria",
@@ -628,7 +628,7 @@
     "latitude": 36.45,
     "longitude": 3.03
   },
-  {
+  "ECU": {
     "url": "https://en.wikipedia.org/wiki/Ecuador",
     "alpha3": "ECU",
     "name": "Ecuador",
@@ -638,7 +638,7 @@
     "latitude": -0.13,
     "longitude": -78.3
   },
-  {
+  "EGY": {
     "url": "https://en.wikipedia.org/wiki/Egypt",
     "alpha3": "EGY",
     "name": "Egypt",
@@ -648,7 +648,7 @@
     "latitude": 30.03,
     "longitude": 31.15
   },
-  {
+  "ERI": {
     "url": "https://en.wikipedia.org/wiki/Eritrea",
     "alpha3": "ERI",
     "name": "Eritrea",
@@ -658,7 +658,7 @@
     "latitude": 15.2,
     "longitude": 38.56
   },
-  {
+  "ESP": {
     "url": "https://en.wikipedia.org/wiki/Spain",
     "alpha3": "ESP",
     "name": "Spain",
@@ -668,7 +668,7 @@
     "latitude": 40.24,
     "longitude": -3.41
   },
-  {
+  "EST": {
     "url": "https://en.wikipedia.org/wiki/Estonia",
     "alpha3": "EST",
     "name": "Estonia",
@@ -678,7 +678,7 @@
     "latitude": 59.26,
     "longitude": 24.43
   },
-  {
+  "ETH": {
     "url": "https://en.wikipedia.org/wiki/Ethiopia",
     "alpha3": "ETH",
     "name": "Ethiopia",
@@ -688,7 +688,7 @@
     "latitude": 9.02,
     "longitude": 38.42
   },
-  {
+  "FIN": {
     "url": "https://en.wikipedia.org/wiki/Finland",
     "alpha3": "FIN",
     "name": "Finland",
@@ -698,7 +698,7 @@
     "latitude": 60.1,
     "longitude": 24.56
   },
-  {
+  "FJI": {
     "url": "https://en.wikipedia.org/wiki/Fiji",
     "alpha3": "FJI",
     "name": "Fiji",
@@ -708,7 +708,7 @@
     "latitude": -18.08,
     "longitude": 178.25
   },
-  {
+  "FLK": {
     "url": "https://en.wikipedia.org/wiki/Falkland_Islands",
     "alpha3": "FLK",
     "name": "Falkland Islands (Malvinas)",
@@ -718,7 +718,7 @@
     "latitude": -51.42,
     "longitude": -57.51
   },
-  {
+  "FRA": {
     "url": "https://en.wikipedia.org/wiki/France",
     "alpha3": "FRA",
     "name": "France",
@@ -728,7 +728,7 @@
     "latitude": 48.52,
     "longitude": 2.2
   },
-  {
+  "FRO": {
     "url": "https://en.wikipedia.org/wiki/Faroe_Islands",
     "alpha3": "FRO",
     "name": "Faroe Islands",
@@ -738,7 +738,7 @@
     "latitude": 62.01,
     "longitude": -6.46
   },
-  {
+  "FSM": {
     "url": "https://en.wikipedia.org/wiki/Federated_States_of_Micronesia",
     "alpha3": "FSM",
     "name": "Micronesia (Federated States of)",
@@ -748,7 +748,7 @@
     "latitude": 6.55,
     "longitude": 158.09
   },
-  {
+  "GAB": {
     "url": "https://en.wikipedia.org/wiki/Gabon",
     "alpha3": "GAB",
     "name": "Gabon",
@@ -758,7 +758,7 @@
     "latitude": 0.23,
     "longitude": 9.27
   },
-  {
+  "GBR": {
     "url": "https://en.wikipedia.org/wiki/United_Kingdom",
     "alpha3": "GBR",
     "name": "United Kingdom of Great Britain and Northern Ireland",
@@ -768,7 +768,7 @@
     "latitude": 51.3,
     "longitude": -0.1
   },
-  {
+  "GEO": {
     "url": "https://en.wikipedia.org/wiki/Georgia_(country)",
     "alpha3": "GEO",
     "name": "Georgia",
@@ -778,7 +778,7 @@
     "latitude": 41.43,
     "longitude": 44.47
   },
-  {
+  "GGY": {
     "url": "https://en.wikipedia.org/wiki/Bailiwick_of_Guernsey",
     "alpha3": "GGY",
     "name": "Guernsey",
@@ -788,7 +788,7 @@
     "latitude": 49.27,
     "longitude": -2.32
   },
-  {
+  "GHA": {
     "url": "https://en.wikipedia.org/wiki/Ghana",
     "alpha3": "GHA",
     "name": "Ghana",
@@ -798,7 +798,7 @@
     "latitude": 5.33,
     "longitude": -0.13
   },
-  {
+  "GIB": {
     "url": "https://en.wikipedia.org/wiki/Gibraltar",
     "alpha3": "GIB",
     "name": "Gibraltar",
@@ -808,7 +808,7 @@
     "latitude": 36.08,
     "longitude": -5.21
   },
-  {
+  "GIN": {
     "url": "https://en.wikipedia.org/wiki/Guinea",
     "alpha3": "GIN",
     "name": "Guinea",
@@ -818,7 +818,7 @@
     "latitude": 9.33,
     "longitude": -13.42
   },
-  {
+  "GMB": {
     "url": "https://en.wikipedia.org/wiki/Gambia",
     "alpha3": "GMB",
     "name": "Gambia",
@@ -828,7 +828,7 @@
     "latitude": 13.27,
     "longitude": -16.34
   },
-  {
+  "GNB": {
     "url": "https://en.wikipedia.org/wiki/Guinea-Bissau",
     "alpha3": "GNB",
     "name": "Guinea-Bissau",
@@ -838,7 +838,7 @@
     "latitude": 11.51,
     "longitude": -15.35
   },
-  {
+  "GNQ": {
     "url": "https://en.wikipedia.org/wiki/Equatorial_Guinea",
     "alpha3": "GNQ",
     "name": "Equatorial Guinea",
@@ -848,7 +848,7 @@
     "latitude": 3.45,
     "longitude": 8.47
   },
-  {
+  "GRC": {
     "url": "https://en.wikipedia.org/wiki/Greece",
     "alpha3": "GRC",
     "name": "Greece",
@@ -858,7 +858,7 @@
     "latitude": 37.59,
     "longitude": 23.44
   },
-  {
+  "GRD": {
     "url": "https://en.wikipedia.org/wiki/Grenada",
     "alpha3": "GRD",
     "name": "Grenada",
@@ -868,7 +868,7 @@
     "latitude": 12.03,
     "longitude": -61.45
   },
-  {
+  "GRL": {
     "url": "https://en.wikipedia.org/wiki/Greenland",
     "alpha3": "GRL",
     "name": "Greenland",
@@ -878,7 +878,7 @@
     "latitude": 64.11,
     "longitude": -51.45
   },
-  {
+  "GTM": {
     "url": "https://en.wikipedia.org/wiki/Guatemala",
     "alpha3": "GTM",
     "name": "Guatemala",
@@ -888,7 +888,7 @@
     "latitude": 14.37,
     "longitude": -90.31
   },
-  {
+  "GUM": {
     "url": "https://en.wikipedia.org/wiki/Guam",
     "alpha3": "GUM",
     "name": "Guam",
@@ -898,7 +898,7 @@
     "latitude": 13.28,
     "longitude": 144.44
   },
-  {
+  "GUY": {
     "url": "https://en.wikipedia.org/wiki/Guyana",
     "alpha3": "GUY",
     "name": "Guyana",
@@ -908,7 +908,7 @@
     "latitude": 6.48,
     "longitude": -58.1
   },
-  {
+  "HKG": {
     "url": "https://en.wikipedia.org/wiki/Hong_Kong",
     "alpha3": "HKG",
     "name": "Hong Kong",
@@ -918,7 +918,7 @@
     "latitude": 22.15,
     "longitude": 114.1
   },
-  {
+  "HMD": {
     "url": "https://en.wikipedia.org/wiki/Heard_Island_and_McDonald_Islands",
     "alpha3": "HMD",
     "name": "Heard Island and McDonald Islands",
@@ -927,7 +927,7 @@
     "latitude": -53.06,
     "longitude": 72.31
   },
-  {
+  "HND": {
     "url": "https://en.wikipedia.org/wiki/Honduras",
     "alpha3": "HND",
     "name": "Honduras",
@@ -937,7 +937,7 @@
     "latitude": 14.06,
     "longitude": -87.13
   },
-  {
+  "HRV": {
     "url": "https://en.wikipedia.org/wiki/Croatia",
     "alpha3": "HRV",
     "name": "Croatia",
@@ -947,7 +947,7 @@
     "latitude": 45.48,
     "longitude": 16
   },
-  {
+  "HTI": {
     "url": "https://en.wikipedia.org/wiki/Haiti",
     "alpha3": "HTI",
     "name": "Haiti",
@@ -957,7 +957,7 @@
     "latitude": 18.32,
     "longitude": -72.2
   },
-  {
+  "HUN": {
     "url": "https://en.wikipedia.org/wiki/Hungary",
     "alpha3": "HUN",
     "name": "Hungary",
@@ -967,7 +967,7 @@
     "latitude": 47.3,
     "longitude": 19.05
   },
-  {
+  "IDN": {
     "url": "https://en.wikipedia.org/wiki/Indonesia",
     "alpha3": "IDN",
     "name": "Indonesia",
@@ -977,7 +977,7 @@
     "latitude": -6.1,
     "longitude": 106.49
   },
-  {
+  "IMN": {
     "url": "https://en.wikipedia.org/wiki/Isle_of_Man",
     "alpha3": "IMN",
     "name": "Isle of Man",
@@ -987,7 +987,7 @@
     "latitude": 54.09,
     "longitude": -4.29
   },
-  {
+  "IND": {
     "url": "https://en.wikipedia.org/wiki/India",
     "alpha3": "IND",
     "name": "India",
@@ -997,7 +997,7 @@
     "latitude": 28.36,
     "longitude": 77.12
   },
-  {
+  "IOT": {
     "url": "https://en.wikipedia.org/wiki/British_Indian_Ocean_Territory",
     "alpha3": "IOT",
     "name": "British Indian Ocean Territory",
@@ -1006,7 +1006,7 @@
     "latitude": -6,
     "longitude": 71.3
   },
-  {
+  "IRL": {
     "url": "https://en.wikipedia.org/wiki/Republic_of_Ireland",
     "alpha3": "IRL",
     "name": "Ireland",
@@ -1016,7 +1016,7 @@
     "latitude": 53.19,
     "longitude": -6.14
   },
-  {
+  "IRN": {
     "url": "https://en.wikipedia.org/wiki/Iran",
     "alpha3": "IRN",
     "name": "Iran (Islamic Republic of)",
@@ -1026,7 +1026,7 @@
     "latitude": 35.4,
     "longitude": 51.25
   },
-  {
+  "IRQ": {
     "url": "https://en.wikipedia.org/wiki/Iraq",
     "alpha3": "IRQ",
     "name": "Iraq",
@@ -1036,7 +1036,7 @@
     "latitude": 33.2,
     "longitude": 44.23
   },
-  {
+  "ISL": {
     "url": "https://en.wikipedia.org/wiki/Iceland",
     "alpha3": "ISL",
     "name": "Iceland",
@@ -1046,7 +1046,7 @@
     "latitude": 64.09,
     "longitude": -21.57
   },
-  {
+  "ISR": {
     "url": "https://en.wikipedia.org/wiki/Israel",
     "alpha3": "ISR",
     "name": "Israel",
@@ -1056,7 +1056,7 @@
     "latitude": 31.46,
     "longitude": 35.14
   },
-  {
+  "ITA": {
     "url": "https://en.wikipedia.org/wiki/Italy",
     "alpha3": "ITA",
     "name": "Italy",
@@ -1066,7 +1066,7 @@
     "latitude": 41.54,
     "longitude": 12.29
   },
-  {
+  "JAM": {
     "url": "https://en.wikipedia.org/wiki/Jamaica",
     "alpha3": "JAM",
     "name": "Jamaica",
@@ -1076,7 +1076,7 @@
     "latitude": 18,
     "longitude": -76.48
   },
-  {
+  "JEY": {
     "url": "https://en.wikipedia.org/wiki/Jersey",
     "alpha3": "JEY",
     "name": "Jersey",
@@ -1086,7 +1086,7 @@
     "latitude": 49.11,
     "longitude": -2.06
   },
-  {
+  "JOR": {
     "url": "https://en.wikipedia.org/wiki/Jordan",
     "alpha3": "JOR",
     "name": "Jordan",
@@ -1096,7 +1096,7 @@
     "latitude": 31.57,
     "longitude": 35.56
   },
-  {
+  "JPN": {
     "url": "https://en.wikipedia.org/wiki/Japan",
     "alpha3": "JPN",
     "name": "Japan",
@@ -1106,7 +1106,7 @@
     "latitude": 35.41,
     "longitude": 139.45
   },
-  {
+  "KAZ": {
     "url": "https://en.wikipedia.org/wiki/Kazakhstan",
     "alpha3": "KAZ",
     "name": "Kazakhstan",
@@ -1116,7 +1116,7 @@
     "latitude": 51.1,
     "longitude": 71.25
   },
-  {
+  "KEN": {
     "url": "https://en.wikipedia.org/wiki/Kenya",
     "alpha3": "KEN",
     "name": "Kenya",
@@ -1126,7 +1126,7 @@
     "latitude": -1.17,
     "longitude": 36.49
   },
-  {
+  "KGZ": {
     "url": "https://en.wikipedia.org/wiki/Kyrgyzstan",
     "alpha3": "KGZ",
     "name": "Kyrgyzstan",
@@ -1136,7 +1136,7 @@
     "latitude": 42.52,
     "longitude": 74.36
   },
-  {
+  "KHM": {
     "url": "https://en.wikipedia.org/wiki/Cambodia",
     "alpha3": "KHM",
     "name": "Cambodia",
@@ -1146,7 +1146,7 @@
     "latitude": 11.33,
     "longitude": 104.55
   },
-  {
+  "KIR": {
     "url": "https://en.wikipedia.org/wiki/Kiribati",
     "alpha3": "KIR",
     "name": "Kiribati",
@@ -1156,7 +1156,7 @@
     "latitude": 1.19,
     "longitude": 172.58
   },
-  {
+  "KNA": {
     "url": "https://en.wikipedia.org/wiki/Saint_Kitts_and_Nevis",
     "alpha3": "KNA",
     "name": "Saint Kitts and Nevis",
@@ -1166,7 +1166,7 @@
     "latitude": 17.18,
     "longitude": -62.43
   },
-  {
+  "KOR": {
     "url": "https://en.wikipedia.org/wiki/South_Korea",
     "alpha3": "KOR",
     "name": "Korea - Republic of",
@@ -1176,7 +1176,7 @@
     "latitude": 37.33,
     "longitude": 126.59
   },
-  {
+  "KWT": {
     "url": "https://en.wikipedia.org/wiki/Kuwait",
     "alpha3": "KWT",
     "name": "Kuwait",
@@ -1186,7 +1186,7 @@
     "latitude": 29.22,
     "longitude": 47.58
   },
-  {
+  "LAO": {
     "url": "https://en.wikipedia.org/wiki/Laos",
     "alpha3": "LAO",
     "name": "Lao People's Democratic Republic",
@@ -1196,7 +1196,7 @@
     "latitude": 17.58,
     "longitude": 102.36
   },
-  {
+  "LBN": {
     "url": "https://en.wikipedia.org/wiki/Lebanon",
     "alpha3": "LBN",
     "name": "Lebanon",
@@ -1206,7 +1206,7 @@
     "latitude": 33.52,
     "longitude": 35.3
   },
-  {
+  "LBR": {
     "url": "https://en.wikipedia.org/wiki/Liberia",
     "alpha3": "LBR",
     "name": "Liberia",
@@ -1216,7 +1216,7 @@
     "latitude": 6.18,
     "longitude": -10.48
   },
-  {
+  "LBY": {
     "url": "https://en.wikipedia.org/wiki/Libya",
     "alpha3": "LBY",
     "name": "Libya",
@@ -1226,7 +1226,7 @@
     "latitude": 32.53,
     "longitude": 13.1
   },
-  {
+  "LCA": {
     "url": "https://en.wikipedia.org/wiki/Saint_Lucia",
     "alpha3": "LCA",
     "name": "Saint Lucia",
@@ -1236,7 +1236,7 @@
     "latitude": 14.01,
     "longitude": -61
   },
-  {
+  "LIE": {
     "url": "https://en.wikipedia.org/wiki/Liechtenstein",
     "alpha3": "LIE",
     "name": "Liechtenstein",
@@ -1246,7 +1246,7 @@
     "latitude": 47.08,
     "longitude": 9.31
   },
-  {
+  "LKA": {
     "url": "https://en.wikipedia.org/wiki/Sri_Lanka",
     "alpha3": "LKA",
     "name": "Sri Lanka",
@@ -1256,7 +1256,7 @@
     "latitude": 6.56,
     "longitude": 79.51
   },
-  {
+  "LSO": {
     "url": "https://en.wikipedia.org/wiki/Lesotho",
     "alpha3": "LSO",
     "name": "Lesotho",
@@ -1266,7 +1266,7 @@
     "latitude": -29.19,
     "longitude": 27.29
   },
-  {
+  "LTU": {
     "url": "https://en.wikipedia.org/wiki/Lithuania",
     "alpha3": "LTU",
     "name": "Lithuania",
@@ -1276,7 +1276,7 @@
     "latitude": 54.41,
     "longitude": 25.19
   },
-  {
+  "LUX": {
     "url": "https://en.wikipedia.org/wiki/Luxembourg",
     "alpha3": "LUX",
     "name": "Luxembourg",
@@ -1286,7 +1286,7 @@
     "latitude": 49.36,
     "longitude": 6.07
   },
-  {
+  "LVA": {
     "url": "https://en.wikipedia.org/wiki/Latvia",
     "alpha3": "LVA",
     "name": "Latvia",
@@ -1296,7 +1296,7 @@
     "latitude": 56.57,
     "longitude": 24.06
   },
-  {
+  "MAC": {
     "url": "https://en.wikipedia.org/wiki/Macau",
     "alpha3": "MAC",
     "name": "Macao",
@@ -1305,7 +1305,7 @@
     "latitude": 22.1,
     "longitude": 113.33
   },
-  {
+  "MAF": {
     "url": "https://en.wikipedia.org/wiki/Collectivity_of_Saint_Martin",
     "alpha3": "MAF",
     "name": "Saint Martin (French part)",
@@ -1315,7 +1315,7 @@
     "latitude": 18.04,
     "longitude": -63.05
   },
-  {
+  "MAR": {
     "url": "https://en.wikipedia.org/wiki/Morocco",
     "alpha3": "MAR",
     "name": "Morocco",
@@ -1325,7 +1325,7 @@
     "latitude": 34.01,
     "longitude": -6.49
   },
-  {
+  "MCO": {
     "url": "https://en.wikipedia.org/wiki/Monaco",
     "alpha3": "MCO",
     "name": "Monaco",
@@ -1335,7 +1335,7 @@
     "latitude": 43.44,
     "longitude": 7.25
   },
-  {
+  "MDA": {
     "url": "https://en.wikipedia.org/wiki/Moldova",
     "alpha3": "MDA",
     "name": "Moldova - Republic of",
@@ -1345,7 +1345,7 @@
     "latitude": 47,
     "longitude": 28.51
   },
-  {
+  "MDG": {
     "url": "https://en.wikipedia.org/wiki/Madagascar",
     "alpha3": "MDG",
     "name": "Madagascar",
@@ -1355,7 +1355,7 @@
     "latitude": -18.55,
     "longitude": 47.31
   },
-  {
+  "MDV": {
     "url": "https://en.wikipedia.org/wiki/Maldives",
     "alpha3": "MDV",
     "name": "Maldives",
@@ -1365,7 +1365,7 @@
     "latitude": 4.1,
     "longitude": 73.3
   },
-  {
+  "MEX": {
     "url": "https://en.wikipedia.org/wiki/Mexico",
     "alpha3": "MEX",
     "name": "Mexico",
@@ -1375,7 +1375,7 @@
     "latitude": 19.26,
     "longitude": -99.08
   },
-  {
+  "MHL": {
     "url": "https://en.wikipedia.org/wiki/Marshall_Islands",
     "alpha3": "MHL",
     "name": "Marshall Islands",
@@ -1385,7 +1385,7 @@
     "latitude": 7.06,
     "longitude": 171.23
   },
-  {
+  "MKD": {
     "url": "https://en.wikipedia.org/wiki/North_Macedonia",
     "alpha3": "MKD",
     "name": "North Macedonia",
@@ -1395,7 +1395,7 @@
     "latitude": 42,
     "longitude": 21.26
   },
-  {
+  "MLI": {
     "url": "https://en.wikipedia.org/wiki/Mali",
     "alpha3": "MLI",
     "name": "Mali",
@@ -1405,7 +1405,7 @@
     "latitude": 12.39,
     "longitude": -8
   },
-  {
+  "MLT": {
     "url": "https://en.wikipedia.org/wiki/Malta",
     "alpha3": "MLT",
     "name": "Malta",
@@ -1415,7 +1415,7 @@
     "latitude": 35.53,
     "longitude": 14.3
   },
-  {
+  "MMR": {
     "url": "https://en.wikipedia.org/wiki/Myanmar",
     "alpha3": "MMR",
     "name": "Myanmar",
@@ -1425,7 +1425,7 @@
     "latitude": 16.48,
     "longitude": 96.09
   },
-  {
+  "MNE": {
     "url": "https://en.wikipedia.org/wiki/Montenegro",
     "alpha3": "MNE",
     "name": "Montenegro",
@@ -1435,7 +1435,7 @@
     "latitude": 42.26,
     "longitude": 19.16
   },
-  {
+  "MNG": {
     "url": "https://en.wikipedia.org/wiki/Mongolia",
     "alpha3": "MNG",
     "name": "Mongolia",
@@ -1445,7 +1445,7 @@
     "latitude": 47.55,
     "longitude": 106.55
   },
-  {
+  "MNP": {
     "url": "https://en.wikipedia.org/wiki/Northern_Mariana_Islands",
     "alpha3": "MNP",
     "name": "Northern Mariana Islands",
@@ -1455,7 +1455,7 @@
     "latitude": 15.12,
     "longitude": 145.45
   },
-  {
+  "MOZ": {
     "url": "https://en.wikipedia.org/wiki/Mozambique",
     "alpha3": "MOZ",
     "name": "Mozambique",
@@ -1465,7 +1465,7 @@
     "latitude": -25.57,
     "longitude": 32.35
   },
-  {
+  "MRT": {
     "url": "https://en.wikipedia.org/wiki/Mauritania",
     "alpha3": "MRT",
     "name": "Mauritania",
@@ -1475,7 +1475,7 @@
     "latitude": 18.07,
     "longitude": -16.02
   },
-  {
+  "MSR": {
     "url": "https://en.wikipedia.org/wiki/Montserrat",
     "alpha3": "MSR",
     "name": "Montserrat",
@@ -1485,7 +1485,7 @@
     "latitude": 16.42,
     "longitude": -62.13
   },
-  {
+  "MUS": {
     "url": "https://en.wikipedia.org/wiki/Mauritius",
     "alpha3": "MUS",
     "name": "Mauritius",
@@ -1495,7 +1495,7 @@
     "latitude": -20.09,
     "longitude": 57.29
   },
-  {
+  "MWI": {
     "url": "https://en.wikipedia.org/wiki/Malawi",
     "alpha3": "MWI",
     "name": "Malawi",
@@ -1505,7 +1505,7 @@
     "latitude": -13.59,
     "longitude": 33.47
   },
-  {
+  "MYS": {
     "url": "https://en.wikipedia.org/wiki/Malaysia",
     "alpha3": "MYS",
     "name": "Malaysia",
@@ -1515,7 +1515,7 @@
     "latitude": 3.1,
     "longitude": 101.42
   },
-  {
+  "NAM": {
     "url": "https://en.wikipedia.org/wiki/Namibia",
     "alpha3": "NAM",
     "name": "Namibia",
@@ -1525,7 +1525,7 @@
     "latitude": -22.34,
     "longitude": 17.05
   },
-  {
+  "NCL": {
     "url": "https://en.wikipedia.org/wiki/New_Caledonia",
     "alpha3": "NCL",
     "name": "New Caledonia",
@@ -1535,7 +1535,7 @@
     "latitude": -22.16,
     "longitude": 166.27
   },
-  {
+  "NER": {
     "url": "https://en.wikipedia.org/wiki/Niger",
     "alpha3": "NER",
     "name": "Niger",
@@ -1545,7 +1545,7 @@
     "latitude": 13.31,
     "longitude": 2.07
   },
-  {
+  "NFK": {
     "url": "https://en.wikipedia.org/wiki/Norfolk_Island",
     "alpha3": "NFK",
     "name": "Norfolk Island",
@@ -1555,7 +1555,7 @@
     "latitude": -29.03,
     "longitude": 167.58
   },
-  {
+  "NGA": {
     "url": "https://en.wikipedia.org/wiki/Nigeria",
     "alpha3": "NGA",
     "name": "Nigeria",
@@ -1565,7 +1565,7 @@
     "latitude": 9.05,
     "longitude": 7.32
   },
-  {
+  "NIC": {
     "url": "https://en.wikipedia.org/wiki/Nicaragua",
     "alpha3": "NIC",
     "name": "Nicaragua",
@@ -1575,7 +1575,7 @@
     "latitude": 12.09,
     "longitude": -86.17
   },
-  {
+  "NIU": {
     "url": "https://en.wikipedia.org/wiki/Niue",
     "alpha3": "NIU",
     "name": "Niue",
@@ -1585,7 +1585,7 @@
     "latitude": -19.01,
     "longitude": -169.55
   },
-  {
+  "NLD": {
     "url": "https://en.wikipedia.org/wiki/Kingdom_of_the_Netherlands",
     "alpha3": "NLD",
     "name": "Netherlands",
@@ -1595,7 +1595,7 @@
     "latitude": 52.23,
     "longitude": 4.54
   },
-  {
+  "NOR": {
     "url": "https://en.wikipedia.org/wiki/Norway",
     "alpha3": "NOR",
     "name": "Norway",
@@ -1605,7 +1605,7 @@
     "latitude": 59.55,
     "longitude": 10.45
   },
-  {
+  "NPL": {
     "url": "https://en.wikipedia.org/wiki/Nepal",
     "alpha3": "NPL",
     "name": "Nepal",
@@ -1615,7 +1615,7 @@
     "latitude": 27.43,
     "longitude": 85.19
   },
-  {
+  "NRU": {
     "url": "https://en.wikipedia.org/wiki/Nauru",
     "alpha3": "NRU",
     "name": "Nauru",
@@ -1624,7 +1624,7 @@
     "latitude": -0.32,
     "longitude": 166.55
   },
-  {
+  "NZL": {
     "url": "https://en.wikipedia.org/wiki/New_Zealand",
     "alpha3": "NZL",
     "name": "New Zealand",
@@ -1634,7 +1634,7 @@
     "latitude": -41.28,
     "longitude": 174.51
   },
-  {
+  "OMN": {
     "url": "https://en.wikipedia.org/wiki/Oman",
     "alpha3": "OMN",
     "name": "Oman",
@@ -1644,7 +1644,7 @@
     "latitude": 23.37,
     "longitude": 58.35
   },
-  {
+  "PAK": {
     "url": "https://en.wikipedia.org/wiki/Pakistan",
     "alpha3": "PAK",
     "name": "Pakistan",
@@ -1654,7 +1654,7 @@
     "latitude": 33.42,
     "longitude": 73.1
   },
-  {
+  "PAN": {
     "url": "https://en.wikipedia.org/wiki/Panama",
     "alpha3": "PAN",
     "name": "Panama",
@@ -1664,7 +1664,7 @@
     "latitude": 8.58,
     "longitude": -79.32
   },
-  {
+  "PCN": {
     "url": "https://en.wikipedia.org/wiki/Pitcairn_Islands",
     "alpha3": "PCN",
     "name": "Pitcairn",
@@ -1674,7 +1674,7 @@
     "latitude": -25.04,
     "longitude": -130.05
   },
-  {
+  "PER": {
     "url": "https://en.wikipedia.org/wiki/Peru",
     "alpha3": "PER",
     "name": "Peru",
@@ -1684,7 +1684,7 @@
     "latitude": -12.03,
     "longitude": -77.03
   },
-  {
+  "PHL": {
     "url": "https://en.wikipedia.org/wiki/Philippines",
     "alpha3": "PHL",
     "name": "Philippines",
@@ -1694,7 +1694,7 @@
     "latitude": 14.35,
     "longitude": 121
   },
-  {
+  "PLW": {
     "url": "https://en.wikipedia.org/wiki/Palau",
     "alpha3": "PLW",
     "name": "Palau",
@@ -1704,7 +1704,7 @@
     "latitude": 7.29,
     "longitude": 134.38
   },
-  {
+  "PNG": {
     "url": "https://en.wikipedia.org/wiki/Papua_New_Guinea",
     "alpha3": "PNG",
     "name": "Papua New Guinea",
@@ -1714,7 +1714,7 @@
     "latitude": -9.3,
     "longitude": 147.1
   },
-  {
+  "POL": {
     "url": "https://en.wikipedia.org/wiki/Poland",
     "alpha3": "POL",
     "name": "Poland",
@@ -1724,7 +1724,7 @@
     "latitude": 52.15,
     "longitude": 21
   },
-  {
+  "PRI": {
     "url": "https://en.wikipedia.org/wiki/Puerto_Rico",
     "alpha3": "PRI",
     "name": "Puerto Rico",
@@ -1734,7 +1734,7 @@
     "latitude": 18.28,
     "longitude": -66.07
   },
-  {
+  "PRK": {
     "url": "https://en.wikipedia.org/wiki/North_Korea",
     "alpha3": "PRK",
     "name": "Korea (Democratic People's Republic of)",
@@ -1744,7 +1744,7 @@
     "latitude": 39.01,
     "longitude": 125.45
   },
-  {
+  "PRT": {
     "url": "https://en.wikipedia.org/wiki/Portugal",
     "alpha3": "PRT",
     "name": "Portugal",
@@ -1754,7 +1754,7 @@
     "latitude": 38.43,
     "longitude": -9.08
   },
-  {
+  "PRY": {
     "url": "https://en.wikipedia.org/wiki/Paraguay",
     "alpha3": "PRY",
     "name": "Paraguay",
@@ -1764,7 +1764,7 @@
     "latitude": -25.16,
     "longitude": -57.4
   },
-  {
+  "PSE": {
     "url": "https://en.wikipedia.org/wiki/State_of_Palestine",
     "alpha3": "PSE",
     "name": "Palestine - State of",
@@ -1773,7 +1773,7 @@
     "latitude": 31.25,
     "longitude": 34.2
   },
-  {
+  "PYF": {
     "url": "https://en.wikipedia.org/wiki/French_Polynesia",
     "alpha3": "PYF",
     "name": "French Polynesia",
@@ -1783,7 +1783,7 @@
     "latitude": -17.32,
     "longitude": -149.34
   },
-  {
+  "QAT": {
     "url": "https://en.wikipedia.org/wiki/Qatar",
     "alpha3": "QAT",
     "name": "Qatar",
@@ -1793,7 +1793,7 @@
     "latitude": 25.17,
     "longitude": 51.32
   },
-  {
+  "ROU": {
     "url": "https://en.wikipedia.org/wiki/Romania",
     "alpha3": "ROU",
     "name": "Romania",
@@ -1803,7 +1803,7 @@
     "latitude": 44.26,
     "longitude": 26.06
   },
-  {
+  "RUS": {
     "url": "https://en.wikipedia.org/wiki/Russia",
     "alpha3": "RUS",
     "name": "Russian Federation",
@@ -1813,7 +1813,7 @@
     "latitude": 55.45,
     "longitude": 37.35
   },
-  {
+  "RWA": {
     "url": "https://en.wikipedia.org/wiki/Rwanda",
     "alpha3": "RWA",
     "name": "Rwanda",
@@ -1823,7 +1823,7 @@
     "latitude": -1.57,
     "longitude": 30.04
   },
-  {
+  "SDN": {
     "url": "https://en.wikipedia.org/wiki/Sudan",
     "alpha3": "SDN",
     "name": "Sudan",
@@ -1833,7 +1833,7 @@
     "latitude": 15.36,
     "longitude": 32.32
   },
-  {
+  "SEN": {
     "url": "https://en.wikipedia.org/wiki/Senegal",
     "alpha3": "SEN",
     "name": "Senegal",
@@ -1843,7 +1843,7 @@
     "latitude": 14.4,
     "longitude": -17.26
   },
-  {
+  "SGP": {
     "url": "https://en.wikipedia.org/wiki/Singapore",
     "alpha3": "SGP",
     "name": "Singapore",
@@ -1853,17 +1853,17 @@
     "latitude": 1.17,
     "longitude": 103.51
   },
-  {
+  "SGS": {
     "url": "https://en.wikipedia.org/wiki/South_Georgia_and_the_South_Sandwich_Islands",
     "alpha3": "SGS",
     "name": "South Georgia and the South Sandwich Islands",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Flag_of_South_Georgia_and_the_South_Sandwich_Islands.svg",
     "license": "Public domain",
-    "capital": "",
-    "latitude": 0,
-    "longitude": 0
+    "capital": "King Edward Point",
+    "latitude": -54.283333,
+    "longitude": -36.5
   },
-  {
+  "SHN": {
     "url": "https://en.wikipedia.org/wiki/Saint_Helena,_Ascension_and_Tristan_da_Cunha",
     "alpha3": "SHN",
     "name": "Saint Helena - Ascension and Tristan da Cunha",
@@ -1873,7 +1873,7 @@
     "latitude": -15.56,
     "longitude": -5.44
   },
-  {
+  "SJM": {
     "url": "https://en.wikipedia.org/wiki/Svalbard_and_Jan_Mayen",
     "alpha3": "SJM",
     "name": "Svalbard and Jan Mayen",
@@ -1883,7 +1883,7 @@
     "latitude": 78.13,
     "longitude": 15.33
   },
-  {
+  "SLB": {
     "url": "https://en.wikipedia.org/wiki/Solomon_Islands",
     "alpha3": "SLB",
     "name": "Solomon Islands",
@@ -1893,7 +1893,7 @@
     "latitude": -9.26,
     "longitude": 159.57
   },
-  {
+  "SLE": {
     "url": "https://en.wikipedia.org/wiki/Sierra_Leone",
     "alpha3": "SLE",
     "name": "Sierra Leone",
@@ -1903,7 +1903,7 @@
     "latitude": 8.3,
     "longitude": -13.15
   },
-  {
+  "SLV": {
     "url": "https://en.wikipedia.org/wiki/El_Salvador",
     "alpha3": "SLV",
     "name": "El Salvador",
@@ -1913,7 +1913,7 @@
     "latitude": 13.42,
     "longitude": -89.12
   },
-  {
+  "SMR": {
     "url": "https://en.wikipedia.org/wiki/San_Marino",
     "alpha3": "SMR",
     "name": "San Marino",
@@ -1923,7 +1923,7 @@
     "latitude": 43.56,
     "longitude": 12.25
   },
-  {
+  "SOM": {
     "url": "https://en.wikipedia.org/wiki/Somalia",
     "alpha3": "SOM",
     "name": "Somalia",
@@ -1933,7 +1933,7 @@
     "latitude": 2.04,
     "longitude": 45.22
   },
-  {
+  "SRB": {
     "url": "https://en.wikipedia.org/wiki/Serbia",
     "alpha3": "SRB",
     "name": "Serbia",
@@ -1943,17 +1943,17 @@
     "latitude": 44.5,
     "longitude": 20.3
   },
-  {
+  "SSD": {
     "url": "https://en.wikipedia.org/wiki/South_Sudan",
     "alpha3": "SSD",
     "name": "South Sudan",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Flag_of_South_Sudan.svg",
     "license": "Public domain",
-    "capital": "",
-    "latitude": 0,
-    "longitude": 0
+    "capital": "Juba",
+    "latitude": 4.85,
+    "longitude": 31.6
   },
-  {
+  "STP": {
     "url": "https://en.wikipedia.org/wiki/S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe",
     "alpha3": "STP",
     "name": "Sao Tome and Principe",
@@ -1963,7 +1963,7 @@
     "latitude": 0.12,
     "longitude": 6.39
   },
-  {
+  "SUR": {
     "url": "https://en.wikipedia.org/wiki/Suriname",
     "alpha3": "SUR",
     "name": "Suriname",
@@ -1973,7 +1973,7 @@
     "latitude": 5.5,
     "longitude": -55.1
   },
-  {
+  "SVK": {
     "url": "https://en.wikipedia.org/wiki/Slovakia",
     "alpha3": "SVK",
     "name": "Slovakia",
@@ -1983,7 +1983,7 @@
     "latitude": 48.09,
     "longitude": 17.07
   },
-  {
+  "SVN": {
     "url": "https://en.wikipedia.org/wiki/Slovenia",
     "alpha3": "SVN",
     "name": "Slovenia",
@@ -1993,7 +1993,7 @@
     "latitude": 46.03,
     "longitude": 14.31
   },
-  {
+  "SWE": {
     "url": "https://en.wikipedia.org/wiki/Sweden",
     "alpha3": "SWE",
     "name": "Sweden",
@@ -2003,7 +2003,7 @@
     "latitude": 59.2,
     "longitude": 18.03
   },
-  {
+  "SWZ": {
     "url": "https://en.wikipedia.org/wiki/Eswatini",
     "alpha3": "SWZ",
     "name": "Eswatini",
@@ -2013,17 +2013,17 @@
     "latitude": -26.18,
     "longitude": 31.06
   },
-  {
+  "SXM": {
     "url": "https://en.wikipedia.org/wiki/Sint_Maarten",
     "alpha3": "SXM",
     "name": "Sint Maarten (Dutch part)",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Flag_of_Sint_Maarten.svg",
     "license": "Public domain",
-    "capital": "",
-    "latitude": 0,
-    "longitude": 0
+    "capital": "Philipsburg",
+    "latitude": 18.033333,
+    "longitude": -63.05
   },
-  {
+  "SYC": {
     "url": "https://en.wikipedia.org/wiki/Seychelles",
     "alpha3": "SYC",
     "name": "Seychelles",
@@ -2033,7 +2033,7 @@
     "latitude": -4.38,
     "longitude": 55.27
   },
-  {
+  "SYR": {
     "url": "https://en.wikipedia.org/wiki/Syria",
     "alpha3": "SYR",
     "name": "Syrian Arab Republic",
@@ -2043,7 +2043,7 @@
     "latitude": 33.3,
     "longitude": 36.18
   },
-  {
+  "TCA": {
     "url": "https://en.wikipedia.org/wiki/Turks_and_Caicos_Islands",
     "alpha3": "TCA",
     "name": "Turks and Caicos Islands",
@@ -2053,7 +2053,7 @@
     "latitude": 21.28,
     "longitude": -71.08
   },
-  {
+  "TCD": {
     "url": "https://en.wikipedia.org/wiki/Chad",
     "alpha3": "TCD",
     "name": "Chad",
@@ -2063,7 +2063,7 @@
     "latitude": 12.06,
     "longitude": 15.02
   },
-  {
+  "TGO": {
     "url": "https://en.wikipedia.org/wiki/Togo",
     "alpha3": "TGO",
     "name": "Togo",
@@ -2073,7 +2073,7 @@
     "latitude": 6.08,
     "longitude": 1.13
   },
-  {
+  "THA": {
     "url": "https://en.wikipedia.org/wiki/Thailand",
     "alpha3": "THA",
     "name": "Thailand",
@@ -2083,7 +2083,7 @@
     "latitude": 13.45,
     "longitude": 100.31
   },
-  {
+  "TJK": {
     "url": "https://en.wikipedia.org/wiki/Tajikistan",
     "alpha3": "TJK",
     "name": "Tajikistan",
@@ -2093,7 +2093,7 @@
     "latitude": 38.35,
     "longitude": 68.48
   },
-  {
+  "TKL": {
     "url": "https://en.wikipedia.org/wiki/Tokelau",
     "alpha3": "TKL",
     "name": "Tokelau",
@@ -2102,7 +2102,7 @@
     "latitude": -9,
     "longitude": -172
   },
-  {
+  "TKM": {
     "url": "https://en.wikipedia.org/wiki/Turkmenistan",
     "alpha3": "TKM",
     "name": "Turkmenistan",
@@ -2112,7 +2112,7 @@
     "latitude": 37.57,
     "longitude": 58.23
   },
-  {
+  "TLS": {
     "url": "https://en.wikipedia.org/wiki/East_Timor",
     "alpha3": "TLS",
     "name": "Timor-Leste",
@@ -2122,7 +2122,7 @@
     "latitude": -8.35,
     "longitude": 125.36
   },
-  {
+  "TON": {
     "url": "https://en.wikipedia.org/wiki/Tonga",
     "alpha3": "TON",
     "name": "Tonga",
@@ -2132,7 +2132,7 @@
     "latitude": -21.08,
     "longitude": -175.12
   },
-  {
+  "TTO": {
     "url": "https://en.wikipedia.org/wiki/Trinidad_and_Tobago",
     "alpha3": "TTO",
     "name": "Trinidad and Tobago",
@@ -2142,7 +2142,7 @@
     "latitude": 10.39,
     "longitude": -61.31
   },
-  {
+  "TUN": {
     "url": "https://en.wikipedia.org/wiki/Tunisia",
     "alpha3": "TUN",
     "name": "Tunisia",
@@ -2152,7 +2152,7 @@
     "latitude": 36.48,
     "longitude": 10.11
   },
-  {
+  "TUR": {
     "url": "https://en.wikipedia.org/wiki/Turkey",
     "alpha3": "TUR",
     "name": "Türkiye",
@@ -2162,7 +2162,7 @@
     "latitude": 39.56,
     "longitude": 32.52
   },
-  {
+  "TUV": {
     "url": "https://en.wikipedia.org/wiki/Tuvalu",
     "alpha3": "TUV",
     "name": "Tuvalu",
@@ -2172,7 +2172,7 @@
     "latitude": -8.3,
     "longitude": 179.12
   },
-  {
+  "TZA": {
     "url": "https://en.wikipedia.org/wiki/Tanzania",
     "alpha3": "TZA",
     "name": "Tanzania - United Republic of",
@@ -2182,7 +2182,7 @@
     "latitude": -6.48,
     "longitude": 39.17
   },
-  {
+  "UGA": {
     "url": "https://en.wikipedia.org/wiki/Uganda",
     "alpha3": "UGA",
     "name": "Uganda",
@@ -2192,7 +2192,7 @@
     "latitude": 0.19,
     "longitude": 32.25
   },
-  {
+  "UKR": {
     "url": "https://en.wikipedia.org/wiki/Ukraine",
     "alpha3": "UKR",
     "name": "Ukraine",
@@ -2202,17 +2202,17 @@
     "latitude": 50.441,
     "longitude": 30.554
   },
-  {
+  "UMI": {
     "url": "https://en.wikipedia.org/wiki/United_States_Minor_Outlying_Islands",
     "alpha3": "UMI",
     "name": "United States Minor Outlying Islands",
     "file_url": "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg",
     "license": "Public domain",
-    "capital": "",
-    "latitude": 0,
-    "longitude": 0
+    "capital": "Wake Island",
+    "latitude": 19.295278,
+    "longitude": 166.631111
   },
-  {
+  "URY": {
     "url": "https://en.wikipedia.org/wiki/Uruguay",
     "alpha3": "URY",
     "name": "Uruguay",
@@ -2222,7 +2222,7 @@
     "latitude": -34.53,
     "longitude": -56.11
   },
-  {
+  "USA": {
     "url": "https://en.wikipedia.org/wiki/United_States",
     "alpha3": "USA",
     "name": "United States of America",
@@ -2232,7 +2232,7 @@
     "latitude": 38.53,
     "longitude": -77.02
   },
-  {
+  "UZB": {
     "url": "https://en.wikipedia.org/wiki/Uzbekistan",
     "alpha3": "UZB",
     "name": "Uzbekistan",
@@ -2242,7 +2242,7 @@
     "latitude": 41.2,
     "longitude": 69.18
   },
-  {
+  "VAT": {
     "url": "https://en.wikipedia.org/wiki/Vatican_City",
     "alpha3": "VAT",
     "name": "Holy See",
@@ -2252,7 +2252,7 @@
     "latitude": 41.54,
     "longitude": 12.27
   },
-  {
+  "VCT": {
     "url": "https://en.wikipedia.org/wiki/Saint_Vincent_and_the_Grenadines",
     "alpha3": "VCT",
     "name": "Saint Vincent and the Grenadines",
@@ -2262,7 +2262,7 @@
     "latitude": 13.09,
     "longitude": -61.14
   },
-  {
+  "VEN": {
     "url": "https://en.wikipedia.org/wiki/Venezuela",
     "alpha3": "VEN",
     "name": "Venezuela (Bolivarian Republic of)",
@@ -2272,7 +2272,7 @@
     "latitude": 10.3,
     "longitude": -66.56
   },
-  {
+  "VGB": {
     "url": "https://en.wikipedia.org/wiki/British_Virgin_Islands",
     "alpha3": "VGB",
     "name": "Virgin Islands (British)",
@@ -2282,7 +2282,7 @@
     "latitude": 18.27,
     "longitude": -64.37
   },
-  {
+  "VIR": {
     "url": "https://en.wikipedia.org/wiki/United_States_Virgin_Islands",
     "alpha3": "VIR",
     "name": "Virgin Islands (U.S.)",
@@ -2292,7 +2292,7 @@
     "latitude": 18.21,
     "longitude": -64.56
   },
-  {
+  "VNM": {
     "url": "https://en.wikipedia.org/wiki/Vietnam",
     "alpha3": "VNM",
     "name": "Viet Nam",
@@ -2302,7 +2302,7 @@
     "latitude": 21.02,
     "longitude": 105.51
   },
-  {
+  "VUT": {
     "url": "https://en.wikipedia.org/wiki/Vanuatu",
     "alpha3": "VUT",
     "name": "Vanuatu",
@@ -2312,7 +2312,7 @@
     "latitude": -17.44,
     "longitude": 168.19
   },
-  {
+  "WLF": {
     "url": "https://en.wikipedia.org/wiki/Wallis_and_Futuna",
     "alpha3": "WLF",
     "name": "Wallis and Futuna",
@@ -2322,7 +2322,7 @@
     "latitude": -13.57,
     "longitude": -171.56
   },
-  {
+  "WSM": {
     "url": "https://en.wikipedia.org/wiki/Samoa",
     "alpha3": "WSM",
     "name": "Samoa",
@@ -2332,7 +2332,7 @@
     "latitude": -13.5,
     "longitude": -171.44
   },
-  {
+  "YEM": {
     "url": "https://en.wikipedia.org/wiki/Yemen",
     "alpha3": "YEM",
     "name": "Yemen",
@@ -2342,7 +2342,7 @@
     "latitude": 15.21,
     "longitude": 44.12
   },
-  {
+  "ZAF": {
     "url": "https://en.wikipedia.org/wiki/South_Africa",
     "alpha3": "ZAF",
     "name": "South Africa",
@@ -2352,7 +2352,7 @@
     "latitude": -25.42,
     "longitude": 28.13
   },
-  {
+  "ZMB": {
     "url": "https://en.wikipedia.org/wiki/Zambia",
     "alpha3": "ZMB",
     "name": "Zambia",
@@ -2362,7 +2362,7 @@
     "latitude": -15.25,
     "longitude": 28.17
   },
-  {
+  "ZWE": {
     "url": "https://en.wikipedia.org/wiki/Zimbabwe",
     "alpha3": "ZWE",
     "name": "Zimbabwe",
@@ -2372,4 +2372,4 @@
     "latitude": -17.5,
     "longitude": 31.03
   }
-]
+}
