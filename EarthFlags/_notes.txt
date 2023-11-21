@@ -1,5 +1,16 @@
 _notes.txt
 
+
+# --
+2023-11-21 16:50:54
+
+>> Correction to USA Washington, DC lat lon
+    "latitude": 38.53,
+    "longitude": -77.02
+--> 
+    "latitude": 38.883333,
+    "longitude": -77.016667
+
 # --
 2023-11-20 12:12:09
 
