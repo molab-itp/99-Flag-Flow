@@ -26,7 +26,7 @@ struct FlagWebView: View {
                         .resizable()
                         .frame(width: 200, height: 100)
                 }
-                WebView(url: "https://en.wikipedia.org"+flagItem.url);
+                WebView(url: flagItem.url);
             }
             else {
                 WebView(url: "https://en.wikipedia.org/wiki/Earth");

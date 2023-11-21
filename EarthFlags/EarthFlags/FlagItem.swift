@@ -32,7 +32,7 @@ struct FlagItem : Decodable {
 //    var isFavorite: Bool = false
     
     func wikiUrl() -> URL? {
-        URL(string: "https://en.wikipedia.org" + url)
+        URL(string: url)
     }
     
     func label() -> String {

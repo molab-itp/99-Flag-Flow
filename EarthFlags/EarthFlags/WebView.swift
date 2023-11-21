@@ -12,6 +12,9 @@ struct WebView : UIViewRepresentable {
     let url: String
     
     func makeUIView(context: Context) -> WKWebView  {
+        
+        print("makeUIView url", url)
+
         // frame does not appear to affect
         // return WKWebView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
         return WKWebView()

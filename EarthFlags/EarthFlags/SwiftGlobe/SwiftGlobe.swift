@@ -564,12 +564,11 @@ class SwiftGlobe {
 
         applyUserTiltAndRotation()
         
-        // Remove any rotation the earth may have made (from automatic spin animation)...
-        let axisAngle = SCNVector4(0, 1, 0, 0 )
-        // !!@ increase in duration does not slow down transition to new location
-//        let spinTo = SCNAction.rotate(toAxisAngle: axisAngle, duration: 3.0)
-        let spinTo = SCNAction.rotate(toAxisAngle: axisAngle, duration: 0.1)
-        globe.runAction(spinTo)
+        // !!@ Move to new loc
+//        // Remove any rotation the earth may have made (from automatic spin animation)...
+//        let axisAngle = SCNVector4(0, 1, 0, 0 )
+//        let spinTo = SCNAction.rotate(toAxisAngle: axisAngle, duration: 0.1)
+//        globe.runAction(spinTo)
     }
     
     internal func applyUserTiltAndRotation() {
@@ -578,27 +577,34 @@ class SwiftGlobe {
         // now apply the user tilt
         matrix = SCNMatrix4RotateF(matrix, userTiltRadians, 1.0, 0.0, 0.0)
         
-        let seasonalTilt = -Float(SwiftGlobe.computeSeasonalTilt(Date()))
-        switch upDownAlignment {
-        case .poles:
-            // first, apply the rotation (along the Y axis)
-            matrix = SCNMatrix4RotateF(matrix, userRotationRadians, 0.0, 1.0, 0.0)
-            // now tilt it (about the X axis) for the seasonal rotation
-            matrix = SCNMatrix4RotateF(matrix, seasonalTilt, 1.0, 0.0, 0.0)
-        case .dayNightTerminator:
-            // now tilt it (about the X axis) for the seasonal rotation
-            matrix = SCNMatrix4RotateF(matrix, seasonalTilt, 1.0, 0.0, 0.0)
-            // first, apply the rotation (along the Y axis)
-            matrix = SCNMatrix4RotateF(matrix, userRotationRadians, 0.0, 1.0, 0.0)
-        }
+        // !!@ Move to new loc
+        matrix = SCNMatrix4RotateF(matrix, userRotationRadians, 0.0, 1.0, 0.0)
+
+        // !!@ Move to new loc
+//        let seasonalTilt = -Float(SwiftGlobe.computeSeasonalTilt(Date()))
+//        switch upDownAlignment {
+//        case .poles:
+//            // first, apply the rotation (along the Y axis)
+//            matrix = SCNMatrix4RotateF(matrix, userRotationRadians, 0.0, 1.0, 0.0)
+//            // now tilt it (about the X axis) for the seasonal rotation
+//            matrix = SCNMatrix4RotateF(matrix, seasonalTilt, 1.0, 0.0, 0.0)
+//        case .dayNightTerminator:
+//            // now tilt it (about the X axis) for the seasonal rotation
+//            matrix = SCNMatrix4RotateF(matrix, seasonalTilt, 1.0, 0.0, 0.0)
+//            // first, apply the rotation (along the Y axis)
+//            matrix = SCNMatrix4RotateF(matrix, userRotationRadians, 0.0, 1.0, 0.0)
+//        }
+        
         //userTiltAndRotation.transform = matrix
+        
         // Animate the transform
         let animation = CABasicAnimation(keyPath: "transform")
         animation.fromValue = userTiltAndRotation.transform
         animation.duration = 3.0
-        userTiltAndRotation.addAnimation(animation, forKey: nil)
 
         userTiltAndRotation.transform = matrix
+
+        userTiltAndRotation.addAnimation(animation, forKey: nil)
 
     }
     

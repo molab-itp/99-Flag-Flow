@@ -34,9 +34,7 @@ class AppModel: ObservableObject
     }
     
     func flagItem(ccode:String) -> FlagItem? {
-        flagItems.first {
-            $0.alpha3 == ccode
-        }
+        return flagDict[ccode]
     }
     
     func isMarked(flagItem: FlagItem) -> Bool {
@@ -63,14 +61,7 @@ class AppModel: ObservableObject
     
     func marked() -> [FlagItem] {
         // Return the flag items in the order that they appear in settings.marked
-        return settings.marked.compactMap { mark in
-            if let index = flagItems.firstIndex(where: { flag in
-                flag.alpha3 == mark
-            }) {
-                return flagItems[index]
-            }
-            return nil;
-        }
+        return settings.marked.compactMap { flagItem(ccode: $0) }
     }
     
     func markedMove(from source: IndexSet, to destination: Int) {

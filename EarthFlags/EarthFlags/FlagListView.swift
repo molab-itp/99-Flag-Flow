@@ -77,10 +77,6 @@ struct FlagItemRowView: View {
                     let state = model.isMarked(flagItem: flagItem)
                     Image(systemName: state ? "circle.fill" : "circle")
                 }
-//                Spacer()
-//                Link(destination: flagItem.wikiUrl()!) {
-//                    Image(systemName: "safari")
-//                }
             }
         }
     }
