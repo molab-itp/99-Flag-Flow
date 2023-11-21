@@ -37,43 +37,34 @@ struct MapTabView: View {
             // .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
-                    Button(action: nextUnkownAction ) {
-                        //Image(systemName: "plus" )
-                        Text("Next-Unk")
-                    }
-                    Button(action: updateAction ) {
-                        //Image(systemName: "plus" )
-                        Text("Update")
-                    }
+//                    Button(action: nextUnkownAction ) {
+//                        //Image(systemName: "plus" )
+//                        Text("Next-Unk")
+//                    }
+//                    Button(action: updateAction ) {
+//                        //Image(systemName: "plus" )
+//                        Text("Update")
+//                    }
                     Button(action: nextLocAction ) {
                         //Image(systemName: "arrow.right.circle" )
                         Text("Next")
                     }
                 }
             }
-
         }
     }
 
-    func nextUnkownAction() {
-        print("nextUnkownAction");
-        withAnimation {
-            print("nextLocAction withAnimation")
-            model.nextUnknown()
-        }
-    }
+//    func nextUnkownAction() {
+//        print("nextUnkownAction");
+//        withAnimation {
+//            print("nextLocAction withAnimation")
+//            model.nextUnknown()
+//        }
+//    }
     
-    func updateAction() {
-        print("updateAction");
-    }
-    
-    func nextLocAction() {
-        print("nextLocAction")
-        withAnimation {
-            print("nextLocAction withAnimation")
-            model.next()
-        }
-    }
+//    func updateAction() {
+//        print("updateAction");
+//    }
 
     func bottomInfo() -> some View {
         VStack {
@@ -95,7 +86,7 @@ struct MapTabView: View {
             .frame(width: 32, height: 32)
     }
     
-    private func starButton() -> some View {
+    private func starNextButton() -> some View {
         VStack {
             Spacer()
             HStack {
@@ -112,6 +103,14 @@ struct MapTabView: View {
         }
     }
     
+    func nextLocAction() {
+        print("nextLocAction")
+        withAnimation {
+            print("nextLocAction withAnimation")
+            model.next()
+        }
+    }
+
     var centerLatitude: String {
         String(format: "%+.6f", model.region.center.latitude)
     }

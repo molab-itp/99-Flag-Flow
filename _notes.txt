@@ -1,11 +1,24 @@
 _notes.txt
 
 # --
+2023-11-20 08:49:31
+
+>> Location example gives warning using Map view
+_course-repos/09-Location
+  Publishing changes from within view updates is not allowed, this will cause undefined behavior
+      Map(coordinateRegion: $locationManager.region,
+
+>> Problem exists in original
+  ... /HackingWithSwift/SwiftUI/project14/Bucketlist/ContentView-ViewModel.swift
+    @MainActor class ViewModel: ObservableObject {
+
+# --
 2023-11-19 19:04:58
 
 
     func nextUnknown() {
 
+--- > nexNoLocation
 
 
 >> refactoring

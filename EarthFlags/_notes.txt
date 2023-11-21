@@ -1,5 +1,129 @@
 _notes.txt
 
+# --
+2023-11-20 12:12:09
+
+
+https://github.com/samayo/country-json/blob/master/src/country-by-geo-coordinates.json
+
+    {
+        "country": "Afghanistan",
+        "north": 38.4834,
+        "south": 29.3775,
+        "west": 60.4784,
+        "east": 74.8794
+    },
+
+
+    }, {
+        "properties": {
+            "country": "Afghanistan",
+            "city": "Kabul",
+            "tld": "af",
+            "iso3": "AFG",
+            "iso2": "AF"
+        },
+        "geometry": {
+            "coordinates": [69.11, 34.31],
+            "type": "Point"
+        },
+        "id": "AF"
+
+# --
+
+https://gist.github.com/mcwhittemore/1f81416ff74dd64decc6?short_path=5c9378f
+
+https://gist.githubusercontent.com/mcwhittemore/1f81416ff74dd64decc6/raw/f34bddb3bf276a32b073ba79d0dd625a5735eedc/usa-state-capitals.geojson
+mcwhittemore/usa-state-capitals.geojson
+
+# --
+
+countries dict + array for 
+Dictionary
+Array
+?? shared elements
+make them classes
+
+struct Location: Identifiable, Codable, Equatable {
+--> class
+
+# --
+
+  {
+    "url": "/wiki/Bangladesh",
+    "alpha3": "BGD",
+    "name": "Bangladesh",
+    "file_url": "//upload.wikimedia.org/wikipedia/commons/f/f9/Flag_of_Bangladesh.svg",
+    "license": "Public domain"
+  },
+23.763889, 90.388889	
+Dhaka
+<wpt lat="23.763889" lon="90.388889">
+
+        "properties": {
+            "country": "Bangladesh",
+            "city": "Dhaka",
+            "tld": "bd",
+            "iso3": "BGD",
+            "iso2": "BD"
+        },
+        "geometry": {
+            "coordinates": [90.24, 23.43],
+            "type": "Point"
+        },
+        "id": "BD"
+
+  {
+    "url": "/wiki/Aruba",
+    "alpha3": "ABW",
+    "name": "Aruba",
+    "file_url": "//upload.wikimedia.org/wikipedia/commons/f/f6/Flag_of_Aruba.svg",
+    "license": "Public domain"
+  },
+12.518611, -70.035833
+Oranjestad
+
+https://github.com/Stefie/geojson-world
+
+        "properties": {
+            "country": "Aruba",
+            "city": "Oranjestad",
+            "tld": "aw",
+            "iso3": "ABW",
+            "iso2": "AW"
+        },
+        "geometry": {
+            "coordinates": [-70.02, 12.31],
+            "type": "Point"
+        },
+        "id": "AW"
+
+https://datahub.io/core/geo-countries
+
+{ "type": "Feature", 
+"properties": { "ADMIN": "Aruba", "ISO_A3": "ABW" }, 
+"geometry": { "type": "Polygon", 
+    "coordinates": 
+        [ [ [ -69.996937628999916, 12.577582098000036 ], [ -69.936390753999945,
+        12.531724351000051 ], [ -69.924672003999945, 12.519232489000046 ], [
+        -69.915760870999918, 12.497015692000076 ], [ -69.880197719999842,
+        12.453558661000045 ], [ -69.876820441999939, 12.427394924000097 ], [
+        -69.888091600999928, 12.417669989000046 ], [ -69.908802863999938,
+        12.417792059000107 ], [ -69.930531378999888, 12.425970770000035 ], [
+        -69.945139126999919, 12.44037506700009 ], [ -69.924672003999945,
+        12.44037506700009 ], [ -69.924672003999945, 12.447211005000014 ], [
+        -69.958566860999923, 12.463202216000099 ], [ -70.027658657999922,
+        12.522935289000088 ], [ -70.048085089999887, 12.531154690000079 ], [
+        -70.058094855999883, 12.537176825000088 ], [ -70.062408006999874,
+        12.546820380000057 ], [ -70.060373501999948, 12.556952216000113 ], [
+        -70.051096157999893, 12.574042059000064 ], [ -70.048736131999931,
+        12.583726304000024 ], [ -70.052642381999931, 12.600002346000053 ], [
+        -70.059641079999921, 12.614243882000054 ], [ -70.061105923999975,
+        12.625392971000068 ], [ -70.048736131999931, 12.632147528000104 ], [
+        -70.00715084499987, 12.5855166690001 ], [ -69.996937628999916,
+        12.577582098000036 ] ] ] } },
+
+
 
 # --
 2023-11-19 12:24:35
@@ -57,6 +181,9 @@ https://developer.apple.com/documentation/scenekit/scnaction
             globe.runAction(spinAction)
 
 
+>> Sharing model state
+    static let main = AppModel()
+https://developer.apple.com/documentation/swift/managing-a-shared-resource-using-a-singleton
 
 # --
 2023-11-19 04:48:03
