@@ -5,7 +5,7 @@
     "name": "Aruba",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Flag_of_Aruba.svg",
     "license": "Public domain",
-    "capital_city": "Oranjestad",
+    "capital": "Oranjestad",
     "latitude": 12.31,
     "longitude": -70.02
   },
@@ -15,7 +15,7 @@
     "name": "Afghanistan",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_the_Taliban.svg",
     "license": "Public domain",
-    "capital_city": "Kabul",
+    "capital": "Kabul",
     "latitude": 34.31,
     "longitude": 69.11
   },
@@ -25,7 +25,7 @@
     "name": "Angola",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Flag_of_Angola.svg",
     "license": "Public domain",
-    "capital_city": "Luanda",
+    "capital": "Luanda",
     "latitude": -8.5,
     "longitude": 13.14
   },
@@ -35,7 +35,7 @@
     "name": "Anguilla",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Anguilla.svg",
     "license": "Public domain",
-    "capital_city": "The Valley",
+    "capital": "The Valley",
     "latitude": 18.13,
     "longitude": -63.03
   },
@@ -45,7 +45,7 @@
     "name": "Åland Islands",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Flag_of_%C3%85land.svg",
     "license": "Public domain",
-    "capital_city": "",
+    "capital": "",
     "latitude": 0,
     "longitude": 0
   },
@@ -55,7 +55,7 @@
     "name": "Albania",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Flag_of_Albania.svg",
     "license": "Public domain",
-    "capital_city": "Tirana",
+    "capital": "Tirana",
     "latitude": 41.19,
     "longitude": 19.49
   },
@@ -65,7 +65,7 @@
     "name": "Andorra",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Andorra.svg",
     "license": "Public domain",
-    "capital_city": "Andorra la Vella",
+    "capital": "Andorra la Vella",
     "latitude": 42.3,
     "longitude": 1.31
   },
@@ -75,7 +75,7 @@
     "name": "United Arab Emirates",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_United_Arab_Emirates.svg",
     "license": "Public domain",
-    "capital_city": "Abu Dhabi",
+    "capital": "Abu Dhabi",
     "latitude": 24.28,
     "longitude": 54.22
   },
@@ -85,7 +85,7 @@
     "name": "Argentina",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg",
     "license": "Public domain",
-    "capital_city": "Buenos Aires",
+    "capital": "Buenos Aires",
     "latitude": -34.36,
     "longitude": -58.4
   },
@@ -95,7 +95,7 @@
     "name": "Armenia",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Flag_of_Armenia.svg",
     "license": "Public domain",
-    "capital_city": "Yerevan",
+    "capital": "Yerevan",
     "latitude": 40.1,
     "longitude": 44.3
   },
@@ -105,7 +105,7 @@
     "name": "American Samoa",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Flag_of_American_Samoa.svg",
     "license": "Public domain",
-    "capital_city": "Pago Pago",
+    "capital": "Pago Pago",
     "latitude": -14.16,
     "longitude": -170.42
   },
@@ -124,7 +124,7 @@
     "name": "Antigua and Barbuda",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Flag_of_Antigua_and_Barbuda.svg",
     "license": "Public domain",
-    "capital_city": "Saint John's",
+    "capital": "Saint John's",
     "latitude": 17.07,
     "longitude": -61.51
   },
@@ -134,7 +134,7 @@
     "name": "Australia",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Flag_of_Australia_%28converted%29.svg",
     "license": "Public domain",
-    "capital_city": "Canberra",
+    "capital": "Canberra",
     "latitude": -35.17,
     "longitude": 149.13
   },
@@ -144,7 +144,7 @@
     "name": "Austria",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_Austria.svg",
     "license": "Public domain",
-    "capital_city": "Vienna",
+    "capital": "Vienna",
     "latitude": 48.12,
     "longitude": 16.22
   },
@@ -154,7 +154,7 @@
     "name": "Azerbaijan",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Flag_of_Azerbaijan.svg",
     "license": "Public domain",
-    "capital_city": "Baku",
+    "capital": "Baku",
     "latitude": 40.23,
     "longitude": 49.52
   },
@@ -164,7 +164,7 @@
     "name": "Burundi",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Flag_of_Burundi.svg",
     "license": "Public domain",
-    "capital_city": "Bujumbura",
+    "capital": "Bujumbura",
     "latitude": -3.22,
     "longitude": 29.21
   },
@@ -174,7 +174,7 @@
     "name": "Belgium",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Belgium.svg",
     "license": "Public domain",
-    "capital_city": "Brussels",
+    "capital": "Brussels",
     "latitude": 50.5,
     "longitude": 4.2
   },
@@ -184,7 +184,7 @@
     "name": "Benin",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Flag_of_Benin.svg",
     "license": "Public domain",
-    "capital_city": "Porto-Novo",
+    "capital": "Porto-Novo",
     "latitude": 6.29,
     "longitude": 2.37
   },
@@ -194,7 +194,7 @@
     "name": "Bonaire - Sint Eustatius and Saba",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_the_Netherlands.svg",
     "license": "Public domain",
-    "capital_city": "",
+    "capital": "",
     "latitude": 0,
     "longitude": 0
   },
@@ -204,7 +204,7 @@
     "name": "Burkina Faso",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Flag_of_Burkina_Faso.svg",
     "license": "Public domain",
-    "capital_city": "Ouagadougou",
+    "capital": "Ouagadougou",
     "latitude": 12.22,
     "longitude": -1.31
   },
@@ -214,7 +214,7 @@
     "name": "Bangladesh",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Flag_of_Bangladesh.svg",
     "license": "Public domain",
-    "capital_city": "Dhaka",
+    "capital": "Dhaka",
     "latitude": 23.43,
     "longitude": 90.24
   },
@@ -224,7 +224,7 @@
     "name": "Bulgaria",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Bulgaria.svg",
     "license": "Public domain",
-    "capital_city": "Sofia",
+    "capital": "Sofia",
     "latitude": 42.41,
     "longitude": 23.19
   },
@@ -234,7 +234,7 @@
     "name": "Bahrain",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Flag_of_Bahrain.svg",
     "license": "Public domain",
-    "capital_city": "Manama",
+    "capital": "Manama",
     "latitude": 26.14,
     "longitude": 50.34
   },
@@ -244,7 +244,7 @@
     "name": "Bahamas",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/9/93/Flag_of_the_Bahamas.svg",
     "license": "Public domain",
-    "capital_city": "Nassau",
+    "capital": "Nassau",
     "latitude": 25.05,
     "longitude": -77.21
   },
@@ -254,7 +254,7 @@
     "name": "Bosnia and Herzegovina",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Flag_of_Bosnia_and_Herzegovina.svg",
     "license": "Public domain",
-    "capital_city": "Sarajevo",
+    "capital": "Sarajevo",
     "latitude": 43.52,
     "longitude": 18.25
   },
@@ -264,7 +264,7 @@
     "name": "Saint Barthélemy",
     "file_url": "https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
     "license": "Public domain",
-    "capital_city": "Gustavia",
+    "capital": "Gustavia",
     "latitude": 17.53,
     "longitude": -62.51
   },
@@ -274,7 +274,7 @@
     "name": "Belarus",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Flag_of_Belarus.svg",
     "license": "Public domain",
-    "capital_city": "Minsk",
+    "capital": "Minsk",
     "latitude": 53.54,
     "longitude": 27.34
   },
@@ -284,7 +284,7 @@
     "name": "Belize",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Flag_of_Belize.svg",
     "license": "Public domain",
-    "capital_city": "Belmopan",
+    "capital": "Belmopan",
     "latitude": 17.15,
     "longitude": -88.46
   },
@@ -294,7 +294,7 @@
     "name": "Bermuda",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Flag_of_Bermuda.svg",
     "license": "Public domain",
-    "capital_city": "Hamilton",
+    "capital": "Hamilton",
     "latitude": 32.17,
     "longitude": -64.47
   },
@@ -304,7 +304,7 @@
     "name": "Bolivia (Plurinational State of)",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Bandera_de_Bolivia_%28Estado%29.svg",
     "license": "Public domain",
-    "capital_city": "La Paz",
+    "capital": "La Paz",
     "latitude": -16.3,
     "longitude": -68.09
   },
@@ -314,7 +314,7 @@
     "name": "Brazil",
     "file_url": "https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg",
     "license": "Public domain",
-    "capital_city": "Brasilia",
+    "capital": "Brasilia",
     "latitude": -15.47,
     "longitude": -47.55
   },
@@ -324,7 +324,7 @@
     "name": "Barbados",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Flag_of_Barbados.svg",
     "license": "Public domain",
-    "capital_city": "Bridgetown",
+    "capital": "Bridgetown",
     "latitude": 13.06,
     "longitude": -59.37
   },
@@ -334,7 +334,7 @@
     "name": "Brunei Darussalam",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Flag_of_Brunei.svg",
     "license": "Public domain",
-    "capital_city": "Bandar Seri Begawan",
+    "capital": "Bandar Seri Begawan",
     "latitude": 4.53,
     "longitude": 114.56
   },
@@ -344,7 +344,7 @@
     "name": "Bhutan",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Flag_of_Bhutan.svg",
     "license": "Public domain",
-    "capital_city": "Thimphu",
+    "capital": "Thimphu",
     "latitude": 27.29,
     "longitude": 89.36
   },
@@ -354,7 +354,7 @@
     "name": "Botswana",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_Botswana.svg",
     "license": "Public domain",
-    "capital_city": "Gaborone",
+    "capital": "Gaborone",
     "latitude": -24.45,
     "longitude": 25.55
   },
@@ -364,7 +364,7 @@
     "name": "Central African Republic",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Flag_of_the_Central_African_Republic.svg",
     "license": "Public domain",
-    "capital_city": "Bangui",
+    "capital": "Bangui",
     "latitude": 4.22,
     "longitude": 18.35
   },
@@ -374,7 +374,7 @@
     "name": "Canada",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Canada_%28Pantone%29.svg",
     "license": "Public domain",
-    "capital_city": "Ottawa",
+    "capital": "Ottawa",
     "latitude": 45.25,
     "longitude": -75.42
   },
@@ -384,7 +384,7 @@
     "name": "Cocos (Keeling) Islands",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Flag_of_the_Cocos_%28Keeling%29_Islands.svg",
     "license": "Public domain",
-    "capital_city": "West Island",
+    "capital": "West Island",
     "latitude": -12.1,
     "longitude": 96.5
   },
@@ -394,7 +394,7 @@
     "name": "Switzerland",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Switzerland.svg",
     "license": "Public domain",
-    "capital_city": "Bern",
+    "capital": "Bern",
     "latitude": 46.57,
     "longitude": 7.26
   },
@@ -404,7 +404,7 @@
     "name": "Chile",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/7/78/Flag_of_Chile.svg",
     "license": "Public domain",
-    "capital_city": "Santiago",
+    "capital": "Santiago",
     "latitude": -33.27,
     "longitude": -70.4
   },
@@ -414,7 +414,7 @@
     "name": "China",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg",
     "license": "Public domain",
-    "capital_city": "Beijing",
+    "capital": "Beijing",
     "latitude": 39.55,
     "longitude": 116.23
   },
@@ -424,7 +424,7 @@
     "name": "Côte d'Ivoire",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_C%C3%B4te_d%27Ivoire.svg",
     "license": "Public domain",
-    "capital_city": "Yamoussoukro",
+    "capital": "Yamoussoukro",
     "latitude": 6.49,
     "longitude": -5.17
   },
@@ -434,7 +434,7 @@
     "name": "Cameroon",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Flag_of_Cameroon.svg",
     "license": "Public domain",
-    "capital_city": "Yaounde",
+    "capital": "Yaounde",
     "latitude": 3.52,
     "longitude": 11.31
   },
@@ -444,7 +444,7 @@
     "name": "Congo - Democratic Republic of the",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Flag_of_the_Democratic_Republic_of_the_Congo.svg",
     "license": "Public domain",
-    "capital_city": "Kinshasa",
+    "capital": "Kinshasa",
     "latitude": -4.19,
     "longitude": 15.18
   },
@@ -454,7 +454,7 @@
     "name": "Congo",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_the_Republic_of_the_Congo.svg",
     "license": "Public domain",
-    "capital_city": "Brazzaville",
+    "capital": "Brazzaville",
     "latitude": -4.15,
     "longitude": 15.17
   },
@@ -464,7 +464,7 @@
     "name": "Cook Islands",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Flag_of_the_Cook_Islands.svg",
     "license": "Public domain",
-    "capital_city": "Avarua",
+    "capital": "Avarua",
     "latitude": -21.12,
     "longitude": -159.46
   },
@@ -474,7 +474,7 @@
     "name": "Colombia",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg",
     "license": "Public domain",
-    "capital_city": "Bogota",
+    "capital": "Bogota",
     "latitude": 4.36,
     "longitude": -74.05
   },
@@ -484,7 +484,7 @@
     "name": "Comoros",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Flag_of_the_Comoros.svg",
     "license": "Public domain",
-    "capital_city": "Moroni",
+    "capital": "Moroni",
     "latitude": -11.42,
     "longitude": 43.14
   },
@@ -494,7 +494,7 @@
     "name": "Cabo Verde",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Flag_of_Cape_Verde.svg",
     "license": "Public domain",
-    "capital_city": "Praia",
+    "capital": "Praia",
     "latitude": 14.55,
     "longitude": -23.31
   },
@@ -504,7 +504,7 @@
     "name": "Costa Rica",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Flag_of_Costa_Rica.svg",
     "license": "Public domain",
-    "capital_city": "San Jose",
+    "capital": "San Jose",
     "latitude": 9.56,
     "longitude": -84.05
   },
@@ -514,7 +514,7 @@
     "name": "Cuba",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Flag_of_Cuba.svg",
     "license": "Public domain",
-    "capital_city": "Havana",
+    "capital": "Havana",
     "latitude": 23.07,
     "longitude": -82.21
   },
@@ -524,7 +524,7 @@
     "name": "Curaçao",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Flag_of_Cura%C3%A7ao.svg",
     "license": "Public domain",
-    "capital_city": "",
+    "capital": "",
     "latitude": 0,
     "longitude": 0
   },
@@ -534,7 +534,7 @@
     "name": "Christmas Island",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Flag_of_Christmas_Island.svg",
     "license": "Public domain",
-    "capital_city": "The Settlement",
+    "capital": "The Settlement",
     "latitude": -10.25,
     "longitude": 105.43
   },
@@ -544,7 +544,7 @@
     "name": "Cayman Islands",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_the_Cayman_Islands.svg",
     "license": "Public domain",
-    "capital_city": "George Town",
+    "capital": "George Town",
     "latitude": 19.18,
     "longitude": -81.23
   },
@@ -554,7 +554,7 @@
     "name": "Cyprus",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Cyprus.svg",
     "license": "Public domain",
-    "capital_city": "Nicosia",
+    "capital": "Nicosia",
     "latitude": 35.1,
     "longitude": 33.22
   },
@@ -564,7 +564,7 @@
     "name": "Czechia",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_Czech_Republic.svg",
     "license": "Public domain",
-    "capital_city": "Prague",
+    "capital": "Prague",
     "latitude": 50.05,
     "longitude": 14.28
   },
@@ -574,7 +574,7 @@
     "name": "Germany",
     "file_url": "https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg",
     "license": "Public domain",
-    "capital_city": "Berlin",
+    "capital": "Berlin",
     "latitude": 52.31,
     "longitude": 13.24
   },
@@ -584,7 +584,7 @@
     "name": "Djibouti",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Flag_of_Djibouti.svg",
     "license": "Public domain",
-    "capital_city": "Djibouti",
+    "capital": "Djibouti",
     "latitude": 11.35,
     "longitude": 43.09
   },
@@ -594,7 +594,7 @@
     "name": "Dominica",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Flag_of_Dominica.svg",
     "license": "Public domain",
-    "capital_city": "Roseau",
+    "capital": "Roseau",
     "latitude": 15.18,
     "longitude": -61.24
   },
@@ -604,7 +604,7 @@
     "name": "Denmark",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Flag_of_Denmark.svg",
     "license": "Public domain",
-    "capital_city": "Copenhagen",
+    "capital": "Copenhagen",
     "latitude": 55.4,
     "longitude": 12.35
   },
@@ -614,7 +614,7 @@
     "name": "Dominican Republic",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_the_Dominican_Republic.svg",
     "license": "Public domain",
-    "capital_city": "Santo Domingo",
+    "capital": "Santo Domingo",
     "latitude": 18.28,
     "longitude": -69.54
   },
@@ -624,7 +624,7 @@
     "name": "Algeria",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_Algeria.svg",
     "license": "Public domain",
-    "capital_city": "Algiers",
+    "capital": "Algiers",
     "latitude": 36.45,
     "longitude": 3.03
   },
@@ -634,7 +634,7 @@
     "name": "Ecuador",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Flag_of_Ecuador.svg",
     "license": "Public domain",
-    "capital_city": "Quito",
+    "capital": "Quito",
     "latitude": -0.13,
     "longitude": -78.3
   },
@@ -644,7 +644,7 @@
     "name": "Egypt",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Egypt.svg",
     "license": "Public domain",
-    "capital_city": "Cairo",
+    "capital": "Cairo",
     "latitude": 30.03,
     "longitude": 31.15
   },
@@ -654,7 +654,7 @@
     "name": "Eritrea",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Flag_of_Eritrea.svg",
     "license": "Public domain",
-    "capital_city": "Asmara",
+    "capital": "Asmara",
     "latitude": 15.2,
     "longitude": 38.56
   },
@@ -664,7 +664,7 @@
     "name": "Spain",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Bandera_de_Espa%C3%B1a.svg",
     "license": "Public domain",
-    "capital_city": "Madrid",
+    "capital": "Madrid",
     "latitude": 40.24,
     "longitude": -3.41
   },
@@ -674,7 +674,7 @@
     "name": "Estonia",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Flag_of_Estonia.svg",
     "license": "Public domain",
-    "capital_city": "Tallinn",
+    "capital": "Tallinn",
     "latitude": 59.26,
     "longitude": 24.43
   },
@@ -684,7 +684,7 @@
     "name": "Ethiopia",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Flag_of_Ethiopia.svg",
     "license": "Public domain",
-    "capital_city": "Addis Ababa",
+    "capital": "Addis Ababa",
     "latitude": 9.02,
     "longitude": 38.42
   },
@@ -694,7 +694,7 @@
     "name": "Finland",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Finland.svg",
     "license": "Public domain",
-    "capital_city": "Helsinki",
+    "capital": "Helsinki",
     "latitude": 60.1,
     "longitude": 24.56
   },
@@ -704,7 +704,7 @@
     "name": "Fiji",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Fiji.svg",
     "license": "Public domain",
-    "capital_city": "Suva",
+    "capital": "Suva",
     "latitude": -18.08,
     "longitude": 178.25
   },
@@ -714,7 +714,7 @@
     "name": "Falkland Islands (Malvinas)",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_the_Falkland_Islands.svg",
     "license": "Public domain",
-    "capital_city": "Stanley",
+    "capital": "Stanley",
     "latitude": -51.42,
     "longitude": -57.51
   },
@@ -724,7 +724,7 @@
     "name": "France",
     "file_url": "https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
     "license": "Public domain",
-    "capital_city": "Paris",
+    "capital": "Paris",
     "latitude": 48.52,
     "longitude": 2.2
   },
@@ -734,7 +734,7 @@
     "name": "Faroe Islands",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Flag_of_the_Faroe_Islands.svg",
     "license": "Public domain",
-    "capital_city": "Torshavn",
+    "capital": "Torshavn",
     "latitude": 62.01,
     "longitude": -6.46
   },
@@ -744,7 +744,7 @@
     "name": "Micronesia (Federated States of)",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Flag_of_the_Federated_States_of_Micronesia.svg",
     "license": "Public domain",
-    "capital_city": "Palikir",
+    "capital": "Palikir",
     "latitude": 6.55,
     "longitude": 158.09
   },
@@ -754,7 +754,7 @@
     "name": "Gabon",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Flag_of_Gabon.svg",
     "license": "Public domain",
-    "capital_city": "Libreville",
+    "capital": "Libreville",
     "latitude": 0.23,
     "longitude": 9.27
   },
@@ -764,7 +764,7 @@
     "name": "United Kingdom of Great Britain and Northern Ireland",
     "file_url": "https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg",
     "license": "Public domain",
-    "capital_city": "London",
+    "capital": "London",
     "latitude": 51.3,
     "longitude": -0.1
   },
@@ -774,7 +774,7 @@
     "name": "Georgia",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Georgia.svg",
     "license": "Public domain",
-    "capital_city": "T'bilisi",
+    "capital": "T'bilisi",
     "latitude": 41.43,
     "longitude": 44.47
   },
@@ -784,7 +784,7 @@
     "name": "Guernsey",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_Guernsey.svg",
     "license": "Public domain",
-    "capital_city": "Saint Peter Port",
+    "capital": "Saint Peter Port",
     "latitude": 49.27,
     "longitude": -2.32
   },
@@ -794,7 +794,7 @@
     "name": "Ghana",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Ghana.svg",
     "license": "Public domain",
-    "capital_city": "Accra",
+    "capital": "Accra",
     "latitude": 5.33,
     "longitude": -0.13
   },
@@ -804,7 +804,7 @@
     "name": "Gibraltar",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Flag_of_Gibraltar.svg",
     "license": "Public domain",
-    "capital_city": "Gibraltar",
+    "capital": "Gibraltar",
     "latitude": 36.08,
     "longitude": -5.21
   },
@@ -814,7 +814,7 @@
     "name": "Guinea",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Flag_of_Guinea.svg",
     "license": "Public domain",
-    "capital_city": "Conakry",
+    "capital": "Conakry",
     "latitude": 9.33,
     "longitude": -13.42
   },
@@ -824,7 +824,7 @@
     "name": "Gambia",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_The_Gambia.svg",
     "license": "Public domain",
-    "capital_city": "Banjul",
+    "capital": "Banjul",
     "latitude": 13.27,
     "longitude": -16.34
   },
@@ -834,7 +834,7 @@
     "name": "Guinea-Bissau",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_Guinea-Bissau.svg",
     "license": "Public domain",
-    "capital_city": "Bissau",
+    "capital": "Bissau",
     "latitude": 11.51,
     "longitude": -15.35
   },
@@ -844,7 +844,7 @@
     "name": "Equatorial Guinea",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Flag_of_Equatorial_Guinea.svg",
     "license": "Public domain",
-    "capital_city": "Malabo",
+    "capital": "Malabo",
     "latitude": 3.45,
     "longitude": 8.47
   },
@@ -854,7 +854,7 @@
     "name": "Greece",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Greece.svg",
     "license": "Public domain",
-    "capital_city": "Athens",
+    "capital": "Athens",
     "latitude": 37.59,
     "longitude": 23.44
   },
@@ -864,7 +864,7 @@
     "name": "Grenada",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Grenada.svg",
     "license": "Public domain",
-    "capital_city": "Saint George's",
+    "capital": "Saint George's",
     "latitude": 12.03,
     "longitude": -61.45
   },
@@ -874,7 +874,7 @@
     "name": "Greenland",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_Greenland.svg",
     "license": "Public domain",
-    "capital_city": "Nuuk",
+    "capital": "Nuuk",
     "latitude": 64.11,
     "longitude": -51.45
   },
@@ -884,7 +884,7 @@
     "name": "Guatemala",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Flag_of_Guatemala.svg",
     "license": "Public domain",
-    "capital_city": "Guatemala City",
+    "capital": "Guatemala City",
     "latitude": 14.37,
     "longitude": -90.31
   },
@@ -894,7 +894,7 @@
     "name": "Guam",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Flag_of_Guam.svg",
     "license": "Public domain",
-    "capital_city": "Hagatna",
+    "capital": "Hagatna",
     "latitude": 13.28,
     "longitude": 144.44
   },
@@ -904,7 +904,7 @@
     "name": "Guyana",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Flag_of_Guyana.svg",
     "license": "Public domain",
-    "capital_city": "Georgetown",
+    "capital": "Georgetown",
     "latitude": 6.48,
     "longitude": -58.1
   },
@@ -914,7 +914,7 @@
     "name": "Hong Kong",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Flag_of_Hong_Kong.svg",
     "license": "Public domain",
-    "capital_city": "Hong Kong",
+    "capital": "Hong Kong",
     "latitude": 22.15,
     "longitude": 114.1
   },
@@ -933,7 +933,7 @@
     "name": "Honduras",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/8/82/Flag_of_Honduras.svg",
     "license": "Public domain",
-    "capital_city": "Tegucigalpa",
+    "capital": "Tegucigalpa",
     "latitude": 14.06,
     "longitude": -87.13
   },
@@ -943,7 +943,7 @@
     "name": "Croatia",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Flag_of_Croatia.svg",
     "license": "Public domain",
-    "capital_city": "Zagreb",
+    "capital": "Zagreb",
     "latitude": 45.48,
     "longitude": 16
   },
@@ -953,7 +953,7 @@
     "name": "Haiti",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Flag_of_Haiti.svg",
     "license": "Public domain",
-    "capital_city": "Port-au-Prince",
+    "capital": "Port-au-Prince",
     "latitude": 18.32,
     "longitude": -72.2
   },
@@ -963,7 +963,7 @@
     "name": "Hungary",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Flag_of_Hungary.svg",
     "license": "Public domain",
-    "capital_city": "Budapest",
+    "capital": "Budapest",
     "latitude": 47.3,
     "longitude": 19.05
   },
@@ -973,7 +973,7 @@
     "name": "Indonesia",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg",
     "license": "Public domain",
-    "capital_city": "Jakarta",
+    "capital": "Jakarta",
     "latitude": -6.1,
     "longitude": 106.49
   },
@@ -983,7 +983,7 @@
     "name": "Isle of Man",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_the_Isle_of_Man.svg",
     "license": "Public domain",
-    "capital_city": "Douglas",
+    "capital": "Douglas",
     "latitude": 54.09,
     "longitude": -4.29
   },
@@ -993,7 +993,7 @@
     "name": "India",
     "file_url": "https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg",
     "license": "Public domain",
-    "capital_city": "New Delhi",
+    "capital": "New Delhi",
     "latitude": 28.36,
     "longitude": 77.12
   },
@@ -1012,7 +1012,7 @@
     "name": "Ireland",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Flag_of_Ireland.svg",
     "license": "Public domain",
-    "capital_city": "Dublin",
+    "capital": "Dublin",
     "latitude": 53.19,
     "longitude": -6.14
   },
@@ -1022,7 +1022,7 @@
     "name": "Iran (Islamic Republic of)",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Flag_of_Iran.svg",
     "license": "Public domain",
-    "capital_city": "Tehran",
+    "capital": "Tehran",
     "latitude": 35.4,
     "longitude": 51.25
   },
@@ -1032,7 +1032,7 @@
     "name": "Iraq",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Flag_of_Iraq.svg",
     "license": "Public domain",
-    "capital_city": "Baghdad",
+    "capital": "Baghdad",
     "latitude": 33.2,
     "longitude": 44.23
   },
@@ -1042,7 +1042,7 @@
     "name": "Iceland",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Iceland.svg",
     "license": "Public domain",
-    "capital_city": "Reykjavik",
+    "capital": "Reykjavik",
     "latitude": 64.09,
     "longitude": -21.57
   },
@@ -1052,7 +1052,7 @@
     "name": "Israel",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Israel.svg",
     "license": "Public domain",
-    "capital_city": "Jerusalem",
+    "capital": "Jerusalem",
     "latitude": 31.46,
     "longitude": 35.14
   },
@@ -1062,7 +1062,7 @@
     "name": "Italy",
     "file_url": "https://upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg",
     "license": "Public domain",
-    "capital_city": "Rome",
+    "capital": "Rome",
     "latitude": 41.54,
     "longitude": 12.29
   },
@@ -1072,7 +1072,7 @@
     "name": "Jamaica",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Flag_of_Jamaica.svg",
     "license": "Public domain",
-    "capital_city": "Kingston",
+    "capital": "Kingston",
     "latitude": 18,
     "longitude": -76.48
   },
@@ -1082,7 +1082,7 @@
     "name": "Jersey",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Flag_of_Jersey.svg",
     "license": "Public domain",
-    "capital_city": "Saint Helier",
+    "capital": "Saint Helier",
     "latitude": 49.11,
     "longitude": -2.06
   },
@@ -1092,7 +1092,7 @@
     "name": "Jordan",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Flag_of_Jordan.svg",
     "license": "Public domain",
-    "capital_city": "Amman",
+    "capital": "Amman",
     "latitude": 31.57,
     "longitude": 35.56
   },
@@ -1102,7 +1102,7 @@
     "name": "Japan",
     "file_url": "https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg",
     "license": "Public domain",
-    "capital_city": "Tokyo",
+    "capital": "Tokyo",
     "latitude": 35.41,
     "longitude": 139.45
   },
@@ -1112,7 +1112,7 @@
     "name": "Kazakhstan",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Flag_of_Kazakhstan.svg",
     "license": "Public domain",
-    "capital_city": "Astana",
+    "capital": "Astana",
     "latitude": 51.1,
     "longitude": 71.25
   },
@@ -1122,7 +1122,7 @@
     "name": "Kenya",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Kenya.svg",
     "license": "Public domain",
-    "capital_city": "Nairobi",
+    "capital": "Nairobi",
     "latitude": -1.17,
     "longitude": 36.49
   },
@@ -1132,7 +1132,7 @@
     "name": "Kyrgyzstan",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Flag_of_Kyrgyzstan.svg",
     "license": "Public domain",
-    "capital_city": "Bishkek",
+    "capital": "Bishkek",
     "latitude": 42.52,
     "longitude": 74.36
   },
@@ -1142,7 +1142,7 @@
     "name": "Cambodia",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_Cambodia.svg",
     "license": "Public domain",
-    "capital_city": "Phnom Penh",
+    "capital": "Phnom Penh",
     "latitude": 11.33,
     "longitude": 104.55
   },
@@ -1152,7 +1152,7 @@
     "name": "Kiribati",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Flag_of_Kiribati.svg",
     "license": "Public domain",
-    "capital_city": "Tarawa",
+    "capital": "Tarawa",
     "latitude": 1.19,
     "longitude": 172.58
   },
@@ -1162,7 +1162,7 @@
     "name": "Saint Kitts and Nevis",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Saint_Kitts_and_Nevis.svg",
     "license": "Public domain",
-    "capital_city": "Basseterre",
+    "capital": "Basseterre",
     "latitude": 17.18,
     "longitude": -62.43
   },
@@ -1172,7 +1172,7 @@
     "name": "Korea - Republic of",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg",
     "license": "Public domain",
-    "capital_city": "Seoul",
+    "capital": "Seoul",
     "latitude": 37.33,
     "longitude": 126.59
   },
@@ -1182,7 +1182,7 @@
     "name": "Kuwait",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Flag_of_Kuwait.svg",
     "license": "Public domain",
-    "capital_city": "Kuwait City",
+    "capital": "Kuwait City",
     "latitude": 29.22,
     "longitude": 47.58
   },
@@ -1192,7 +1192,7 @@
     "name": "Lao People's Democratic Republic",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Flag_of_Laos.svg",
     "license": "Public domain",
-    "capital_city": "Vientiane",
+    "capital": "Vientiane",
     "latitude": 17.58,
     "longitude": 102.36
   },
@@ -1202,7 +1202,7 @@
     "name": "Lebanon",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Flag_of_Lebanon.svg",
     "license": "Public domain",
-    "capital_city": "Beirut",
+    "capital": "Beirut",
     "latitude": 33.52,
     "longitude": 35.3
   },
@@ -1212,7 +1212,7 @@
     "name": "Liberia",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Flag_of_Liberia.svg",
     "license": "Public domain",
-    "capital_city": "Monrovia",
+    "capital": "Monrovia",
     "latitude": 6.18,
     "longitude": -10.48
   },
@@ -1222,7 +1222,7 @@
     "name": "Libya",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Libya.svg",
     "license": "Public domain",
-    "capital_city": "Tripoli",
+    "capital": "Tripoli",
     "latitude": 32.53,
     "longitude": 13.1
   },
@@ -1232,7 +1232,7 @@
     "name": "Saint Lucia",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Saint_Lucia.svg",
     "license": "Public domain",
-    "capital_city": "Castries",
+    "capital": "Castries",
     "latitude": 14.01,
     "longitude": -61
   },
@@ -1242,7 +1242,7 @@
     "name": "Liechtenstein",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Flag_of_Liechtenstein.svg",
     "license": "Public domain",
-    "capital_city": "Vaduz",
+    "capital": "Vaduz",
     "latitude": 47.08,
     "longitude": 9.31
   },
@@ -1252,7 +1252,7 @@
     "name": "Sri Lanka",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Flag_of_Sri_Lanka.svg",
     "license": "Public domain",
-    "capital_city": "Colombo",
+    "capital": "Colombo",
     "latitude": 6.56,
     "longitude": 79.51
   },
@@ -1262,7 +1262,7 @@
     "name": "Lesotho",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Flag_of_Lesotho.svg",
     "license": "Public domain",
-    "capital_city": "Maseru",
+    "capital": "Maseru",
     "latitude": -29.19,
     "longitude": 27.29
   },
@@ -1272,7 +1272,7 @@
     "name": "Lithuania",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Flag_of_Lithuania.svg",
     "license": "Public domain",
-    "capital_city": "Vilnius",
+    "capital": "Vilnius",
     "latitude": 54.41,
     "longitude": 25.19
   },
@@ -1282,7 +1282,7 @@
     "name": "Luxembourg",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/d/da/Flag_of_Luxembourg.svg",
     "license": "Public domain",
-    "capital_city": "Luxembourg",
+    "capital": "Luxembourg",
     "latitude": 49.36,
     "longitude": 6.07
   },
@@ -1292,7 +1292,7 @@
     "name": "Latvia",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Latvia.svg",
     "license": "Public domain",
-    "capital_city": "Riga",
+    "capital": "Riga",
     "latitude": 56.57,
     "longitude": 24.06
   },
@@ -1311,7 +1311,7 @@
     "name": "Saint Martin (French part)",
     "file_url": "https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
     "license": "Public domain",
-    "capital_city": "Marigot",
+    "capital": "Marigot",
     "latitude": 18.04,
     "longitude": -63.05
   },
@@ -1321,7 +1321,7 @@
     "name": "Morocco",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Flag_of_Morocco.svg",
     "license": "Public domain",
-    "capital_city": "Rabat",
+    "capital": "Rabat",
     "latitude": 34.01,
     "longitude": -6.49
   },
@@ -1331,7 +1331,7 @@
     "name": "Monaco",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Flag_of_Monaco.svg",
     "license": "Public domain",
-    "capital_city": "Monaco",
+    "capital": "Monaco",
     "latitude": 43.44,
     "longitude": 7.25
   },
@@ -1341,7 +1341,7 @@
     "name": "Moldova - Republic of",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/2/27/Flag_of_Moldova.svg",
     "license": "Public domain",
-    "capital_city": "Chisinau",
+    "capital": "Chisinau",
     "latitude": 47,
     "longitude": 28.51
   },
@@ -1351,7 +1351,7 @@
     "name": "Madagascar",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Madagascar.svg",
     "license": "Public domain",
-    "capital_city": "Antananarivo",
+    "capital": "Antananarivo",
     "latitude": -18.55,
     "longitude": 47.31
   },
@@ -1361,7 +1361,7 @@
     "name": "Maldives",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Maldives.svg",
     "license": "Public domain",
-    "capital_city": "Male",
+    "capital": "Male",
     "latitude": 4.1,
     "longitude": 73.3
   },
@@ -1371,7 +1371,7 @@
     "name": "Mexico",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg",
     "license": "Public domain",
-    "capital_city": "Mexico City",
+    "capital": "Mexico City",
     "latitude": 19.26,
     "longitude": -99.08
   },
@@ -1381,7 +1381,7 @@
     "name": "Marshall Islands",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Flag_of_the_Marshall_Islands.svg",
     "license": "Public domain",
-    "capital_city": "Majuro",
+    "capital": "Majuro",
     "latitude": 7.06,
     "longitude": 171.23
   },
@@ -1391,7 +1391,7 @@
     "name": "North Macedonia",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Flag_of_North_Macedonia.svg",
     "license": "Public domain",
-    "capital_city": "Skopje",
+    "capital": "Skopje",
     "latitude": 42,
     "longitude": 21.26
   },
@@ -1401,7 +1401,7 @@
     "name": "Mali",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_Mali.svg",
     "license": "Public domain",
-    "capital_city": "Bamako",
+    "capital": "Bamako",
     "latitude": 12.39,
     "longitude": -8
   },
@@ -1411,7 +1411,7 @@
     "name": "Malta",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Flag_of_Malta.svg",
     "license": "Public domain",
-    "capital_city": "Valletta",
+    "capital": "Valletta",
     "latitude": 35.53,
     "longitude": 14.3
   },
@@ -1421,7 +1421,7 @@
     "name": "Myanmar",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Flag_of_Myanmar.svg",
     "license": "Public domain",
-    "capital_city": "Rangoon",
+    "capital": "Rangoon",
     "latitude": 16.48,
     "longitude": 96.09
   },
@@ -1431,7 +1431,7 @@
     "name": "Montenegro",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Flag_of_Montenegro.svg",
     "license": "Public domain",
-    "capital_city": "Podgorica",
+    "capital": "Podgorica",
     "latitude": 42.26,
     "longitude": 19.16
   },
@@ -1441,7 +1441,7 @@
     "name": "Mongolia",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Flag_of_Mongolia.svg",
     "license": "Public domain",
-    "capital_city": "Ulaanbaatar",
+    "capital": "Ulaanbaatar",
     "latitude": 47.55,
     "longitude": 106.55
   },
@@ -1451,7 +1451,7 @@
     "name": "Northern Mariana Islands",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Flag_of_the_Northern_Mariana_Islands.svg",
     "license": "Public domain",
-    "capital_city": "Saipan",
+    "capital": "Saipan",
     "latitude": 15.12,
     "longitude": 145.45
   },
@@ -1461,7 +1461,7 @@
     "name": "Mozambique",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_Mozambique.svg",
     "license": "Public domain",
-    "capital_city": "Maputo",
+    "capital": "Maputo",
     "latitude": -25.57,
     "longitude": 32.35
   },
@@ -1471,7 +1471,7 @@
     "name": "Mauritania",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Flag_of_Mauritania.svg",
     "license": "Public domain",
-    "capital_city": "Nouakchott",
+    "capital": "Nouakchott",
     "latitude": 18.07,
     "longitude": -16.02
   },
@@ -1481,7 +1481,7 @@
     "name": "Montserrat",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_Montserrat.svg",
     "license": "Public domain",
-    "capital_city": "Plymouth",
+    "capital": "Plymouth",
     "latitude": 16.42,
     "longitude": -62.13
   },
@@ -1491,7 +1491,7 @@
     "name": "Mauritius",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_Mauritius.svg",
     "license": "Public domain",
-    "capital_city": "Port Louis",
+    "capital": "Port Louis",
     "latitude": -20.09,
     "longitude": 57.29
   },
@@ -1501,7 +1501,7 @@
     "name": "Malawi",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Flag_of_Malawi.svg",
     "license": "Public domain",
-    "capital_city": "Lilongwe",
+    "capital": "Lilongwe",
     "latitude": -13.59,
     "longitude": 33.47
   },
@@ -1511,7 +1511,7 @@
     "name": "Malaysia",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg",
     "license": "Public domain",
-    "capital_city": "Kuala Lumpur",
+    "capital": "Kuala Lumpur",
     "latitude": 3.1,
     "longitude": 101.42
   },
@@ -1521,7 +1521,7 @@
     "name": "Namibia",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_Namibia.svg",
     "license": "Public domain",
-    "capital_city": "Windhoek",
+    "capital": "Windhoek",
     "latitude": -22.34,
     "longitude": 17.05
   },
@@ -1531,7 +1531,7 @@
     "name": "New Caledonia",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Drapeau_de_Nouvelle-Cal%C3%A9donie.png",
     "license": "Creative Commons Attribution-Share Alike 4.0 International",
-    "capital_city": "Noumea",
+    "capital": "Noumea",
     "latitude": -22.16,
     "longitude": 166.27
   },
@@ -1541,7 +1541,7 @@
     "name": "Niger",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Flag_of_Niger.svg",
     "license": "Public domain",
-    "capital_city": "Niamey",
+    "capital": "Niamey",
     "latitude": 13.31,
     "longitude": 2.07
   },
@@ -1551,7 +1551,7 @@
     "name": "Norfolk Island",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Norfolk_Island.svg",
     "license": "Public domain",
-    "capital_city": "Kingston",
+    "capital": "Kingston",
     "latitude": -29.03,
     "longitude": 167.58
   },
@@ -1561,7 +1561,7 @@
     "name": "Nigeria",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Flag_of_Nigeria.svg",
     "license": "Public domain",
-    "capital_city": "Abuja",
+    "capital": "Abuja",
     "latitude": 9.05,
     "longitude": 7.32
   },
@@ -1571,7 +1571,7 @@
     "name": "Nicaragua",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Nicaragua.svg",
     "license": "Public domain",
-    "capital_city": "Managua",
+    "capital": "Managua",
     "latitude": 12.09,
     "longitude": -86.17
   },
@@ -1581,7 +1581,7 @@
     "name": "Niue",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_Niue.svg",
     "license": "Public domain",
-    "capital_city": "Alofi",
+    "capital": "Alofi",
     "latitude": -19.01,
     "longitude": -169.55
   },
@@ -1591,7 +1591,7 @@
     "name": "Netherlands",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_the_Netherlands.svg",
     "license": "Public domain",
-    "capital_city": "Amsterdam",
+    "capital": "Amsterdam",
     "latitude": 52.23,
     "longitude": 4.54
   },
@@ -1601,7 +1601,7 @@
     "name": "Norway",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Norway.svg",
     "license": "Public domain",
-    "capital_city": "Oslo",
+    "capital": "Oslo",
     "latitude": 59.55,
     "longitude": 10.45
   },
@@ -1611,7 +1611,7 @@
     "name": "Nepal",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Flag_of_Nepal.svg",
     "license": "Public domain",
-    "capital_city": "Kathmandu",
+    "capital": "Kathmandu",
     "latitude": 27.43,
     "longitude": 85.19
   },
@@ -1630,7 +1630,7 @@
     "name": "New Zealand",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_New_Zealand.svg",
     "license": "Public domain",
-    "capital_city": "Wellington",
+    "capital": "Wellington",
     "latitude": -41.28,
     "longitude": 174.51
   },
@@ -1640,7 +1640,7 @@
     "name": "Oman",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Flag_of_Oman.svg",
     "license": "Public domain",
-    "capital_city": "Muscat",
+    "capital": "Muscat",
     "latitude": 23.37,
     "longitude": 58.35
   },
@@ -1650,7 +1650,7 @@
     "name": "Pakistan",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Flag_of_Pakistan.svg",
     "license": "Public domain",
-    "capital_city": "Islamabad",
+    "capital": "Islamabad",
     "latitude": 33.42,
     "longitude": 73.1
   },
@@ -1660,7 +1660,7 @@
     "name": "Panama",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Flag_of_Panama.svg",
     "license": "Public domain",
-    "capital_city": "Panama City",
+    "capital": "Panama City",
     "latitude": 8.58,
     "longitude": -79.32
   },
@@ -1670,7 +1670,7 @@
     "name": "Pitcairn",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Flag_of_the_Pitcairn_Islands.svg",
     "license": "Public domain",
-    "capital_city": "Adamstown",
+    "capital": "Adamstown",
     "latitude": -25.04,
     "longitude": -130.05
   },
@@ -1680,7 +1680,7 @@
     "name": "Peru",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Peru.svg",
     "license": "Public domain",
-    "capital_city": "Lima",
+    "capital": "Lima",
     "latitude": -12.03,
     "longitude": -77.03
   },
@@ -1690,7 +1690,7 @@
     "name": "Philippines",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Flag_of_the_Philippines.svg",
     "license": "Public domain",
-    "capital_city": "Manila",
+    "capital": "Manila",
     "latitude": 14.35,
     "longitude": 121
   },
@@ -1700,7 +1700,7 @@
     "name": "Palau",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Palau.svg",
     "license": "Public domain",
-    "capital_city": "Melekeok",
+    "capital": "Melekeok",
     "latitude": 7.29,
     "longitude": 134.38
   },
@@ -1710,7 +1710,7 @@
     "name": "Papua New Guinea",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Flag_of_Papua_New_Guinea.svg",
     "license": "Public domain",
-    "capital_city": "Port Moresby",
+    "capital": "Port Moresby",
     "latitude": -9.3,
     "longitude": 147.1
   },
@@ -1720,7 +1720,7 @@
     "name": "Poland",
     "file_url": "https://upload.wikimedia.org/wikipedia/en/1/12/Flag_of_Poland.svg",
     "license": "Public domain",
-    "capital_city": "Warsaw",
+    "capital": "Warsaw",
     "latitude": 52.15,
     "longitude": 21
   },
@@ -1730,7 +1730,7 @@
     "name": "Puerto Rico",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/2/28/Flag_of_Puerto_Rico.svg",
     "license": "Public domain",
-    "capital_city": "San Juan",
+    "capital": "San Juan",
     "latitude": 18.28,
     "longitude": -66.07
   },
@@ -1740,7 +1740,7 @@
     "name": "Korea (Democratic People's Republic of)",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Flag_of_North_Korea.svg",
     "license": "Public domain",
-    "capital_city": "Pyongyang",
+    "capital": "Pyongyang",
     "latitude": 39.01,
     "longitude": 125.45
   },
@@ -1750,7 +1750,7 @@
     "name": "Portugal",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg",
     "license": "Public domain",
-    "capital_city": "Lisbon",
+    "capital": "Lisbon",
     "latitude": 38.43,
     "longitude": -9.08
   },
@@ -1760,7 +1760,7 @@
     "name": "Paraguay",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/2/27/Flag_of_Paraguay.svg",
     "license": "Public domain",
-    "capital_city": "Asuncion",
+    "capital": "Asuncion",
     "latitude": -25.16,
     "longitude": -57.4
   },
@@ -1779,7 +1779,7 @@
     "name": "French Polynesia",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Flag_of_French_Polynesia.svg",
     "license": "Public domain",
-    "capital_city": "Papeete",
+    "capital": "Papeete",
     "latitude": -17.32,
     "longitude": -149.34
   },
@@ -1789,7 +1789,7 @@
     "name": "Qatar",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Qatar.svg",
     "license": "Public domain",
-    "capital_city": "Doha",
+    "capital": "Doha",
     "latitude": 25.17,
     "longitude": 51.32
   },
@@ -1799,7 +1799,7 @@
     "name": "Romania",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Flag_of_Romania.svg",
     "license": "Public domain",
-    "capital_city": "Bucharest",
+    "capital": "Bucharest",
     "latitude": 44.26,
     "longitude": 26.06
   },
@@ -1809,7 +1809,7 @@
     "name": "Russian Federation",
     "file_url": "https://upload.wikimedia.org/wikipedia/en/f/f3/Flag_of_Russia.svg",
     "license": "Public domain",
-    "capital_city": "Moscow",
+    "capital": "Moscow",
     "latitude": 55.45,
     "longitude": 37.35
   },
@@ -1819,7 +1819,7 @@
     "name": "Rwanda",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Flag_of_Rwanda.svg",
     "license": "Public domain",
-    "capital_city": "Kigali",
+    "capital": "Kigali",
     "latitude": -1.57,
     "longitude": 30.04
   },
@@ -1829,7 +1829,7 @@
     "name": "Sudan",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_Sudan.svg",
     "license": "Public domain",
-    "capital_city": "Khartoum",
+    "capital": "Khartoum",
     "latitude": 15.36,
     "longitude": 32.32
   },
@@ -1839,7 +1839,7 @@
     "name": "Senegal",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Flag_of_Senegal.svg",
     "license": "Public domain",
-    "capital_city": "Dakar",
+    "capital": "Dakar",
     "latitude": 14.4,
     "longitude": -17.26
   },
@@ -1849,7 +1849,7 @@
     "name": "Singapore",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Singapore.svg",
     "license": "Public domain",
-    "capital_city": "Singapore",
+    "capital": "Singapore",
     "latitude": 1.17,
     "longitude": 103.51
   },
@@ -1859,7 +1859,7 @@
     "name": "South Georgia and the South Sandwich Islands",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Flag_of_South_Georgia_and_the_South_Sandwich_Islands.svg",
     "license": "Public domain",
-    "capital_city": "",
+    "capital": "",
     "latitude": 0,
     "longitude": 0
   },
@@ -1869,7 +1869,7 @@
     "name": "Saint Helena - Ascension and Tristan da Cunha",
     "file_url": "https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg",
     "license": "Public domain",
-    "capital_city": "Jamestown",
+    "capital": "Jamestown",
     "latitude": -15.56,
     "longitude": -5.44
   },
@@ -1879,7 +1879,7 @@
     "name": "Svalbard and Jan Mayen",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Norway.svg",
     "license": "Public domain",
-    "capital_city": "Longyearbyen",
+    "capital": "Longyearbyen",
     "latitude": 78.13,
     "longitude": 15.33
   },
@@ -1889,7 +1889,7 @@
     "name": "Solomon Islands",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Flag_of_the_Solomon_Islands.svg",
     "license": "Public domain",
-    "capital_city": "Honiara",
+    "capital": "Honiara",
     "latitude": -9.26,
     "longitude": 159.57
   },
@@ -1899,7 +1899,7 @@
     "name": "Sierra Leone",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Flag_of_Sierra_Leone.svg",
     "license": "Public domain",
-    "capital_city": "Freetown",
+    "capital": "Freetown",
     "latitude": 8.3,
     "longitude": -13.15
   },
@@ -1909,7 +1909,7 @@
     "name": "El Salvador",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Flag_of_El_Salvador.svg",
     "license": "Public domain",
-    "capital_city": "San Salvador",
+    "capital": "San Salvador",
     "latitude": 13.42,
     "longitude": -89.12
   },
@@ -1919,7 +1919,7 @@
     "name": "San Marino",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Flag_of_San_Marino.svg",
     "license": "Public domain",
-    "capital_city": "San Marino",
+    "capital": "San Marino",
     "latitude": 43.56,
     "longitude": 12.25
   },
@@ -1929,7 +1929,7 @@
     "name": "Somalia",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Flag_of_Somalia.svg",
     "license": "Public domain",
-    "capital_city": "Mogadishu",
+    "capital": "Mogadishu",
     "latitude": 2.04,
     "longitude": 45.22
   },
@@ -1939,7 +1939,7 @@
     "name": "Serbia",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Flag_of_Serbia.svg",
     "license": "Public domain",
-    "capital_city": "Belgrade",
+    "capital": "Belgrade",
     "latitude": 44.5,
     "longitude": 20.3
   },
@@ -1949,7 +1949,7 @@
     "name": "South Sudan",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Flag_of_South_Sudan.svg",
     "license": "Public domain",
-    "capital_city": "",
+    "capital": "",
     "latitude": 0,
     "longitude": 0
   },
@@ -1959,7 +1959,7 @@
     "name": "Sao Tome and Principe",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Flag_of_Sao_Tome_and_Principe.svg",
     "license": "Public domain",
-    "capital_city": "Sao Tome",
+    "capital": "Sao Tome",
     "latitude": 0.12,
     "longitude": 6.39
   },
@@ -1969,7 +1969,7 @@
     "name": "Suriname",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Flag_of_Suriname.svg",
     "license": "Public domain",
-    "capital_city": "Paramaribo",
+    "capital": "Paramaribo",
     "latitude": 5.5,
     "longitude": -55.1
   },
@@ -1979,7 +1979,7 @@
     "name": "Slovakia",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Flag_of_Slovakia.svg",
     "license": "Public domain",
-    "capital_city": "Bratislava",
+    "capital": "Bratislava",
     "latitude": 48.09,
     "longitude": 17.07
   },
@@ -1989,7 +1989,7 @@
     "name": "Slovenia",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Flag_of_Slovenia.svg",
     "license": "Public domain",
-    "capital_city": "Ljubljana",
+    "capital": "Ljubljana",
     "latitude": 46.03,
     "longitude": 14.31
   },
@@ -1999,7 +1999,7 @@
     "name": "Sweden",
     "file_url": "https://upload.wikimedia.org/wikipedia/en/4/4c/Flag_of_Sweden.svg",
     "license": "Public domain",
-    "capital_city": "Stockholm",
+    "capital": "Stockholm",
     "latitude": 59.2,
     "longitude": 18.03
   },
@@ -2009,7 +2009,7 @@
     "name": "Eswatini",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Flag_of_Eswatini.svg",
     "license": "Public domain",
-    "capital_city": "Mbabane",
+    "capital": "Mbabane",
     "latitude": -26.18,
     "longitude": 31.06
   },
@@ -2019,7 +2019,7 @@
     "name": "Sint Maarten (Dutch part)",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Flag_of_Sint_Maarten.svg",
     "license": "Public domain",
-    "capital_city": "",
+    "capital": "",
     "latitude": 0,
     "longitude": 0
   },
@@ -2029,7 +2029,7 @@
     "name": "Seychelles",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Seychelles.svg",
     "license": "Public domain",
-    "capital_city": "Victoria",
+    "capital": "Victoria",
     "latitude": -4.38,
     "longitude": 55.27
   },
@@ -2039,7 +2039,7 @@
     "name": "Syrian Arab Republic",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/5/53/Flag_of_Syria.svg",
     "license": "Public domain",
-    "capital_city": "Damascus",
+    "capital": "Damascus",
     "latitude": 33.3,
     "longitude": 36.18
   },
@@ -2049,7 +2049,7 @@
     "name": "Turks and Caicos Islands",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Flag_of_the_Turks_and_Caicos_Islands.svg",
     "license": "Public domain",
-    "capital_city": "Grand Turk",
+    "capital": "Grand Turk",
     "latitude": 21.28,
     "longitude": -71.08
   },
@@ -2059,7 +2059,7 @@
     "name": "Chad",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Flag_of_Chad.svg",
     "license": "Public domain",
-    "capital_city": "N'Djamena",
+    "capital": "N'Djamena",
     "latitude": 12.06,
     "longitude": 15.02
   },
@@ -2069,7 +2069,7 @@
     "name": "Togo",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/6/68/Flag_of_Togo.svg",
     "license": "Public domain",
-    "capital_city": "Lome",
+    "capital": "Lome",
     "latitude": 6.08,
     "longitude": 1.13
   },
@@ -2079,7 +2079,7 @@
     "name": "Thailand",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_Thailand.svg",
     "license": "Public domain",
-    "capital_city": "Bangkok",
+    "capital": "Bangkok",
     "latitude": 13.45,
     "longitude": 100.31
   },
@@ -2089,7 +2089,7 @@
     "name": "Tajikistan",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_Tajikistan.svg",
     "license": "Public domain",
-    "capital_city": "Dushanbe",
+    "capital": "Dushanbe",
     "latitude": 38.35,
     "longitude": 68.48
   },
@@ -2108,7 +2108,7 @@
     "name": "Turkmenistan",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Flag_of_Turkmenistan.svg",
     "license": "Public domain",
-    "capital_city": "Ashgabat",
+    "capital": "Ashgabat",
     "latitude": 37.57,
     "longitude": 58.23
   },
@@ -2118,7 +2118,7 @@
     "name": "Timor-Leste",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Flag_of_East_Timor.svg",
     "license": "Public domain",
-    "capital_city": "Dili",
+    "capital": "Dili",
     "latitude": -8.35,
     "longitude": 125.36
   },
@@ -2128,7 +2128,7 @@
     "name": "Tonga",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Tonga.svg",
     "license": "Public domain",
-    "capital_city": "Nuku'alofa",
+    "capital": "Nuku'alofa",
     "latitude": -21.08,
     "longitude": -175.12
   },
@@ -2138,7 +2138,7 @@
     "name": "Trinidad and Tobago",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Flag_of_Trinidad_and_Tobago.svg",
     "license": "Public domain",
-    "capital_city": "Port-of-Spain",
+    "capital": "Port-of-Spain",
     "latitude": 10.39,
     "longitude": -61.31
   },
@@ -2148,7 +2148,7 @@
     "name": "Tunisia",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Tunisia.svg",
     "license": "Public domain",
-    "capital_city": "Tunis",
+    "capital": "Tunis",
     "latitude": 36.48,
     "longitude": 10.11
   },
@@ -2158,7 +2158,7 @@
     "name": "Türkiye",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg",
     "license": "Public domain",
-    "capital_city": "Ankara",
+    "capital": "Ankara",
     "latitude": 39.56,
     "longitude": 32.52
   },
@@ -2168,7 +2168,7 @@
     "name": "Tuvalu",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Flag_of_Tuvalu.svg",
     "license": "Public domain",
-    "capital_city": "Funafuti",
+    "capital": "Funafuti",
     "latitude": -8.3,
     "longitude": 179.12
   },
@@ -2178,7 +2178,7 @@
     "name": "Tanzania - United Republic of",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Flag_of_Tanzania.svg",
     "license": "Public domain",
-    "capital_city": "Dar es Salaam",
+    "capital": "Dar es Salaam",
     "latitude": -6.48,
     "longitude": 39.17
   },
@@ -2188,7 +2188,7 @@
     "name": "Uganda",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Flag_of_Uganda.svg",
     "license": "Public domain",
-    "capital_city": "Kampala",
+    "capital": "Kampala",
     "latitude": 0.19,
     "longitude": 32.25
   },
@@ -2198,7 +2198,7 @@
     "name": "Ukraine",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Ukraine.svg",
     "license": "Public domain",
-    "capital_city": "Kiew",
+    "capital": "Kiew",
     "latitude": 50.441,
     "longitude": 30.554
   },
@@ -2208,7 +2208,7 @@
     "name": "United States Minor Outlying Islands",
     "file_url": "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg",
     "license": "Public domain",
-    "capital_city": "",
+    "capital": "",
     "latitude": 0,
     "longitude": 0
   },
@@ -2218,7 +2218,7 @@
     "name": "Uruguay",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Uruguay.svg",
     "license": "Public domain",
-    "capital_city": "Montevideo",
+    "capital": "Montevideo",
     "latitude": -34.53,
     "longitude": -56.11
   },
@@ -2228,7 +2228,7 @@
     "name": "United States of America",
     "file_url": "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg",
     "license": "Public domain",
-    "capital_city": "Washington, DC",
+    "capital": "Washington, DC",
     "latitude": 38.53,
     "longitude": -77.02
   },
@@ -2238,7 +2238,7 @@
     "name": "Uzbekistan",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Uzbekistan.svg",
     "license": "Public domain",
-    "capital_city": "Tashkent",
+    "capital": "Tashkent",
     "latitude": 41.2,
     "longitude": 69.18
   },
@@ -2248,7 +2248,7 @@
     "name": "Holy See",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_the_Vatican_City.svg",
     "license": "Public domain",
-    "capital_city": "Vatican City",
+    "capital": "Vatican City",
     "latitude": 41.54,
     "longitude": 12.27
   },
@@ -2258,7 +2258,7 @@
     "name": "Saint Vincent and the Grenadines",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Flag_of_Saint_Vincent_and_the_Grenadines.svg",
     "license": "Public domain",
-    "capital_city": "Kingstown",
+    "capital": "Kingstown",
     "latitude": 13.09,
     "longitude": -61.14
   },
@@ -2268,7 +2268,7 @@
     "name": "Venezuela (Bolivarian Republic of)",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Flag_of_Venezuela.svg",
     "license": "Public domain",
-    "capital_city": "Caracas",
+    "capital": "Caracas",
     "latitude": 10.3,
     "longitude": -66.56
   },
@@ -2278,7 +2278,7 @@
     "name": "Virgin Islands (British)",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Flag_of_the_British_Virgin_Islands.svg",
     "license": "Public domain",
-    "capital_city": "Road Town",
+    "capital": "Road Town",
     "latitude": 18.27,
     "longitude": -64.37
   },
@@ -2288,7 +2288,7 @@
     "name": "Virgin Islands (U.S.)",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Flag_of_the_United_States_Virgin_Islands.svg",
     "license": "Public domain",
-    "capital_city": "Charlotte Amalie",
+    "capital": "Charlotte Amalie",
     "latitude": 18.21,
     "longitude": -64.56
   },
@@ -2298,7 +2298,7 @@
     "name": "Viet Nam",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg",
     "license": "Public domain",
-    "capital_city": "Hanoi",
+    "capital": "Hanoi",
     "latitude": 21.02,
     "longitude": 105.51
   },
@@ -2308,7 +2308,7 @@
     "name": "Vanuatu",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Flag_of_Vanuatu_%28official%29.svg",
     "license": "Public domain",
-    "capital_city": "Port-Vila",
+    "capital": "Port-Vila",
     "latitude": -17.44,
     "longitude": 168.19
   },
@@ -2318,7 +2318,7 @@
     "name": "Wallis and Futuna",
     "file_url": "https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
     "license": "Public domain",
-    "capital_city": "Mata-Utu",
+    "capital": "Mata-Utu",
     "latitude": -13.57,
     "longitude": -171.56
   },
@@ -2328,7 +2328,7 @@
     "name": "Samoa",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Flag_of_Samoa.svg",
     "license": "Public domain",
-    "capital_city": "Apia",
+    "capital": "Apia",
     "latitude": -13.5,
     "longitude": -171.44
   },
@@ -2338,7 +2338,7 @@
     "name": "Yemen",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Flag_of_Yemen.svg",
     "license": "Public domain",
-    "capital_city": "Sanaa",
+    "capital": "Sanaa",
     "latitude": 15.21,
     "longitude": 44.12
   },
@@ -2348,7 +2348,7 @@
     "name": "South Africa",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_South_Africa.svg",
     "license": "Public domain",
-    "capital_city": "Pretoria",
+    "capital": "Pretoria",
     "latitude": -25.42,
     "longitude": 28.13
   },
@@ -2358,7 +2358,7 @@
     "name": "Zambia",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Flag_of_Zambia.svg",
     "license": "Public domain",
-    "capital_city": "Lusaka",
+    "capital": "Lusaka",
     "latitude": -15.25,
     "longitude": 28.17
   },
@@ -2368,7 +2368,7 @@
     "name": "Zimbabwe",
     "file_url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Flag_of_Zimbabwe.svg",
     "license": "Public domain",
-    "capital_city": "Harare",
+    "capital": "Harare",
     "latitude": -17.5,
     "longitude": 31.03
   }

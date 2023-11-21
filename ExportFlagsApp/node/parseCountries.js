@@ -47,7 +47,7 @@ let outExample = {
     name: 'Bangladesh',
     file_url: 'https://upload.wikimedia.org/wikipedia/commons/f/f9/Flag_of_Bangladesh.svg',
     license: 'Public domain',
-    capital_city: 'Dhaka',
+    capital: 'Dhaka',
     latitude: 23.43,
     longitude: 90.24,
   },
@@ -86,7 +86,7 @@ for (let index = 0; index < countries.length; index++) {
 
   item.url = 'https://en.wikipedia.org' + item.url;
   item.file_url = 'https:' + item.file_url;
-  item.capital_city = '';
+  item.capital = '';
 
   item.latitude = 0.0;
   item.longitude = 0.0;
@@ -98,7 +98,7 @@ for (let index = 0; index < countries.length; index++) {
     console.log('MISSING countries', index, item.alpha3, item.name);
     continue;
   }
-  item.capital_city = fitem.properties.city;
+  item.capital = fitem.properties.city;
   item.latitude = fitem.geometry.coordinates[1];
   item.longitude = fitem.geometry.coordinates[0];
   // if (index > 4) break;
