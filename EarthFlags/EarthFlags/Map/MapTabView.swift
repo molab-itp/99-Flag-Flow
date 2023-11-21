@@ -41,8 +41,10 @@ struct MapTabView: View {
             // .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
-                    Button(action: restoreLocAction ) {
-                        Image(systemName: "star.circle" )
+                    if !model.locationMatch(model.currentLocation) {
+                        Button(action: restoreLocAction ) {
+                            Image(systemName: "star.circle" )
+                        }
                     }
                     Button(action: nextLocAction ) {
                         Text("Next")
@@ -54,9 +56,7 @@ struct MapTabView: View {
 
     func topInfo() -> some View {
         VStack {
-//            if model.locationMatch(model.currentLocation) {
-                Text(model.currentLocation.label)
-//            }
+            Text(model.currentLocation.label)
             Spacer()
         }
     }
