@@ -76,6 +76,10 @@ let missingCount = 0;
 
 let countriesDict = {};
 
+countries.sort((item1, item2) => {
+  return item1.alpha3.localeCompare(item2.alpha3);
+});
+
 for (let index = 0; index < countries.length; index++) {
   let item = countries[index];
   countriesDict[item.alpha3] = item;
