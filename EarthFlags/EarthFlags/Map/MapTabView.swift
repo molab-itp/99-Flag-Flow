@@ -13,7 +13,7 @@ struct MapTabView: View {
     @EnvironmentObject var model: LocationModel
     
     var body: some View {
-        //let _ = Self._printChanges()
+//        let _ = Self._printChanges()
         NavigationStack {
             ZStack {
                 Map(coordinateRegion: $model.region,
@@ -35,11 +35,16 @@ struct MapTabView: View {
             .onAppear {
                 print("MapTabView onAppear locations", model.locations)
             }
+            .onChange(of: model.region ) { _ in
+                print("MapTabView onAppear region", model.region)
+            }
             // .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
+                    Button(action: restoreLocAction ) {
+                        Image(systemName: "star.circle" )
+                    }
                     Button(action: nextLocAction ) {
-                        //Image(systemName: "arrow.right.circle" )
                         Text("Next")
                     }
                 }
@@ -49,9 +54,9 @@ struct MapTabView: View {
 
     func topInfo() -> some View {
         VStack {
-            if model.locationMatch(model.currentLocation) {
+//            if model.locationMatch(model.currentLocation) {
                 Text(model.currentLocation.label)
-            }
+//            }
             Spacer()
         }
     }
@@ -90,11 +95,19 @@ struct MapTabView: View {
         }
     }
     
+    func restoreLocAction() {
+        print("nextLocAction")
+        withAnimation {
+            print("nextLocAction withAnimation")
+            model.restoreLocation()
+        }
+    }
+    
     func nextLocAction() {
         print("nextLocAction")
         withAnimation {
             print("nextLocAction withAnimation")
-            model.next()
+            model.nextLocation()
         }
     }
 

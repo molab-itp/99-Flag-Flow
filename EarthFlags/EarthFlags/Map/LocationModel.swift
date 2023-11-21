@@ -8,7 +8,17 @@
 import Foundation
 import MapKit
 
+extension MKCoordinateRegion: Equatable {
+    public static func == (lhs: MKCoordinateRegion, rhs: MKCoordinateRegion) -> Bool {
+        return lhs.center.latitude == rhs.center.latitude 
+        && lhs.center.longitude == rhs.center.longitude
+        && lhs.span.latitudeDelta == rhs.span.latitudeDelta
+        && lhs.span.longitudeDelta == rhs.span.longitudeDelta
+    }
+}
+
 @MainActor class LocationModel: ObservableObject {
+        
     @Published var region = MKCoordinateRegion(
         center: CLLocationCoordinate2D(
             latitude: 40.630566,    // Brooklyn Flatlands
@@ -30,14 +40,14 @@ import MapKit
     }
 
     func locationMatch(_ current:Location) -> Bool {
-        print("locationMatch current", current, "center", region.center)
+//        print("locationMatch current", current, "center", region.center)
         let epsilon = 0.000001;
         let center = region.center
         return abs(current.latitude - center.latitude) < epsilon
             && abs(current.longitude - center.longitude) < epsilon
     }
 
-    func next() {
+    func nextLocation() {
         print("LocationModel next index", index, "locations.count", locations.count)
         if locations.count <= 0 {
             return;
@@ -49,6 +59,10 @@ import MapKit
         // print("LocationModel next region", region)
         currentLocation = cl;
         // print("LocationModel next currentLocation", currentLocation)
+    }
+    
+    func restoreLocation() {
+        region = currentLocation.region
     }
     
 //    func nextUnknown() {
@@ -96,22 +110,8 @@ let knownLocations:[Location] = [
     Location(id: "EGY", latitude: 30.033333, longitude: 31.2166670, label: "Egypt", capital: "Cairo")
 ];
 
-class Location: Identifiable, Codable {
-    internal init(
-            id: String = "USA Brooklyn Flatlands",
-            latitude: Double = 40.630566,
-            longitude: Double = -73.922013,
-            label: String = "USA Brooklyn Flatlands",
-            capital: String = "Brooklyn Flatlands",
-            delta: Double = 100.0) {
-        self.id = id
-        self.latitude = latitude
-        self.longitude = longitude
-        self.label = label
-        self.capital = capital
-        self.delta = delta
-    }
-    
+class Location: Identifiable, Codable, Equatable {
+        
     var id = "USA Brooklyn Flatlands"
     var latitude = 40.630566
     var longitude = -73.922013
@@ -119,6 +119,25 @@ class Location: Identifiable, Codable {
     var capital = "Brooklyn Flatlands"
     var delta = 100.0
     
+    static func == (lhs: Location, rhs: Location) -> Bool {
+        return lhs.id == rhs.id
+    }
+    
+    internal init(
+        id: String = "USA Brooklyn Flatlands",
+        latitude: Double = 40.630566,
+        longitude: Double = -73.922013,
+        label: String = "USA Brooklyn Flatlands",
+        capital: String = "Brooklyn Flatlands",
+        delta: Double = 100.0) {
+            self.id = id
+            self.latitude = latitude
+            self.longitude = longitude
+            self.label = label
+            self.capital = capital
+            self.delta = delta
+        }
+
     var coordinate: CLLocationCoordinate2D {
         CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
     }

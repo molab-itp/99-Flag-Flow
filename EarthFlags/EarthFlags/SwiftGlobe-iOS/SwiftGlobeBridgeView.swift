@@ -31,10 +31,10 @@ struct SwiftGlobeBridgeView: View {
 
     func topInfo() -> some View {
         VStack {
-            if model.locationMatch(model.currentLocation) {
+//            if model.locationMatch(model.currentLocation) {
                 Text(model.currentLocation.label)
                     .background(.white)
-            }
+//            }
             Spacer()
         }
     }
@@ -63,7 +63,7 @@ struct SwiftGlobeBridgeView: View {
         print("nextLocAction")
         withAnimation {
             print("nextLocAction withAnimation")
-            model.next()
+            model.nextLocation()
         }
     }
 
