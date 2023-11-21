@@ -29,6 +29,7 @@ struct MapTabView: View {
                     }
                 }
                 centerCircle()
+                topInfo()
                 bottomInfo()
             }
             .onAppear {
@@ -37,14 +38,6 @@ struct MapTabView: View {
             // .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
-//                    Button(action: nextUnkownAction ) {
-//                        //Image(systemName: "plus" )
-//                        Text("Next-Unk")
-//                    }
-//                    Button(action: updateAction ) {
-//                        //Image(systemName: "plus" )
-//                        Text("Update")
-//                    }
                     Button(action: nextLocAction ) {
                         //Image(systemName: "arrow.right.circle" )
                         Text("Next")
@@ -54,18 +47,15 @@ struct MapTabView: View {
         }
     }
 
-//    func nextUnkownAction() {
-//        print("nextUnkownAction");
-//        withAnimation {
-//            print("nextLocAction withAnimation")
-//            model.nextUnknown()
-//        }
-//    }
+    func topInfo() -> some View {
+        VStack {
+            if model.locationMatch(model.currentLocation) {
+                Text(model.currentLocation.label)
+            }
+            Spacer()
+        }
+    }
     
-//    func updateAction() {
-//        print("updateAction");
-//    }
-
     func bottomInfo() -> some View {
         VStack {
             Spacer()
@@ -73,12 +63,9 @@ struct MapTabView: View {
                 .font(locationFont)
             Text("lon: \(centerLongitude)")
                 .font(locationFont)
-            if model.locationMatch(model.currentLocation) {
-                Text(model.currentLocation.label)
-            }
         }
     }
-    
+
     private func centerCircle() -> some View {
         Circle()
             .fill(.blue)

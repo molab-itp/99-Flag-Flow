@@ -12,38 +12,45 @@ struct SwiftGlobeBridgeView: View {
     @EnvironmentObject var model: LocationModel
     
     var body: some View {
-        ZStack {
-            SwiftGlobeBridgeRep(location: model.currentLocation)
-            VStack {
-                Spacer()
-                HStack {
-                    Spacer()
-                    Button(action: starAction ) {
-                        Image(systemName: "star")
-                    }
-                    .padding()
-                    .background(.black.opacity(0.75))
-                    .foregroundColor(.white)
-                    .font(.title)
-                    .clipShape(Circle())
-                }
+        NavigationStack {
+            ZStack {
+                SwiftGlobeBridgeRep(location: model.currentLocation)
+                topInfo()
+                bottomInfo()
             }
-            VStack {
-                Spacer()
-                Text("lat: \(centerLatitude)")
-                    .font(locationFont)
-                    .background(.white)
-                Text("lon: \(centerLongitude)")
-                    .font(locationFont)
-                    .background(.white)
-                if model.locationMatch(model.currentLocation) {
-                    Text(model.currentLocation.label)
-                    .background(.white)
+            .toolbar {
+                ToolbarItemGroup(placement: .navigationBarTrailing) {
+                    Button(action: nextLocAction ) {
+                        //Image(systemName: "arrow.right.circle" )
+                        Text("Next")
+                    }
                 }
             }
         }
     }
-        
+
+    func topInfo() -> some View {
+        VStack {
+            if model.locationMatch(model.currentLocation) {
+                Text(model.currentLocation.label)
+                    .background(.white)
+            }
+            Spacer()
+        }
+    }
+    
+    func bottomInfo() -> some View {
+        VStack {
+            Spacer()
+            Text("lat: \(centerLatitude)")
+                .font(locationFont)
+                .background(.white)
+            Text("lon: \(centerLongitude)")
+                .font(locationFont)
+                .background(.white)
+        }
+    }
+
     var centerLatitude: String {
         String(format: "%+.6f", model.region.center.latitude)
     }
@@ -52,10 +59,10 @@ struct SwiftGlobeBridgeView: View {
         String(format: "%+.6f", model.region.center.longitude)
     }
     
-    func starAction() {
-        print("starAction")
+    func nextLocAction() {
+        print("nextLocAction")
         withAnimation {
-            print("starAction withAnimation")
+            print("nextLocAction withAnimation")
             model.next()
         }
     }
