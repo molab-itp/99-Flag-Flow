@@ -52,6 +52,7 @@ struct FlagListView: View {
 
 struct FlagItemRowView: View {
     @EnvironmentObject var model: AppModel
+    @EnvironmentObject var locationModel: LocationModel
     var flagItem:FlagItem
     var body: some View {
         VStack {
@@ -61,21 +62,21 @@ struct FlagItemRowView: View {
                 .onTapGesture {
                     // print("tapped", flagItem)
                     Task {
-                        model.toggleMarked(flagItem: flagItem);
-                        if model.isMarked(flagItem: flagItem) {
-                            model.selectedTab = .map
-                        }
+                        model.flagItem = flagItem
+                        model.setMarked(flagItem: flagItem, state: true);
+                        locationModel.setLocation(ccode: flagItem.alpha3)
+                        model.selectedTab = .map
                     }
                 }
             HStack {
-                Button {
-                    model.flagItem = flagItem
-                    model.selectedTab = .detail
-                } label: {
-                    let state = model.isMarked(flagItem: flagItem)
-                    Image(systemName: "info.circle")
-                }
-                Spacer()
+//                Button {
+//                    model.flagItem = flagItem
+//                    model.selectedTab = .detail
+//                } label: {
+//                    // let state = model.isMarked(flagItem: flagItem)
+//                    Image(systemName: "info.circle")
+//                }
+//                Spacer()
                 Text(flagItem.label())
                 Spacer()
                 Button {

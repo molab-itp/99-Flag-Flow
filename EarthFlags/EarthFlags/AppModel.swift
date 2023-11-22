@@ -37,6 +37,10 @@ class AppModel: ObservableObject
         return flagDict[ccode]
     }
     
+    func currentFlagItem(_ ccode: String) {
+        flagItem = flagItem(ccode: ccode);
+    }
+    
     func isMarked(flagItem: FlagItem) -> Bool {
         settings.marked.contains(flagItem.alpha3)
     }
@@ -44,19 +48,22 @@ class AppModel: ObservableObject
     func toggleMarked(flagItem: FlagItem) {
         let state = isMarked(flagItem: flagItem);
         setMarked(flagItem: flagItem, state: !state)
-        saveSettings();
     }
     
     func setMarked(flagItem: FlagItem, state: Bool) {
         // print("setFavorite state", state)
-        // remove flag if in marked
+        // check if already marked
         if let index = settings.marked.firstIndex(of:flagItem.alpha3) {
+            if state { return }
             settings.marked.remove(at:index);
         }
-        // Insert at begining
-        if state {
+        else {
+            // Not currently marked
+            if !state { return }
+            // Insert at begining
             settings.marked.insert(flagItem.alpha3, at:0)
         }
+        saveSettings();
     }
     
     func marked() -> [FlagItem] {

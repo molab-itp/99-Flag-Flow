@@ -53,45 +53,38 @@ extension MKCoordinateRegion: Equatable {
             return;
         }
         index = (index + 1) % locations.count;
-        let cl = locations[index];
-        // print("LocationModel next cl", cl)
-        region = cl.region
-        // print("LocationModel next region", region)
-        currentLocation = cl;
-        // print("LocationModel next currentLocation", currentLocation)
+        setLocation(index: index)
+    }
+    
+    func setLocation(index: Int) {
+        self.index = index;
+        let loc = locations[index];
+        region = loc.region
+        currentLocation = loc;
+        AppModel.main.currentFlagItem(loc.id)
+    }
+    
+    func setLocation(ccode: String) {
+        if let index = locations.firstIndex(where: { $0.id == ccode }) {
+            setLocation(index: index)
+        }
     }
     
     func setLocation(_ location: Location) {
-        guard let findex = locations.firstIndex(of: location) else {
-            return
+        if let index = locations.firstIndex(of: location) {
+            setLocation(index: index);
         }
-        index = findex;
-        region = location.region
-        currentLocation = location
     }
     
     func restoreLocation() {
         region = currentLocation.region
     }
-    
-//    func nextUnknown() {
-//        print("LocationModel nextUnknown index", index, "locations.count", locations.count)
-//        if locations.count <= 0 {
-//            return;
-//        }
-//        index = (index + 1) % locations.count;
-//        let cl = locations[index];
-//        
-//        currentLocation = cl;
-//        region = cl.region
-//
-//    }
-    
+        
     func restoreFrom(marked: Array<String>) {
         print("LocationModel restoreFrom marked", marked)
         var newLocs = [Location]()
         for ccode in marked {
-            guard let fitem = AppModel.main.flagDict[ccode] else { continue }
+            guard let fitem = AppModel.main.flagItem(ccode: ccode) else { continue }
             let loc = Location(
                 id: fitem.alpha3,
                 latitude: fitem.latitude,
@@ -102,9 +95,7 @@ extension MKCoordinateRegion: Equatable {
         }
         locations = newLocs;
         if !newLocs.isEmpty {
-            index = 0;
-            currentLocation = newLocs[0];
-            region = currentLocation.region;
+            setLocation(index: 0)
         }
     }
 }
