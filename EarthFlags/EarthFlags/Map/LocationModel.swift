@@ -61,6 +61,15 @@ extension MKCoordinateRegion: Equatable {
         // print("LocationModel next currentLocation", currentLocation)
     }
     
+    func setLocation(_ location: Location) {
+        guard let findex = locations.firstIndex(of: location) else {
+            return
+        }
+        index = findex;
+        region = location.region
+        currentLocation = location
+    }
+    
     func restoreLocation() {
         region = currentLocation.region
     }

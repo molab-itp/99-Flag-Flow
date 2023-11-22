@@ -60,10 +60,22 @@ struct FlagItemRowView: View {
                 .frame(width: 200, height: 100)
                 .onTapGesture {
                     // print("tapped", flagItem)
-                    model.flagItem = flagItem
-                    model.selectedTab = .detail
+                    Task {
+                        model.toggleMarked(flagItem: flagItem);
+                        if model.isMarked(flagItem: flagItem) {
+                            model.selectedTab = .map
+                        }
+                    }
                 }
             HStack {
+                Button {
+                    model.flagItem = flagItem
+                    model.selectedTab = .detail
+                } label: {
+                    let state = model.isMarked(flagItem: flagItem)
+                    Image(systemName: "info.circle")
+                }
+                Spacer()
                 Text(flagItem.label())
                 Spacer()
                 Button {

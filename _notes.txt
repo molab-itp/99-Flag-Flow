@@ -1,6 +1,14 @@
 _notes.txt
 
 # --
+2023-11-21 18:19:00
+
+Plus on map to add location per country
+  with label, remembers span delta
+Next will cycle between them
+List for all Marked locations
+
+# --
 2023-11-20 08:49:31
 
 >> Location example gives warning using Map view

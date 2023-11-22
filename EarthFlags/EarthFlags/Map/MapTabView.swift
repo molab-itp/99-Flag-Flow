@@ -26,6 +26,12 @@ struct MapTabView: View {
                                 .frame(width: 44, height: 22)
                             Text(loc.label)
                         }
+                        .onTapGesture {
+                            withAnimation {
+                                print("nextLocAction withAnimation")
+                                model.setLocation(loc)
+                            }
+                        }
                     }
                 }
                 centerCircle()
@@ -33,10 +39,10 @@ struct MapTabView: View {
                 bottomInfo()
             }
             .onAppear {
-                print("MapTabView onAppear locations", model.locations)
+//                print("MapTabView onAppear locations", model.locations)
             }
             .onChange(of: model.region ) { _ in
-                print("MapTabView onAppear region", model.region)
+//                print("MapTabView onAppear region", model.region)
             }
             // .navigationBarTitleDisplayMode(.inline)
             .toolbar {
