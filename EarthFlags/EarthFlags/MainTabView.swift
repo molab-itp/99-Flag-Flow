@@ -27,7 +27,7 @@ struct MainTabView: View {
                     Label("List", systemImage: "list.bullet")
                 }
                 .tag(TabTag.list)
-            FlagMarkedView()
+            FlagMarkedView(marked: model.marked())
                 .tabItem {
                     Label("Marked", systemImage: "circle.fill")
                 }

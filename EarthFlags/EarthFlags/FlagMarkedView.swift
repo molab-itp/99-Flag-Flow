@@ -9,8 +9,9 @@ import SwiftUI
 
 struct FlagMarkedView: View {
     
-    @State var marked: [FlagItem] = []
-    
+//    @State var marked: [FlagItem] = []
+    var marked: [FlagItem]
+
     @EnvironmentObject var model: AppModel
     
     var body: some View {
@@ -19,19 +20,30 @@ struct FlagMarkedView: View {
                 Rectangle()
                     .background(Color(white: 0.9))
                     .foregroundStyle(Color(white: 0.8))
-                VStack {
-                    // Query count from model to get modified count
-                    Text("\(model.marked().count) Marked")
-                        .padding()
-                    List {
-                        ForEach(marked, id: \.alpha3) { fitem in
-                            FlagItemRowView(flagItem: fitem)
+                ScrollViewReader { proxy in
+                    VStack {
+                        // Query count from model to get modified count
+                        Text("\(model.marked().count) Marked")
+                            .padding()
+                        List {
+                            ForEach(marked, id: \.alpha3) { fitem in
+                                FlagItemRowView(flagItem: fitem)
+                            }
+                            .onMove(perform: move)
+                            .onDelete(perform: delete )
                         }
-                        .onMove(perform: move)
-                        .onDelete(perform: delete )
+                        .toolbar {
+                            EditButton()
+                        }
                     }
-                    .toolbar {
-                        EditButton()
+                    .onAppear {
+                        print("FlagMarkedView ScrollViewReader onAppear marked", marked.count);
+                        // Capture marked here to so list not updated on marked status changed
+//                        marked = model.marked()
+                        guard let last = marked.last else { return }
+                        print("FlagMarkedView ScrollViewReader last.alpha3", last.alpha3);
+                        proxy.scrollTo(last.alpha3, anchor: .bottom)
+                        print("FlagMarkedView ScrollViewReader settings.last", model.settings.marked.last!)
                     }
                 }
             }
@@ -39,7 +51,7 @@ struct FlagMarkedView: View {
         .onAppear {
             print("FlagMarkedView onAppear");
             // Capture marked here to so list not updated on marked status changed
-            marked = model.marked();
+//            marked = model.marked();
         }
         .onDisappear {
             print("FlagMarkedView onDisappear")
@@ -48,13 +60,15 @@ struct FlagMarkedView: View {
     func move(from source: IndexSet, to destination: Int) {
         print("FlagMarkedView move", source, destination)
         model.markedMove(from: source, to: destination)
-        marked = model.marked();
+//        marked = model.marked();
         // users.move(fromOffsets: source, toOffset: destination)
     }
     func delete( indices: IndexSet) {
         print("onDelete", indices)
-        model.markedDelete(indices: indices)
-        marked = model.marked();
+        withAnimation {
+            model.markedDelete(indices: indices)
+        }
+//        marked = model.marked();
         // appModel.removeLocation(at: indices)
     }
     

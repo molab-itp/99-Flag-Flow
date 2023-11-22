@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import WebKit
 
 class AppModel: ObservableObject
 {
@@ -16,6 +17,8 @@ class AppModel: ObservableObject
     
     @Published var settings:Settings
 
+    var webView:WKWebView?
+    
     static let main = AppModel()
     
     init() {
@@ -61,7 +64,8 @@ class AppModel: ObservableObject
             // Not currently marked
             if !state { return }
             // Insert at begining
-            settings.marked.insert(flagItem.alpha3, at:0)
+//            settings.marked.insert(flagItem.alpha3, at:0)
+            settings.marked.append(flagItem.alpha3)
         }
         saveSettings();
     }

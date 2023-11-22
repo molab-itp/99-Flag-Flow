@@ -81,9 +81,11 @@ struct FlagItemRowView: View {
                 Spacer()
                 Button {
                     Task {
-                        model.toggleMarked(flagItem: flagItem);
-                        if model.isMarked(flagItem: flagItem) {
-                            model.selectedTab = .marks
+                        withAnimation {
+                            model.toggleMarked(flagItem: flagItem);
+                            if model.isMarked(flagItem: flagItem) {
+                                model.selectedTab = .marks
+                            }
                         }
                     }
                 } label: {
