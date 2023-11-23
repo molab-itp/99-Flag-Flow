@@ -30,7 +30,8 @@ struct FlagListView: View {
                         }
                     }
                     .toolbar {
-                        ToolbarItemGroup(placement: .navigationBarTrailing) {
+                        ToolbarItemGroup(placement:
+                                .navigationBarTrailing) {
                             toolBarButtonRow()
                         }
                     }
