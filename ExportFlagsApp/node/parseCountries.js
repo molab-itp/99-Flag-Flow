@@ -109,6 +109,23 @@ console.log('MISSING countries', missingCount);
 // fs.writeJsonSync(outputPath, countriesDict, { spaces: 2 });
 fs.writeJsonSync(outputPath, countries, { spaces: 2 });
 
+/*
+ % pwd
+/Users/jht2/Documents/projects/_planning-molab-repos/99-Flag-Flow/ExportFlagsApp/node
+
+ % node parseCountries.js
+features.length 241
+MISSING countries 4 ALA Åland Islands
+MISSING countries 19 BES Bonaire - Sint Eustatius and Saba
+MISSING countries 52 CUW Curaçao
+MISSING countries 186 SGS South Georgia and the South Sandwich Islands
+MISSING countries 195 SSD South Sudan
+MISSING countries 202 SXM Sint Maarten (Dutch part)
+MISSING countries 221 UMI United States Minor Outlying Islands
+countries.length 238
+
+*/
+
 // features.length 241
 // MISSING countries 1 ALA Åland Islands
 // MISSING countries 26 BES Bonaire - Sint Eustatius and Saba

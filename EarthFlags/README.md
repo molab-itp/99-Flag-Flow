@@ -22,4 +22,9 @@
   - https://github.com/twostraws/HackingWithSwift.git
 
 - SwiftGloble
+
   - https://github.com/dmojdehi/SwiftGlobe.git
+
+- Country locations merged into country flag info
+
+  - ExportFlagsApp/node/parseCountries.js
