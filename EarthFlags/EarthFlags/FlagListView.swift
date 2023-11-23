@@ -26,10 +26,9 @@ struct FlagListView: View {
                     //     destination: URL(string: titleRef)!)
                     // .font(.largeTitle)
                     // .padding()
-                    Text("\(model.flagItems.count) Countries on Earth")
-                        .padding()
-                    
                     List {
+                        Text("\(model.flagItems.count) Countries on Earth")
+                            .padding()
                         ForEach(searchResults, id: \.alpha3) { fitem in
                             FlagItemRowView(flagItem: fitem)
                         }
