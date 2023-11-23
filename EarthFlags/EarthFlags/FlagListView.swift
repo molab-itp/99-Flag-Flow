@@ -13,17 +13,22 @@ struct FlagListView: View {
     
     @State private var searchText = ""
     
+    @Environment(\.openURL) private var openURL
+
     var body: some View {
-        ZStack {
-            Rectangle()
-                .background(Color(white: 0.9))
-                .foregroundStyle(Color(white: 0.8))
-            VStack {
-                Link("Earth Flags",
-                     destination: URL(string: titleRef)!)
-                // .font(.largeTitle)
-                .padding()
-                NavigationStack {
+        NavigationStack {
+            ZStack {
+                Rectangle()
+                    .background(Color(white: 0.9))
+                    .foregroundStyle(Color(white: 0.8))
+                VStack {
+                    //Link("Earth Flags",
+                    //     destination: URL(string: titleRef)!)
+                    // .font(.largeTitle)
+                    // .padding()
+                    Text("\(model.flagItems.count) Countries on Earth")
+                        .padding()
+                    
                     List {
                         ForEach(searchResults, id: \.alpha3) { fitem in
                             FlagItemRowView(flagItem: fitem)
@@ -31,8 +36,19 @@ struct FlagListView: View {
                     }
                 }
             }
+            .toolbar {
+                ToolbarItemGroup(placement: .navigationBarTrailing) {
+                    Button(action: { 
+                        if let url = URL(string: titleRef) {
+                            openURL(url)
+                        }
+                    } ) {
+                        Image(systemName: "safari" )
+                    }
+                }
+            }
+            .searchable(text: $searchText)
         }
-        .searchable(text: $searchText)
     }
     
     var searchResults: [FlagItem] {
