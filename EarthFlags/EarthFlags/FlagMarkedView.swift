@@ -22,6 +22,7 @@ struct FlagMarkedView: View {
                 ScrollViewReader { proxy in
                     VStack {
                         Text("\(marked.count) Marked")
+                            .font(.caption)
                             .padding()
                         List {
                             ForEach(marked, id: \.alpha3) { fitem in
@@ -29,6 +30,9 @@ struct FlagMarkedView: View {
                             }
                             .onMove(perform: move)
                             .onDelete(perform: delete )
+                        }
+                        .toolbar {
+                            EditButton()
                         }
                     }
                     .onAppear {
@@ -39,9 +43,6 @@ struct FlagMarkedView: View {
                         proxy.scrollTo(last.alpha3, anchor: .bottom)
                     }
                 }
-            }
-            .toolbar {
-                EditButton()
             }
         }
         .onAppear {

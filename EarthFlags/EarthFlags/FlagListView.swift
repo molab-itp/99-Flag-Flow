@@ -22,31 +22,47 @@ struct FlagListView: View {
                     .background(Color(white: 0.9))
                     .foregroundStyle(Color(white: 0.8))
                 VStack {
-                    //Link("Earth Flags",
-                    //     destination: URL(string: titleRef)!)
-                    // .font(.largeTitle)
-                    // .padding()
+                    countRow()
                     List {
-                        Text("\(model.flagItems.count) Countries on Earth")
-                            .padding()
+                        // countBar()
                         ForEach(searchResults, id: \.alpha3) { fitem in
                             FlagItemRowView(flagItem: fitem)
                         }
                     }
-                }
-            }
-            .toolbar {
-                ToolbarItemGroup(placement: .navigationBarTrailing) {
-                    Button(action: { 
-                        if let url = URL(string: titleRef) {
-                            openURL(url)
+                    .toolbar {
+                        ToolbarItemGroup(placement: .navigationBarTrailing) {
+                            toolBarButtonRow()
                         }
-                    } ) {
-                        Image(systemName: "safari" )
                     }
                 }
             }
             .searchable(text: $searchText)
+        }
+    }
+    
+    func toolBarButtonRow() -> some View {
+        Button(action: {
+            if let url = URL(string: titleRef) {
+                openURL(url)
+            }
+        } ) {
+            Image(systemName: "safari" )
+        }
+    }
+    
+    func countRow() -> some View {
+        Group() {
+            if searchText.isEmpty {
+                Text("\(model.flagItems.count) Countries on Earth")
+                    .font(.caption)
+                    .padding()
+                    //.padding([.top, .bottom], 10)
+            }
+            else {
+                Text("\(searchResults.count) Countries")
+                    .font(.caption)
+                    .padding()
+            }
         }
     }
     
