@@ -8,15 +8,6 @@
 import Foundation
 import MapKit
 
-extension MKCoordinateRegion: Equatable {
-    public static func == (lhs: MKCoordinateRegion, rhs: MKCoordinateRegion) -> Bool {
-        return lhs.center.latitude == rhs.center.latitude 
-        && lhs.center.longitude == rhs.center.longitude
-        && lhs.span.latitudeDelta == rhs.span.latitudeDelta
-        && lhs.span.longitudeDelta == rhs.span.longitudeDelta
-    }
-}
-
 @MainActor class LocationModel: ObservableObject {
         
     @Published var region = MKCoordinateRegion(
@@ -155,6 +146,15 @@ class Location: Identifiable, Codable, Equatable {
                 latitudeDelta: delta,
                 longitudeDelta: delta)
         )
+    }
+}
+
+extension MKCoordinateRegion: Equatable {
+    public static func == (lhs: MKCoordinateRegion, rhs: MKCoordinateRegion) -> Bool {
+        return lhs.center.latitude == rhs.center.latitude
+        && lhs.center.longitude == rhs.center.longitude
+        && lhs.span.latitudeDelta == rhs.span.latitudeDelta
+        && lhs.span.longitudeDelta == rhs.span.longitudeDelta
     }
 }
 

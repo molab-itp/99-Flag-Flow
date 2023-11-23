@@ -21,6 +21,8 @@ class AppModel: ObservableObject
     
     static let main = AppModel()
     
+    lazy var verNum = Self.bundleVersion()
+
     init() {
         settings = AppModel.loadSettings()
         flagItems = getCountriesFromJSON()

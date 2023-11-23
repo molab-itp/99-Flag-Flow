@@ -29,6 +29,8 @@ struct FlagListView: View {
                             FlagItemRowView(flagItem: fitem)
                         }
                     }
+                    .navigationTitle("EarthFlags v\(model.verNum)")
+                    .navigationBarTitleDisplayMode(.inline)
                     .toolbar {
                         ToolbarItemGroup(placement:
                                 .navigationBarTrailing) {
