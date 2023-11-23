@@ -11,7 +11,7 @@
 
   - https://github.com/linssen/country-flag-icons/blob/master/countries.json
 
-- ViewFlags/ViewFlags/Resources/countries.json
+- EarthFlags/EarthFlags/Resources/countries.json
 
   - JSON for each country
 

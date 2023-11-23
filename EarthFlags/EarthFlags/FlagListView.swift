@@ -5,7 +5,7 @@
 import SwiftUI
 import UIKit
 
-let titleRef = "https://github.com/molab-itp/99-Flag-Flow/tree/main/ViewFlags"
+let titleRef = "https://github.com/molab-itp/99-Flag-Flow/tree/main/EarthFlags"
 
 struct FlagListView: View {
     

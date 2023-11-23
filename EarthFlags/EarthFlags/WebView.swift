@@ -1,6 +1,6 @@
 //
 //  WebView.swift
-//  ViewFlags
+//  EarthFlags
 //
 //  Created by jht2 on 11/15/23.
 //
@@ -22,6 +22,7 @@ struct WebView : UIViewRepresentable {
         
         let nwebView = WKWebView()
         
+        // Hold on to the webView so we can reload 
         model.webView = nwebView
         
         return nwebView

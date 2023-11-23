@@ -1,4 +1,4 @@
-// # ViewFlags
+// # EarthFlags
 
 import SwiftUI
 

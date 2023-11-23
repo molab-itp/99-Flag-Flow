@@ -1,6 +1,6 @@
 //
 //  FlagWebView.swift
-//  ViewFlags
+//  EarthFlags
 //
 //  Created by jht2 on 11/17/23.
 //

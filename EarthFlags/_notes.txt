@@ -301,7 +301,7 @@ jpg assests to fix crash
 
 run on iphone --> crash taking up too much memory
 
-The app “ViewFlags” has been killed by the operating system 
+The app “EarthFlags” has been killed by the operating system 
 because it is using too much memory.
 Domain: IDEDebugSessionErrorDomain
 Code: 11
