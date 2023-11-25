@@ -111,7 +111,7 @@ fs.writeJsonSync(outputPath, countries, { spaces: 2 });
 
 /*
  % pwd
-/Users/jht2/Documents/projects/_planning-molab-repos/99-Flag-Flow/ExportFlagsApp/node
+ ... /99-Flag-Flow/ExportFlagsApp/node
 
  % node parseCountries.js
 features.length 241

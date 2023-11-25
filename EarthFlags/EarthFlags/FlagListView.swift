@@ -62,7 +62,7 @@ struct FlagListView: View {
                     //.padding([.top, .bottom], 10)
             }
             else {
-                Text("\(searchResults.count) Countries")
+                Text("\(searchResults.count) found")
                     .font(.caption)
                     .padding()
             }

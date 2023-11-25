@@ -1,5 +1,19 @@
 _notes.txt
 
+
+# --
+   begomd tje seb
+   \
+   
+# --
+2023-11-23 12:44:32
+
+Submitted to app store
+Rename app name to EarthFlag without 's' for Apple trademark compliance
+
+>> Use build number odd for dev build
+  even build number for submitted app
+
 # --
 2023-11-21 18:19:00
 
