@@ -12,7 +12,11 @@ struct FlagMarkedView: View {
     var marked: [FlagItem]
 
     @EnvironmentObject var model: AppModel
+
+    @State private var showingUnmarkAlert: Bool = false
+    @State private var unmarkFlagItem: FlagItem?
     
+
     var body: some View {
         NavigationStack {
             ZStack {
@@ -26,7 +30,10 @@ struct FlagMarkedView: View {
                             .padding()
                         List {
                             ForEach(marked, id: \.alpha3) { fitem in
-                                FlagItemRowView(flagItem: fitem)
+                                FlagMarkedRowView(flagItem: fitem,
+                                                showUnmarkAlert: $showingUnmarkAlert,
+                                                unmarkFlagItem: $unmarkFlagItem)
+
                             }
                             .onMove(perform: move)
                             .onDelete(perform: delete )
@@ -41,6 +48,19 @@ struct FlagMarkedView: View {
                         guard let last = marked.last else { return }
                         //print("FlagMarkedView ScrollViewReader last.alpha3", last.alpha3);
                         proxy.scrollTo(last.alpha3, anchor: .bottom)
+                    }
+                    .alert("Remove flag from marked list?", isPresented:$showingUnmarkAlert) {
+                        Button("Unmark Flag") {
+                            if let unmarkFlagItem {
+                                withAnimation {
+                                    model.setMarked(flagItem: unmarkFlagItem, state: false);
+                                }
+                            }
+                            showingUnmarkAlert = false
+                        }
+                        Button("Cancel", role: .cancel) {
+                            showingUnmarkAlert = false
+                        }
                     }
                 }
             }
@@ -63,6 +83,56 @@ struct FlagMarkedView: View {
         }
     }
     
+}
+
+struct FlagMarkedRowView: View {
+    
+    @EnvironmentObject var model: AppModel
+    @EnvironmentObject var locationModel: LocationModel
+    
+    var flagItem: FlagItem
+    
+    @Binding var showUnmarkAlert: Bool
+    @Binding var unmarkFlagItem: FlagItem?
+    
+    var body: some View {
+        VStack {
+            Image("flag-"+flagItem.alpha3)
+                .resizable()
+                .frame(width: 200, height: 100)
+                .onTapGesture {
+                    // print("tapped", flagItem)
+                    Task {
+                        model.flagItem = flagItem
+                        model.setMarked(flagItem: flagItem, state: true);
+                        locationModel.setLocation(ccode: flagItem.alpha3)
+                        model.selectedTab = .map
+                    }
+                }
+            HStack {
+                Text(flagItem.label())
+                Spacer()
+                Button {
+                    if model.isMarked(flagItem: flagItem) {
+                        // Is marked, will remove mark
+                        unmarkFlagItem = flagItem
+                        showUnmarkAlert = true
+                    }
+                    else {
+                        // Not marked, now marked
+                        Task {
+                            withAnimation {
+                                model.setMarked(flagItem: flagItem, state: true);
+                            }
+                        }
+                    }
+                } label: {
+                    let state = model.isMarked(flagItem: flagItem)
+                    Image(systemName: state ? "circle.fill" : "circle")
+                }
+            }
+        }
+    }
 }
 
 #Preview {

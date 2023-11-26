@@ -10,10 +10,12 @@ let titleRef = "https://github.com/molab-itp/99-Flag-Flow/tree/main/EarthFlags"
 struct FlagListView: View {
     
     @EnvironmentObject var model: AppModel
-    
-    @State private var searchText = ""
-    
     @Environment(\.openURL) private var openURL
+
+    @State private var searchText = ""
+
+    @State private var showingUnmarkAlert: Bool = false
+    @State private var unmarkFlagItem: FlagItem?
 
     var body: some View {
         NavigationStack {
@@ -26,7 +28,9 @@ struct FlagListView: View {
                     List {
                         // countBar()
                         ForEach(searchResults, id: \.alpha3) { fitem in
-                            FlagItemRowView(flagItem: fitem)
+                            FlagListRowView(flagItem: fitem,
+                                            showUnmarkAlert: $showingUnmarkAlert,
+                                            unmarkFlagItem: $unmarkFlagItem)
                         }
                     }
                     .navigationTitle("EarthFlags v\(model.verNum)")
@@ -40,6 +44,19 @@ struct FlagListView: View {
                 }
             }
             .searchable(text: $searchText)
+            .alert("Remove flag from marked list?", isPresented:$showingUnmarkAlert) {
+                Button("Unmark Flag") {
+                    if let unmarkFlagItem {
+                        withAnimation {
+                            model.setMarked(flagItem: unmarkFlagItem, state: false);
+                        }
+                    }
+                    showingUnmarkAlert = false
+                }
+                Button("Cancel", role: .cancel) {
+                    showingUnmarkAlert = false
+                }
+            }
         }
     }
     
@@ -84,10 +101,16 @@ struct FlagListView: View {
 
 }
 
-struct FlagItemRowView: View {
+struct FlagListRowView: View {
+    
     @EnvironmentObject var model: AppModel
     @EnvironmentObject var locationModel: LocationModel
-    var flagItem:FlagItem
+    
+    var flagItem: FlagItem
+    
+    @Binding var showUnmarkAlert: Bool
+    @Binding var unmarkFlagItem: FlagItem?
+
     var body: some View {
         VStack {
             Image("flag-"+flagItem.alpha3)
@@ -103,21 +126,19 @@ struct FlagItemRowView: View {
                     }
                 }
             HStack {
-//                Button {
-//                    model.flagItem = flagItem
-//                    model.selectedTab = .detail
-//                } label: {
-//                    // let state = model.isMarked(flagItem: flagItem)
-//                    Image(systemName: "info.circle")
-//                }
-//                Spacer()
                 Text(flagItem.label())
                 Spacer()
                 Button {
-                    Task {
-                        withAnimation {
-                            model.toggleMarked(flagItem: flagItem);
-                            if model.isMarked(flagItem: flagItem) {
+                    if model.isMarked(flagItem: flagItem) {
+                        // Is marked, will remove mark
+                        unmarkFlagItem = flagItem
+                        showUnmarkAlert = true
+                    }
+                    else {
+                        // Not marked, now marked
+                        Task {
+                            withAnimation {
+                                model.setMarked(flagItem: flagItem, state: true);
                                 model.selectedTab = .marks
                             }
                         }
