@@ -38,6 +38,29 @@ class AppModel: ObservableObject
         return model
     }
     
+    var locations: [Location] {
+        settings.locations
+    }
+    
+    func addLocation(loc: Location, after: Int) {
+        print("AppModel addLocation")
+        //settings.locations.append(loc)
+        settings.locations.insert(loc, at: after)
+        saveSettings();
+    }
+    
+    func moveLocation(from source: IndexSet, to destination: Int) {
+        print("AppModel moveLocation", source, destination)
+        settings.locations.move(fromOffsets: source, toOffset: destination)
+        saveSettings();
+    }
+    
+    func deleteLocation(indices: IndexSet) {
+        print("AppModel deleteLocation", indices)
+        settings.locations.remove(atOffsets: indices)
+        saveSettings();
+    }
+
     func restoreLocations() {
         if let loc = settings.locations.first {
             LocationModel.main.setLocation(loc)
@@ -180,7 +203,7 @@ extension FileManager {
 let currentVersion = 2;
 
 //struct Settings: Codable {
-class Settings: Codable {
+class Settings: Codable, ObservableObject {
 
     var version: Int = currentVersion
     

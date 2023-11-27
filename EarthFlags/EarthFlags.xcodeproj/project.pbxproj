@@ -20,7 +20,6 @@
 		AB7F18B22B140DA4008C2905 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7F18B12B140DA4008C2905 /* Location.swift */; };
 		AB7F18B42B140E66008C2905 /* EditLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7F18B32B140E66008C2905 /* EditLocationView.swift */; };
 		AB7F18B62B140FF2008C2905 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7F18B52B140FF2008C2905 /* Result.swift */; };
-		AB7F18B82B141495008C2905 /* LocationModel-Nearby.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7F18B72B141495008C2905 /* LocationModel-Nearby.swift */; };
 		AB7F18BA2B142E94008C2905 /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7F18B92B142E93008C2905 /* LocationListView.swift */; };
 		AB8A75912B0D04E300A8CD5F /* countries_capitals.json in Resources */ = {isa = PBXBuildFile; fileRef = AB8A75902B0D04E300A8CD5F /* countries_capitals.json */; };
 		ABCA885C2B07219700F09268 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCA885B2B07219700F09268 /* AppModel.swift */; };
@@ -69,7 +68,6 @@
 		AB7F18B12B140DA4008C2905 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		AB7F18B32B140E66008C2905 /* EditLocationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditLocationView.swift; sourceTree = "<group>"; };
 		AB7F18B52B140FF2008C2905 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
-		AB7F18B72B141495008C2905 /* LocationModel-Nearby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocationModel-Nearby.swift"; sourceTree = "<group>"; };
 		AB7F18B92B142E93008C2905 /* LocationListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
 		AB8A75902B0D04E300A8CD5F /* countries_capitals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries_capitals.json; sourceTree = "<group>"; };
 		ABCA885B2B07219700F09268 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
@@ -132,7 +130,6 @@
 				AB7F18B32B140E66008C2905 /* EditLocationView.swift */,
 				AB7F18B92B142E93008C2905 /* LocationListView.swift */,
 				AB3DC8A72B09534A00F0E631 /* LocationModel.swift */,
-				AB7F18B72B141495008C2905 /* LocationModel-Nearby.swift */,
 				AB7F18B12B140DA4008C2905 /* Location.swift */,
 				AB7F18B52B140FF2008C2905 /* Result.swift */,
 			);
@@ -341,7 +338,6 @@
 			files = (
 				ABCA885C2B07219700F09268 /* AppModel.swift in Sources */,
 				AB3DC8A92B09534A00F0E631 /* LocationModel.swift in Sources */,
-				AB7F18B82B141495008C2905 /* LocationModel-Nearby.swift in Sources */,
 				ABCA88602B07D0E300F09268 /* FlagMarkedView.swift in Sources */,
 				ABE29FDE2AB3A0860072F7C2 /* FlagListView.swift in Sources */,
 				AB7F18B22B140DA4008C2905 /* Location.swift in Sources */,

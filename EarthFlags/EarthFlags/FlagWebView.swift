@@ -22,7 +22,7 @@ struct FlagWebView: View {
                                 .font(.title)
                         }
                     }
-                    Image("flag-"+flagItem.alpha3)
+                    Image(flagItem.imageRef)
                         .resizable()
                         .frame(width: 200, height: 100)
                         .onTapGesture {

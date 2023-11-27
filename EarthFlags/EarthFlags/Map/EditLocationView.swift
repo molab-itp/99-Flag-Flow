@@ -9,12 +9,15 @@ import SwiftUI
 
 struct EditLocationView: View {
     
+    var action = "Update"
+    
+    @EnvironmentObject var appModel: AppModel
     @EnvironmentObject var locationModel: LocationModel
 //    var onSave: (Location) -> Void
     
     @Environment(\.dismiss) var dismiss
     
-    var flagItem = AppModel.main.flagItem
+//    var flagItem = AppModel.main.flagItem
     
     var body: some View {
         // NavigationView {
@@ -28,14 +31,6 @@ struct EditLocationView: View {
             }
             Section {
                 HStack {
-                    Text("code:")
-                    Text(flagItem?.alpha3 ?? "")
-                }
-                HStack {
-                    Text("name:")
-                    Text(flagItem?.name ?? "")
-                }
-                HStack {
                     Text("latitude:")
                     Text(locationModel.centerLatitude)
                 }
@@ -43,16 +38,35 @@ struct EditLocationView: View {
                     Text("longitude:")
                     Text(locationModel.centerLongitude)
                 }
-
+                if let flagItem = locationModel.flagItem() {
+                    HStack {
+                        Image(flagItem.imageRef)
+                            .resizable()
+                            .frame(width: 40, height: 20)
+                        Text(flagItem.alpha3 )
+                    }
+                    HStack {
+                        Text("name:")
+                        Text(flagItem.name)
+                    }
+                }
             }
         }
         .toolbar {
             ToolbarItemGroup(placement: .navigationBarTrailing) {
-                Button("Update") {
-                    locationModel.currentLocation.label = locationModel.label
-                    locationModel.updateLocation()
-                    withAnimation {
-                        locationModel.restoreLocation()
+                // Update or Add
+                Button(action) {
+                    if (action == "Update") {
+                        locationModel.currentLocation.label = locationModel.label
+                        locationModel.updateLocation()
+                        withAnimation {
+                            locationModel.restoreLocation()
+                        }
+                    }
+                    else {
+                        // Add a location.
+                        print("location add")
+                        locationModel.addLocation();
                     }
                     dismiss()
                 }
@@ -88,5 +102,6 @@ struct NearbyView: View {
 
 #Preview {
     EditLocationView()
+        .environmentObject(AppModel.sample)
         .environmentObject(LocationModel.main)
 }

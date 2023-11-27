@@ -48,6 +48,25 @@ class LocationModel: ObservableObject {
         String(format: "%+.6f", region.center.longitude)
     }
 
+    func addLocation() {
+        print("LocationModel addLocation " );
+        let ccode = currentLocation.ccode
+        let id = ccode+"-"+UUID().uuidString;
+        let delta = min(region.span.latitudeDelta, region.span.longitudeDelta)
+        let loc = Location( id: id,
+                            ccode: ccode,
+                            latitude: region.center.latitude,
+                            longitude: region.center.longitude,
+                            label: label,
+                            capital: "",
+                            delta: delta)
+        AppModel.main.addLocation(loc: loc, after: index)
+    }
+    
+    func flagItem() -> FlagItem? {
+        AppModel.main.flagItem(ccode: currentLocation.ccode)
+    }
+    
     func updateLocation() {
         print("updateLocation region.span", region.span.latitudeDelta, region.span.longitudeDelta );
         print("updateLocation currentLocation.delta", currentLocation.delta );

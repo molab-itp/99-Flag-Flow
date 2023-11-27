@@ -6,6 +6,8 @@ _notes.txt
 
 # [Bucketlist](https://github.com/molab-itp/09-Bucketlist)
 
+    func addLocation() {
+        // !!@
 
 
 # --

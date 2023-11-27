@@ -44,7 +44,7 @@ class Location: Identifiable, Codable, Equatable {
     }
     
     var imageRef: String {
-        "flag-\(id)"
+        "flag-\(ccode)"
     }
     
     var region: MKCoordinateRegion {

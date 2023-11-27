@@ -13,7 +13,7 @@ struct MapTabView: View {
     @EnvironmentObject var appModel: AppModel
     @EnvironmentObject var locationModel: LocationModel
 
-    @State private var showingAddLocationAlert: Bool = false
+//    @State private var showingAddLocationAlert: Bool = false
 
     var body: some View {
         // let _ = Self._printChanges()
@@ -50,44 +50,62 @@ struct MapTabView: View {
             // .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItemGroup(placement: .navigationBarLeading) {
-                    NavigationLink(
-                        destination:
-                            EditLocationView()
-                    ) {
-                        Image(systemName: "arrow.down.app" )
-                    }
-                    NavigationLink(
-                        destination:
-                            LocationListView()
-                    ) {
-                        Image(systemName: "list.bullet" )
-                    }
+                    leftToolbarButtons()
                 }
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
-                    if !locationModel.locationMatch(locationModel.currentLocation) {
-                        Button(action: restoreLocAction ) {
-                            Image(systemName: "staroflife.circle" )
-                        }
-                    }
-                    Button(action: nextLocAction ) {
-                        Image(systemName: "arrow.left.square.fill" )
-                    }
-                    Button(action: previousLocAction ) {
-                        Image(systemName: "arrow.right.square.fill" )
-                    }
+                    rightToolbarButtons()
                 }
             }
-            .alert("Add location?", isPresented:$showingAddLocationAlert) {
-                Button("Ok") {
-                    showingAddLocationAlert = false
-                }
-                Button("Cancel", role: .cancel) {
-                    showingAddLocationAlert = false
-                }
-            }
+//            .alert("Add location?", isPresented:$showingAddLocationAlert) {
+//                Button("Ok") {
+//                    showingAddLocationAlert = false
+//                }
+//                Button("Cancel", role: .cancel) {
+//                    showingAddLocationAlert = false
+//                }
+//            }
         }
     }
 
+    func leftToolbarButtons() -> some View {
+        Group {
+            NavigationLink(
+                destination:
+                    EditLocationView(action: "Add")
+            ) {
+                Image(systemName: "plus" )
+            }
+            NavigationLink(
+                destination:
+                    EditLocationView()
+            ) {
+                Image(systemName: "arrow.down.app" )
+            }
+            NavigationLink(
+                destination:
+                    LocationListView()
+            ) {
+                Image(systemName: "list.bullet" )
+            }
+        }
+    }
+    
+    func rightToolbarButtons() -> some View {
+        Group {
+            if !locationModel.locationMatch(locationModel.currentLocation) {
+                Button(action: restoreLocAction ) {
+                    Image(systemName: "staroflife.circle" )
+                }
+            }
+            Button(action: nextLocAction ) {
+                Image(systemName: "arrow.left.square.fill" )
+            }
+            Button(action: previousLocAction ) {
+                Image(systemName: "arrow.right.square.fill" )
+            }
+        }
+    }
+    
     func topInfo() -> some View {
         VStack {
             Text(locationModel.currentLocation.label)
@@ -134,14 +152,6 @@ struct MapTabView: View {
             locationModel.restoreLocation()
         }
     }
-    
-//    var centerLatitude: String {
-//        String(format: "%+.6f", locationModel.region.center.latitude)
-//    }
-//    
-//    var centerLongitude: String {
-//        String(format: "%+.6f", locationModel.region.center.longitude)
-//    }
     
 }
 

@@ -40,6 +40,9 @@ struct FlagItem : Decodable {
         return "\(sindex) \(alpha3) \(name)"
     }
     
+    var imageRef:String {
+        "flag-"+alpha3
+    }
 }
 
 let FlagItem_Sample = FlagItem(
