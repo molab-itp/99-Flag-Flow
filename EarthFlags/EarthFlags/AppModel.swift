@@ -202,8 +202,8 @@ extension FileManager {
 
 let currentVersion = 2;
 
-//struct Settings: Codable {
-class Settings: Codable, ObservableObject {
+// Must be a struct Settings for edits to register
+struct Settings: Codable {
 
     var version: Int = currentVersion
     
