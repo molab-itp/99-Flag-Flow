@@ -1,5 +1,12 @@
 _notes.txt
 
+# --
+2023-11-27 12:49:12
+
+https://www.hackingwithswift.com/quick-start/concurrency/how-to-use-mainactor-to-run-code-on-the-main-queue
+
+
+!! EditLocationView not adding after current location index
 
 # --
 2023-11-26 18:39:57

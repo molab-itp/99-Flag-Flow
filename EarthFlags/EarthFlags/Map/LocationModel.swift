@@ -29,8 +29,10 @@ class LocationModel: ObservableObject {
         return model
     }
     
+    lazy var appModel = AppModel.main
+    
     var locations: [Location] {
-        AppModel.main.settings.locations
+        appModel.settings.locations
     }
 
     enum LoadingState {
@@ -38,8 +40,13 @@ class LocationModel: ObservableObject {
     }
     @Published var loadingState = LoadingState.loading
     @Published var pages = [Page]()
+    
+    // Set in EditLocationView
     @Published var label: String = ""
+    @Published var ccode: String = ""
 
+    // --
+    
     var centerLatitude: String {
         String(format: "%+.6f", region.center.latitude)
     }
@@ -50,7 +57,7 @@ class LocationModel: ObservableObject {
 
     func addLocation() {
         print("LocationModel addLocation " );
-        let ccode = currentLocation.ccode
+        // let ccode = currentLocation.ccode
         let id = ccode+"-"+UUID().uuidString;
         let delta = min(region.span.latitudeDelta, region.span.longitudeDelta)
         let loc = Location( id: id,
@@ -60,11 +67,11 @@ class LocationModel: ObservableObject {
                             label: label,
                             capital: "",
                             delta: delta)
-        AppModel.main.addLocation(loc: loc, after: index)
+        appModel.addLocation(loc: loc, after: index)
     }
     
-    func flagItem() -> FlagItem? {
-        AppModel.main.flagItem(ccode: currentLocation.ccode)
+    func flagItem(ccode: String) -> FlagItem? {
+        appModel.flagItem(ccode: ccode)
     }
     
     func updateLocation() {
@@ -75,7 +82,7 @@ class LocationModel: ObservableObject {
         currentLocation.longitude = region.center.longitude
         currentLocation.delta = min(region.span.latitudeDelta, region.span.longitudeDelta);
         
-        AppModel.main.saveSettings()
+        appModel.saveSettings()
     }
     
     func locationMatch(_ current:Location) -> Bool {
@@ -104,12 +111,14 @@ class LocationModel: ObservableObject {
     }
     
     func setLocation(index: Int) {
+        print("LocationModel setLocation index", index, "locations.count", locations.count)
         self.index = index;
         let loc = locations[index];
         region = loc.region
         currentLocation = loc;
         label = currentLocation.label
-        AppModel.main.currentFlagItem(loc.ccode)
+        ccode = currentLocation.ccode
+        appModel.currentFlagItem(loc.ccode)
     }
     
     func setLocation(ccode: String) {

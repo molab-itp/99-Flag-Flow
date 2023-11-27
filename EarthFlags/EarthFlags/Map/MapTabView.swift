@@ -97,10 +97,10 @@ struct MapTabView: View {
                     Image(systemName: "staroflife.circle" )
                 }
             }
-            Button(action: nextLocAction ) {
+            Button(action: previousLocAction  ) {
                 Image(systemName: "arrow.left.square.fill" )
             }
-            Button(action: previousLocAction ) {
+            Button(action: nextLocAction ) {
                 Image(systemName: "arrow.right.square.fill" )
             }
         }

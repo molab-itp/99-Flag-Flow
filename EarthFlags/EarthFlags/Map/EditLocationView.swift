@@ -28,6 +28,11 @@ struct EditLocationView: View {
                     // .frame(width:160)
                     TextField("", text: $locationModel.label)
                 }
+                HStack {
+                    Text("ccode:")
+                    // .frame(width:160)
+                    TextField("", text: $locationModel.ccode)
+                }
             }
             Section {
                 HStack {
@@ -38,15 +43,12 @@ struct EditLocationView: View {
                     Text("longitude:")
                     Text(locationModel.centerLongitude)
                 }
-                if let flagItem = locationModel.flagItem() {
+                if let flagItem = locationModel.flagItem(ccode: locationModel.ccode) {
                     HStack {
                         Image(flagItem.imageRef)
                             .resizable()
                             .frame(width: 40, height: 20)
                         Text(flagItem.alpha3 )
-                    }
-                    HStack {
-                        Text("name:")
                         Text(flagItem.name)
                     }
                 }
@@ -56,7 +58,7 @@ struct EditLocationView: View {
             ToolbarItemGroup(placement: .navigationBarTrailing) {
                 // Update or Add
                 Button(action) {
-                    if (action == "Update") {
+                    if action == "Update" {
                         locationModel.currentLocation.label = locationModel.label
                         locationModel.updateLocation()
                         withAnimation {
@@ -72,6 +74,12 @@ struct EditLocationView: View {
                 }
             }
             
+        }
+        .onAppear() {
+            print("EditLocationView onAppear locationModel.ccode", locationModel.ccode)
+            if action == "Add" {
+                locationModel.ccode = ""
+            }
         }
     }
 
