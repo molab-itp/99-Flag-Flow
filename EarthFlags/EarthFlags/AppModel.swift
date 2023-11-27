@@ -38,6 +38,12 @@ class AppModel: ObservableObject
         return model
     }
     
+    func restoreLocations() {
+        if let loc = settings.locations.first {
+            LocationModel.main.setLocation(loc)
+        }
+    }
+    
     func flagItem(ccode:String) -> FlagItem? {
         return flagDict[ccode]
     }

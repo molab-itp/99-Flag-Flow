@@ -32,11 +32,6 @@ struct MainTabView: View {
                     Label("Marked", systemImage: "circle.fill")
                 }
                 .tag(TabTag.marks)
-            FlagWebView()
-                .tabItem {
-                    Label("Detail", systemImage: "info.circle")
-                }
-                .tag(TabTag.detail)
             MapTabView()
                 .tabItem {
                     Label("Map", systemImage: "map")
@@ -47,11 +42,16 @@ struct MainTabView: View {
                     Label("Earth", systemImage: "globe")
                 }
                 .tag(TabTag.earth)
+            FlagWebView()
+                .tabItem {
+                    Label("Detail", systemImage: "info.circle")
+                }
+                .tag(TabTag.detail)
         }
         .onAppear() {
             print("MainTabView onAppear model.settings.locations", model.settings.locations)
             // print("MainTabView onAppear locationModel.locations", locationModel.locations)
-            // model.restoreLocations()
+             model.restoreLocations()
         }
     }
 }

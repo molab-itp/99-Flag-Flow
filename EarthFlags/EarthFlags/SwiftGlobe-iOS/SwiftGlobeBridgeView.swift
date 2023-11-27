@@ -9,12 +9,12 @@ import SwiftUI
 
 struct SwiftGlobeBridgeView: View {
     
-    @EnvironmentObject var model: LocationModel
+    @EnvironmentObject var locationModel: LocationModel
     
     var body: some View {
         NavigationStack {
             ZStack {
-                SwiftGlobeBridgeRep(location: model.currentLocation)
+                SwiftGlobeBridgeRep(location: locationModel.currentLocation)
                 topInfo()
                 bottomInfo()
             }
@@ -31,7 +31,7 @@ struct SwiftGlobeBridgeView: View {
 
     func topInfo() -> some View {
         VStack {
-            Text(model.currentLocation.label)
+            Text(locationModel.currentLocation.label)
                 .background(.white)
             Spacer()
         }
@@ -40,28 +40,28 @@ struct SwiftGlobeBridgeView: View {
     func bottomInfo() -> some View {
         VStack {
             Spacer()
-            Text("lat: \(centerLatitude)")
+            Text("lat: \(locationModel.centerLatitude)")
                 .font(locationFont)
                 .background(.white)
-            Text("lon: \(centerLongitude)")
+            Text("lon: \(locationModel.centerLongitude)")
                 .font(locationFont)
                 .background(.white)
         }
     }
 
-    var centerLatitude: String {
-        String(format: "%+.6f", model.region.center.latitude)
-    }
-    
-    var centerLongitude: String {
-        String(format: "%+.6f", model.region.center.longitude)
-    }
+//    var centerLatitude: String {
+//        String(format: "%+.6f", model.region.center.latitude)
+//    }
+//    
+//    var centerLongitude: String {
+//        String(format: "%+.6f", model.region.center.longitude)
+//    }
     
     func nextLocAction() {
         print("nextLocAction")
         withAnimation {
             print("nextLocAction withAnimation")
-            model.nextLocation()
+            locationModel.nextLocation()
         }
     }
 

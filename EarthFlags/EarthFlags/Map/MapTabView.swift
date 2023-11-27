@@ -13,7 +13,7 @@ struct MapTabView: View {
     @EnvironmentObject var appModel: AppModel
     @EnvironmentObject var locationModel: LocationModel
 
-//    @State private var showingUpdateAlert: Bool = false
+    @State private var showingAddLocationAlert: Bool = false
 
     var body: some View {
         // let _ = Self._printChanges()
@@ -44,22 +44,23 @@ struct MapTabView: View {
             .onAppear {
 //                print("MapTabView onAppear locations", model.locations)
             }
-            .onChange(of: locationModel.region ) { _ in
+//            .onChange(of: locationModel.region ) { _ in
 //                print("MapTabView onAppear region", locationModel.region)
-            }
+//            }
             // .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItemGroup(placement: .navigationBarLeading) {
-//                    Button(action: {
-//                        showingUpdateAlert = true
-//                    } ) {
-//                        Image(systemName: "staroflife.fill" )
-//                    }
-                    NavigationLink( destination:
-                        EditLocationView()
-                    )
-                    {
+                    NavigationLink(
+                        destination:
+                            EditLocationView()
+                    ) {
                         Image(systemName: "arrow.down.app" )
+                    }
+                    NavigationLink(
+                        destination:
+                            LocationListView()
+                    ) {
+                        Image(systemName: "list.bullet" )
                     }
                 }
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
@@ -76,15 +77,14 @@ struct MapTabView: View {
                     }
                 }
             }
-//            .alert("Update location?", isPresented:$showingUpdateAlert) {
-//                Button("Ok") {
-//                    updateLocAction()
-//                    showingUpdateAlert = false
-//                }
-//                Button("Cancel", role: .cancel) {
-//                    showingUpdateAlert = false
-//                }
-//            }
+            .alert("Add location?", isPresented:$showingAddLocationAlert) {
+                Button("Ok") {
+                    showingAddLocationAlert = false
+                }
+                Button("Cancel", role: .cancel) {
+                    showingAddLocationAlert = false
+                }
+            }
         }
     }
 
@@ -98,9 +98,9 @@ struct MapTabView: View {
     func bottomInfo() -> some View {
         VStack {
             Spacer()
-            Text("lat: \(centerLatitude)")
+            Text("lat: \(locationModel.centerLatitude)")
                 .font(locationFont)
-            Text("lon: \(centerLongitude)")
+            Text("lon: \(locationModel.centerLongitude)")
                 .font(locationFont)
         }
     }
@@ -111,30 +111,7 @@ struct MapTabView: View {
             .opacity(0.3)
             .frame(width: 32, height: 32)
     }
-    
-    private func starNextButton() -> some View {
-        VStack {
-            Spacer()
-            HStack {
-                Spacer()
-                Button(action: nextLocAction ) {
-                    Image(systemName: "staroflife")
-                }
-                .padding()
-                .background(.black.opacity(0.75))
-                .foregroundColor(.white)
-                .font(.title)
-                .clipShape(Circle())
-            }
-        }
-    }
-    
-    func updateLocAction() {
-        print("updateLocAction")
-        locationModel.updateLocation()
-        restoreLocAction();
-    }
-    
+        
     func previousLocAction() {
         print("previousLocAction")
         withAnimation {
@@ -158,13 +135,13 @@ struct MapTabView: View {
         }
     }
     
-    var centerLatitude: String {
-        String(format: "%+.6f", locationModel.region.center.latitude)
-    }
-    
-    var centerLongitude: String {
-        String(format: "%+.6f", locationModel.region.center.longitude)
-    }
+//    var centerLatitude: String {
+//        String(format: "%+.6f", locationModel.region.center.latitude)
+//    }
+//    
+//    var centerLongitude: String {
+//        String(format: "%+.6f", locationModel.region.center.longitude)
+//    }
     
 }
 

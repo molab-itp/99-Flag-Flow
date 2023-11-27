@@ -14,24 +14,38 @@ struct EditLocationView: View {
     
     @Environment(\.dismiss) var dismiss
     
+    var flagItem = AppModel.main.flagItem
+    
     var body: some View {
-        //        NavigationView {
+        // NavigationView {
         Form {
             Section {
-                TextField("Place label", text: $locationModel.label)
+                HStack {
+                    Text("label:")
+                    // .frame(width:160)
+                    TextField("", text: $locationModel.label)
+                }
             }
-            //                Section("Nearby…") {
-            //                    switch locationModel.loadingState {
-            //                    case .loading:
-            //                        Text("Loading…")
-            //                    case .loaded:
-            //                        NearbyView(locationModel: locationModel)
-            //                    case .failed:
-            //                        Text("Please try again later.")
-            //                    }
-            //                }
+            Section {
+                HStack {
+                    Text("code:")
+                    Text(flagItem?.alpha3 ?? "")
+                }
+                HStack {
+                    Text("name:")
+                    Text(flagItem?.name ?? "")
+                }
+                HStack {
+                    Text("latitude:")
+                    Text(locationModel.centerLatitude)
+                }
+                HStack {
+                    Text("longitude:")
+                    Text(locationModel.centerLongitude)
+                }
+
+            }
         }
-        //            .navigationTitle("Place details")
         .toolbar {
             ToolbarItemGroup(placement: .navigationBarTrailing) {
                 Button("Update") {
@@ -45,12 +59,8 @@ struct EditLocationView: View {
             }
             
         }
-        //            .task {
-        //                await locationModel.fetchNearbyPlaces()
-        //            }
-        //        }
     }
-    
+
 //    init(location: Location, onSave: @escaping (Location) -> Void) {
 //        self.onSave = onSave
 //        _locationModel = StateObject(wrappedValue: LocationModel(location: location))

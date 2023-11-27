@@ -40,6 +40,14 @@ class LocationModel: ObservableObject {
     @Published var pages = [Page]()
     @Published var label: String = ""
 
+    var centerLatitude: String {
+        String(format: "%+.6f", region.center.latitude)
+    }
+    
+    var centerLongitude: String {
+        String(format: "%+.6f", region.center.longitude)
+    }
+
     func updateLocation() {
         print("updateLocation region.span", region.span.latitudeDelta, region.span.longitudeDelta );
         print("updateLocation currentLocation.delta", currentLocation.delta );
@@ -82,7 +90,7 @@ class LocationModel: ObservableObject {
         region = loc.region
         currentLocation = loc;
         label = currentLocation.label
-        AppModel.main.currentFlagItem(loc.id)
+        AppModel.main.currentFlagItem(loc.ccode)
     }
     
     func setLocation(ccode: String) {
