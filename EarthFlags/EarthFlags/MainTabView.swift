@@ -49,8 +49,9 @@ struct MainTabView: View {
                 .tag(TabTag.earth)
         }
         .onAppear() {
-            print("MainTabView onAppear locationModel.locations", locationModel.locations)
-            model.restoreLocations()
+            print("MainTabView onAppear model.settings.locations", model.settings.locations)
+            // print("MainTabView onAppear locationModel.locations", locationModel.locations)
+            // model.restoreLocations()
         }
     }
 }

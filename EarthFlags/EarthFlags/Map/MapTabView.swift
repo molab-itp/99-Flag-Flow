@@ -10,14 +10,17 @@ import MapKit
 
 struct MapTabView: View {
 
-    @EnvironmentObject var model: LocationModel
-    
+    @EnvironmentObject var appModel: AppModel
+    @EnvironmentObject var locationModel: LocationModel
+
+//    @State private var showingUpdateAlert: Bool = false
+
     var body: some View {
-//        let _ = Self._printChanges()
+        // let _ = Self._printChanges()
         NavigationStack {
             ZStack {
-                Map(coordinateRegion: $model.region,
-                    annotationItems: model.locations )
+                Map(coordinateRegion: $locationModel.region,
+                    annotationItems: appModel.settings.locations )
                 { loc in
                     MapAnnotation(coordinate: loc.coordinate) {
                         VStack {
@@ -29,7 +32,7 @@ struct MapTabView: View {
                         .onTapGesture {
                             withAnimation {
                                 print("nextLocAction withAnimation")
-                                model.setLocation(loc)
+                                locationModel.setLocation(loc)
                             }
                         }
                     }
@@ -41,28 +44,53 @@ struct MapTabView: View {
             .onAppear {
 //                print("MapTabView onAppear locations", model.locations)
             }
-            .onChange(of: model.region ) { _ in
-//                print("MapTabView onAppear region", model.region)
+            .onChange(of: locationModel.region ) { _ in
+//                print("MapTabView onAppear region", locationModel.region)
             }
             // .navigationBarTitleDisplayMode(.inline)
             .toolbar {
+                ToolbarItemGroup(placement: .navigationBarLeading) {
+//                    Button(action: {
+//                        showingUpdateAlert = true
+//                    } ) {
+//                        Image(systemName: "staroflife.fill" )
+//                    }
+                    NavigationLink( destination:
+                        EditLocationView()
+                    )
+                    {
+                        Image(systemName: "arrow.down.app" )
+                    }
+                }
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
-                    if !model.locationMatch(model.currentLocation) {
+                    if !locationModel.locationMatch(locationModel.currentLocation) {
                         Button(action: restoreLocAction ) {
-                            Image(systemName: "star.circle" )
+                            Image(systemName: "staroflife.circle" )
                         }
                     }
                     Button(action: nextLocAction ) {
-                        Text("Next")
+                        Image(systemName: "arrow.left.square.fill" )
+                    }
+                    Button(action: previousLocAction ) {
+                        Image(systemName: "arrow.right.square.fill" )
                     }
                 }
             }
+//            .alert("Update location?", isPresented:$showingUpdateAlert) {
+//                Button("Ok") {
+//                    updateLocAction()
+//                    showingUpdateAlert = false
+//                }
+//                Button("Cancel", role: .cancel) {
+//                    showingUpdateAlert = false
+//                }
+//            }
         }
     }
 
     func topInfo() -> some View {
         VStack {
-            Text(model.currentLocation.label)
+            Text(locationModel.currentLocation.label)
             Spacer()
         }
     }
@@ -90,7 +118,7 @@ struct MapTabView: View {
             HStack {
                 Spacer()
                 Button(action: nextLocAction ) {
-                    Image(systemName: "star")
+                    Image(systemName: "staroflife")
                 }
                 .padding()
                 .background(.black.opacity(0.75))
@@ -101,11 +129,17 @@ struct MapTabView: View {
         }
     }
     
-    func restoreLocAction() {
-        print("nextLocAction")
+    func updateLocAction() {
+        print("updateLocAction")
+        locationModel.updateLocation()
+        restoreLocAction();
+    }
+    
+    func previousLocAction() {
+        print("previousLocAction")
         withAnimation {
-            print("nextLocAction withAnimation")
-            model.restoreLocation()
+            print("previousLocAction withAnimation")
+            locationModel.previousLocation()
         }
     }
     
@@ -113,16 +147,23 @@ struct MapTabView: View {
         print("nextLocAction")
         withAnimation {
             print("nextLocAction withAnimation")
-            model.nextLocation()
+            locationModel.nextLocation()
         }
     }
 
+    func restoreLocAction() {
+        print("restoreLocAction")
+        withAnimation {
+            locationModel.restoreLocation()
+        }
+    }
+    
     var centerLatitude: String {
-        String(format: "%+.6f", model.region.center.latitude)
+        String(format: "%+.6f", locationModel.region.center.latitude)
     }
     
     var centerLongitude: String {
-        String(format: "%+.6f", model.region.center.longitude)
+        String(format: "%+.6f", locationModel.region.center.longitude)
     }
     
 }
@@ -133,5 +174,6 @@ let locationFont = Font
 
 #Preview {
     MapTabView()
+        .environmentObject(AppModel.sample)
         .environmentObject(LocationModel.sample)
 }

@@ -8,7 +8,8 @@
 import Foundation
 import MapKit
 
-@MainActor class LocationModel: ObservableObject {
+//@MainActor 
+class LocationModel: ObservableObject {
         
     @Published var region = MKCoordinateRegion(
         center: CLLocationCoordinate2D(
@@ -18,26 +19,54 @@ import MapKit
             latitudeDelta: 100.0,
             longitudeDelta: 100.0)
     )
-    @Published var locations = [Location()]
-    var currentLocation = Location()
+    @Published var currentLocation = Location()
     var index = 0
 
     static let main = LocationModel()
 
     static var sample:LocationModel {
         let model = LocationModel();
-        model.locations = knownLocations
         return model
     }
+    
+    var locations: [Location] {
+        AppModel.main.settings.locations
+    }
 
+    enum LoadingState {
+        case loading, loaded, failed
+    }
+    @Published var loadingState = LoadingState.loading
+    @Published var pages = [Page]()
+    @Published var label: String = ""
+
+    func updateLocation() {
+        print("updateLocation region.span", region.span.latitudeDelta, region.span.longitudeDelta );
+        print("updateLocation currentLocation.delta", currentLocation.delta );
+        
+        currentLocation.latitude = region.center.latitude
+        currentLocation.longitude = region.center.longitude
+        currentLocation.delta = min(region.span.latitudeDelta, region.span.longitudeDelta);
+        
+        AppModel.main.saveSettings()
+    }
+    
     func locationMatch(_ current:Location) -> Bool {
-//        print("locationMatch current", current, "center", region.center)
         let epsilon = 0.000001;
         let center = region.center
         return abs(current.latitude - center.latitude) < epsilon
             && abs(current.longitude - center.longitude) < epsilon
     }
 
+    func previousLocation() {
+        print("LocationModel previous index", index, "locations.count", locations.count)
+        if locations.count <= 0 {
+            return;
+        }
+        index = (index - 1 + locations.count) % locations.count;
+        setLocation(index: index)
+    }
+    
     func nextLocation() {
         print("LocationModel next index", index, "locations.count", locations.count)
         if locations.count <= 0 {
@@ -52,6 +81,7 @@ import MapKit
         let loc = locations[index];
         region = loc.region
         currentLocation = loc;
+        label = currentLocation.label
         AppModel.main.currentFlagItem(loc.id)
     }
     
@@ -70,94 +100,15 @@ import MapKit
     func restoreLocation() {
         region = currentLocation.region
     }
-        
-    func restoreFrom(marked: Array<String>) {
-        print("LocationModel restoreFrom marked", marked)
-        var newLocs = [Location]()
-        for ccode in marked {
-            guard let fitem = AppModel.main.flagItem(ccode: ccode) else { continue }
-            let loc = Location(
-                id: fitem.alpha3,
-                latitude: fitem.latitude,
-                longitude: fitem.longitude,
-                label: fitem.name,
-                capital: fitem.capital);
-            newLocs.append(loc)
-        }
-        locations = newLocs;
-        if !newLocs.isEmpty {
-            setLocation(index: 0)
-        }
-    }
 }
 
 let knownLocations:[Location] = [
     Location(delta: 5.0), // USA Brooklyn Flatlands
-    Location(id: "USA", latitude: 38.883333, longitude: -77.016667, label: "USA", capital: "Washington, D.C."),
-    Location(id: "GBR", latitude: 51.500000, longitude: -0.1166670, label: "UK", capital: "London"),
-    Location(id: "JAM", latitude: 17.983333, longitude: -76.800000, label: "Jamaica", capital: "Kingston"),
-    Location(id: "GUY", latitude: 6.8058330, longitude: -58.150833, label: "Guyana", capital: "Georgetown"),
-    Location(id: "GHA", latitude: 5.5550000, longitude: -0.1925000, label: "Ghana", capital: "Accra"),
-    Location(id: "EGY", latitude: 30.033333, longitude: 31.2166670, label: "Egypt", capital: "Cairo")
+    Location(id: "USA", ccode: "USA", latitude: 38.883333, longitude: -77.016667, label: "USA", capital: "Washington, D.C."),
+    Location(id: "GBR", ccode: "GBR", latitude: 51.500000, longitude: -0.1166670, label: "UK", capital: "London"),
+    Location(id: "JAM", ccode: "JAM", latitude: 17.983333, longitude: -76.800000, label: "Jamaica", capital: "Kingston"),
+    Location(id: "GUY", ccode: "GUY", latitude: 6.8058330, longitude: -58.150833, label: "Guyana", capital: "Georgetown"),
+    Location(id: "GHA", ccode: "GHA", latitude: 5.5550000, longitude: -0.1925000, label: "Ghana", capital: "Accra"),
+    Location(id: "EGY", ccode: "EGY", latitude: 30.033333, longitude: 31.2166670, label: "Egypt", capital: "Cairo")
 ];
-
-class Location: Identifiable, Codable, Equatable {
-        
-    var id = "USA Brooklyn Flatlands"
-    var latitude = 40.630566
-    var longitude = -73.922013
-    var label = "USA Brooklyn Flatlands"
-    var capital = "Brooklyn Flatlands"
-    var delta = 100.0
-    
-    static func == (lhs: Location, rhs: Location) -> Bool {
-        return lhs.id == rhs.id
-    }
-    
-    internal init(
-        id: String = "USA Brooklyn Flatlands",
-        latitude: Double = 40.630566,
-        longitude: Double = -73.922013,
-        label: String = "USA Brooklyn Flatlands",
-        capital: String = "Brooklyn Flatlands",
-        delta: Double = 100.0) {
-            self.id = id
-            self.latitude = latitude
-            self.longitude = longitude
-            self.label = label
-            self.capital = capital
-            self.delta = delta
-        }
-
-    var coordinate: CLLocationCoordinate2D {
-        CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
-    }
-    
-    var imageRef: String {
-        "flag-\(id)"
-    }
-    
-    var region: MKCoordinateRegion {
-        MKCoordinateRegion(
-            center: CLLocationCoordinate2D(
-                latitude: latitude,
-                longitude: longitude),
-            span: MKCoordinateSpan(
-                latitudeDelta: delta,
-                longitudeDelta: delta)
-        )
-    }
-}
-
-extension MKCoordinateRegion: Equatable {
-    public static func == (lhs: MKCoordinateRegion, rhs: MKCoordinateRegion) -> Bool {
-        return lhs.center.latitude == rhs.center.latitude
-        && lhs.center.longitude == rhs.center.longitude
-        && lhs.span.latitudeDelta == rhs.span.latitudeDelta
-        && lhs.span.longitudeDelta == rhs.span.longitudeDelta
-    }
-}
-
-// https://www.hackingwithswift.com/books/ios-swiftui/bucket-list-introduction
-// https://github.com/twostraws/HackingWithSwift.git
 

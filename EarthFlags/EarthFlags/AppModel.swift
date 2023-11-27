@@ -59,15 +59,27 @@ class AppModel: ObservableObject
         // print("setFavorite state", state)
         // check if already marked
         if let index = settings.marked.firstIndex(of:flagItem.alpha3) {
+            // Currently marked
             if state { return }
             settings.marked.remove(at:index);
+            // Remove all locations that match the country code
+            settings.locations = settings.locations.filter {
+                $0.ccode != flagItem.alpha3
+            }
         }
         else {
             // Not currently marked
             if !state { return }
-            // Insert at begining
-//            settings.marked.insert(flagItem.alpha3, at:0)
             settings.marked.append(flagItem.alpha3)
+            // First appearance of this country in locations
+            let loc = Location( id: flagItem.alpha3,
+                                ccode: flagItem.alpha3,
+                                latitude: flagItem.latitude,
+                                longitude: flagItem.longitude,
+                                label: flagItem.name,
+                                capital: flagItem.capital);
+            settings.locations.append(loc)
+            
         }
         saveSettings();
     }
@@ -113,6 +125,10 @@ extension AppModel {
         do {
             let data = try Data(contentsOf: Self.savePath)
             settings = try JSONDecoder().decode(Settings.self, from: data)
+            if settings.version != currentVersion {
+                print("AppModel loadSettings version wrong ", settings.version, currentVersion)
+                settings = Settings();
+            }
         } catch {
             print("AppModel loadSettings error", error)
             settings = Settings();
@@ -121,21 +137,21 @@ extension AppModel {
         return settings;
     }
     
-    func restoreLocations() {
-        Task() {
-            await LocationModel.main.restoreFrom(marked: settings.marked)
-        }
-    }
+//    func restoreLocations() {
+//        LocationModel.main.restoreFrom(marked: settings.marked)
+//    }
     
     func saveSettings() {
         print("AppModel saveSettings", settings)
+        print("AppModel saveSettings marked", settings.marked)
+        print("AppModel saveSettings locations", settings.locations)
         do {
             let data = try JSONEncoder().encode(settings)
             try data.write(to: Self.savePath, options: [.atomic, .completeFileProtection])
         } catch {
             print("AppModel saveSettings error", error)
         }
-        restoreLocations();
+        // restoreLocations();
     }
     
     static func bundleVersion() -> String {
@@ -155,9 +171,17 @@ extension FileManager {
 //  SwiftUI/project14/Bucketlist/ContentView-ViewModel.swift
 // https://github.com/twostraws/HackingWithSwift/blob/main/SwiftUI/project14/Bucketlist/ContentView-ViewModel.swift
 
-struct Settings: Codable {
+let currentVersion = 2;
+
+//struct Settings: Codable {
+class Settings: Codable {
+
+    var version: Int = currentVersion
     
     var marked: Array<String> = [];
+    
+    var locations: [Location] = []
+    
 }
 
 // https://developer.apple.com/documentation/swiftui/observedobject

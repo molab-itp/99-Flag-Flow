@@ -2,9 +2,45 @@ _notes.txt
 
 
 # --
-   begomd tje seb
-   \
-   
+2023-11-26 18:39:57
+
+# [Bucketlist](https://github.com/molab-itp/09-Bucketlist)
+
+
+
+# --
+2023-11-26 14:29:21
+
+    func restoreFrom(marked: Array<String>) {
+
+https://www.hackingwithswift.com/quick-start/swiftui/how-to-create-an-explicit-animation
+
+withAnimation(.linear(duration: 3))
+
+https://developer.apple.com/documentation/swiftui/withanimation(_:_:)
+
+Removing @MainActor
+//@MainActor
+
+    func restoreLocations() {
+        LocationModel.main.restoreFrom(marked: settings.marked)
+    //  Task() { //@MainActor
+    //      await LocationModel.main.restoreFrom(marked: settings.marked)
+    //  }
+    }
+
+# --
+2023-11-26 13:55:23
+
+https://www.hackingwithswift.com/books/ios-swiftui/introducing-mvvm-into-your-swiftui-project
+
+@MainActor class ViewModel: ObservableObject {
+
+ @MainActor attribute here we’re taking a “belt and braces” approach: 
+ we’re telling Swift every part of this class should run on the main actor, 
+ so it’s safe to update the UI, no matter where it’s used.
+
+
 # --
 2023-11-23 12:44:32
 

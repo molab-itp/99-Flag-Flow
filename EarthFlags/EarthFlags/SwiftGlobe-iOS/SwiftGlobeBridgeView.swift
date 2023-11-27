@@ -31,10 +31,8 @@ struct SwiftGlobeBridgeView: View {
 
     func topInfo() -> some View {
         VStack {
-//            if model.locationMatch(model.currentLocation) {
-                Text(model.currentLocation.label)
-                    .background(.white)
-//            }
+            Text(model.currentLocation.label)
+                .background(.white)
             Spacer()
         }
     }

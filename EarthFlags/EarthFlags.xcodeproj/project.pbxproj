@@ -17,6 +17,10 @@
 		AB3DC8A92B09534A00F0E631 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3DC8A72B09534A00F0E631 /* LocationModel.swift */; };
 		AB4E84832B03B58D00582923 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AB4E84822B03B58D00582923 /* README.md */; };
 		AB4E84872B03DFB500582923 /* _notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = AB4E84862B03DFB500582923 /* _notes.txt */; };
+		AB7F18B22B140DA4008C2905 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7F18B12B140DA4008C2905 /* Location.swift */; };
+		AB7F18B42B140E66008C2905 /* EditLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7F18B32B140E66008C2905 /* EditLocationView.swift */; };
+		AB7F18B62B140FF2008C2905 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7F18B52B140FF2008C2905 /* Result.swift */; };
+		AB7F18B82B141495008C2905 /* LocationModel-Nearby.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7F18B72B141495008C2905 /* LocationModel-Nearby.swift */; };
 		AB8A75912B0D04E300A8CD5F /* countries_capitals.json in Resources */ = {isa = PBXBuildFile; fileRef = AB8A75902B0D04E300A8CD5F /* countries_capitals.json */; };
 		ABCA885C2B07219700F09268 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCA885B2B07219700F09268 /* AppModel.swift */; };
 		ABCA885E2B077E6700F09268 /* FlagWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCA885D2B077E6700F09268 /* FlagWebView.swift */; };
@@ -61,6 +65,10 @@
 		AB3DC8A72B09534A00F0E631 /* LocationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		AB4E84822B03B58D00582923 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AB4E84862B03DFB500582923 /* _notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = _notes.txt; sourceTree = "<group>"; };
+		AB7F18B12B140DA4008C2905 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		AB7F18B32B140E66008C2905 /* EditLocationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditLocationView.swift; sourceTree = "<group>"; };
+		AB7F18B52B140FF2008C2905 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		AB7F18B72B141495008C2905 /* LocationModel-Nearby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocationModel-Nearby.swift"; sourceTree = "<group>"; };
 		AB8A75902B0D04E300A8CD5F /* countries_capitals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries_capitals.json; sourceTree = "<group>"; };
 		ABCA885B2B07219700F09268 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		ABCA885D2B077E6700F09268 /* FlagWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagWebView.swift; sourceTree = "<group>"; };
@@ -119,7 +127,11 @@
 			isa = PBXGroup;
 			children = (
 				AB3DC8A62B09534A00F0E631 /* MapTabView.swift */,
+				AB7F18B32B140E66008C2905 /* EditLocationView.swift */,
 				AB3DC8A72B09534A00F0E631 /* LocationModel.swift */,
+				AB7F18B72B141495008C2905 /* LocationModel-Nearby.swift */,
+				AB7F18B12B140DA4008C2905 /* Location.swift */,
+				AB7F18B52B140FF2008C2905 /* Result.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -326,10 +338,14 @@
 			files = (
 				ABCA885C2B07219700F09268 /* AppModel.swift in Sources */,
 				AB3DC8A92B09534A00F0E631 /* LocationModel.swift in Sources */,
+				AB7F18B82B141495008C2905 /* LocationModel-Nearby.swift in Sources */,
 				ABCA88602B07D0E300F09268 /* FlagMarkedView.swift in Sources */,
 				ABE29FDE2AB3A0860072F7C2 /* FlagListView.swift in Sources */,
+				AB7F18B22B140DA4008C2905 /* Location.swift in Sources */,
 				AB32E6452B016386009C8E7C /* FlagItem.swift in Sources */,
+				AB7F18B62B140FF2008C2905 /* Result.swift in Sources */,
 				AB3DC89D2B0903F000F0E631 /* ViewController.swift in Sources */,
+				AB7F18B42B140E66008C2905 /* EditLocationView.swift in Sources */,
 				AB32E6432B01632F009C8E7C /* Bundle-decode.swift in Sources */,
 				ABD9F5562B05AB4500020D0B /* WebView.swift in Sources */,
 				ABF2F1CE2B05A83200696485 /* MainTabView.swift in Sources */,
