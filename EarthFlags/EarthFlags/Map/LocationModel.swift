@@ -99,20 +99,21 @@ class LocationModel: ObservableObject {
 
     func previousLocation() {
         print("LocationModel previous index", index, "locations.count", locations.count)
-        if locations.count <= 0 {
-            return;
-        }
-        index = (index - 1 + locations.count) % locations.count;
-        setLocation(index: index)
+        adjustLocation(-1)
     }
     
     func nextLocation() {
         print("LocationModel next index", index, "locations.count", locations.count)
+        adjustLocation(1)
+    }
+    
+    func adjustLocation(_ delta: Int) {
+        print("adjustLocation previous delta", delta, "index", index, "locations.count", locations.count)
         if locations.count <= 0 {
             return;
         }
-        index = (index + 1) % locations.count;
-        setLocation(index: index)
+        let newIndex = (index + delta + locations.count) % locations.count;
+        setLocation(index: newIndex)
     }
     
     func setLocation(index: Int) {

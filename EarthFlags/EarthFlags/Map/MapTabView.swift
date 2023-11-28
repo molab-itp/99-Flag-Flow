@@ -13,56 +13,53 @@ struct MapTabView: View {
     @EnvironmentObject var appModel: AppModel
     @EnvironmentObject var locationModel: LocationModel
 
-    @State var showingEdit = false
-//    @State private var showingAddLocationAlert: Bool = false
+    @State private var showingEdit = false
 
-    let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
-    @State var lastTime: TimeInterval = 0.0
-    @State var lastDate: Date?
+    // Trigger time every 1/10th second
+    private let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
+    @State private var lastTime: TimeInterval = 0.0
+    @State private var lastDate: Date?
     
     var body: some View {
 //        let _ = Self._printChanges()
         NavigationStack {
-//            TimelineView(.animation) { context in
-                VStack {
-                    // Text(context.date.description)
-                    if let lastDate = lastDate {
-                        Text(lastDate.ISO8601Format() )
-                    }
-                    if showingEdit {
-                        editForm()
-                    }
-                    ZStack {
-                        map()
-                        centerCircle()
-                        topInfo()
-                        bottomInfo()
-                    }
+            VStack {
+//                if let lastDate = lastDate {
+//                    Text(lastDate.ISO8601Format() )
+//                }
+                if showingEdit {
+                    editForm()
                 }
-                .toolbar {
-                    ToolbarItemGroup(placement: .navigationBarLeading) {
-                        leftToolbarButtons()
-                    }
-                    ToolbarItemGroup(placement: .navigationBarTrailing) {
-                        rightToolbarButtons()
-                    }
-                }
-                .onReceive(timer) { arg in
-                    lastDate = arg
-                    let now = arg.timeIntervalSinceReferenceDate
-//                    print("MapTabView onReceive timer now", now)
-//                    let diff = now - lastTime
-//                    print("", diff)
-                    lastTime = now
-                }
-                .onAppear {
-                    print("MapTabView onAppear")
-                }
-                .onDisappear() {
-                    print("MapTabView onDisappear")
+                ZStack {
+                    map()
+                    centerCircle()
+                    topInfo()
+                    bottomInfo()
                 }
             }
-//        }
+            .toolbar {
+                ToolbarItemGroup(placement: .navigationBarLeading) {
+                    leftToolbarButtons()
+                }
+                ToolbarItemGroup(placement: .navigationBarTrailing) {
+                    rightToolbarButtons()
+                }
+            }
+            .onReceive(timer) { arg in
+                lastDate = arg
+                let now = arg.timeIntervalSinceReferenceDate
+                //                    print("MapTabView onReceive timer now", now)
+                //                    let diff = now - lastTime
+                //                    print("", diff)
+                lastTime = now
+            }
+            .onAppear {
+                print("MapTabView onAppear")
+            }
+            .onDisappear() {
+                print("MapTabView onDisappear")
+            }
+        }
     }
     
     func editForm() -> some View {
