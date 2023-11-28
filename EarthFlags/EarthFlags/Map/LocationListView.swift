@@ -8,7 +8,9 @@ import SwiftUI
 struct LocationListView: View {
     
     @EnvironmentObject var appModel: AppModel
-//    @EnvironmentObject var locationModel: LocationModel
+    @EnvironmentObject var locationModel: LocationModel
+    
+    @Environment(\.dismiss) var dismiss
 
     var body: some View {
         VStack {
@@ -17,13 +19,18 @@ struct LocationListView: View {
                 .padding()
             List {
                 ForEach(appModel.locations) { loc in
-                    HStack {
-                        if let flagItem = appModel.flagItem(ccode: loc.ccode) {
-                            Image(flagItem.imageRef)
-                                .resizable()
-                                .frame(width: 40, height: 20)
+                    Button(action: {
+                        locationModel.setLocation(id: loc.id)
+                        dismiss()
+                    } ) {
+                        HStack {
+                            if let flagItem = appModel.flagItem(ccode: loc.ccode) {
+                                Image(flagItem.imageRef)
+                                    .resizable()
+                                    .frame(width: 40, height: 20)
+                            }
+                            Text(loc.label)
                         }
-                        Text(loc.label)
                     }
                 }
                 .onMove(perform: move)

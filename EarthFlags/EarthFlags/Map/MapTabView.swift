@@ -13,41 +13,23 @@ struct MapTabView: View {
     @EnvironmentObject var appModel: AppModel
     @EnvironmentObject var locationModel: LocationModel
 
+    @State var showingEdit = false
 //    @State private var showingAddLocationAlert: Bool = false
 
     var body: some View {
         // let _ = Self._printChanges()
         NavigationStack {
-            ZStack {
-                Map(coordinateRegion: $locationModel.region,
-                    annotationItems: appModel.settings.locations )
-                { loc in
-                    MapAnnotation(coordinate: loc.coordinate) {
-                        VStack {
-                            Image(loc.imageRef)
-                                .resizable()
-                                .frame(width: 44, height: 22)
-                            Text(loc.label)
-                        }
-                        .onTapGesture {
-                            withAnimation {
-                                print("nextLocAction withAnimation")
-                                locationModel.setLocation(loc)
-                            }
-                        }
-                    }
+            VStack {
+                if showingEdit {
+                    editForm()
                 }
-                centerCircle()
-                topInfo()
-                bottomInfo()
+                ZStack {
+                    map()
+                    centerCircle()
+                    topInfo()
+                    bottomInfo()
+                }
             }
-            .onAppear {
-//                print("MapTabView onAppear locations", model.locations)
-            }
-//            .onChange(of: locationModel.region ) { _ in
-//                print("MapTabView onAppear region", locationModel.region)
-//            }
-            // .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItemGroup(placement: .navigationBarLeading) {
                     leftToolbarButtons()
@@ -56,29 +38,103 @@ struct MapTabView: View {
                     rightToolbarButtons()
                 }
             }
-//            .alert("Add location?", isPresented:$showingAddLocationAlert) {
-//                Button("Ok") {
-//                    showingAddLocationAlert = false
-//                }
-//                Button("Cancel", role: .cancel) {
-//                    showingAddLocationAlert = false
-//                }
-//            }
+        }
+    }
+    
+    func editForm() -> some View {
+        VStack {
+            Form {
+                Section {
+                    HStack {
+                        Text("label:")
+                        // .frame(width:160)
+                        TextField("", text: $locationModel.label)
+                    }
+                    HStack {
+                        Text("ccode:")
+                        // .frame(width:160)
+                        TextField("", text: $locationModel.ccode)
+                    }
+                    HStack {
+                        Text("duration:")
+                        // .frame(width:160)
+                        TextField("", value: $locationModel.duration, format: .number)
+                    }
+                }
+            }
+            Button(action: {
+                showingEditToggle()
+                updateAction()
+            } ) {
+                Text("Update")
+            }
+            Button(action: {
+                showingEditToggle()
+                addAction()
+            } ) {
+                Text("Add")
+            }
+        }
+    }
+    
+    func addAction() {
+        // Add a location.
+        print("location add")
+        locationModel.addLocation();
+    }
+    
+    func updateAction() {
+        locationModel.currentLocation.label = locationModel.label
+        locationModel.updateLocation()
+        withAnimation {
+            locationModel.restoreLocation()
+        }
+    }
+    
+    func map() -> some View {
+        Map(coordinateRegion: $locationModel.region,
+            annotationItems: appModel.settings.locations )
+        { loc in
+            MapAnnotation(coordinate: loc.coordinate) {
+                VStack {
+                    Image(loc.imageRef)
+                        .resizable()
+                        .frame(width: 44, height: 22)
+                    Text(loc.label)
+                }
+                .onTapGesture {
+                    withAnimation {
+                        print("nextLocAction withAnimation")
+                        locationModel.setLocation(loc)
+                    }
+                }
+            }
         }
     }
 
+    func showingEditToggle() {
+        withAnimation {
+            showingEdit.toggle()
+        }
+    }
+    
     func leftToolbarButtons() -> some View {
         Group {
-            NavigationLink(
-                destination:
-                    EditLocationView(action: "Add")
-            ) {
-                Image(systemName: "plus" )
-            }
-            NavigationLink(
-                destination:
-                    EditLocationView()
-            ) {
+//            NavigationLink(
+//                destination:
+//                    EditLocationView(action: "Add")
+//            ) {
+//                Image(systemName: "plus" )
+//            }
+//            NavigationLink(
+//                destination:
+//                    EditLocationView()
+//            ) {
+//                Image(systemName: "arrow.down.app" )
+//            }
+            Button(action: {
+                showingEditToggle()
+            } ) {
                 Image(systemName: "arrow.down.app" )
             }
             NavigationLink(
@@ -131,24 +187,28 @@ struct MapTabView: View {
     }
         
     func previousLocAction() {
-        print("previousLocAction")
-        withAnimation {
-            print("previousLocAction withAnimation")
+        let duration = locationModel.currentLocation.duration
+        print("previousLocAction duration", duration)
+//        withAnimation(.linear(duration: duration)) {
+        withAnimation  {
             locationModel.previousLocation()
         }
     }
     
     func nextLocAction() {
-        print("nextLocAction")
-        withAnimation {
-            print("nextLocAction withAnimation")
+        let duration = locationModel.currentLocation.duration
+        print("nextLocAction duration", duration)
+//        withAnimation(.linear(duration: duration)) {
+        withAnimation  {
             locationModel.nextLocation()
         }
     }
 
     func restoreLocAction() {
-        print("restoreLocAction")
-        withAnimation {
+        let duration = locationModel.currentLocation.duration
+        print("restoreLocAction duration", duration)
+//        withAnimation(.linear(duration: duration)) {
+        withAnimation  {
             locationModel.restoreLocation()
         }
     }

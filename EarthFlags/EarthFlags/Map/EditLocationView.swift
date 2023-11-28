@@ -33,6 +33,11 @@ struct EditLocationView: View {
                     // .frame(width:160)
                     TextField("", text: $locationModel.ccode)
                 }
+                HStack {
+                    Text("duration:")
+                    // .frame(width:160)
+                    TextField("", value: $locationModel.duration, format: .number)
+                }
             }
             Section {
                 HStack {

@@ -17,6 +17,7 @@ class Location: Identifiable, Codable, Equatable {
     var label = "USA Brooklyn Flatlands"
     var capital = "Brooklyn Flatlands"
     var delta = 100.0
+    var duration = 3.0
     
     static func == (lhs: Location, rhs: Location) -> Bool {
         return lhs.id == rhs.id
@@ -29,7 +30,8 @@ class Location: Identifiable, Codable, Equatable {
         longitude: Double = -73.922013,
         label: String = "USA Brooklyn Flatlands",
         capital: String = "Brooklyn Flatlands",
-        delta: Double = 100.0) {
+        delta: Double = 100.0,
+        duration: Double = 3.0) {
             self.id = id
             self.ccode = ccode
             self.latitude = latitude
@@ -37,6 +39,7 @@ class Location: Identifiable, Codable, Equatable {
             self.label = label
             self.capital = capital
             self.delta = delta
+            self.duration = duration
         }
     
     var coordinate: CLLocationCoordinate2D {

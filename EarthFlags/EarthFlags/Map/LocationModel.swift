@@ -44,6 +44,7 @@ class LocationModel: ObservableObject {
     // Set in EditLocationView
     @Published var label: String = ""
     @Published var ccode: String = ""
+    @Published var duration: Double = 3.0
 
     // --
     
@@ -75,13 +76,17 @@ class LocationModel: ObservableObject {
     }
     
     func updateLocation() {
-        print("updateLocation region.span", region.span.latitudeDelta, region.span.longitudeDelta );
-        print("updateLocation currentLocation.delta", currentLocation.delta );
+        print("updateLocation region.span", region.span.latitudeDelta, region.span.longitudeDelta )
+        print("updateLocation currentLocation.delta", currentLocation.delta )
         
         currentLocation.latitude = region.center.latitude
         currentLocation.longitude = region.center.longitude
-        currentLocation.delta = min(region.span.latitudeDelta, region.span.longitudeDelta);
+        currentLocation.delta = min(region.span.latitudeDelta, region.span.longitudeDelta)
         
+        currentLocation.label = label
+        currentLocation.ccode = ccode
+        currentLocation.duration = duration
+
         appModel.saveSettings()
     }
     
@@ -116,13 +121,14 @@ class LocationModel: ObservableObject {
         let loc = locations[index];
         region = loc.region
         currentLocation = loc;
-        label = currentLocation.label
-        ccode = currentLocation.ccode
+        label = loc.label
+        ccode = loc.ccode
+        duration = loc.duration
         appModel.currentFlagItem(loc.ccode)
     }
     
-    func setLocation(ccode: String) {
-        if let index = locations.firstIndex(where: { $0.id == ccode }) {
+    func setLocation(id: String) {
+        if let index = locations.firstIndex(where: { $0.id == id }) {
             setLocation(index: index)
         }
     }
