@@ -17,18 +17,13 @@ struct MapTabView: View {
 
     // Trigger time every 1/10th second
     private let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
-//    @State private var lastTime: TimeInterval = 0.0
-//    @State private var lastDate: Date?
     
     var body: some View {
 //        let _ = Self._printChanges()
         NavigationStack {
             VStack {
-//                if let lastDate = lastDate {
-//                    Text(lastDate.ISO8601Format() )
-//                }
                 if showingEdit {
-                    editForm()
+                    editLocation()
                 }
                 ZStack {
                     map()
@@ -45,14 +40,8 @@ struct MapTabView: View {
                     rightToolbarButtons()
                 }
             }
-            .onReceive(timer) { arg in
-//                lastDate = arg
-//                let now = arg.timeIntervalSinceReferenceDate
-                // print("MapTabView onReceive timer now", now)
-                // let diff = now - lastTime
-                // print("", diff)
-//                lastTime = now
-                locationModel.stepAnimation(arg)
+            .onReceive(timer) { dateArg in
+                locationModel.stepAnimation()
             }
             .onAppear {
                 print("MapTabView onAppear")
@@ -63,56 +52,64 @@ struct MapTabView: View {
         }
     }
     
-    func editForm() -> some View {
+    func editLocation() -> some View {
         VStack {
-            Form {
-                Section {
-                    HStack {
-                        Text("label:")
-                        // .frame(width:160)
-                        TextField("", text: $locationModel.label)
-                    }
-                    HStack {
-                        Text("ccode:")
-                        // .frame(width:160)
-                        TextField("", text: $locationModel.ccode)
-                    }
-                    HStack {
-                        Text("duration:")
-                        // .frame(width:160)
-                        TextField("", value: $locationModel.duration, format: .number)
-                    }
+            editLocButtons()
+            editLocForm()
+        }
+    }
+    
+    func editLocForm() -> some View {
+        Form {
+            Section {
+                HStack {
+                    Text("label:")
+                    // .frame(width:160)
+                    TextField("", text: $locationModel.label)
+                }
+                HStack {
+                    Text("ccode:")
+                    // .frame(width:160)
+                    TextField("", text: $locationModel.ccode)
+                }
+                HStack {
+                    Text("duration:")
+                    // .frame(width:160)
+                    TextField("", value: $locationModel.duration, format: .number)
                 }
             }
+        }
+    }
+    
+    func editLocButtons() -> some View {
+        HStack {
             Button(action: {
                 showingEditToggle()
                 updateAction()
             } ) {
                 Text("Update")
+                // .font(.headline)
+                    .foregroundColor(.white)
+                    .padding(8)
+                    .background(Color(.systemIndigo))
+                    .cornerRadius(12)
+                // .padding(5)
             }
             Button(action: {
                 showingEditToggle()
                 addAction()
             } ) {
                 Text("Add")
+                // .font(.headline)
+                    .foregroundColor(.white)
+                    .padding(8)
+                    .background(Color(.systemIndigo))
+                    .cornerRadius(12)
+                // .padding(5)
             }
         }
     }
-    
-    func addAction() {
-        // Add a location.
-        print("location add")
-        locationModel.addLocation();
-    }
-    
-    func updateAction() {
-        locationModel.currentLocation.label = locationModel.label
-        locationModel.updateLocation()
-        withAnimation {
-            locationModel.restoreLocation()
-        }
-    }
-    
+        
     func map() -> some View {
         Map(coordinateRegion: $locationModel.region,
             annotationItems: appModel.settings.locations )
@@ -174,7 +171,7 @@ struct MapTabView: View {
     
     func topInfo() -> some View {
         VStack {
-            Text(locationModel.currentLocation.label)
+            Text(locationModel.currentLabel())
             Spacer()
         }
     }
@@ -195,7 +192,21 @@ struct MapTabView: View {
             .opacity(0.3)
             .frame(width: 32, height: 32)
     }
-        
+
+    func addAction() {
+        // Add a location.
+        print("location add")
+        locationModel.addLocation();
+    }
+    
+    func updateAction() {
+        locationModel.currentLocation.label = locationModel.label
+        locationModel.updateLocation()
+        withAnimation {
+            locationModel.restoreLocation()
+        }
+    }
+
     func previousLocAction() {
         let duration = locationModel.currentLocation.duration
         print("previousLocAction duration", duration)
@@ -231,6 +242,6 @@ let locationFont = Font
 
 #Preview {
     MapTabView()
-        .environmentObject(AppModel.sample)
-        .environmentObject(LocationModel.sample)
+        .environmentObject(AppModel.main)
+        .environmentObject(LocationModel.main)
 }

@@ -35,6 +35,7 @@ class LocationModel: ObservableObject {
         appModel.settings.locations
     }
 
+    // --
     enum LoadingState {
         case loading, loaded, failed
     }
@@ -54,9 +55,15 @@ class LocationModel: ObservableObject {
     var startLoc: Location?
     var targetIndex = 0
 
-    func stepAnimation(_ refDate: Date) {
-        // print("stepAnimation refDate", refDate.timeIntervalSinceReferenceDate);
-//        let now = refDate.timeIntervalSinceReferenceDate
+    func currentLabel() -> String {
+        if animating, let targetLoc, let startLoc {
+            return startLoc.label + " to " + targetLoc.label
+        }
+        return currentLocation.label
+    }
+    
+    func stepAnimation() {
+        // print("stepAnimation");
         let now = Date.timeIntervalSinceReferenceDate
         if !animating {
             return
