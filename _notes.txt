@@ -1,27 +1,33 @@
 _notes.txt
 
 # --
+
+ITSAppUsesNonExemptEncryption
+vs.
+ITSEncryptionExportComplianceCode
+
+# --
 2023-11-28 12:03:02
 
-            Button(action: {
-                let key = user.userGalleryKey
-                // let key = app.userGalleryKey(user: user)
-                app.selectGallery(key: key)
-            }) {
-                Text("Photos")
-                    .font(.headline)
-                    .foregroundColor(.white)
-                    .padding()
-                // .frame(maxWidth: .infinity)
-                    .background(Color(.systemIndigo))
-                    .cornerRadius(12)
-                    .padding(5)
-            }
+Button(action: {
+    let key = user.userGalleryKey
+    // let key = app.userGalleryKey(user: user)
+    app.selectGallery(key: key)
+}) {
+    Text("Photos")
+        .font(.headline)
+        .foregroundColor(.white)
+        .padding()
+    // .frame(maxWidth: .infinity)
+        .background(Color(.systemIndigo))
+        .cornerRadius(12)
+        .padding(5)
+}
 
-        let loc = locations[index];
-        region = loc.region
+let loc = locations[index];
+region = loc.region
 
-        duration = loc.duration
+duration = loc.duration
 
 region.center.latitude
 region.center.longitude
