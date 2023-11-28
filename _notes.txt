@@ -3,6 +3,33 @@ _notes.txt
 # --
 2023-11-28 12:03:02
 
+        let loc = locations[index];
+        region = loc.region
+
+        duration = loc.duration
+
+region.center.latitude
+region.center.longitude
+region.span.latitudeDelta
+region.span.longitudeDelta
+
+Location
+
+    var latitude = 40.630566
+    var longitude = -73.922013
+
+    var region: MKCoordinateRegion {
+        MKCoordinateRegion(
+            center: CLLocationCoordinate2D(
+                latitude: latitude,
+                longitude: longitude),
+            span: MKCoordinateSpan(
+                latitudeDelta: delta,
+                longitudeDelta: delta)
+        )
+    }
+
+
 https://developer.apple.com/documentation/swiftui/timelineview
 
         TimelineView(.animation) { context in

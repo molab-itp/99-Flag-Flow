@@ -41,11 +41,116 @@ class LocationModel: ObservableObject {
     @Published var loadingState = LoadingState.loading
     @Published var pages = [Page]()
     
-    // Set in EditLocationView
+    // Set in MapTabView editForm
     @Published var label: String = ""
     @Published var ccode: String = ""
     @Published var duration: Double = 3.0
 
+    // --
+    var animating = false
+    var wasAnimating = false
+    var animStart: TimeInterval = 0
+    var targetLoc: Location?
+    var startLoc: Location?
+    var targetIndex = 0
+
+    func stepAnimation(_ refDate: Date) {
+        // print("stepAnimation refDate", refDate.timeIntervalSinceReferenceDate);
+//        let now = refDate.timeIntervalSinceReferenceDate
+        let now = Date.timeIntervalSinceReferenceDate
+        if !animating {
+            return
+        }
+        if !wasAnimating {
+            animStart = Date.timeIntervalSinceReferenceDate
+            wasAnimating = true
+        }
+        let lapse = now - animStart
+        if lapse >= duration {
+            stopAnimation();
+            return
+        }
+        print("stepAnimation lapse", lapse)
+        guard let targetLoc, let startLoc else {
+            print("stepAnimation no targetLoc startLoc")
+            return
+        }
+        let perCent = lapse / duration
+        region.center.latitude = startLoc.latitude + (targetLoc.latitude - startLoc.latitude) * perCent
+        region.center.longitude = startLoc.longitude + (targetLoc.longitude - startLoc.longitude) * perCent
+        region.span.latitudeDelta = startLoc.delta + (targetLoc.delta - startLoc.delta) * perCent
+        region.span.longitudeDelta = startLoc.delta + (targetLoc.delta - startLoc.delta) * perCent
+
+    }
+    
+    func startAnimation() {
+        animStart = Date.timeIntervalSinceReferenceDate
+        animating = true
+        wasAnimating = false
+    }
+    
+    func stopAnimation () {
+        let isAnimating = animating
+        animating = false
+        wasAnimating = false
+        if isAnimating {
+            establishLocation(targetIndex)
+        }
+    }
+
+    func previousLocation(_ animated: Bool = false) {
+        print("LocationModel previous index", index, "locations.count", locations.count)
+        prepareAnimation(animated)
+        adjustLocation(-1)
+    }
+    
+    func nextLocation(_ animated: Bool = false) {
+        print("LocationModel next index", index, "locations.count", locations.count)
+        prepareAnimation(animated)
+        adjustLocation(1)
+    }
+    
+    func prepareAnimation(_ animated: Bool = false) {
+        if animated {
+            startAnimation()
+        }
+        else {
+            stopAnimation()
+        }
+    }
+    
+    func adjustLocation(_ delta: Int) {
+        print("adjustLocation previous delta", delta, "index", index, "locations.count", locations.count)
+        if locations.count <= 0 {
+            return;
+        }
+        let newIndex = (index + delta + locations.count) % locations.count;
+        setLocation(index: newIndex)
+    }
+    
+    func setLocation(index newIndex: Int) {
+        print("LocationModel setLocation index", index, "locations.count", locations.count)
+        if animating {
+            startLoc = locations[index]
+            targetLoc = locations[newIndex]
+            targetIndex = newIndex
+        }
+        else {
+            establishLocation(newIndex);
+        }
+    }
+
+    func establishLocation(_ newIndex: Int) {
+        let loc = locations[newIndex]
+        index = newIndex;
+        region = loc.region
+        currentLocation = loc;
+        label = loc.label
+        ccode = loc.ccode
+        duration = loc.duration
+        appModel.currentFlagItem(loc.ccode)
+    }
+    
     // --
     
     var centerLatitude: String {
@@ -95,37 +200,6 @@ class LocationModel: ObservableObject {
         let center = region.center
         return abs(current.latitude - center.latitude) < epsilon
             && abs(current.longitude - center.longitude) < epsilon
-    }
-
-    func previousLocation() {
-        print("LocationModel previous index", index, "locations.count", locations.count)
-        adjustLocation(-1)
-    }
-    
-    func nextLocation() {
-        print("LocationModel next index", index, "locations.count", locations.count)
-        adjustLocation(1)
-    }
-    
-    func adjustLocation(_ delta: Int) {
-        print("adjustLocation previous delta", delta, "index", index, "locations.count", locations.count)
-        if locations.count <= 0 {
-            return;
-        }
-        let newIndex = (index + delta + locations.count) % locations.count;
-        setLocation(index: newIndex)
-    }
-    
-    func setLocation(index: Int) {
-        print("LocationModel setLocation index", index, "locations.count", locations.count)
-        self.index = index;
-        let loc = locations[index];
-        region = loc.region
-        currentLocation = loc;
-        label = loc.label
-        ccode = loc.ccode
-        duration = loc.duration
-        appModel.currentFlagItem(loc.ccode)
     }
     
     func setLocation(id: String) {

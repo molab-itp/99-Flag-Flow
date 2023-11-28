@@ -17,8 +17,8 @@ struct MapTabView: View {
 
     // Trigger time every 1/10th second
     private let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
-    @State private var lastTime: TimeInterval = 0.0
-    @State private var lastDate: Date?
+//    @State private var lastTime: TimeInterval = 0.0
+//    @State private var lastDate: Date?
     
     var body: some View {
 //        let _ = Self._printChanges()
@@ -46,12 +46,13 @@ struct MapTabView: View {
                 }
             }
             .onReceive(timer) { arg in
-                lastDate = arg
-                let now = arg.timeIntervalSinceReferenceDate
-                //                    print("MapTabView onReceive timer now", now)
-                //                    let diff = now - lastTime
-                //                    print("", diff)
-                lastTime = now
+//                lastDate = arg
+//                let now = arg.timeIntervalSinceReferenceDate
+                // print("MapTabView onReceive timer now", now)
+                // let diff = now - lastTime
+                // print("", diff)
+//                lastTime = now
+                locationModel.stepAnimation(arg)
             }
             .onAppear {
                 print("MapTabView onAppear")
@@ -141,18 +142,6 @@ struct MapTabView: View {
     
     func leftToolbarButtons() -> some View {
         Group {
-//            NavigationLink(
-//                destination:
-//                    EditLocationView(action: "Add")
-//            ) {
-//                Image(systemName: "plus" )
-//            }
-//            NavigationLink(
-//                destination:
-//                    EditLocationView()
-//            ) {
-//                Image(systemName: "arrow.down.app" )
-//            }
             Button(action: {
                 showingEditToggle()
             } ) {
@@ -212,7 +201,7 @@ struct MapTabView: View {
         print("previousLocAction duration", duration)
 //        withAnimation(.linear(duration: duration)) {
         withAnimation  {
-            locationModel.previousLocation()
+            locationModel.previousLocation(!showingEdit)
         }
     }
     
@@ -221,7 +210,7 @@ struct MapTabView: View {
         print("nextLocAction duration", duration)
 //        withAnimation(.linear(duration: duration)) {
         withAnimation  {
-            locationModel.nextLocation()
+            locationModel.nextLocation(!showingEdit)
         }
     }
 
