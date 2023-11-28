@@ -3,6 +3,12 @@ _notes.txt
 # --
 2023-11-28 12:03:02
 
+https://developer.apple.com/documentation/swiftui/timelineview
+
+        TimelineView(.animation) { context in
+
+https://developer.apple.com/documentation/swiftui/timelineschedule/animation
+
 Timed travel on map
 
 # --

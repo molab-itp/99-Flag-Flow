@@ -10,7 +10,7 @@ import WebKit
 
 class AppModel: ObservableObject
 {
-    @Published var selectedTab = TabTag.list
+    @Published var selectedTab = TabTag.flags
     @Published var flagItem: FlagItem?
     @Published var flagItems: [FlagItem]
     var flagDict: Dictionary<String,FlagItem>

@@ -8,7 +8,7 @@
 import SwiftUI
 
 enum TabTag {
-    case list
+    case flags
     case marks
     case detail
     case earth
@@ -24,9 +24,9 @@ struct MainTabView: View {
         TabView(selection: $model.selectedTab) {
             FlagListView()
                 .tabItem {
-                    Label("List", systemImage: "list.bullet")
+                    Label("Flags", systemImage: "list.bullet")
                 }
-                .tag(TabTag.list)
+                .tag(TabTag.flags)
             FlagMarkedView(marked: model.marked())
                 .tabItem {
                     Label("Marked", systemImage: "circle.fill")

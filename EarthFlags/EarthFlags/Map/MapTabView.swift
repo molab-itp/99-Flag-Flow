@@ -16,29 +16,53 @@ struct MapTabView: View {
     @State var showingEdit = false
 //    @State private var showingAddLocationAlert: Bool = false
 
+    let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
+    @State var lastTime: TimeInterval = 0.0
+    @State var lastDate: Date?
+    
     var body: some View {
-        // let _ = Self._printChanges()
+//        let _ = Self._printChanges()
         NavigationStack {
-            VStack {
-                if showingEdit {
-                    editForm()
+//            TimelineView(.animation) { context in
+                VStack {
+                    // Text(context.date.description)
+                    if let lastDate = lastDate {
+                        Text(lastDate.ISO8601Format() )
+                    }
+                    if showingEdit {
+                        editForm()
+                    }
+                    ZStack {
+                        map()
+                        centerCircle()
+                        topInfo()
+                        bottomInfo()
+                    }
                 }
-                ZStack {
-                    map()
-                    centerCircle()
-                    topInfo()
-                    bottomInfo()
+                .toolbar {
+                    ToolbarItemGroup(placement: .navigationBarLeading) {
+                        leftToolbarButtons()
+                    }
+                    ToolbarItemGroup(placement: .navigationBarTrailing) {
+                        rightToolbarButtons()
+                    }
+                }
+                .onReceive(timer) { arg in
+                    lastDate = arg
+                    let now = arg.timeIntervalSinceReferenceDate
+//                    print("MapTabView onReceive timer now", now)
+//                    let diff = now - lastTime
+//                    print("", diff)
+                    lastTime = now
+                }
+                .onAppear {
+                    print("MapTabView onAppear")
+                }
+                .onDisappear() {
+                    print("MapTabView onDisappear")
                 }
             }
-            .toolbar {
-                ToolbarItemGroup(placement: .navigationBarLeading) {
-                    leftToolbarButtons()
-                }
-                ToolbarItemGroup(placement: .navigationBarTrailing) {
-                    rightToolbarButtons()
-                }
-            }
-        }
+//        }
     }
     
     func editForm() -> some View {
