@@ -64,18 +64,20 @@ struct MapTabView: View {
             Section {
                 HStack {
                     Text("label:")
-                    // .frame(width:160)
                     TextField("", text: $locationModel.label)
                 }
+                TextField("", text: $locationModel.description)
                 HStack {
-                    Text("ccode:")
-                    // .frame(width:160)
-                    TextField("", text: $locationModel.ccode)
+                    Text("flagCode:")
+                    TextField("", text: $locationModel.flagCode)
                 }
                 HStack {
                     Text("duration:")
-                    // .frame(width:160)
                     TextField("", value: $locationModel.duration, format: .number)
+                }
+                HStack {
+                    Text("ccode:")
+                    Text(locationModel.ccode)
                 }
             }
         }
@@ -120,9 +122,11 @@ struct MapTabView: View {
         { loc in
             MapAnnotation(coordinate: loc.coordinate) {
                 VStack {
-                    Image(loc.imageRef)
-                        .resizable()
-                        .frame(width: 44, height: 22)
+                    if let flagCode = loc.flagCode {
+                        Image("flag-\(flagCode)")
+                            .resizable()
+                            .frame(width: 44, height: 22)
+                    }
                     Text(loc.label)
                 }
                 .onTapGesture {
@@ -175,7 +179,15 @@ struct MapTabView: View {
     
     func topInfo() -> some View {
         VStack {
-            Text(locationModel.currentLabel())
+            HStack {
+                Image("flag-\(locationModel.ccode)")
+                    .resizable()
+                    .frame(width: 44, height: 22)
+                Text(locationModel.currentLabel())
+            }
+            if !locationModel.description.isEmpty {
+                Text(locationModel.description)
+            }
             Spacer()
         }
     }

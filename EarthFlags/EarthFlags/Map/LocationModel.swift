@@ -45,6 +45,8 @@ class LocationModel: ObservableObject {
     // Set in MapTabView editForm
     @Published var label: String = ""
     @Published var ccode: String = ""
+    @Published var flagCode: String = ""
+    @Published var description: String = ""
     @Published var duration: Double = 3.0
 
     // --
@@ -107,23 +109,34 @@ class LocationModel: ObservableObject {
 
     func previousLocation(_ animated: Bool = false) {
         print("LocationModel previous index", index, "locations.count", locations.count)
-        prepareAnimation(animated)
-        adjustLocation(-1)
+        prepareAnimation(animated, delta: -1)
+//        adjustLocation(-1)
     }
     
     func nextLocation(_ animated: Bool = false) {
         print("LocationModel next index", index, "locations.count", locations.count)
-        prepareAnimation(animated)
-        adjustLocation(1)
+        prepareAnimation(animated, delta: 1)
+//        adjustLocation(1)
     }
     
-    func prepareAnimation(_ animated: Bool = false) {
+    func prepareAnimation(_ animated: Bool = false, delta: Int) {
         if animated {
-            startAnimation()
+            // Animation requested
+            if animating {
+                // Already animating, stop and return
+                stopAnimation()
+                return
+            }
+            else {
+                startAnimation()
+            }
         }
         else {
+            // Animation not requested
+            // stop any animation in progress
             stopAnimation()
         }
+        adjustLocation(delta)
     }
     
     func adjustLocation(_ delta: Int) {
@@ -155,6 +168,8 @@ class LocationModel: ObservableObject {
         label = loc.label
         ccode = loc.ccode
         duration = loc.duration
+        flagCode = loc.flagCode ?? loc.ccode
+        description = loc.description ?? ""
         appModel.currentFlagItem(loc.ccode)
     }
     
@@ -185,7 +200,10 @@ class LocationModel: ObservableObject {
                             longitude: region.center.longitude,
                             label: nlabel,
                             capital: "",
-                            delta: delta)
+                            delta: delta,
+                            flagCode: flagCode,
+                            description: description
+        )
         appModel.addLocation(loc: loc, after: index)
     }
     
@@ -204,6 +222,9 @@ class LocationModel: ObservableObject {
         currentLocation.label = label
         currentLocation.ccode = ccode
         currentLocation.duration = duration
+        
+        currentLocation.flagCode = flagCode
+        currentLocation.description = description
 
         appModel.saveSettings()
     }
