@@ -9,7 +9,7 @@ let titleRef = "https://github.com/molab-itp/99-Flag-Flow/tree/main/EarthFlags"
 
 struct FlagListView: View {
     
-    @EnvironmentObject var model: AppModel
+    @EnvironmentObject var appModel: AppModel
     @Environment(\.openURL) private var openURL
 
     @State private var searchText = ""
@@ -33,7 +33,7 @@ struct FlagListView: View {
                                             unmarkFlagItem: $unmarkFlagItem)
                         }
                     }
-                    .navigationTitle("EarthFlags v\(model.verNum)")
+                    .navigationTitle("EarthFlags v\(appModel.verNum)")
                     .navigationBarTitleDisplayMode(.inline)
                     .toolbar {
                         ToolbarItemGroup(placement:
@@ -48,7 +48,7 @@ struct FlagListView: View {
                 Button("Unmark Flag") {
                     if let unmarkFlagItem {
                         withAnimation {
-                            model.setMarked(flagItem: unmarkFlagItem, state: false);
+                            appModel.setMarked(flagItem: unmarkFlagItem, state: false);
                         }
                     }
                     showingUnmarkAlert = false
@@ -73,7 +73,7 @@ struct FlagListView: View {
     func countRow() -> some View {
         Group() {
             if searchText.isEmpty {
-                Text("\(model.flagItems.count) Countries on Earth")
+                Text("\(appModel.flagItems.count) Countries on Earth")
                     .font(.caption)
                     .padding()
                     //.padding([.top, .bottom], 10)
@@ -88,9 +88,9 @@ struct FlagListView: View {
     
     var searchResults: [FlagItem] {
         if searchText.isEmpty {
-            return model.flagItems
+            return appModel.flagItems
         } else {
-            return model.flagItems.filter {
+            return appModel.flagItems.filter {
                 let stext = searchText.lowercased()
                 let name = $0.name.lowercased()
                 let alpha3 = $0.alpha3.lowercased()

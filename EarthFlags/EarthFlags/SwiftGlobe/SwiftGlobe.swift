@@ -334,7 +334,7 @@ class SwiftGlobe {
         skybox.eulerAngles = SCNVector3(x: kTiltOfEclipticFromGalacticPlaneRadians, y: 0.0, z: 0.0 )
         scene.rootNode.addChildNode(skybox)
         
-        // give us some ambient light (to light the rest of the model)
+        // give us some ambient light (to light the rest of the appModel)
         let ambientLight = SCNLight()
         ambientLight.type = .ambient
         ambientLight.intensity = kAmbientLightIntensity // default is 1000!

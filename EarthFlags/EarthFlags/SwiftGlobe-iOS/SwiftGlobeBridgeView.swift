@@ -50,11 +50,11 @@ struct SwiftGlobeBridgeView: View {
     }
 
 //    var centerLatitude: String {
-//        String(format: "%+.6f", model.region.center.latitude)
+//        String(format: "%+.6f", appModel.region.center.latitude)
 //    }
 //    
 //    var centerLongitude: String {
-//        String(format: "%+.6f", model.region.center.longitude)
+//        String(format: "%+.6f", appModel.region.center.longitude)
 //    }
     
     func nextLocAction() {

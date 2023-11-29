@@ -1,7 +1,16 @@
 _notes.txt
 
 # --
+2023-11-29 16:33:03
+
+    @State private var showingUnmarkAlert: Bool = false
+.alert("Remove flag from marked list?", isPresented:$showingUnmarkAlert) {
+
+
+# --
 2023-11-29 09:55:42
+
+https://developer.apple.com/documentation/uikit/uipasteboard
 
 https://www.hackingwithswift.com/example-code/system/how-to-copy-text-to-the-clipboard-using-uipasteboard
 

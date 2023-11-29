@@ -11,7 +11,7 @@ struct FlagMarkedView: View {
     
     var marked: [FlagItem]
 
-    @EnvironmentObject var model: AppModel
+    @EnvironmentObject var appModel: AppModel
 
     @State private var showingUnmarkAlert: Bool = false
     @State private var unmarkFlagItem: FlagItem?
@@ -44,7 +44,7 @@ struct FlagMarkedView: View {
                     }
                     .onAppear {
                         //print("FlagMarkedView ScrollViewReader onAppear marked", marked.count);
-                        //print("FlagMarkedView ScrollViewReader settings.last", model.settings.marked.last!)
+                        //print("FlagMarkedView ScrollViewReader settings.last", appModel.settings.marked.last!)
                         guard let last = marked.last else { return }
                         //print("FlagMarkedView ScrollViewReader last.alpha3", last.alpha3);
                         proxy.scrollTo(last.alpha3, anchor: .bottom)
@@ -53,7 +53,7 @@ struct FlagMarkedView: View {
                         Button("Unmark Flag") {
                             if let unmarkFlagItem {
                                 withAnimation {
-                                    model.setMarked(flagItem: unmarkFlagItem, state: false);
+                                    appModel.setMarked(flagItem: unmarkFlagItem, state: false);
                                 }
                             }
                             showingUnmarkAlert = false
@@ -73,13 +73,13 @@ struct FlagMarkedView: View {
         }
     }
     func move(from source: IndexSet, to destination: Int) {
-        //print("FlagMarkedView move", source, destination)
-        model.markedMove(from: source, to: destination)
+        //print("FlagMarkedView moveLocation", source, destination)
+        appModel.markedMove(from: source, to: destination)
     }
     func delete( indices: IndexSet) {
         //print("onDelete", indices)
         withAnimation {
-            model.markedDelete(indices: indices)
+            appModel.markedDelete(indices: indices)
         }
     }
     

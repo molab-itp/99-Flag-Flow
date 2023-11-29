@@ -15,7 +15,8 @@ class AppModel: ObservableObject
     @Published var flagItems: [FlagItem]
     var flagDict: Dictionary<String,FlagItem>
     
-    @Published var settings:Settings
+    @Published var settings: Settings
+    @Published var description: String = ""
 
     var webView:WKWebView?
     
@@ -29,6 +30,9 @@ class AppModel: ObservableObject
         flagDict = Dictionary<String,FlagItem>()
         for flag in flagItems {
             flagDict[flag.alpha3] = flag;
+        }
+        if let description = settings.description {
+            self.description = description
         }
     }
     
@@ -64,7 +68,7 @@ class AppModel: ObservableObject
     }
 
     func restoreLocations() {
-        if let loc = settings.locations.first {
+        if let loc = settings.locations.last {
             LocationModel.main.setLocation(loc)
         }
     }
@@ -131,9 +135,9 @@ class AppModel: ObservableObject
     }
 }
 
+// Read countries_capitals.json from Resources
 func getCountriesFromJSON() -> [FlagItem] {
     var flags = Bundle.main.decode([FlagItem].self, from: "countries_capitals.json")
-//    flags = flags.sorted { $0.alpha3 < $1.alpha3 }
     for index in 0..<flags.count {
         flags[index].index = index+1;
     }
@@ -145,15 +149,13 @@ func getCountriesFromJSON() -> [FlagItem] {
 //
 extension AppModel {
     
-    static let savePathRead = FileManager.documentsDirectory.appendingPathComponent("AppSetting.json")
-    static let savePathSave = FileManager.documentsDirectory.appendingPathComponent("AppSetting.json")
+    static let savePath = FileManager.documentsDirectory.appendingPathComponent("AppSetting.json")
 
     static func loadSettings() -> Settings {
-        print("AppModel loadSettings")
-
+        //print("AppModel loadSettings")
         var settings:Settings;
         do {
-            let data = try Data(contentsOf: Self.savePathRead)
+            let data = try Data(contentsOf: Self.savePath)
             settings = try JSONDecoder().decode(Settings.self, from: data)
             if settings.version != currentVersion {
                 print("AppModel loadSettings version wrong ", settings.version, currentVersion)
@@ -163,21 +165,64 @@ extension AppModel {
             print("AppModel loadSettings error", error)
             settings = Settings();
         }
-                
+        print("AppModel loadSettings", settings.description ?? "-nil-", settings.marked.count, settings.locations.count)
         return settings;
     }
         
     func saveSettings() {
-        print("AppModel saveSettings", settings)
+        print("AppModel saveSettings", settings.description ?? "-nil-", settings.marked.count, settings.locations.count)
+        //print("AppModel saveSettings", settings)
         //print("AppModel saveSettings marked", settings.marked)
         //print("AppModel saveSettings locations", settings.locations)
         do {
             let encoder = JSONEncoder()
             encoder.outputFormatting = [.prettyPrinted, .sortedKeys]
             let data = try encoder.encode(settings)
-            try data.write(to: Self.savePathSave, options: [.atomic, .completeFileProtection])
+            try data.write(to: Self.savePath, options: [.atomic, .completeFileProtection])
         } catch {
             print("AppModel saveSettings error", error)
+        }
+    }
+    
+    // Exporting will set settings.description from description
+    // and save locally
+    func settingsAsJSON() -> String {
+        var str = ""
+        do {
+            settings.description = description
+            let encoder = JSONEncoder()
+            encoder.outputFormatting = [.prettyPrinted, .sortedKeys]
+            let data = try encoder.encode(settings)
+            // str = String(data.description.utf8)
+            // https://www.hackingwithswift.com/example-code/language/how-to-convert-data-to-a-string
+            str = String(decoding: data, as: UTF8.self)
+        } catch {
+            print("AppModel settingsAsJSON error", error)
+        }
+        saveSettings();
+        return str;
+    }
+    
+    // Importing will set description from settings.description
+    func settingsFromJSON(_ str: String) {
+        var settings:Settings;
+        do {
+            // https://www.hackingwithswift.com/example-code/language/how-to-convert-a-string-to-data
+            let data = Data(str.utf8)
+            settings = try JSONDecoder().decode(Settings.self, from: data)
+            if settings.version != currentVersion {
+                print("AppModel settingsFromJSON version wrong ", settings.version, currentVersion)
+            }
+            if settings.description == nil {
+                settings.description = Date().ISO8601Format()
+            }
+            self.settings = settings
+            if let description = settings.description {
+                self.description = description
+            }
+            saveSettings();
+        } catch {
+            print("AppModel settingsFromJSON error", error)
         }
     }
     
@@ -186,6 +231,26 @@ extension AppModel {
     }
     
 } // extension AppModel
+
+// Increase currentVerion code to invalidate old formats
+let currentVersion = 3;
+
+// Must be a struct Settings for edits to register
+struct Settings: Codable {
+
+    var description: String? = "My flags"
+    
+    var version: Int = currentVersion
+    
+    var marked: Array<String> = [];
+    
+    var locations: [Location] = []
+    
+}
+
+// https://developer.apple.com/documentation/swiftui/observedobject
+
+// --
 
 extension FileManager {
     static var documentsDirectory: URL {
@@ -198,18 +263,4 @@ extension FileManager {
 //  SwiftUI/project14/Bucketlist/ContentView-ViewModel.swift
 // https://github.com/twostraws/HackingWithSwift/blob/main/SwiftUI/project14/Bucketlist/ContentView-ViewModel.swift
 
-let currentVersion = 2;
-
-// Must be a struct Settings for edits to register
-struct Settings: Codable {
-
-    var version: Int = currentVersion
-    
-    var marked: Array<String> = [];
-    
-    var locations: [Location] = []
-    
-}
-
-// https://developer.apple.com/documentation/swiftui/observedobject
 

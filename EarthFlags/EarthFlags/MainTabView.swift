@@ -17,17 +17,17 @@ enum TabTag {
 
 struct MainTabView: View {
     
-    @EnvironmentObject var model: AppModel
+    @EnvironmentObject var appModel: AppModel
     @EnvironmentObject var locationModel: LocationModel
 
     var body: some View {
-        TabView(selection: $model.selectedTab) {
+        TabView(selection: $appModel.selectedTab) {
             FlagListView()
                 .tabItem {
                     Label("Flags", systemImage: "list.bullet")
                 }
                 .tag(TabTag.flags)
-            FlagMarkedView(marked: model.marked())
+            FlagMarkedView(marked: appModel.marked())
                 .tabItem {
                     Label("Marked", systemImage: "circle.fill")
                 }
@@ -49,9 +49,9 @@ struct MainTabView: View {
                 .tag(TabTag.detail)
         }
         .onAppear() {
-            print("MainTabView onAppear model.settings.locations", model.settings.locations)
+            // print("MainTabView onAppear appModel.settings.locations", appModel.settings.locations)
             // print("MainTabView onAppear locationModel.locations", locationModel.locations)
-             model.restoreLocations()
+             appModel.restoreLocations()
         }
     }
 }
