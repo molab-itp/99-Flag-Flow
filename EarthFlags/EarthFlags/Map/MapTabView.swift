@@ -58,18 +58,19 @@ struct MapTabView: View {
             Section {
                 HStack {
                     Text("label:")
+                        .font(.footnote)
                     TextField("", text: $locationModel.label)
                 }
-                TextField("", text: $locationModel.description)
-//                HStack {
-//                    Text("flagCode:")
-//                    TextField("", text: $locationModel.flagCode)
-//                }
                 HStack {
-                    Text("duration:")
+                    Text("description:")
+                        .font(.footnote)
+                    TextField("", text: $locationModel.description)
+                }
+                HStack {
+                    Text("animation duration:")
                     TextField("", value: $locationModel.duration, format: .number)
                 }
-                Picker("Map Symbol", selection: $locationModel.mapSymbol) {
+                Picker("map symbol", selection: $locationModel.mapSymbol) {
                     Text("star").tag("star")
                     Text("triangle").tag("triangle")
                     Text("circle").tag("circle")
@@ -87,12 +88,8 @@ struct MapTabView: View {
                     // smallcircle.filled.circle
                     // target
                     // smallcircle.filled.circle.fill
-//                    Text("dot.scope").tag("dot.scope")
+                    // Text("dot.scope").tag("dot.scope")
                 }
-//                HStack {
-//                    Text("ccode:")
-//                    Text(locationModel.ccode)
-//                }
             }
         }
     }
@@ -122,12 +119,10 @@ struct MapTabView: View {
     
     func editButtonLabel(_ label: String) -> some View {
         Text(label)
-        // .font(.headline)
             .foregroundColor(.white)
             .padding(8)
             .background(Color(.systemIndigo))
             .cornerRadius(12)
-        // .padding(5)
     }
         
     func map() -> some View {
@@ -135,16 +130,7 @@ struct MapTabView: View {
             annotationItems: appModel.settings.locations )
         { loc in
             MapAnnotation(coordinate: loc.coordinate) {
-//                VStack {
-//                    if let flagCode = loc.flagCode {
-//                        Image("flag-\(flagCode)")
-//                            .resizable()
-//                            .frame(width: 44, height: 22)
-//                    }
-//                    Text(loc.label)
-//                }
                 HStack {
-//                    Image(systemName: "circle.fill" )
                     Image(systemName: loc.mapSymbol ?? "circle" )
                         .resizable()
                         .frame(width: 30, height: 30)
