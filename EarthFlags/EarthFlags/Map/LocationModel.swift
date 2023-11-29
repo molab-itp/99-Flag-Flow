@@ -240,7 +240,12 @@ class LocationModel: ObservableObject {
         if animating, let targetLoc, let startLoc {
             return startLoc.label + " to " + targetLoc.label
         }
-        return currentLocation.label
+        var nlabel = currentLocation.label;
+        var str = currentLocation.description ?? "";
+        if !str.isEmpty {
+            nlabel = nlabel + " - " + str;
+        }
+        return nlabel
     }
 
     // --

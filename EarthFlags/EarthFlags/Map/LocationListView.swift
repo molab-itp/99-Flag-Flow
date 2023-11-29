@@ -24,6 +24,9 @@ struct LocationListView: View {
                         dismiss()
                     } ) {
                         HStack {
+                            Image(systemName: loc.mapSymbol ?? "circle" )
+                                .resizable()
+                                .frame(width: 30, height: 30)
                             if let flagItem = appModel.flagItem(ccode: loc.ccode) {
                                 Image(flagItem.imageRef)
                                     .resizable()
@@ -37,14 +40,25 @@ struct LocationListView: View {
                 .onDelete(perform: delete )
             }
             .toolbar {
-                EditButton()
+                // ToolbarItemGroup(placement: .navigationBarLeading) {
+                ToolbarItemGroup(placement: .navigationBarTrailing) {
+                    Button(action: { } ) {
+                        Image(systemName: "square.and.arrow.up.on.square" )
+                    }
+                    Button(action: { } ) {
+                        Image(systemName: "square.and.arrow.down.on.square" )
+                    }
+                    EditButton()
+                }
             }
         }
     }
+    
     func move(from source: IndexSet, to destination: Int) {
         //print("FlagMarkedView move", source, destination)
         appModel.moveLocation(from: source, to: destination)
     }
+    
     func delete( indices: IndexSet) {
         //print("onDelete", indices)
         withAnimation {

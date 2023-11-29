@@ -67,7 +67,8 @@ struct MapTabView: View {
                     TextField("", text: $locationModel.description)
                 }
                 HStack {
-                    Text("animation duration:")
+                    Text("seconds:")
+                        .font(.footnote)
                     TextField("", value: $locationModel.duration, format: .number)
                 }
                 Picker("map symbol", selection: $locationModel.mapSymbol) {
@@ -76,8 +77,8 @@ struct MapTabView: View {
                     Text("circle").tag("circle")
                     Text("circle.fill").tag("circle.fill")
                     Text("circle.dotted").tag("circle.dotted")
-                    Text("minus").tag("minus")
-                    Text("minus.square").tag("minus.square")
+                    // Text("minus").tag("minus")
+                    Text("minus").tag("minus.square")
                     Text("plus").tag("plus")
                     Text("plus.square").tag("plus.square")
                     Text("square").tag("square")
@@ -178,18 +179,19 @@ struct MapTabView: View {
     func topInfo() -> some View {
         VStack {
             VStack {
+                // Without Rectangle HStack extends into top buttons
+                Rectangle()
+                    .frame(height: 0)
+                    .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
                 HStack {
                     Image("flag-\(locationModel.ccode)")
                         .resizable()
                         .frame(width: 44, height: 22)
                     Text(locationModel.currentLabel())
                 }
-                if !locationModel.description.isEmpty {
-                    Text(locationModel.description)
-                }
-                
+                .padding(2)
+                .background(Color(.init(red: 0, green: 0, blue: 1, alpha: 0.2   )))
             }
-            .background(Color(.init(red: 0, green: 0, blue: 1, alpha: 0.1   )))
             Spacer()
         }
     }
@@ -207,7 +209,7 @@ struct MapTabView: View {
     private func centerCircle() -> some View {
         Circle()
             .fill(.blue)
-            .opacity(0.3)
+            .opacity(0.5)
             .frame(width: 32, height: 32)
     }
     
