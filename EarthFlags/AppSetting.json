@@ -2,53 +2,51 @@
   "version" : 2,
   "locations" : [
     {
+      "longitude" : -0.072608720899209639,
+      "id" : "GBR",
+      "capital" : "London",
+      "flagCode" : "",
+      "latitude" : 51.567177683435304,
+      "label" : "UK Hackney",
+      "duration" : 3,
+      "description" : "",
+      "delta" : 0.19621370139363137,
+      "ccode" : "GBR"
+    },
+    {
       "longitude" : -76.479999999999919,
       "id" : "JAM",
       "capital" : "Kingston",
+      "flagCode" : "JAM",
       "latitude" : 18.00000000000005,
       "label" : "Jamaica",
-      "duration" : 9,
+      "duration" : 3,
+      "description" : "",
       "delta" : 64.819639322292204,
       "ccode" : "JAM"
     },
     {
-      "longitude" : -76.479999999999919,
-      "id" : "JAM-9AAEB81F-0719-4A56-9133-86723C63AE15",
+      "longitude" : 0.15359631488591596,
+      "id" : "GBR-5B101040-D9CB-40C0-9BF2-D4344DA0CE3E",
       "capital" : "",
-      "latitude" : 18.00000000000005,
-      "label" : "Jamaica-1",
+      "flagCode" : "",
+      "latitude" : 51.532085842208211,
+      "label" : "UK Dagenham",
       "duration" : 3,
-      "delta" : 64.819639322292261,
-      "ccode" : "JAM"
+      "description" : "",
+      "delta" : 0.0031644784866902156,
+      "ccode" : "GBR"
     },
     {
-      "longitude" : 0.15334020879075955,
-      "id" : "-4521D214-66E4-4D1F-8D5A-14DE8B89CC1C",
-      "capital" : "",
-      "latitude" : 51.532441900930543,
-      "label" : "UK - Dagenham Essex",
-      "duration" : 3,
-      "delta" : 0.0020590427771605135,
-      "ccode" : ""
-    },
-    {
-      "longitude" : 0.15334020879075955,
-      "id" : "-A8950602-70EC-445E-B9D2-0372A27E0465",
-      "capital" : "",
-      "latitude" : 51.532441900930515,
-      "label" : "UK -1",
-      "duration" : 3,
-      "delta" : 0.0020590427772759776,
-      "ccode" : ""
-    },
-    {
-      "longitude" : -73.951788602459729,
+      "longitude" : -73.954736821024042,
       "id" : "USA",
       "capital" : "Washington, DC",
-      "latitude" : 40.661285935617236,
+      "flagCode" : "USA",
+      "latitude" : 40.65130298629802,
       "label" : "USA - Brooklyn",
       "duration" : 3,
-      "delta" : 0.37280875680052361,
+      "description" : "",
+      "delta" : 0.051783337052015099,
       "ccode" : "USA"
     },
     {
@@ -82,6 +80,18 @@
       "ccode" : "NLD"
     },
     {
+      "longitude" : -59.625229700904733,
+      "id" : "BRB",
+      "capital" : "Bridgetown",
+      "flagCode" : "BRB",
+      "latitude" : 13.370721897118013,
+      "label" : "Barbados",
+      "duration" : 3,
+      "description" : "",
+      "delta" : 0.64519733110547151,
+      "ccode" : "BRB"
+    },
+    {
       "longitude" : 149.13,
       "id" : "AUS",
       "capital" : "Canberra",
@@ -92,67 +102,50 @@
       "ccode" : "AUS"
     },
     {
-      "longitude" : 2.2000000000000002,
+      "longitude" : 2.3300049544382757,
       "id" : "FRA",
       "capital" : "Paris",
-      "latitude" : 48.520000000000003,
+      "flagCode" : "FRA",
+      "latitude" : 48.907399059912827,
       "label" : "France",
       "duration" : 3,
-      "delta" : 100,
+      "description" : "",
+      "delta" : 0.49932979349962103,
       "ccode" : "FRA"
     },
     {
-      "longitude" : -59.369999999999997,
-      "id" : "BRB",
-      "capital" : "Bridgetown",
-      "latitude" : 13.06,
-      "label" : "Barbados",
+      "longitude" : -72.383986902634405,
+      "id" : "BRB-BEF8016A-BEC0-4427-8798-79741671901B",
+      "capital" : "",
+      "flagCode" : "BRB",
+      "latitude" : 12.890764271016851,
+      "label" : "Barbados-1",
       "duration" : 3,
-      "delta" : 100,
+      "description" : "",
+      "delta" : 44.271428836516613,
       "ccode" : "BRB"
     },
     {
-      "longitude" : -84.049999999999997,
+      "longitude" : -84.018163800752021,
       "id" : "CRI",
       "capital" : "San Jose",
-      "latitude" : 9.5600000000000005,
+      "flagCode" : "CRI",
+      "latitude" : 9.7664729329091511,
       "label" : "Costa Rica",
       "duration" : 3,
-      "delta" : 100,
+      "description" : "",
+      "delta" : 1.1497087855672437,
       "ccode" : "CRI"
-    },
-    {
-      "longitude" : -0.099999999999994565,
-      "id" : "GBR",
-      "capital" : "London",
-      "latitude" : 51.300000000000011,
-      "label" : "UK",
-      "duration" : 3,
-      "delta" : 45.308276285902167,
-      "ccode" : "GBR"
-    },
-    {
-      "longitude" : -0.099999999999994565,
-      "id" : "GBR-5AE6B5FE-6069-4A11-B822-8643879ECA56",
-      "capital" : "",
-      "latitude" : 51.300000000000011,
-      "label" : "UK-1",
-      "duration" : 3,
-      "delta" : 45.308276285902139,
-      "ccode" : "GBR"
     }
   ],
   "marked" : [
+    "GBR",
     "JAM",
     "USA",
     "NLD",
     "AUS",
     "FRA",
     "BRB",
-    "CRI",
-    "IOT",
-    "VGB",
-    "ZMB",
-    "GBR"
+    "CRI"
   ]
 }

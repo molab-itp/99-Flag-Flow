@@ -42,12 +42,14 @@ class LocationModel: ObservableObject {
     @Published var loadingState = LoadingState.loading
     @Published var pages = [Page]()
     
+    // --
     // Set in MapTabView editForm
     @Published var label: String = ""
     @Published var ccode: String = ""
     @Published var flagCode: String = ""
     @Published var description: String = ""
     @Published var duration: Double = 3.0
+    @Published var capital: String = ""
 
     // --
     var animating = false
@@ -57,13 +59,6 @@ class LocationModel: ObservableObject {
     var startLoc: Location?
     var targetIndex = 0
 
-    func currentLabel() -> String {
-        if animating, let targetLoc, let startLoc {
-            return startLoc.label + " to " + targetLoc.label
-        }
-        return currentLocation.label
-    }
-    
     func stepAnimation() {
         // print("stepAnimation");
         let now = Date.timeIntervalSinceReferenceDate
@@ -110,13 +105,11 @@ class LocationModel: ObservableObject {
     func previousLocation(_ animated: Bool = false) {
         print("LocationModel previous index", index, "locations.count", locations.count)
         prepareAnimation(animated, delta: -1)
-//        adjustLocation(-1)
     }
     
     func nextLocation(_ animated: Bool = false) {
         print("LocationModel next index", index, "locations.count", locations.count)
         prepareAnimation(animated, delta: 1)
-//        adjustLocation(1)
     }
     
     func prepareAnimation(_ animated: Bool = false, delta: Int) {
@@ -170,45 +163,36 @@ class LocationModel: ObservableObject {
         duration = loc.duration
         flagCode = loc.flagCode ?? loc.ccode
         description = loc.description ?? ""
+        capital = loc.capital
+        
         appModel.currentFlagItem(loc.ccode)
     }
     
     // --
     
-    var centerLatitude: String {
-        String(format: "%+.6f", region.center.latitude)
-    }
-    
-    var centerLongitude: String {
-        String(format: "%+.6f", region.center.longitude)
-    }
-
     func addLocation() {
         print("LocationModel addLocation " );
         let id = ccode+"-"+UUID().uuidString;
         let delta = min(region.span.latitudeDelta, region.span.longitudeDelta)
         var nlabel = label;
+        // For labels with dash, replace with ccode count
         if let dashIndex = nlabel.firstIndex(of: "-") {
-//            nlabel = nlabel.substring(to: dashIndex)
+            // String splicing Partial range recommend over substring
             nlabel = String(nlabel[..<dashIndex])
         }
         let noff = locations.filter { $0.ccode == ccode }
-        nlabel = nlabel+"-"+String(noff.count)
+        nlabel = nlabel+"-"+String(noff.count + 1)
         let loc = Location( id: id,
                             ccode: ccode,
                             latitude: region.center.latitude,
                             longitude: region.center.longitude,
                             label: nlabel,
-                            capital: "",
+                            capital: capital,
                             delta: delta,
                             flagCode: flagCode,
                             description: description
         )
         appModel.addLocation(loc: loc, after: index)
-    }
-    
-    func flagItem(ccode: String) -> FlagItem? {
-        appModel.flagItem(ccode: ccode)
     }
     
     func updateLocation() {
@@ -225,17 +209,12 @@ class LocationModel: ObservableObject {
         
         currentLocation.flagCode = flagCode
         currentLocation.description = description
-
+        
         appModel.saveSettings()
     }
     
-    func locationMatch(_ current:Location) -> Bool {
-        let epsilon = 0.000001;
-        let center = region.center
-        return abs(current.latitude - center.latitude) < epsilon
-            && abs(current.longitude - center.longitude) < epsilon
-    }
-    
+    // --
+        
     func setLocation(id: String) {
         if let index = locations.firstIndex(where: { $0.id == id }) {
             setLocation(index: index)
@@ -247,10 +226,44 @@ class LocationModel: ObservableObject {
             setLocation(index: index);
         }
     }
+
+    // --
+
+    func currentLabel() -> String {
+        if animating, let targetLoc, let startLoc {
+            return startLoc.label + " to " + targetLoc.label
+        }
+        return currentLocation.label
+    }
+
+    // --
+    // region is update by Map
     
+    func locationMatch(_ current:Location) -> Bool {
+        let epsilon = 0.000001;
+        let center = region.center
+        return abs(current.latitude - center.latitude) < epsilon
+        && abs(current.longitude - center.longitude) < epsilon
+    }
+
     func restoreLocation() {
         region = currentLocation.region
     }
+    
+    var centerLatitude: String {
+        String(format: "%+.6f", region.center.latitude)
+    }
+    
+    var centerLongitude: String {
+        String(format: "%+.6f", region.center.longitude)
+    }
+    
+    // --
+    
+    func flagItem(ccode: String) -> FlagItem? {
+        appModel.flagItem(ccode: ccode)
+    }
+
 }
 
 let knownLocations:[Location] = [
