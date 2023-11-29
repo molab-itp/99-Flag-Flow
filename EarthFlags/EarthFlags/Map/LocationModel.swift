@@ -154,10 +154,13 @@ class LocationModel: ObservableObject {
     }
 
     func establishLocation(_ newIndex: Int) {
+        if newIndex >= locations.count {
+            return;
+        }
         let loc = locations[newIndex]
         index = newIndex;
-        region = loc.region
         currentLocation = loc;
+        region = loc.region
         label = loc.label
         ccode = loc.ccode
         duration = loc.duration

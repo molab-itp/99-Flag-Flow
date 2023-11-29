@@ -115,13 +115,19 @@ struct MapTabView: View {
             annotationItems: appModel.settings.locations )
         { loc in
             MapAnnotation(coordinate: loc.coordinate) {
-                VStack {
-                    if let flagCode = loc.flagCode {
-                        Image("flag-\(flagCode)")
-                            .resizable()
-                            .frame(width: 44, height: 22)
-                    }
-                    Text(loc.label)
+//                VStack {
+//                    if let flagCode = loc.flagCode {
+//                        Image("flag-\(flagCode)")
+//                            .resizable()
+//                            .frame(width: 44, height: 22)
+//                    }
+//                    Text(loc.label)
+//                }
+                HStack {
+//                    Image(systemName: "circle.fill" )
+                    Image(systemName: "circle" )
+                        .resizable()
+                        .frame(width: 30, height: 30)
                 }
                 .onTapGesture {
                     withAnimation {
