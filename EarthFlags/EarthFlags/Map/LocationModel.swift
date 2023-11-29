@@ -176,7 +176,7 @@ class LocationModel: ObservableObject {
         let delta = min(region.span.latitudeDelta, region.span.longitudeDelta)
         var nlabel = label;
         // For labels with dash, replace with ccode count
-        if let dashIndex = nlabel.firstIndex(of: "-") {
+        if let dashIndex = nlabel.lastIndex(of: "-") {
             // String splicing Partial range recommend over substring
             nlabel = String(nlabel[..<dashIndex])
         }
