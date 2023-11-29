@@ -38,6 +38,8 @@ class AppModel: ObservableObject
         return model
     }
     
+    // --
+    
     var locations: [Location] {
         settings.locations
     }
@@ -67,6 +69,8 @@ class AppModel: ObservableObject
         }
     }
     
+    // --
+    
     func flagItem(ccode:String) -> FlagItem? {
         return flagDict[ccode]
     }
@@ -91,10 +95,6 @@ class AppModel: ObservableObject
             // Currently marked
             if state { return }
             settings.marked.remove(at:index);
-            // Remove all locations that match the country code
-//            settings.locations = settings.locations.filter {
-//                $0.ccode != flagItem.alpha3
-//            }
         }
         else {
             // Not currently marked
@@ -166,15 +166,11 @@ extension AppModel {
                 
         return settings;
     }
-    
-//    func restoreLocations() {
-//        LocationModel.main.restoreFrom(marked: settings.marked)
-//    }
-    
+        
     func saveSettings() {
         print("AppModel saveSettings", settings)
-        print("AppModel saveSettings marked", settings.marked)
-        print("AppModel saveSettings locations", settings.locations)
+        //print("AppModel saveSettings marked", settings.marked)
+        //print("AppModel saveSettings locations", settings.locations)
         do {
             let encoder = JSONEncoder()
             encoder.outputFormatting = [.prettyPrinted, .sortedKeys]
@@ -183,7 +179,6 @@ extension AppModel {
         } catch {
             print("AppModel saveSettings error", error)
         }
-        // restoreLocations();
     }
     
     static func bundleVersion() -> String {

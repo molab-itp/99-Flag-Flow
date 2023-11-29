@@ -50,6 +50,7 @@ class LocationModel: ObservableObject {
     @Published var description: String = ""
     @Published var duration: Double = 3.0
     @Published var capital: String = ""
+    @Published var mapSymbol: String = ""
 
     // --
     var animating = false
@@ -167,6 +168,7 @@ class LocationModel: ObservableObject {
         flagCode = loc.flagCode ?? loc.ccode
         description = loc.description ?? ""
         capital = loc.capital
+        mapSymbol = loc.mapSymbol ?? "circle"
         
         appModel.currentFlagItem(loc.ccode)
     }
@@ -193,7 +195,8 @@ class LocationModel: ObservableObject {
                             capital: capital,
                             delta: delta,
                             flagCode: flagCode,
-                            description: description
+                            description: description,
+                            mapSymbol: mapSymbol
         )
         appModel.addLocation(loc: loc, after: index)
     }
@@ -212,7 +215,8 @@ class LocationModel: ObservableObject {
         
         currentLocation.flagCode = flagCode
         currentLocation.description = description
-        
+        currentLocation.mapSymbol = mapSymbol
+
         appModel.saveSettings()
     }
     
@@ -251,12 +255,14 @@ class LocationModel: ObservableObject {
     }
     
     func locationUpdated() -> Bool {
+        let cmapSymbol = currentLocation.mapSymbol ?? "circle"
         return currentLocation.ccode != ccode
         || currentLocation.label != label
         || currentLocation.flagCode != flagCode
         || currentLocation.description != description
         || currentLocation.duration != duration
         || currentLocation.capital != capital
+        || cmapSymbol != mapSymbol
         || !locationCoordsMatch()
     }
 

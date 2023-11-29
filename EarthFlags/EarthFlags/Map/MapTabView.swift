@@ -61,18 +61,38 @@ struct MapTabView: View {
                     TextField("", text: $locationModel.label)
                 }
                 TextField("", text: $locationModel.description)
-                HStack {
-                    Text("flagCode:")
-                    TextField("", text: $locationModel.flagCode)
-                }
+//                HStack {
+//                    Text("flagCode:")
+//                    TextField("", text: $locationModel.flagCode)
+//                }
                 HStack {
                     Text("duration:")
                     TextField("", value: $locationModel.duration, format: .number)
                 }
-                HStack {
-                    Text("ccode:")
-                    Text(locationModel.ccode)
+                Picker("Map Symbol", selection: $locationModel.mapSymbol) {
+                    Text("star").tag("star")
+                    Text("triangle").tag("triangle")
+                    Text("circle").tag("circle")
+                    Text("circle.fill").tag("circle.fill")
+                    Text("circle.dotted").tag("circle.dotted")
+                    Text("minus").tag("minus")
+                    Text("minus.square").tag("minus.square")
+                    Text("plus").tag("plus")
+                    Text("plus.square").tag("plus.square")
+                    Text("square").tag("square")
+                    Text("square.dotted").tag("square.dotted")
+                    Text("hexagon").tag("hexagon")
+                    Text("pentagon").tag("pentagon")
+                    Text("dot.square").tag("dot.square")
+                    // smallcircle.filled.circle
+                    // target
+                    // smallcircle.filled.circle.fill
+//                    Text("dot.scope").tag("dot.scope")
                 }
+//                HStack {
+//                    Text("ccode:")
+//                    Text(locationModel.ccode)
+//                }
             }
         }
     }
@@ -84,7 +104,7 @@ struct MapTabView: View {
                     // showingEditToggle()
                     updateAction()
                 } ) {
-                    editButton(label:"Update")
+                    editButtonLabel("Update")
                 }
             }
             Button(action: {
@@ -92,15 +112,15 @@ struct MapTabView: View {
                 addAction()
                 nextLocAction()
             } ) {
-                editButton(label:"Add")
+                editButtonLabel("Add")
             }
             Button(action: showingEditToggle ) {
-                editButton(label:"Close")
+                editButtonLabel("Close")
             }
         }
     }
     
-    func editButton(label: String) -> some View {
+    func editButtonLabel(_ label: String) -> some View {
         Text(label)
         // .font(.headline)
             .foregroundColor(.white)
@@ -125,7 +145,7 @@ struct MapTabView: View {
 //                }
                 HStack {
 //                    Image(systemName: "circle.fill" )
-                    Image(systemName: "circle" )
+                    Image(systemName: loc.mapSymbol ?? "circle" )
                         .resizable()
                         .frame(width: 30, height: 30)
                 }
@@ -171,15 +191,19 @@ struct MapTabView: View {
     
     func topInfo() -> some View {
         VStack {
-            HStack {
-                Image("flag-\(locationModel.ccode)")
-                    .resizable()
-                    .frame(width: 44, height: 22)
-                Text(locationModel.currentLabel())
+            VStack {
+                HStack {
+                    Image("flag-\(locationModel.ccode)")
+                        .resizable()
+                        .frame(width: 44, height: 22)
+                    Text(locationModel.currentLabel())
+                }
+                if !locationModel.description.isEmpty {
+                    Text(locationModel.description)
+                }
+                
             }
-            if !locationModel.description.isEmpty {
-                Text(locationModel.description)
-            }
+            .background(Color(.init(red: 0, green: 0, blue: 1, alpha: 0.1   )))
             Spacer()
         }
     }

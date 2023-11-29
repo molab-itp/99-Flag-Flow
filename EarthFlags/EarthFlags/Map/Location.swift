@@ -20,7 +20,8 @@ class Location: Identifiable, Codable, Equatable {
     var duration = 3.0
     var flagCode: String?
     var description: String?
-
+    var mapSymbol: String?
+    
     static func == (lhs: Location, rhs: Location) -> Bool {
         return lhs.id == rhs.id
     }
@@ -33,20 +34,23 @@ class Location: Identifiable, Codable, Equatable {
         label: String = "USA Brooklyn Flatlands",
         capital: String = "Brooklyn Flatlands",
         delta: Double = 100.0,
+        duration: Double = 3.0,
         flagCode: String = "",
         description: String = "",
-        duration: Double = 3.0) {
-            self.id = id
-            self.ccode = ccode
-            self.latitude = latitude
-            self.longitude = longitude
-            self.label = label
-            self.capital = capital
-            self.delta = delta
-            self.duration = duration
-            self.flagCode = flagCode
-            self.description = description
-        }
+        mapSymbol: String = ""
+    ) {
+        self.id = id
+        self.ccode = ccode
+        self.latitude = latitude
+        self.longitude = longitude
+        self.label = label
+        self.capital = capital
+        self.delta = delta
+        self.duration = duration
+        self.flagCode = flagCode
+        self.description = description
+        self.mapSymbol = mapSymbol
+    }
     
     var coordinate: CLLocationCoordinate2D {
         CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
