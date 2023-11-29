@@ -44,8 +44,8 @@ class LocationModel: ObservableObject {
     
     // --
     // Set in MapTabView editForm
-    @Published var label: String = ""
     @Published var ccode: String = ""
+    @Published var label: String = ""
     @Published var flagCode: String = ""
     @Published var description: String = ""
     @Published var duration: Double = 3.0
@@ -239,11 +239,22 @@ class LocationModel: ObservableObject {
     // --
     // region is update by Map
     
-    func locationMatch(_ current:Location) -> Bool {
-        let epsilon = 0.000001;
+    func locationCoordsMatch() -> Bool {
+        let current = currentLocation
         let center = region.center
+        let epsilon = 0.000001;
         return abs(current.latitude - center.latitude) < epsilon
         && abs(current.longitude - center.longitude) < epsilon
+    }
+    
+    func locationUpdated() -> Bool {
+        return currentLocation.ccode != ccode
+        || currentLocation.label != label
+        || currentLocation.flagCode != flagCode
+        || currentLocation.description != description
+        || currentLocation.duration != duration
+        || currentLocation.capital != capital
+        || !locationCoordsMatch()
     }
 
     func restoreLocation() {

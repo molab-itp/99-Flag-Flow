@@ -3,7 +3,8 @@ _notes.txt
 # --
 2023-11-29 00:02:51
 
-            if !locationModel.locationMatch(locationModel.currentLocation) {
+if !locationModel.locationMatch(locationModel.currentLocation) {
+
 extend to editable items
 only show Update button if there are changes
 if any change warn when next/previous

@@ -79,11 +79,13 @@ struct MapTabView: View {
     
     func editLocButtons() -> some View {
         HStack {
-            Button(action: {
-                showingEditToggle()
-                updateAction()
-            } ) {
-                editButton(label:"Update")
+            if locationModel.locationUpdated() {
+                Button(action: {
+                    // showingEditToggle()
+                    updateAction()
+                } ) {
+                    editButton(label:"Update")
+                }
             }
             Button(action: {
                 // showingEditToggle()
@@ -92,9 +94,7 @@ struct MapTabView: View {
             } ) {
                 editButton(label:"Add")
             }
-            Button(action: {
-                showingEditToggle()
-            } ) {
+            Button(action: showingEditToggle ) {
                 editButton(label:"Close")
             }
         }
@@ -149,7 +149,7 @@ struct MapTabView: View {
     
     func rightToolbarButtons() -> some View {
         Group {
-            if !locationModel.locationMatch(locationModel.currentLocation) {
+            if !locationModel.locationCoordsMatch() {
                 Button(action: restoreLocAction ) {
                     Image(systemName: "staroflife.circle" )
                 }
