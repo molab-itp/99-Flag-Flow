@@ -1,6 +1,20 @@
 _notes.txt
 
 # --
+2023-11-28 19:50:30
+
+>> editable flagCode
+starts of as ccode
+code not editable
+>> editable description
+appears below label
+
+partial range upto
+
+>> Adding Location name gets mixed up
+
+# --
+2023-11-28 12:03:02
 
 ITSAppUsesNonExemptEncryption
 vs.

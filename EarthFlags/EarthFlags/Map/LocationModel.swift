@@ -170,14 +170,20 @@ class LocationModel: ObservableObject {
 
     func addLocation() {
         print("LocationModel addLocation " );
-        // let ccode = currentLocation.ccode
         let id = ccode+"-"+UUID().uuidString;
         let delta = min(region.span.latitudeDelta, region.span.longitudeDelta)
+        var nlabel = label;
+        if let dashIndex = nlabel.firstIndex(of: "-") {
+//            nlabel = nlabel.substring(to: dashIndex)
+            nlabel = String(nlabel[..<dashIndex])
+        }
+        let noff = locations.filter { $0.ccode == ccode }
+        nlabel = nlabel+"-"+String(noff.count)
         let loc = Location( id: id,
                             ccode: ccode,
                             latitude: region.center.latitude,
                             longitude: region.center.longitude,
-                            label: label,
+                            label: nlabel,
                             capital: "",
                             delta: delta)
         appModel.addLocation(loc: loc, after: index)

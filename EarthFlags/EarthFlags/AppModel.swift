@@ -92,16 +92,16 @@ class AppModel: ObservableObject
             if state { return }
             settings.marked.remove(at:index);
             // Remove all locations that match the country code
-            settings.locations = settings.locations.filter {
-                $0.ccode != flagItem.alpha3
-            }
+//            settings.locations = settings.locations.filter {
+//                $0.ccode != flagItem.alpha3
+//            }
         }
         else {
             // Not currently marked
             if !state { return }
             settings.marked.append(flagItem.alpha3)
             // First appearance of this country in locations
-            let loc = Location( id: flagItem.alpha3,
+            let loc = Location( id: flagItem.uuidString,
                                 ccode: flagItem.alpha3,
                                 latitude: flagItem.latitude,
                                 longitude: flagItem.longitude,
@@ -145,14 +145,15 @@ func getCountriesFromJSON() -> [FlagItem] {
 //
 extension AppModel {
     
-    static let savePath = FileManager.documentsDirectory.appendingPathComponent("AppSetting")
-    
+    static let savePathRead = FileManager.documentsDirectory.appendingPathComponent("AppSetting.json")
+    static let savePathSave = FileManager.documentsDirectory.appendingPathComponent("AppSetting.json")
+
     static func loadSettings() -> Settings {
         print("AppModel loadSettings")
 
         var settings:Settings;
         do {
-            let data = try Data(contentsOf: Self.savePath)
+            let data = try Data(contentsOf: Self.savePathRead)
             settings = try JSONDecoder().decode(Settings.self, from: data)
             if settings.version != currentVersion {
                 print("AppModel loadSettings version wrong ", settings.version, currentVersion)
@@ -176,7 +177,7 @@ extension AppModel {
         print("AppModel saveSettings locations", settings.locations)
         do {
             let data = try JSONEncoder().encode(settings)
-            try data.write(to: Self.savePath, options: [.atomic, .completeFileProtection])
+            try data.write(to: Self.savePathSave, options: [.atomic, .completeFileProtection])
         } catch {
             print("AppModel saveSettings error", error)
         }

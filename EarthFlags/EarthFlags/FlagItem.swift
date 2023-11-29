@@ -43,6 +43,10 @@ struct FlagItem : Decodable {
     var imageRef:String {
         "flag-"+alpha3
     }
+    
+    var uuidString: String {
+        alpha3+"-"+UUID().uuidString
+    }
 }
 
 let FlagItem_Sample = FlagItem(

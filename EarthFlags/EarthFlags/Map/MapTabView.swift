@@ -87,27 +87,31 @@ struct MapTabView: View {
                 showingEditToggle()
                 updateAction()
             } ) {
-                Text("Update")
-                // .font(.headline)
-                    .foregroundColor(.white)
-                    .padding(8)
-                    .background(Color(.systemIndigo))
-                    .cornerRadius(12)
-                // .padding(5)
+                editButton(label:"Update")
+            }
+            Button(action: {
+                // showingEditToggle()
+                addAction()
+                nextLocAction()
+            } ) {
+                editButton(label:"Add")
             }
             Button(action: {
                 showingEditToggle()
-                addAction()
             } ) {
-                Text("Add")
-                // .font(.headline)
-                    .foregroundColor(.white)
-                    .padding(8)
-                    .background(Color(.systemIndigo))
-                    .cornerRadius(12)
-                // .padding(5)
+                editButton(label:"Close")
             }
         }
+    }
+    
+    func editButton(label: String) -> some View {
+        Text(label)
+        // .font(.headline)
+            .foregroundColor(.white)
+            .padding(8)
+            .background(Color(.systemIndigo))
+            .cornerRadius(12)
+        // .padding(5)
     }
         
     func map() -> some View {
