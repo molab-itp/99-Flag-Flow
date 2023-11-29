@@ -177,7 +177,7 @@ extension AppModel {
         print("AppModel saveSettings locations", settings.locations)
         do {
             let encoder = JSONEncoder()
-            encoder.outputFormatting = .prettyPrinted
+            encoder.outputFormatting = [.prettyPrinted, .sortedKeys]
             let data = try encoder.encode(settings)
             try data.write(to: Self.savePathSave, options: [.atomic, .completeFileProtection])
         } catch {

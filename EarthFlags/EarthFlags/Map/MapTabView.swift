@@ -19,7 +19,7 @@ struct MapTabView: View {
     private let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
     
     var body: some View {
-//        let _ = Self._printChanges()
+        // let _ = Self._printChanges()
         NavigationStack {
             VStack {
                 if showingEdit {
@@ -42,12 +42,6 @@ struct MapTabView: View {
             }
             .onReceive(timer) { dateArg in
                 locationModel.stepAnimation()
-            }
-            .onAppear {
-                print("MapTabView onAppear")
-            }
-            .onDisappear() {
-                print("MapTabView onDisappear")
             }
         }
     }
@@ -138,18 +132,10 @@ struct MapTabView: View {
             }
         }
     }
-
-    func showingEditToggle() {
-        withAnimation {
-            showingEdit.toggle()
-        }
-    }
     
     func leftToolbarButtons() -> some View {
         Group {
-            Button(action: {
-                showingEditToggle()
-            } ) {
+            Button(action: showingEditToggle ) {
                 Image(systemName: "arrow.down.app" )
             }
             NavigationLink(
@@ -207,6 +193,14 @@ struct MapTabView: View {
             .fill(.blue)
             .opacity(0.3)
             .frame(width: 32, height: 32)
+    }
+    
+    // --
+
+    func showingEditToggle() {
+        withAnimation {
+            showingEdit.toggle()
+        }
     }
 
     func addAction() {
