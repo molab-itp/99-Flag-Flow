@@ -51,7 +51,11 @@ class AppModel: ObservableObject
     func addLocation(loc: Location, after: Int) {
         print("AppModel addLocation after", after)
         //settings.locations.append(loc)
-        settings.locations.insert(loc, at: after+1)
+        var at = after + 1
+        if at > settings.locations.count {
+            at = settings.locations.count
+        }
+        settings.locations.insert(loc, at: at)
         saveSettings();
     }
     
