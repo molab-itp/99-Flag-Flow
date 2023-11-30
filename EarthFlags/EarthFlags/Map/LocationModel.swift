@@ -238,7 +238,7 @@ class LocationModel: ObservableObject {
 
     func currentLabel() -> String {
         if animating, let targetLoc, let startLoc {
-            return startLoc.label + " to " + targetLoc.label
+            return startLoc.label + "..." + targetLoc.label
         }
         var nlabel = currentLocation.label;
         var str = currentLocation.description ?? "";
