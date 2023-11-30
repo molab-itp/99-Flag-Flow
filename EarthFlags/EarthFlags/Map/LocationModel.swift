@@ -36,11 +36,11 @@ class LocationModel: ObservableObject {
     }
 
     // --
-    enum LoadingState {
-        case loading, loaded, failed
-    }
-    @Published var loadingState = LoadingState.loading
-    @Published var pages = [Page]()
+//    enum LoadingState {
+//        case loading, loaded, failed
+//    }
+//    @Published var loadingState = LoadingState.loading
+//    @Published var pages = [Page]()
     
     // --
     // Set in MapTabView editForm

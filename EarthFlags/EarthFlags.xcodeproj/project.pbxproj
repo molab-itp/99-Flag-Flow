@@ -18,7 +18,6 @@
 		AB4E84832B03B58D00582923 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AB4E84822B03B58D00582923 /* README.md */; };
 		AB4E84872B03DFB500582923 /* _notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = AB4E84862B03DFB500582923 /* _notes.txt */; };
 		AB7F18B22B140DA4008C2905 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7F18B12B140DA4008C2905 /* Location.swift */; };
-		AB7F18B62B140FF2008C2905 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7F18B52B140FF2008C2905 /* Result.swift */; };
 		AB7F18BA2B142E94008C2905 /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7F18B92B142E93008C2905 /* LocationListView.swift */; };
 		AB8A75912B0D04E300A8CD5F /* countries_capitals.json in Resources */ = {isa = PBXBuildFile; fileRef = AB8A75902B0D04E300A8CD5F /* countries_capitals.json */; };
 		ABCA885C2B07219700F09268 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCA885B2B07219700F09268 /* AppModel.swift */; };
@@ -65,7 +64,6 @@
 		AB4E84822B03B58D00582923 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AB4E84862B03DFB500582923 /* _notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = _notes.txt; sourceTree = "<group>"; };
 		AB7F18B12B140DA4008C2905 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
-		AB7F18B52B140FF2008C2905 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		AB7F18B92B142E93008C2905 /* LocationListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
 		AB8A75902B0D04E300A8CD5F /* countries_capitals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries_capitals.json; sourceTree = "<group>"; };
 		ABCA885B2B07219700F09268 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
@@ -128,7 +126,6 @@
 				AB7F18B92B142E93008C2905 /* LocationListView.swift */,
 				AB3DC8A72B09534A00F0E631 /* LocationModel.swift */,
 				AB7F18B12B140DA4008C2905 /* Location.swift */,
-				AB7F18B52B140FF2008C2905 /* Result.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -340,7 +337,6 @@
 				AB7F18B22B140DA4008C2905 /* Location.swift in Sources */,
 				AB32E6452B016386009C8E7C /* FlagItem.swift in Sources */,
 				AB7F18BA2B142E94008C2905 /* LocationListView.swift in Sources */,
-				AB7F18B62B140FF2008C2905 /* Result.swift in Sources */,
 				AB3DC89D2B0903F000F0E631 /* ViewController.swift in Sources */,
 				AB32E6432B01632F009C8E7C /* Bundle-decode.swift in Sources */,
 				ABD9F5562B05AB4500020D0B /* WebView.swift in Sources */,
