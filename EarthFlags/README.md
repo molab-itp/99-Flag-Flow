@@ -26,6 +26,7 @@
 - SwiftGloble
   - SwiftGlobeBridgeRep: UIViewControllerRepresentable
   - https://github.com/dmojdehi/SwiftGlobe.git
+  - An interactive 3D globe in SceneKit for iOS, watchOS, tvOS, and MacOS X.
 
 ## asset preparation
 
