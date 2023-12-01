@@ -51,13 +51,15 @@ class LocationModel: ObservableObject {
     @Published var duration: Double = 3.0
     @Published var capital: String = ""
     @Published var mapSymbol: String = ""
-
+    
     // --
     var animating = false
     var wasAnimating = false
     var animStart: TimeInterval = 0
     var targetLoc: Location?
-    var startLoc: Location?
+//    var startLoc: Location?
+    var startRegion: MKCoordinateRegion?
+    var startLabel: String?
     var targetIndex = 0
 
     func stepAnimation() {
@@ -76,15 +78,15 @@ class LocationModel: ObservableObject {
             return
         }
         print("stepAnimation lapse", lapse)
-        guard let targetLoc, let startLoc else {
-            print("stepAnimation no targetLoc startLoc")
+        guard let targetLoc, let startRegion else {
+            print("stepAnimation no targetLoc startRegion")
             return
         }
         let perCent = lapse / duration
-        region.center.latitude = startLoc.latitude + (targetLoc.latitude - startLoc.latitude) * perCent
-        region.center.longitude = startLoc.longitude + (targetLoc.longitude - startLoc.longitude) * perCent
-        region.span.latitudeDelta = startLoc.delta + (targetLoc.delta - startLoc.delta) * perCent
-        region.span.longitudeDelta = startLoc.delta + (targetLoc.delta - startLoc.delta) * perCent
+        region.center.latitude = startRegion.center.latitude + (targetLoc.latitude - startRegion.center.latitude) * perCent
+        region.center.longitude = startRegion.center.longitude + (targetLoc.longitude - startRegion.center.longitude) * perCent
+        region.span.latitudeDelta = startRegion.span.latitudeDelta + (targetLoc.delta - startRegion.span.latitudeDelta) * perCent
+        region.span.longitudeDelta = startRegion.span.longitudeDelta + (targetLoc.delta - startRegion.span.longitudeDelta) * perCent
 
     }
     
@@ -145,7 +147,9 @@ class LocationModel: ObservableObject {
     func setLocation(index newIndex: Int) {
         print("LocationModel setLocation index", index, "locations.count", locations.count)
         if animating {
-            startLoc = locations[index]
+//            startLoc = locations[index]
+            startLabel = label
+            startRegion = region
             targetLoc = locations[newIndex]
             targetIndex = newIndex
         }
@@ -221,7 +225,13 @@ class LocationModel: ObservableObject {
     }
     
     // --
-        
+    
+    func setLocation(ccode: String) {
+        if let index = locations.firstIndex(where: { $0.ccode == ccode }) {
+            setLocation(index: index)
+        }
+    }
+
     func setLocation(id: String) {
         if let index = locations.firstIndex(where: { $0.id == id }) {
             setLocation(index: index)
@@ -237,8 +247,8 @@ class LocationModel: ObservableObject {
     // --
 
     func currentLabel() -> String {
-        if animating, let targetLoc, let startLoc {
-            return startLoc.label + "..." + targetLoc.label
+        if animating, let targetLoc, let startLabel {
+            return startLabel + "..." + targetLoc.label
         }
         var nlabel = currentLocation.label;
         let description = currentLocation.description ?? "";

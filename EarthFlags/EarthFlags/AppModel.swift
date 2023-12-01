@@ -114,7 +114,8 @@ class AppModel: ObservableObject
                                 latitude: flagItem.latitude,
                                 longitude: flagItem.longitude,
                                 label: flagItem.name,
-                                capital: flagItem.capital);
+                                capital: flagItem.capital,
+                                mapSymbol: "circle");
             settings.locations.append(loc)
             
         }

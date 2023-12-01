@@ -105,7 +105,7 @@ struct FlagMarkedRowView: View {
                     Task {
                         model.flagItem = flagItem
                         model.setMarked(flagItem: flagItem, state: true);
-                        locationModel.setLocation(id: flagItem.alpha3)
+                        locationModel.setLocation(ccode: flagItem.alpha3)
                         model.selectedTab = .map
                     }
                 }

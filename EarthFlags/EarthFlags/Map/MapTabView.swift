@@ -190,7 +190,7 @@ struct MapTabView: View {
                     Text(locationModel.currentLabel())
                 }
                 .padding(2)
-                .background(Color(.init(red: 0, green: 0, blue: 1, alpha: 0.2   )))
+                .background(Color(.init(red: 0, green: 0, blue: 1, alpha: 0.2)))
             }
             Spacer()
         }

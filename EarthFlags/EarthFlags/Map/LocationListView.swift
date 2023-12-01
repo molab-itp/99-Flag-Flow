@@ -20,7 +20,14 @@ struct LocationListView: View {
             locationListHeader()
             List {
                 ForEach(appModel.locations) { loc in
-                    locationListRow(loc)
+                    let selected = loc.id == locationModel.currentLocation.id
+                    if selected {
+                        locationListRow(loc)
+                            .background(Color(.init(red: 0, green: 0, blue: 1, alpha: 0.2)))
+                    }
+                    else {
+                        locationListRow(loc)
+                    }
                 }
                 .onMove(perform: moveLocation)
                 .onDelete(perform: deleteLocation )
@@ -83,6 +90,7 @@ struct LocationListView: View {
                 }
                 Text(loc.label)
             }
+            
         }
     }
 
