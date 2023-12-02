@@ -7,14 +7,6 @@
 
 import SwiftUI
 
-enum TabTag {
-    case flags
-    case marks
-    case detail
-    case earth
-    case map
-}
-
 struct MainTabView: View {
     
     @EnvironmentObject var appModel: AppModel

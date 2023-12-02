@@ -87,7 +87,7 @@ struct FlagMarkedView: View {
 
 struct FlagMarkedRowView: View {
     
-    @EnvironmentObject var model: AppModel
+    @EnvironmentObject var appModel: AppModel
     @EnvironmentObject var locationModel: LocationModel
     
     var flagItem: FlagItem
@@ -103,17 +103,17 @@ struct FlagMarkedRowView: View {
                 .onTapGesture {
                     // print("tapped", flagItem)
                     Task {
-                        model.flagItem = flagItem
-                        model.setMarked(flagItem: flagItem, state: true);
+                        appModel.flagItem = flagItem
+                        appModel.setMarked(flagItem: flagItem, state: true);
                         locationModel.setLocation(ccode: flagItem.alpha3)
-                        model.selectedTab = .map
+                        appModel.selectedTab = .map
                     }
                 }
             HStack {
                 Text(flagItem.label())
                 Spacer()
                 Button {
-                    if model.isMarked(flagItem: flagItem) {
+                    if appModel.isMarked(flagItem: flagItem) {
                         // Is marked, will remove mark
                         unmarkFlagItem = flagItem
                         showUnmarkAlert = true
@@ -122,12 +122,12 @@ struct FlagMarkedRowView: View {
                         // Not marked, now marked
                         Task {
                             withAnimation {
-                                model.setMarked(flagItem: flagItem, state: true);
+                                appModel.setMarked(flagItem: flagItem, state: true);
                             }
                         }
                     }
                 } label: {
-                    let state = model.isMarked(flagItem: flagItem)
+                    let state = appModel.isMarked(flagItem: flagItem)
                     Image(systemName: state ? "circle.fill" : "circle")
                 }
             }

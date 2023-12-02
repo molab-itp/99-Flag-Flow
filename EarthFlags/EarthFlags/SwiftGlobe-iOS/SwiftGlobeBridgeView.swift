@@ -20,6 +20,16 @@ struct SwiftGlobeBridgeView: View {
             }
             .toolbar {
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
+//                    Link(destination: URL(string: "https://www.youtube.com/watch?v=0fKBhvDjuy0")!) {
+//                        Image(systemName: "safari")
+//                    }
+                    NavigationLink(
+                        destination:
+                            WebView(url: "https://blackfacts.com/kiosk?delay=0&playlist=0fKBhvDjuy0")
+                    ) {
+                        Image(systemName: "circle.circle" )
+                    }
+
                     Button(action: nextLocAction ) {
                         //Image(systemName: "arrow.right.circle" )
                         Text("Next")

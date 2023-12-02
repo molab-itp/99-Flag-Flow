@@ -11,6 +11,7 @@ import WebKit
 class AppModel: ObservableObject
 {
     @Published var selectedTab = TabTag.flags
+
     @Published var flagItem: FlagItem?
     @Published var flagItems: [FlagItem]
     var flagDict: Dictionary<String,FlagItem>
@@ -23,7 +24,7 @@ class AppModel: ObservableObject
     static let main = AppModel()
     
     lazy var verNum = Self.bundleVersion()
-
+    
     init() {
         settings = AppModel.loadSettings()
         flagItems = getCountriesFromJSON()
@@ -34,6 +35,7 @@ class AppModel: ObservableObject
         if let description = settings.description {
             self.description = description
         }
+        selectedTab = settings.selectedTab ?? .flags
     }
     
     static var sample:AppModel {
@@ -176,6 +178,9 @@ extension AppModel {
         
     func saveSettings() {
         print("AppModel saveSettings", settings.description ?? "-nil-", settings.marked.count, settings.locations.count)
+        
+        selectedTab = settings.selectedTab ?? .map
+        
         //print("AppModel saveSettings", settings)
         //print("AppModel saveSettings marked", settings.marked)
         //print("AppModel saveSettings locations", settings.locations)
@@ -237,21 +242,6 @@ extension AppModel {
     
 } // extension AppModel
 
-// Increase currentVerion code to invalidate old formats
-let currentVersion = 3;
-
-// Must be a struct Settings for edits to register
-struct Settings: Codable {
-
-    var description: String? = "My flags"
-    
-    var version: Int = currentVersion
-    
-    var marked: Array<String> = [];
-    
-    var locations: [Location] = []
-    
-}
 
 // https://developer.apple.com/documentation/swiftui/observedobject
 

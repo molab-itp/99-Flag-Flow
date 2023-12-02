@@ -148,30 +148,30 @@ struct MapTabView: View {
     
     func leftToolbarButtons() -> some View {
         Group {
-            Button(action: showingEditToggle ) {
-                Image(systemName: "arrow.down.app" )
-            }
             NavigationLink(
                 destination:
                     LocationListView()
             ) {
                 Image(systemName: "list.bullet" )
             }
-        }
-    }
-    
-    func rightToolbarButtons() -> some View {
-        Group {
             if !locationModel.locationCoordsMatch() {
                 Button(action: restoreLocAction ) {
                     Image(systemName: "staroflife.circle" )
                 }
             }
+        }
+    }
+    
+    func rightToolbarButtons() -> some View {
+        Group {
+            Button(action: showingEditToggle ) {
+                Image(systemName: "arrow.down.app" )
+            }
             Button(action: previousLocAction  ) {
-                Image(systemName: "arrow.left.square.fill" )
+                Image(systemName: "arrow.left.square" )
             }
             Button(action: nextLocAction ) {
-                Image(systemName: "arrow.right.square.fill" )
+                Image(systemName: "arrow.right.square" )
             }
         }
     }

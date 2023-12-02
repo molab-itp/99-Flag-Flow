@@ -20,6 +20,7 @@
 		AB7F18B22B140DA4008C2905 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7F18B12B140DA4008C2905 /* Location.swift */; };
 		AB7F18BA2B142E94008C2905 /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7F18B92B142E93008C2905 /* LocationListView.swift */; };
 		AB8A75912B0D04E300A8CD5F /* countries_capitals.json in Resources */ = {isa = PBXBuildFile; fileRef = AB8A75902B0D04E300A8CD5F /* countries_capitals.json */; };
+		AB9166022B1BCF30009E5AE3 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9166012B1BCF30009E5AE3 /* Settings.swift */; };
 		ABCA885C2B07219700F09268 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCA885B2B07219700F09268 /* AppModel.swift */; };
 		ABCA885E2B077E6700F09268 /* FlagWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCA885D2B077E6700F09268 /* FlagWebView.swift */; };
 		ABCA88602B07D0E300F09268 /* FlagMarkedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCA885F2B07D0E300F09268 /* FlagMarkedView.swift */; };
@@ -66,6 +67,7 @@
 		AB7F18B12B140DA4008C2905 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		AB7F18B92B142E93008C2905 /* LocationListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
 		AB8A75902B0D04E300A8CD5F /* countries_capitals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries_capitals.json; sourceTree = "<group>"; };
+		AB9166012B1BCF30009E5AE3 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		ABCA885B2B07219700F09268 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		ABCA885D2B077E6700F09268 /* FlagWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagWebView.swift; sourceTree = "<group>"; };
 		ABCA885F2B07D0E300F09268 /* FlagMarkedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagMarkedView.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 			children = (
 				ABE29FCB2AB3A03D0072F7C2 /* EarthFlagsApp.swift */,
 				ABCA885B2B07219700F09268 /* AppModel.swift */,
+				AB9166012B1BCF30009E5AE3 /* Settings.swift */,
 				ABF2F1CD2B05A83200696485 /* MainTabView.swift */,
 				ABE29FD92AB3A0860072F7C2 /* FlagListView.swift */,
 				ABCA885F2B07D0E300F09268 /* FlagMarkedView.swift */,
@@ -344,6 +347,7 @@
 				ABCA88912B08BA5000F09268 /* SwiftGlobe.swift in Sources */,
 				ABCA88922B08BA5000F09268 /* GlowingMarker.swift in Sources */,
 				AB3DC8A02B0904DA00F0E631 /* SwiftGlobeBridgeView.swift in Sources */,
+				AB9166022B1BCF30009E5AE3 /* Settings.swift in Sources */,
 				AB3DC8A82B09534A00F0E631 /* MapTabView.swift in Sources */,
 				ABE29FCC2AB3A03D0072F7C2 /* EarthFlagsApp.swift in Sources */,
 				ABCA88B92B08BA5000F09268 /* SwiftGlobe+DemoMarkers.swift in Sources */,
@@ -477,7 +481,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 12;
 				DEVELOPMENT_ASSET_PATHS = "\"EarthFlags/Preview Content\"";
 				DEVELOPMENT_TEAM = 3RCW2SSL8G;
 				ENABLE_PREVIEWS = YES;
@@ -507,7 +511,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 12;
 				DEVELOPMENT_ASSET_PATHS = "\"EarthFlags/Preview Content\"";
 				DEVELOPMENT_TEAM = 3RCW2SSL8G;
 				ENABLE_PREVIEWS = YES;
