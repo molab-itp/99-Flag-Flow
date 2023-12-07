@@ -62,9 +62,20 @@ class LocationModel: ObservableObject {
     var startLabel: String?
     var targetIndex = 0
 
+    var animPause = false
+    var animPauseStart: TimeInterval = 0
+    var animPauseDuration: TimeInterval = 1.0
+    
     func stepAnimation() {
         // print("stepAnimation");
         let now = Date.timeIntervalSinceReferenceDate
+        if animPause {
+            let lapse = now - animPauseStart
+            if lapse > animPauseDuration {
+                animPause = false
+                nextLocation( true)
+                startAnimation()            }
+        }
         if !animating {
             return
         }
@@ -74,7 +85,7 @@ class LocationModel: ObservableObject {
         }
         let lapse = now - animStart
         if lapse >= duration {
-            stopAnimation();
+            stopAnimationSegment();
             return
         }
         print("stepAnimation lapse", lapse)
@@ -88,6 +99,19 @@ class LocationModel: ObservableObject {
         region.span.latitudeDelta = startRegion.span.latitudeDelta + (targetLoc.delta - startRegion.span.latitudeDelta) * perCent
         region.span.longitudeDelta = startRegion.span.longitudeDelta + (targetLoc.delta - startRegion.span.longitudeDelta) * perCent
 
+    }
+
+    // Continue animation to next if mapSymbol is dotted
+    func stopAnimationSegment() {
+        let isAnimating = animating
+        stopAnimation();
+        if isAnimating && mapSymbol.contains(".dotted") {
+            animPause = true
+            animPauseStart = Date.timeIntervalSinceReferenceDate
+
+//            nextLocation( true)
+//            startAnimation()
+        }
     }
     
     func startAnimation() {
