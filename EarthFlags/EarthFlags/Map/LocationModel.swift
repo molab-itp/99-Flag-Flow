@@ -74,7 +74,8 @@ class LocationModel: ObservableObject {
             if lapse > animPauseDuration {
                 animPause = false
                 nextLocation( true)
-                startAnimation()            }
+                startAnimation()
+            }
         }
         if !animating {
             return
