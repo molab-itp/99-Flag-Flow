@@ -101,7 +101,7 @@ struct FlagMarkedRowView: View {
                 .resizable()
                 .frame(width: 200, height: 100)
                 .onTapGesture {
-                    // print("tapped", flagItem)
+                     print("FlagMarkedRowView tapped", flagItem)
                     Task {
                         appModel.flagItem = flagItem
                         appModel.setMarked(flagItem: flagItem, state: true);

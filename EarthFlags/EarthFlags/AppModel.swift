@@ -179,7 +179,7 @@ extension AppModel {
     func saveSettings() {
         print("AppModel saveSettings", settings.description ?? "-nil-", settings.marked.count, settings.locations.count)
         
-        selectedTab = settings.selectedTab ?? .map
+//        selectedTab = settings.selectedTab ?? .map
         
         //print("AppModel saveSettings", settings)
         //print("AppModel saveSettings marked", settings.marked)
