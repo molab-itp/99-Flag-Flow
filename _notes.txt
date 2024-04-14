@@ -7,6 +7,12 @@ Why are we here?
 
 An origin story and reflection of app development process
 
+a-repos
+
+In Finder, click your hard drive under Locations, then open your Macintosh HD
+folder. Press Command + Shift + . (period) to make the hidden files appear. You
+can also do the same from inside the Documents, Applications, and Desktop
+folders.
 
 
 # --
