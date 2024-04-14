@@ -1,0 +1,7 @@
+
+*.xcscheme
+
+*.xcbkptlist
+xcuserdata
+xcshareddata
+*/xcuserdata/*

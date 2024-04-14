@@ -1,6 +1,15 @@
 _notes.txt
 
 # --
+2024-04-14 16:57:30
+
+Why are we here?
+
+An origin story and reflection of app development process
+
+
+
+# --
 2023-12-02 15:19:06
 
     @Published var selectedTab = TabTag.flags
